@@ -1,0 +1,54 @@
+{
+  "schema": "gooo/body-codegen-ir-search-plan/v1",
+  "intent": "Add five to an amount, double the updated total, and return that reassigned total.",
+  "hole_id": "choice",
+  "candidates": [
+    {
+      "id": "option_a",
+      "expression": "input + 10"
+    },
+    {
+      "id": "option_b",
+      "expression": "total"
+    },
+    {
+      "id": "option_c",
+      "expression": "input * 2 + 5"
+    }
+  ],
+  "test_cases": [
+    {
+      "input": -5,
+      "expected": 0
+    },
+    {
+      "input": 0,
+      "expected": 10
+    },
+    {
+      "input": 1,
+      "expected": 12
+    },
+    {
+      "input": 4,
+      "expected": 18
+    }
+  ],
+  "holdout_test_cases": [
+    {
+      "input": -10,
+      "expected": -10
+    },
+    {
+      "input": 8,
+      "expected": 26
+    },
+    {
+      "input": 10,
+      "expected": 30
+    }
+  ],
+  "max_attempts": 3,
+  "provider_model": "english",
+  "prompt_profile": "compact"
+}

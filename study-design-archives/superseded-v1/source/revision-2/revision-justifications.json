@@ -1,0 +1,1251 @@
+{
+  "schema": "gooo/ir-composition-revision-justification/v1",
+  "source_design_freeze_sha256": "e66f71f3bc02350168bb3958628bf5d1a3e02096ed758cbfbe83f987b71eb9b8",
+  "revision_count": 32,
+  "same_32_intention_ids": true,
+  "intentions_added": 0,
+  "global_correction": "Go candidate reporting now consumes explicit gold_candidate_id from each vector, checked against the frozen plan; it does not infer truth from an incorrect rotation formula.",
+  "per_design": [
+    {
+      "id": "cc01_inclusive_band",
+      "same_intent_id": true,
+      "original_intent": "Return 2 for inputs from 3 through 8 inclusive, and -1 otherwise.",
+      "revised_intent": "Return 2 for inputs from 3 through 8 inclusive, and -1 otherwise.",
+      "changes": [
+        "correct_candidate_rotation_metadata"
+      ],
+      "original_gold_candidate_id_from_catalog": "option_a",
+      "gold_candidate_id_in_revision2": "option_a",
+      "legacy_report_formula_candidate_id": "option_a",
+      "gold_rotation_corrected": false,
+      "body_changed": false,
+      "candidate_expressions_changed": false,
+      "training_inputs_before": [
+        -1,
+        2,
+        3,
+        8,
+        9
+      ],
+      "training_inputs_after": [
+        -1,
+        2,
+        3,
+        8,
+        9
+      ],
+      "evaluation_inputs_before": [
+        -10,
+        4,
+        12
+      ],
+      "evaluation_inputs_after": [
+        -10,
+        4,
+        12
+      ],
+      "structural_deltas": []
+    },
+    {
+      "id": "cc02_nonzero_disjunction",
+      "same_intent_id": true,
+      "original_intent": "Return 1 for every nonzero integer, including both negative and positive values; return 0 only for zero.",
+      "revised_intent": "Return 1 for every nonzero integer, including both negative and positive values; return 0 only for zero.",
+      "changes": [
+        "correct_candidate_rotation_metadata"
+      ],
+      "original_gold_candidate_id_from_catalog": "option_c",
+      "gold_candidate_id_in_revision2": "option_c",
+      "legacy_report_formula_candidate_id": "option_b",
+      "gold_rotation_corrected": true,
+      "body_changed": false,
+      "candidate_expressions_changed": false,
+      "training_inputs_before": [
+        -1,
+        0,
+        1
+      ],
+      "training_inputs_after": [
+        -1,
+        0,
+        1
+      ],
+      "evaluation_inputs_before": [
+        -7,
+        12
+      ],
+      "evaluation_inputs_after": [
+        -7,
+        12
+      ],
+      "structural_deltas": []
+    },
+    {
+      "id": "cc03_two_islands",
+      "same_intent_id": true,
+      "original_intent": "Return 7 only for the two isolated inputs -4 and 4; return 0 for the gap and the exterior.",
+      "revised_intent": "Return 7 only for the two isolated inputs -4 and 4; return 0 for the gap and the exterior.",
+      "changes": [
+        "correct_candidate_rotation_metadata"
+      ],
+      "original_gold_candidate_id_from_catalog": "option_b",
+      "gold_candidate_id_in_revision2": "option_b",
+      "legacy_report_formula_candidate_id": "option_c",
+      "gold_rotation_corrected": true,
+      "body_changed": false,
+      "candidate_expressions_changed": false,
+      "training_inputs_before": [
+        -5,
+        -4,
+        0,
+        4,
+        5
+      ],
+      "training_inputs_after": [
+        -5,
+        -4,
+        0,
+        4,
+        5
+      ],
+      "evaluation_inputs_before": [
+        -100,
+        2
+      ],
+      "evaluation_inputs_after": [
+        -100,
+        2
+      ],
+      "structural_deltas": []
+    },
+    {
+      "id": "cc04_outer_cutoffs",
+      "same_intent_id": true,
+      "original_intent": "Return 9 when the input is at most -6 or at least 8; return 0 in the middle interval.",
+      "revised_intent": "Return 9 when the input is at most -6 or at least 8; return 0 in the middle interval.",
+      "changes": [
+        "correct_candidate_rotation_metadata"
+      ],
+      "original_gold_candidate_id_from_catalog": "option_a",
+      "gold_candidate_id_in_revision2": "option_a",
+      "legacy_report_formula_candidate_id": "option_a",
+      "gold_rotation_corrected": false,
+      "body_changed": false,
+      "candidate_expressions_changed": false,
+      "training_inputs_before": [
+        -7,
+        -6,
+        -5,
+        7,
+        8,
+        9
+      ],
+      "training_inputs_after": [
+        -7,
+        -6,
+        -5,
+        7,
+        8,
+        9
+      ],
+      "evaluation_inputs_before": [
+        -100,
+        0,
+        100
+      ],
+      "evaluation_inputs_after": [
+        -100,
+        0,
+        100
+      ],
+      "structural_deltas": []
+    },
+    {
+      "id": "ni05_negative_then_double",
+      "same_intent_id": true,
+      "original_intent": "Return -1 for a negative input, double inputs from 0 through 9, and return 20 from 10 onward.",
+      "revised_intent": "Return -1 for a negative input, double inputs from 0 through 9, and return 20 from 10 onward.",
+      "changes": [
+        "correct_candidate_rotation_metadata"
+      ],
+      "original_gold_candidate_id_from_catalog": "option_c",
+      "gold_candidate_id_in_revision2": "option_c",
+      "legacy_report_formula_candidate_id": "option_b",
+      "gold_rotation_corrected": true,
+      "body_changed": false,
+      "candidate_expressions_changed": false,
+      "training_inputs_before": [
+        -1,
+        0,
+        1,
+        9,
+        10
+      ],
+      "training_inputs_after": [
+        -1,
+        0,
+        1,
+        9,
+        10
+      ],
+      "evaluation_inputs_before": [
+        -5,
+        5,
+        11
+      ],
+      "evaluation_inputs_after": [
+        -5,
+        5,
+        11
+      ],
+      "structural_deltas": []
+    },
+    {
+      "id": "ni06_surcharge_discount",
+      "same_intent_id": true,
+      "original_intent": "Reject negative quantities as 0, add 10 through quantity 100, then discount quantities above 100 by 10.",
+      "revised_intent": "Reject negative quantities as 0, add 10 through quantity 100, then discount quantities above 100 by 10.",
+      "changes": [
+        "correct_candidate_rotation_metadata"
+      ],
+      "original_gold_candidate_id_from_catalog": "option_b",
+      "gold_candidate_id_in_revision2": "option_b",
+      "legacy_report_formula_candidate_id": "option_c",
+      "gold_rotation_corrected": true,
+      "body_changed": false,
+      "candidate_expressions_changed": false,
+      "training_inputs_before": [
+        -1,
+        0,
+        1,
+        100,
+        101
+      ],
+      "training_inputs_after": [
+        -1,
+        0,
+        1,
+        100,
+        101
+      ],
+      "evaluation_inputs_before": [
+        -5,
+        50,
+        111
+      ],
+      "evaluation_inputs_after": [
+        -5,
+        50,
+        111
+      ],
+      "structural_deltas": []
+    },
+    {
+      "id": "ni07_zero_special_negative_offset",
+      "same_intent_id": true,
+      "original_intent": "Map zero to 5, positive inputs to 3, and negative inputs to the input plus 2.",
+      "revised_intent": "Map zero to 5, positive inputs to 3, and negative inputs to the input plus 2.",
+      "changes": [
+        "correct_candidate_rotation_metadata"
+      ],
+      "original_gold_candidate_id_from_catalog": "option_a",
+      "gold_candidate_id_in_revision2": "option_a",
+      "legacy_report_formula_candidate_id": "option_a",
+      "gold_rotation_corrected": false,
+      "body_changed": false,
+      "candidate_expressions_changed": false,
+      "training_inputs_before": [
+        -2,
+        -1,
+        0,
+        1
+      ],
+      "training_inputs_after": [
+        -2,
+        -1,
+        0,
+        1
+      ],
+      "evaluation_inputs_before": [
+        -9,
+        2,
+        50
+      ],
+      "evaluation_inputs_after": [
+        -9,
+        2,
+        50
+      ],
+      "structural_deltas": []
+    },
+    {
+      "id": "ni08_upper_grade_excess",
+      "same_intent_id": true,
+      "original_intent": "Return -1 below 60, 0 from 60 through 79, and the excess above 80 from 80 onward.",
+      "revised_intent": "Return -1 below 60, 0 from 60 through 79, and the excess above 80 from 80 onward.",
+      "changes": [
+        "correct_candidate_rotation_metadata"
+      ],
+      "original_gold_candidate_id_from_catalog": "option_c",
+      "gold_candidate_id_in_revision2": "option_c",
+      "legacy_report_formula_candidate_id": "option_b",
+      "gold_rotation_corrected": true,
+      "body_changed": false,
+      "candidate_expressions_changed": false,
+      "training_inputs_before": [
+        59,
+        60,
+        79,
+        80,
+        81
+      ],
+      "training_inputs_after": [
+        59,
+        60,
+        79,
+        80,
+        81
+      ],
+      "evaluation_inputs_before": [
+        -1,
+        70,
+        100
+      ],
+      "evaluation_inputs_after": [
+        -1,
+        70,
+        100
+      ],
+      "structural_deltas": []
+    },
+    {
+      "id": "lr09_compound_total",
+      "same_intent_id": true,
+      "original_intent": "Add five to an amount, double the updated total, and return that reassigned total.",
+      "revised_intent": "Add five to an amount, double the updated total, and return that reassigned total.",
+      "changes": [
+        "correct_candidate_rotation_metadata"
+      ],
+      "original_gold_candidate_id_from_catalog": "option_b",
+      "gold_candidate_id_in_revision2": "option_b",
+      "legacy_report_formula_candidate_id": "option_c",
+      "gold_rotation_corrected": true,
+      "body_changed": false,
+      "candidate_expressions_changed": false,
+      "training_inputs_before": [
+        -5,
+        0,
+        1,
+        4
+      ],
+      "training_inputs_after": [
+        -5,
+        0,
+        1,
+        4
+      ],
+      "evaluation_inputs_before": [
+        -10,
+        8,
+        10
+      ],
+      "evaluation_inputs_after": [
+        -10,
+        8,
+        10
+      ],
+      "structural_deltas": []
+    },
+    {
+      "id": "lr10_floor_then_increment",
+      "same_intent_id": true,
+      "original_intent": "Replace negative input with zero; otherwise increment it once, then return the updated local.",
+      "revised_intent": "Replace negative input with zero; otherwise increment it once, then return the updated local.",
+      "changes": [
+        "correct_candidate_rotation_metadata"
+      ],
+      "original_gold_candidate_id_from_catalog": "option_a",
+      "gold_candidate_id_in_revision2": "option_a",
+      "legacy_report_formula_candidate_id": "option_a",
+      "gold_rotation_corrected": false,
+      "body_changed": false,
+      "candidate_expressions_changed": false,
+      "training_inputs_before": [
+        -1,
+        0,
+        1,
+        5
+      ],
+      "training_inputs_after": [
+        -1,
+        0,
+        1,
+        5
+      ],
+      "evaluation_inputs_before": [
+        -10,
+        4,
+        20
+      ],
+      "evaluation_inputs_after": [
+        -10,
+        4,
+        20
+      ],
+      "structural_deltas": []
+    },
+    {
+      "id": "lr11_nonnegative_doubled_score",
+      "same_intent_id": true,
+      "original_intent": "Double the input; add one when the doubled score is nonnegative and reset negative scores to zero.",
+      "revised_intent": "Double the input; add one when the doubled score is nonnegative and reset negative scores to zero.",
+      "changes": [
+        "correct_candidate_rotation_metadata"
+      ],
+      "original_gold_candidate_id_from_catalog": "option_c",
+      "gold_candidate_id_in_revision2": "option_c",
+      "legacy_report_formula_candidate_id": "option_b",
+      "gold_rotation_corrected": true,
+      "body_changed": false,
+      "candidate_expressions_changed": false,
+      "training_inputs_before": [
+        -2,
+        -1,
+        0,
+        2
+      ],
+      "training_inputs_after": [
+        -2,
+        -1,
+        0,
+        2
+      ],
+      "evaluation_inputs_before": [
+        -10,
+        3,
+        10
+      ],
+      "evaluation_inputs_after": [
+        -10,
+        3,
+        10
+      ],
+      "structural_deltas": []
+    },
+    {
+      "id": "lr12_cap_after_adjustment",
+      "same_intent_id": true,
+      "original_intent": "Add three, cap the adjusted amount at ten, subtract one from that capped local, and return it.",
+      "revised_intent": "Add three, cap the adjusted amount at ten, subtract one from that capped local, and return it.",
+      "changes": [
+        "correct_candidate_rotation_metadata"
+      ],
+      "original_gold_candidate_id_from_catalog": "option_b",
+      "gold_candidate_id_in_revision2": "option_b",
+      "legacy_report_formula_candidate_id": "option_c",
+      "gold_rotation_corrected": true,
+      "body_changed": false,
+      "candidate_expressions_changed": false,
+      "training_inputs_before": [
+        -5,
+        0,
+        7,
+        8
+      ],
+      "training_inputs_after": [
+        -5,
+        0,
+        7,
+        8
+      ],
+      "evaluation_inputs_before": [
+        -20,
+        10,
+        100
+      ],
+      "evaluation_inputs_after": [
+        -20,
+        10,
+        100
+      ],
+      "structural_deltas": []
+    },
+    {
+      "id": "pr13_subtract_tripled_sum",
+      "same_intent_id": true,
+      "original_intent": "Subtract three times the sum of the input and two from one hundred.",
+      "revised_intent": "Subtract three times the sum of the input and two from one hundred.",
+      "changes": [
+        "correct_candidate_rotation_metadata"
+      ],
+      "original_gold_candidate_id_from_catalog": "option_a",
+      "gold_candidate_id_in_revision2": "option_a",
+      "legacy_report_formula_candidate_id": "option_a",
+      "gold_rotation_corrected": false,
+      "body_changed": false,
+      "candidate_expressions_changed": false,
+      "training_inputs_before": [
+        -2,
+        0,
+        3,
+        5
+      ],
+      "training_inputs_after": [
+        -2,
+        0,
+        3,
+        5
+      ],
+      "evaluation_inputs_before": [
+        -10,
+        7,
+        20
+      ],
+      "evaluation_inputs_after": [
+        -10,
+        7,
+        20
+      ],
+      "structural_deltas": []
+    },
+    {
+      "id": "pr14_product_neighbor_factors",
+      "same_intent_id": true,
+      "original_intent": "Multiply the input plus its successor by the input minus two.",
+      "revised_intent": "Multiply the input plus its successor by the input minus two.",
+      "changes": [
+        "correct_candidate_rotation_metadata"
+      ],
+      "original_gold_candidate_id_from_catalog": "option_c",
+      "gold_candidate_id_in_revision2": "option_c",
+      "legacy_report_formula_candidate_id": "option_b",
+      "gold_rotation_corrected": true,
+      "body_changed": false,
+      "candidate_expressions_changed": false,
+      "training_inputs_before": [
+        -3,
+        0,
+        2,
+        5
+      ],
+      "training_inputs_after": [
+        -3,
+        0,
+        2,
+        5
+      ],
+      "evaluation_inputs_before": [
+        -10,
+        4,
+        10
+      ],
+      "evaluation_inputs_after": [
+        -10,
+        4,
+        10
+      ],
+      "structural_deltas": []
+    },
+    {
+      "id": "pr15_square_minus_successor_sum",
+      "same_intent_id": true,
+      "original_intent": "Subtract the input plus four from the square of the input.",
+      "revised_intent": "Subtract the input plus four from the square of the input.",
+      "changes": [
+        "correct_candidate_rotation_metadata"
+      ],
+      "original_gold_candidate_id_from_catalog": "option_b",
+      "gold_candidate_id_in_revision2": "option_b",
+      "legacy_report_formula_candidate_id": "option_c",
+      "gold_rotation_corrected": true,
+      "body_changed": false,
+      "candidate_expressions_changed": false,
+      "training_inputs_before": [
+        -2,
+        0,
+        3,
+        6
+      ],
+      "training_inputs_after": [
+        -2,
+        0,
+        3,
+        6
+      ],
+      "evaluation_inputs_before": [
+        -10,
+        5,
+        20
+      ],
+      "evaluation_inputs_after": [
+        -10,
+        5,
+        20
+      ],
+      "structural_deltas": []
+    },
+    {
+      "id": "pr16_composed_neighbor_product",
+      "same_intent_id": true,
+      "original_intent": "Multiply the saved successor by the input plus two, then subtract the original input.",
+      "revised_intent": "Multiply the saved successor by the input plus two, then subtract the original input.",
+      "changes": [
+        "correct_candidate_rotation_metadata"
+      ],
+      "original_gold_candidate_id_from_catalog": "option_a",
+      "gold_candidate_id_in_revision2": "option_a",
+      "legacy_report_formula_candidate_id": "option_a",
+      "gold_rotation_corrected": false,
+      "body_changed": false,
+      "candidate_expressions_changed": false,
+      "training_inputs_before": [
+        -3,
+        0,
+        2,
+        5
+      ],
+      "training_inputs_after": [
+        -3,
+        0,
+        2,
+        5
+      ],
+      "evaluation_inputs_before": [
+        -10,
+        4,
+        12
+      ],
+      "evaluation_inputs_after": [
+        -10,
+        4,
+        12
+      ],
+      "structural_deltas": []
+    },
+    {
+      "id": "cp17_nonpositive_inclusive",
+      "same_intent_id": true,
+      "original_intent": "Return 1 for every input at or below zero, including zero, and 0 for positive inputs.",
+      "revised_intent": "Return 1 for every input at or below zero, including zero, and 0 for positive inputs.",
+      "changes": [
+        "correct_candidate_rotation_metadata"
+      ],
+      "original_gold_candidate_id_from_catalog": "option_c",
+      "gold_candidate_id_in_revision2": "option_c",
+      "legacy_report_formula_candidate_id": "option_b",
+      "gold_rotation_corrected": true,
+      "body_changed": false,
+      "candidate_expressions_changed": false,
+      "training_inputs_before": [
+        -1,
+        0,
+        1
+      ],
+      "training_inputs_after": [
+        -1,
+        0,
+        1
+      ],
+      "evaluation_inputs_before": [
+        -9,
+        5,
+        10
+      ],
+      "evaluation_inputs_after": [
+        -9,
+        5,
+        10
+      ],
+      "structural_deltas": []
+    },
+    {
+      "id": "cp18_exact_release_code",
+      "same_intent_id": true,
+      "original_intent": "Return 1 only for release code 7; neighboring codes are not release code 7.",
+      "revised_intent": "Return 1 only for release code 7; neighboring codes are not release code 7.",
+      "changes": [
+        "correct_candidate_rotation_metadata"
+      ],
+      "original_gold_candidate_id_from_catalog": "option_b",
+      "gold_candidate_id_in_revision2": "option_b",
+      "legacy_report_formula_candidate_id": "option_c",
+      "gold_rotation_corrected": true,
+      "body_changed": false,
+      "candidate_expressions_changed": false,
+      "training_inputs_before": [
+        6,
+        7,
+        8
+      ],
+      "training_inputs_after": [
+        6,
+        7,
+        8
+      ],
+      "evaluation_inputs_before": [
+        0,
+        9,
+        100
+      ],
+      "evaluation_inputs_after": [
+        0,
+        9,
+        100
+      ],
+      "structural_deltas": []
+    },
+    {
+      "id": "cp19_range_without_origin",
+      "same_intent_id": true,
+      "original_intent": "Return 1 inside the inclusive range -3 through 3 except at zero; return 0 elsewhere.",
+      "revised_intent": "Return 1 inside the inclusive range -3 through 3 except at zero; return 0 elsewhere.",
+      "changes": [
+        "correct_candidate_rotation_metadata"
+      ],
+      "original_gold_candidate_id_from_catalog": "option_a",
+      "gold_candidate_id_in_revision2": "option_a",
+      "legacy_report_formula_candidate_id": "option_a",
+      "gold_rotation_corrected": false,
+      "body_changed": false,
+      "candidate_expressions_changed": false,
+      "training_inputs_before": [
+        -4,
+        -3,
+        0,
+        3,
+        4
+      ],
+      "training_inputs_after": [
+        -4,
+        -3,
+        0,
+        3,
+        4
+      ],
+      "evaluation_inputs_before": [
+        -100,
+        2,
+        100
+      ],
+      "evaluation_inputs_after": [
+        -100,
+        2,
+        100
+      ],
+      "structural_deltas": []
+    },
+    {
+      "id": "cp20_strict_symmetric_window",
+      "same_intent_id": true,
+      "original_intent": "Return 4 only strictly between -5 and 5; both endpoints and everything outside return -4.",
+      "revised_intent": "Return 4 only strictly between -5 and 5; both endpoints and everything outside return -4.",
+      "changes": [
+        "correct_candidate_rotation_metadata"
+      ],
+      "original_gold_candidate_id_from_catalog": "option_c",
+      "gold_candidate_id_in_revision2": "option_c",
+      "legacy_report_formula_candidate_id": "option_b",
+      "gold_rotation_corrected": true,
+      "body_changed": false,
+      "candidate_expressions_changed": false,
+      "training_inputs_before": [
+        -6,
+        -5,
+        -4,
+        4,
+        5,
+        6
+      ],
+      "training_inputs_after": [
+        -6,
+        -5,
+        -4,
+        4,
+        5,
+        6
+      ],
+      "evaluation_inputs_before": [
+        -100,
+        0,
+        100
+      ],
+      "evaluation_inputs_after": [
+        -100,
+        0,
+        100
+      ],
+      "structural_deltas": []
+    },
+    {
+      "id": "bl21_saved_range_predicates",
+      "same_intent_id": true,
+      "original_intent": "Save lower and upper range predicates, combine them, and return 1 only for values from -2 through 2.",
+      "revised_intent": "Save lower and upper range predicates, combine them, and return 1 only for values from -2 through 2.",
+      "changes": [
+        "correct_candidate_rotation_metadata",
+        "use_low_high_and_allowed_in_shared_guard_then_test_predicates_in_hole"
+      ],
+      "original_gold_candidate_id_from_catalog": "option_b",
+      "gold_candidate_id_in_revision2": "option_b",
+      "legacy_report_formula_candidate_id": "option_c",
+      "gold_rotation_corrected": true,
+      "body_changed": true,
+      "candidate_expressions_changed": true,
+      "training_inputs_before": [
+        -3,
+        -2,
+        0,
+        2,
+        3
+      ],
+      "training_inputs_after": [
+        -3,
+        -2,
+        0,
+        2,
+        3
+      ],
+      "evaluation_inputs_before": [
+        -10,
+        1,
+        10
+      ],
+      "evaluation_inputs_after": [
+        -100,
+        -1,
+        1,
+        100
+      ],
+      "structural_deltas": [
+        "skeleton",
+        "candidate_set",
+        "training_cases"
+      ]
+    },
+    {
+      "id": "bl22_reassigned_valid_flag",
+      "same_intent_id": true,
+      "original_intent": "Build a nonnegative flag, refine it in place to require an input no greater than five, then return 5 only when valid.",
+      "revised_intent": "Build a nonnegative flag, refine it in place to require an input no greater than five, then return 5 only when valid.",
+      "changes": [
+        "correct_candidate_rotation_metadata",
+        "add_input_10_to_separate_option_b_from_gold"
+      ],
+      "original_gold_candidate_id_from_catalog": "option_a",
+      "gold_candidate_id_in_revision2": "option_a",
+      "legacy_report_formula_candidate_id": "option_a",
+      "gold_rotation_corrected": false,
+      "body_changed": false,
+      "candidate_expressions_changed": false,
+      "training_inputs_before": [
+        -1,
+        0,
+        5,
+        6
+      ],
+      "training_inputs_after": [
+        -1,
+        0,
+        5,
+        6,
+        10
+      ],
+      "evaluation_inputs_before": [
+        -10,
+        2,
+        100
+      ],
+      "evaluation_inputs_after": [
+        -10,
+        2,
+        100
+      ],
+      "structural_deltas": [
+        "training_cases"
+      ]
+    },
+    {
+      "id": "bl23_nonzero_bounded_flag",
+      "same_intent_id": true,
+      "original_intent": "Return 9 only when a saved nonzero predicate and a saved inclusive -4 through 4 range predicate are both true.",
+      "revised_intent": "Return 9 only when a saved nonzero predicate and a saved inclusive -4 through 4 range predicate are both true.",
+      "changes": [
+        "correct_candidate_rotation_metadata",
+        "use_nonzero_bounded_and_eligible_in_shared_guard_then_test_predicates_in_hole"
+      ],
+      "original_gold_candidate_id_from_catalog": "option_c",
+      "gold_candidate_id_in_revision2": "option_c",
+      "legacy_report_formula_candidate_id": "option_b",
+      "gold_rotation_corrected": true,
+      "body_changed": true,
+      "candidate_expressions_changed": true,
+      "training_inputs_before": [
+        -5,
+        -4,
+        0,
+        4,
+        5
+      ],
+      "training_inputs_after": [
+        -5,
+        -4,
+        -1,
+        0,
+        4,
+        5
+      ],
+      "evaluation_inputs_before": [
+        -100,
+        3,
+        100
+      ],
+      "evaluation_inputs_after": [
+        -100,
+        -2,
+        1,
+        100
+      ],
+      "structural_deltas": [
+        "skeleton",
+        "candidate_set",
+        "training_cases"
+      ]
+    },
+    {
+      "id": "bl24_selected_nonnegative_codes",
+      "same_intent_id": true,
+      "original_intent": "Select code 2, plus code 4 only when nonnegative; all negative codes and other nonnegative codes return zero.",
+      "revised_intent": "Select code 2, plus code 4 only when nonnegative; all negative codes and other nonnegative codes return zero.",
+      "changes": [
+        "correct_candidate_rotation_metadata"
+      ],
+      "original_gold_candidate_id_from_catalog": "option_b",
+      "gold_candidate_id_in_revision2": "option_b",
+      "legacy_report_formula_candidate_id": "option_c",
+      "gold_rotation_corrected": true,
+      "body_changed": false,
+      "candidate_expressions_changed": false,
+      "training_inputs_before": [
+        -1,
+        0,
+        2,
+        4,
+        5
+      ],
+      "training_inputs_after": [
+        -1,
+        0,
+        2,
+        4,
+        5
+      ],
+      "evaluation_inputs_before": [
+        -100,
+        1,
+        10
+      ],
+      "evaluation_inputs_after": [
+        -100,
+        1,
+        10
+      ],
+      "structural_deltas": []
+    },
+    {
+      "id": "tx25_sign_label",
+      "same_intent_id": true,
+      "original_intent": "Label the input as negative or nonnegative; return -1 for the negative label and 1 for the other label.",
+      "revised_intent": "Label the input as negative or nonnegative; return -1 for the negative label and 1 for the other label.",
+      "changes": [
+        "correct_candidate_rotation_metadata"
+      ],
+      "original_gold_candidate_id_from_catalog": "option_a",
+      "gold_candidate_id_in_revision2": "option_a",
+      "legacy_report_formula_candidate_id": "option_a",
+      "gold_rotation_corrected": false,
+      "body_changed": false,
+      "candidate_expressions_changed": false,
+      "training_inputs_before": [
+        -1,
+        0,
+        1
+      ],
+      "training_inputs_after": [
+        -1,
+        0,
+        1
+      ],
+      "evaluation_inputs_before": [
+        -20,
+        20
+      ],
+      "evaluation_inputs_after": [
+        -20,
+        20
+      ],
+      "structural_deltas": []
+    },
+    {
+      "id": "tx26_state_label",
+      "same_intent_id": true,
+      "original_intent": "Classify zero as closed, positive input as open, and negative input as error; return one only for open.",
+      "revised_intent": "Classify zero as closed, positive input as open, and negative input as error; return one only for open.",
+      "changes": [
+        "correct_candidate_rotation_metadata"
+      ],
+      "original_gold_candidate_id_from_catalog": "option_c",
+      "gold_candidate_id_in_revision2": "option_c",
+      "legacy_report_formula_candidate_id": "option_b",
+      "gold_rotation_corrected": true,
+      "body_changed": false,
+      "candidate_expressions_changed": false,
+      "training_inputs_before": [
+        -1,
+        0,
+        1
+      ],
+      "training_inputs_after": [
+        -1,
+        0,
+        1
+      ],
+      "evaluation_inputs_before": [
+        -20,
+        7
+      ],
+      "evaluation_inputs_after": [
+        -20,
+        7
+      ],
+      "structural_deltas": []
+    },
+    {
+      "id": "tx27_lexical_cutoff",
+      "same_intent_id": true,
+      "original_intent": "Assign amber to negative inputs and zinc otherwise; return 1 exactly when the label sorts before gold.",
+      "revised_intent": "Assign amber to negative inputs and zinc otherwise; return 1 exactly when the label sorts before gold.",
+      "changes": [
+        "correct_candidate_rotation_metadata"
+      ],
+      "original_gold_candidate_id_from_catalog": "option_b",
+      "gold_candidate_id_in_revision2": "option_b",
+      "legacy_report_formula_candidate_id": "option_c",
+      "gold_rotation_corrected": true,
+      "body_changed": false,
+      "candidate_expressions_changed": false,
+      "training_inputs_before": [
+        -1,
+        0,
+        1
+      ],
+      "training_inputs_after": [
+        -1,
+        0,
+        1
+      ],
+      "evaluation_inputs_before": [
+        -2,
+        2
+      ],
+      "evaluation_inputs_after": [
+        -2,
+        2
+      ],
+      "structural_deltas": []
+    },
+    {
+      "id": "tx28_reassigned_text_state",
+      "same_intent_id": true,
+      "original_intent": "Start with the idle-pending text state, replace it with ready for positive input, and return 2 only for ready.",
+      "revised_intent": "Start with the idle-pending text state, replace it with ready for positive input, and return 2 only for ready.",
+      "changes": [
+        "correct_candidate_rotation_metadata"
+      ],
+      "original_gold_candidate_id_from_catalog": "option_a",
+      "gold_candidate_id_in_revision2": "option_a",
+      "legacy_report_formula_candidate_id": "option_a",
+      "gold_rotation_corrected": false,
+      "body_changed": false,
+      "candidate_expressions_changed": false,
+      "training_inputs_before": [
+        -1,
+        0,
+        1
+      ],
+      "training_inputs_after": [
+        -1,
+        0,
+        1
+      ],
+      "evaluation_inputs_before": [
+        -10,
+        100
+      ],
+      "evaluation_inputs_after": [
+        -10,
+        100
+      ],
+      "structural_deltas": []
+    },
+    {
+      "id": "ob29_saturating_increment",
+      "same_intent_id": true,
+      "original_intent": "Increment every int64 input except the maximum, which remains at the maximum instead of wrapping.",
+      "revised_intent": "Increment every int64 input except the maximum, which remains at the maximum instead of wrapping.",
+      "changes": [
+        "correct_candidate_rotation_metadata"
+      ],
+      "original_gold_candidate_id_from_catalog": "option_c",
+      "gold_candidate_id_in_revision2": "option_c",
+      "legacy_report_formula_candidate_id": "option_b",
+      "gold_rotation_corrected": true,
+      "body_changed": false,
+      "candidate_expressions_changed": false,
+      "training_inputs_before": [
+        0,
+        1,
+        9223372036854775805,
+        9223372036854775806
+      ],
+      "training_inputs_after": [
+        0,
+        1,
+        9223372036854775805,
+        9223372036854775806
+      ],
+      "evaluation_inputs_before": [
+        9223372036854775807,
+        9223372036854775804,
+        -1
+      ],
+      "evaluation_inputs_after": [
+        9223372036854775807,
+        9223372036854775804,
+        -1
+      ],
+      "structural_deltas": []
+    },
+    {
+      "id": "ob30_saturating_decrement",
+      "same_intent_id": true,
+      "original_intent": "Decrement every int64 input except the minimum, which remains at the minimum instead of wrapping.",
+      "revised_intent": "Decrement every int64 input except the minimum, which remains at the minimum instead of wrapping.",
+      "changes": [
+        "correct_candidate_rotation_metadata"
+      ],
+      "original_gold_candidate_id_from_catalog": "option_b",
+      "gold_candidate_id_in_revision2": "option_b",
+      "legacy_report_formula_candidate_id": "option_c",
+      "gold_rotation_corrected": true,
+      "body_changed": false,
+      "candidate_expressions_changed": false,
+      "training_inputs_before": [
+        -9223372036854775806,
+        -9223372036854775807,
+        0,
+        1
+      ],
+      "training_inputs_after": [
+        -9223372036854775806,
+        -9223372036854775807,
+        0,
+        1
+      ],
+      "evaluation_inputs_before": [
+        -9223372036854775808,
+        -9223372036854775805,
+        10
+      ],
+      "evaluation_inputs_after": [
+        -9223372036854775808,
+        -9223372036854775805,
+        10
+      ],
+      "structural_deltas": []
+    },
+    {
+      "id": "ob31_saturating_double",
+      "same_intent_id": true,
+      "original_intent": "Double values while the product fits; values beyond either half-range saturate at the corresponding int64 endpoint.",
+      "revised_intent": "Double values while the product fits; values beyond either half-range saturate at the corresponding int64 endpoint.",
+      "changes": [
+        "correct_candidate_rotation_metadata"
+      ],
+      "original_gold_candidate_id_from_catalog": "option_a",
+      "gold_candidate_id_in_revision2": "option_a",
+      "legacy_report_formula_candidate_id": "option_a",
+      "gold_rotation_corrected": false,
+      "body_changed": false,
+      "candidate_expressions_changed": false,
+      "training_inputs_before": [
+        -2,
+        -1,
+        0,
+        1,
+        2
+      ],
+      "training_inputs_after": [
+        -2,
+        -1,
+        0,
+        1,
+        2
+      ],
+      "evaluation_inputs_before": [
+        9223372036854775807,
+        4611686018427387903,
+        4611686018427387904,
+        -9223372036854775808,
+        -4611686018427387904,
+        -4611686018427387905
+      ],
+      "evaluation_inputs_after": [
+        9223372036854775807,
+        4611686018427387903,
+        4611686018427387904,
+        -9223372036854775808,
+        -4611686018427387904,
+        -4611686018427387905
+      ],
+      "structural_deltas": []
+    },
+    {
+      "id": "ob32_clamped_absolute",
+      "same_intent_id": true,
+      "original_intent": "Return the nonnegative magnitude; map the unrepresentable absolute value of the minimum int64 to the maximum int64.",
+      "revised_intent": "Return the nonnegative magnitude; map the unrepresentable absolute value of the minimum int64 to the maximum int64.",
+      "changes": [
+        "correct_candidate_rotation_metadata"
+      ],
+      "original_gold_candidate_id_from_catalog": "option_c",
+      "gold_candidate_id_in_revision2": "option_c",
+      "legacy_report_formula_candidate_id": "option_b",
+      "gold_rotation_corrected": true,
+      "body_changed": false,
+      "candidate_expressions_changed": false,
+      "training_inputs_before": [
+        -3,
+        0,
+        5,
+        7
+      ],
+      "training_inputs_after": [
+        -3,
+        0,
+        5,
+        7
+      ],
+      "evaluation_inputs_before": [
+        -9223372036854775808,
+        -9223372036854775807,
+        9223372036854775807
+      ],
+      "evaluation_inputs_after": [
+        -9223372036854775808,
+        -9223372036854775807,
+        9223372036854775807
+      ],
+      "structural_deltas": []
+    }
+  ]
+}

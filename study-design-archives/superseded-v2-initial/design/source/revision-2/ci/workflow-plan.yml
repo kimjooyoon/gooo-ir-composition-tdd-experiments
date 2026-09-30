@@ -1,0 +1,14 @@
+schema: gooo/ir-composition-revision2-ci-plan/v1
+python: standard library only
+go: "1.27.0" (direct physical binary; GOTOOLCHAIN=local, GOPROXY=off, GOSUMDB=off, GOWORK=off)
+network: disabled for the replay; provider endpoints and API keys unset
+command: python3 cohorts/ir-composition-curriculum-2026-09-30/revision-2/ci/validate_revision2.py --replay --go-bin "$GO1_27_BIN"
+steps:
+  - verify revision-manifest.json and design-freeze.json hashes
+  - run independent Go reference tests for original and revision-2 finite vectors
+  - replay all original candidate packages; expect 93 compiled and 3 source compile failures
+  - replay all revision-2 candidate packages; expect 96 compiled and executed
+  - compare actual compiled outputs with independent Python int64 expected rows
+  - verify gold passes training and both distractors are separated on training only
+  - verify 32 legacy, 32 compact, and 32 compact-feedback plans and source bindings
+  - report original and revision-2 denominators separately; do not count them as 64 intentions

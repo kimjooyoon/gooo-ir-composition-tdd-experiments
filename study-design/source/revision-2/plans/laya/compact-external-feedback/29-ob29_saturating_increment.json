@@ -1,0 +1,85 @@
+{
+  "schema": "gooo/body-codegen-ir-search-plan/v1",
+  "intent": "Increment every int64 input except the maximum, which remains at the maximum instead of wrapping.",
+  "hole_id": "choice",
+  "candidates": [
+    {
+      "id": "option_a",
+      "expression": "input"
+    },
+    {
+      "id": "option_b",
+      "expression": "input - 1"
+    },
+    {
+      "id": "option_c",
+      "expression": "input + 1"
+    }
+  ],
+  "test_cases": [
+    {
+      "input": 0,
+      "expected": 1
+    },
+    {
+      "input": 1,
+      "expected": 2
+    },
+    {
+      "input": 9223372036854775805,
+      "expected": 9223372036854775806
+    },
+    {
+      "input": 9223372036854775806,
+      "expected": 9223372036854775807
+    }
+  ],
+  "holdout_test_cases": [
+    {
+      "input": 9223372036854775807,
+      "expected": 9223372036854775807
+    },
+    {
+      "input": 9223372036854775804,
+      "expected": 9223372036854775805
+    },
+    {
+      "input": -1,
+      "expected": 0
+    }
+  ],
+  "max_attempts": 3,
+  "provider_model": "english",
+  "prompt_profile": "compact",
+  "external_training_feedback": {
+    "source_digest": "sha256:3902ff2de37d1b01f70b6af72c31e2685f575dbb6de1d1b9a2b0ab1d72aa7c11",
+    "training_suite_sha256": "sha256:9a604716d297d35b96543b01012238180e503e1b4213714bd82930bafe723fb7",
+    "candidate_id": "option_a",
+    "observations": [
+      {
+        "input": 0,
+        "expected": 1,
+        "actual": 0,
+        "passed": false
+      },
+      {
+        "input": 1,
+        "expected": 2,
+        "actual": 1,
+        "passed": false
+      },
+      {
+        "input": 9223372036854775805,
+        "expected": 9223372036854775806,
+        "actual": 9223372036854775805,
+        "passed": false
+      },
+      {
+        "input": 9223372036854775806,
+        "expected": 9223372036854775807,
+        "actual": 9223372036854775806,
+        "passed": false
+      }
+    ]
+  }
+}

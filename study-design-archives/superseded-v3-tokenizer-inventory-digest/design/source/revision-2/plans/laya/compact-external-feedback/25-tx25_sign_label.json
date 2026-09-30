@@ -1,0 +1,71 @@
+{
+  "schema": "gooo/body-codegen-ir-search-plan/v1",
+  "intent": "Label the input as negative or nonnegative; return -1 for the negative label and 1 for the other label.",
+  "hole_id": "choice",
+  "candidates": [
+    {
+      "id": "option_a",
+      "expression": "\"negative\""
+    },
+    {
+      "id": "option_b",
+      "expression": "\"nonnegative\""
+    },
+    {
+      "id": "option_c",
+      "expression": "\"neutral\""
+    }
+  ],
+  "test_cases": [
+    {
+      "input": -1,
+      "expected": -1
+    },
+    {
+      "input": 0,
+      "expected": 1
+    },
+    {
+      "input": 1,
+      "expected": 1
+    }
+  ],
+  "holdout_test_cases": [
+    {
+      "input": -20,
+      "expected": -1
+    },
+    {
+      "input": 20,
+      "expected": 1
+    }
+  ],
+  "max_attempts": 3,
+  "provider_model": "english",
+  "prompt_profile": "compact",
+  "external_training_feedback": {
+    "source_digest": "sha256:efa85435aff410ef43981757ac9e39dc535d1def1b12be5d659671dc9b981e21",
+    "training_suite_sha256": "sha256:d97636ae265e5c6cd91a3f3d1422d2b0f5f572fc0bdbea8ab5f5e7da71788632",
+    "candidate_id": "option_c",
+    "observations": [
+      {
+        "input": -1,
+        "expected": -1,
+        "actual": 1,
+        "passed": false
+      },
+      {
+        "input": 0,
+        "expected": 1,
+        "actual": 1,
+        "passed": true
+      },
+      {
+        "input": 1,
+        "expected": 1,
+        "actual": 1,
+        "passed": true
+      }
+    ]
+  }
+}

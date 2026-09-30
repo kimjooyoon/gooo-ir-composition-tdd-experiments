@@ -1,0 +1,36 @@
+{
+  "candidates": [
+    {
+      "expression": "\"negative\"",
+      "id": "option_a"
+    },
+    {
+      "expression": "\"nonnegative\"",
+      "id": "option_b"
+    },
+    {
+      "expression": "\"neutral\"",
+      "id": "option_c"
+    }
+  ],
+  "hole_id": "choice",
+  "intent": "Label the input as negative or nonnegative; return -1 for the negative label and 1 for the other label.",
+  "max_attempts": 1,
+  "prompt_profile": "compact",
+  "provider_model": "multilingual",
+  "schema": "gooo/body-codegen-ir-search-plan/v1",
+  "test_cases": [
+    {
+      "expected": -1,
+      "input": -1
+    },
+    {
+      "expected": 1,
+      "input": 0
+    },
+    {
+      "expected": 1,
+      "input": 1
+    }
+  ]
+}

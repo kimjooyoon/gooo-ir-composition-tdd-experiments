@@ -1,0 +1,44 @@
+{
+  "candidates": [
+    {
+      "expression": "input + 11",
+      "id": "option_a"
+    },
+    {
+      "expression": "input + 10",
+      "id": "option_b"
+    },
+    {
+      "expression": "input + 9",
+      "id": "option_c"
+    }
+  ],
+  "hole_id": "choice",
+  "intent": "Reject negative quantities as 0, add 10 through quantity 100, then discount quantities above 100 by 10.",
+  "max_attempts": 3,
+  "prompt_profile": "compact",
+  "provider_model": "multilingual",
+  "schema": "gooo/body-codegen-ir-search-plan/v1",
+  "test_cases": [
+    {
+      "expected": 0,
+      "input": -1
+    },
+    {
+      "expected": 10,
+      "input": 0
+    },
+    {
+      "expected": 11,
+      "input": 1
+    },
+    {
+      "expected": 110,
+      "input": 100
+    },
+    {
+      "expected": 91,
+      "input": 101
+    }
+  ]
+}

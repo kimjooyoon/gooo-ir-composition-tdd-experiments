@@ -1,0 +1,105 @@
+{
+  "schema": "gooo/body-codegen-ir-search-plan/v1",
+  "intent": "Return 4 only strictly between -5 and 5; both endpoints and everything outside return -4.",
+  "hole_id": "choice",
+  "candidates": [
+    {
+      "id": "option_a",
+      "expression": "input >= -5 && input <= 5"
+    },
+    {
+      "id": "option_b",
+      "expression": "input > -5 && input <= 5"
+    },
+    {
+      "id": "option_c",
+      "expression": "input > -5 && input < 5"
+    }
+  ],
+  "test_cases": [
+    {
+      "input": -6,
+      "expected": -4
+    },
+    {
+      "input": -5,
+      "expected": -4
+    },
+    {
+      "input": -4,
+      "expected": 4
+    },
+    {
+      "input": 4,
+      "expected": 4
+    },
+    {
+      "input": 5,
+      "expected": -4
+    },
+    {
+      "input": 6,
+      "expected": -4
+    }
+  ],
+  "holdout_test_cases": [
+    {
+      "input": -100,
+      "expected": -4
+    },
+    {
+      "input": 0,
+      "expected": 4
+    },
+    {
+      "input": 100,
+      "expected": -4
+    }
+  ],
+  "max_attempts": 3,
+  "provider_model": "english",
+  "prompt_profile": "compact",
+  "external_training_feedback": {
+    "source_digest": "sha256:a99ac35a84dcd79e2f44e8a6e666ac5836a743e1490710c6fec670d07fe9d4c6",
+    "training_suite_sha256": "sha256:b0a8b31aa1ad85e785e33b89361a8760537f95906496b9ab349ebe94ef636591",
+    "candidate_id": "option_b",
+    "observations": [
+      {
+        "input": -6,
+        "expected": -4,
+        "actual": -4,
+        "passed": true
+      },
+      {
+        "input": -5,
+        "expected": -4,
+        "actual": -4,
+        "passed": true
+      },
+      {
+        "input": -4,
+        "expected": 4,
+        "actual": 4,
+        "passed": true
+      },
+      {
+        "input": 4,
+        "expected": 4,
+        "actual": 4,
+        "passed": true
+      },
+      {
+        "input": 5,
+        "expected": -4,
+        "actual": 4,
+        "passed": false
+      },
+      {
+        "input": 6,
+        "expected": -4,
+        "actual": -4,
+        "passed": true
+      }
+    ]
+  }
+}

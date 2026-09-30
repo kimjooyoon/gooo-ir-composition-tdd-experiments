@@ -1,0 +1,1 @@
+[{"split":"training","input":-1,"expected":-2,"actual":-2},{"split":"training","input":0,"expected":-2,"actual":-2},{"split":"training","input":1,"expected":2,"actual":-2},{"split":"evaluation","input":-10,"expected":-2,"actual":-2},{"split":"evaluation","input":100,"expected":2,"actual":-2}]

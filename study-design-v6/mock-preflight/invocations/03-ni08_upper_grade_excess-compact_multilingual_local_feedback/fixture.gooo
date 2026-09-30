@@ -1,0 +1,4 @@
+package bodycodegen
+namespace bodycodegen
+entity Integer id "bodycodegen://entity/integer"
+activity C08(Integer) -> Integer computes "if input < 60 { return -1 } else { if input < 80 { return 0 } else { return __GOOO_BODY_HOLE_choice__ } }"

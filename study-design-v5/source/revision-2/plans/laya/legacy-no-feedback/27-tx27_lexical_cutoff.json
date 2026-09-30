@@ -1,0 +1,45 @@
+{
+  "schema": "gooo/body-codegen-ir-search-plan/v1",
+  "intent": "Assign amber to negative inputs and zinc otherwise; return 1 exactly when the label sorts before gold.",
+  "hole_id": "choice",
+  "candidates": [
+    {
+      "id": "option_a",
+      "expression": "\"zoo\""
+    },
+    {
+      "id": "option_b",
+      "expression": "\"gold\""
+    },
+    {
+      "id": "option_c",
+      "expression": "\"amber\""
+    }
+  ],
+  "test_cases": [
+    {
+      "input": -1,
+      "expected": 1
+    },
+    {
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "input": 1,
+      "expected": 0
+    }
+  ],
+  "holdout_test_cases": [
+    {
+      "input": -2,
+      "expected": 1
+    },
+    {
+      "input": 2,
+      "expected": 0
+    }
+  ],
+  "max_attempts": 3,
+  "provider_model": "english"
+}

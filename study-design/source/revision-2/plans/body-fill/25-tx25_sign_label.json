@@ -1,0 +1,33 @@
+{
+  "schema": "gooo/body-codegen-ir-fill-plan/v1",
+  "intent": "Label the input as negative or nonnegative; return -1 for the negative label and 1 for the other label.",
+  "hole_id": "choice",
+  "candidates": [
+    {
+      "id": "option_a",
+      "expression": "\"negative\""
+    },
+    {
+      "id": "option_b",
+      "expression": "\"nonnegative\""
+    },
+    {
+      "id": "option_c",
+      "expression": "\"neutral\""
+    }
+  ],
+  "test_cases": [
+    {
+      "input": -1,
+      "expected": -1
+    },
+    {
+      "input": 0,
+      "expected": 1
+    },
+    {
+      "input": 1,
+      "expected": 1
+    }
+  ]
+}

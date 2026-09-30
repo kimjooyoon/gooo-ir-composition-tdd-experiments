@@ -1,0 +1,44 @@
+{
+  "candidates": [
+    {
+      "expression": "input != 0",
+      "id": "option_a"
+    },
+    {
+      "expression": "true",
+      "id": "option_b"
+    },
+    {
+      "expression": "input > -2",
+      "id": "option_c"
+    }
+  ],
+  "hole_id": "choice",
+  "intent": "Save lower and upper range predicates, combine them, and return 1 only for values from -2 through 2.",
+  "max_attempts": 3,
+  "prompt_profile": "compact",
+  "provider_model": "multilingual",
+  "schema": "gooo/body-codegen-ir-search-plan/v1",
+  "test_cases": [
+    {
+      "expected": 0,
+      "input": -3
+    },
+    {
+      "expected": 1,
+      "input": -2
+    },
+    {
+      "expected": 1,
+      "input": 0
+    },
+    {
+      "expected": 1,
+      "input": 2
+    },
+    {
+      "expected": 0,
+      "input": 3
+    }
+  ]
+}

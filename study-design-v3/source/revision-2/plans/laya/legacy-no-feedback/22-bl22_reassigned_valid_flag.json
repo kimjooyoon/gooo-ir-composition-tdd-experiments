@@ -1,0 +1,57 @@
+{
+  "schema": "gooo/body-codegen-ir-search-plan/v1",
+  "intent": "Build a nonnegative flag, refine it in place to require an input no greater than five, then return 5 only when valid.",
+  "hole_id": "choice",
+  "candidates": [
+    {
+      "id": "option_a",
+      "expression": "valid"
+    },
+    {
+      "id": "option_b",
+      "expression": "valid || input == 10"
+    },
+    {
+      "id": "option_c",
+      "expression": "input <= 5"
+    }
+  ],
+  "test_cases": [
+    {
+      "input": -1,
+      "expected": -5
+    },
+    {
+      "input": 0,
+      "expected": 5
+    },
+    {
+      "input": 5,
+      "expected": 5
+    },
+    {
+      "input": 6,
+      "expected": -5
+    },
+    {
+      "input": 10,
+      "expected": -5
+    }
+  ],
+  "holdout_test_cases": [
+    {
+      "input": -10,
+      "expected": -5
+    },
+    {
+      "input": 2,
+      "expected": 5
+    },
+    {
+      "input": 100,
+      "expected": -5
+    }
+  ],
+  "max_attempts": 3,
+  "provider_model": "english"
+}

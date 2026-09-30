@@ -1,0 +1,53 @@
+{
+  "schema": "gooo/body-codegen-ir-search-plan/v1",
+  "intent": "Subtract three times the sum of the input and two from one hundred.",
+  "hole_id": "choice",
+  "candidates": [
+    {
+      "id": "option_a",
+      "expression": "input + 2"
+    },
+    {
+      "id": "option_b",
+      "expression": "input + 3"
+    },
+    {
+      "id": "option_c",
+      "expression": "input - 2"
+    }
+  ],
+  "test_cases": [
+    {
+      "input": -2,
+      "expected": 100
+    },
+    {
+      "input": 0,
+      "expected": 94
+    },
+    {
+      "input": 3,
+      "expected": 85
+    },
+    {
+      "input": 5,
+      "expected": 79
+    }
+  ],
+  "holdout_test_cases": [
+    {
+      "input": -10,
+      "expected": 124
+    },
+    {
+      "input": 7,
+      "expected": 73
+    },
+    {
+      "input": 20,
+      "expected": 34
+    }
+  ],
+  "max_attempts": 3,
+  "provider_model": "english"
+}

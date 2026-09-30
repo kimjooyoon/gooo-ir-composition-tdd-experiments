@@ -1,0 +1,12 @@
+{
+  "schema": "gooo/preparation-retention-disclosure/v1",
+  "stage": "pre-freeze temporary v7 preparation",
+  "failure": "provider_fallback_receipt_count lookup differed from aggregate deterministic_fallback_receipt_count",
+  "raw_staging_retention": "NOT_RETAINED",
+  "reason": "The preparation exception handler removed its temporary .study-design-staging-* directory before the corrected retry.",
+  "exact_original_script_bytes": "UNAVAILABLE",
+  "actual_laya_calls": 0,
+  "scope": "Preparing-agent disclosure corroborated by the cleanup path; raw artifact bytes and original hashes cannot be independently replayed.",
+  "subsequent_frozen_design_sha256": "ecce451059062b11f6fa8c8198bcfa53318d0533dddd5e1c5d119e22066bcd0b",
+  "model_results_changed": false
+}

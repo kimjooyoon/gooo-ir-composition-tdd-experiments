@@ -1,0 +1,4 @@
+package bodycodegen
+namespace bodycodegen
+entity Integer id "bodycodegen://entity/integer"
+activity C15(Integer) -> Integer computes "return input * input - __GOOO_BODY_HOLE_choice__"

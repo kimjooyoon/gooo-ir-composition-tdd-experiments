@@ -1,0 +1,85 @@
+{
+  "schema": "gooo/body-codegen-ir-search-plan/v1",
+  "intent": "Subtract three times the sum of the input and two from one hundred.",
+  "hole_id": "choice",
+  "candidates": [
+    {
+      "id": "option_a",
+      "expression": "input + 2"
+    },
+    {
+      "id": "option_b",
+      "expression": "input + 3"
+    },
+    {
+      "id": "option_c",
+      "expression": "input - 2"
+    }
+  ],
+  "test_cases": [
+    {
+      "input": -2,
+      "expected": 100
+    },
+    {
+      "input": 0,
+      "expected": 94
+    },
+    {
+      "input": 3,
+      "expected": 85
+    },
+    {
+      "input": 5,
+      "expected": 79
+    }
+  ],
+  "holdout_test_cases": [
+    {
+      "input": -10,
+      "expected": 124
+    },
+    {
+      "input": 7,
+      "expected": 73
+    },
+    {
+      "input": 20,
+      "expected": 34
+    }
+  ],
+  "max_attempts": 3,
+  "provider_model": "english",
+  "prompt_profile": "compact",
+  "external_training_feedback": {
+    "source_digest": "sha256:5b928f522d938b1d33b7938fe69d2a794f810180cc714f7d18bc52840da90650",
+    "training_suite_sha256": "sha256:2d9dec6e81463bd30ff28b2252193058312252d025bfe7d79181a8d85901ae19",
+    "candidate_id": "option_b",
+    "observations": [
+      {
+        "input": -2,
+        "expected": 100,
+        "actual": 97,
+        "passed": false
+      },
+      {
+        "input": 0,
+        "expected": 94,
+        "actual": 91,
+        "passed": false
+      },
+      {
+        "input": 3,
+        "expected": 85,
+        "actual": 82,
+        "passed": false
+      },
+      {
+        "input": 5,
+        "expected": 79,
+        "actual": 76,
+        "passed": false
+      }
+    ]
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "schema": "gooo/body-codegen-ir-search-plan/v1",
+  "intent": "Decrement every int64 input except the minimum, which remains at the minimum instead of wrapping.",
+  "hole_id": "choice",
+  "candidates": [
+    {
+      "id": "option_a",
+      "expression": "input + 1"
+    },
+    {
+      "id": "option_b",
+      "expression": "input - 1"
+    },
+    {
+      "id": "option_c",
+      "expression": "input"
+    }
+  ],
+  "test_cases": [
+    {
+      "input": -9223372036854775806,
+      "expected": -9223372036854775807
+    },
+    {
+      "input": -9223372036854775807,
+      "expected": -9223372036854775808
+    },
+    {
+      "input": 0,
+      "expected": -1
+    },
+    {
+      "input": 1,
+      "expected": 0
+    }
+  ],
+  "holdout_test_cases": [
+    {
+      "input": -9223372036854775808,
+      "expected": -9223372036854775808
+    },
+    {
+      "input": -9223372036854775805,
+      "expected": -9223372036854775806
+    },
+    {
+      "input": 10,
+      "expected": 9
+    }
+  ],
+  "max_attempts": 3,
+  "provider_model": "english",
+  "prompt_profile": "compact",
+  "external_training_feedback": {
+    "source_digest": "sha256:923ce738356e902a5b77a908bcf77e89a66fc895adabc6556bd19457675bcca7",
+    "training_suite_sha256": "sha256:3bb1f3603f3055078916bf97e0ff1b06de2e8492a7266d910c3bce731c30ec6e",
+    "candidate_id": "option_a",
+    "observations": [
+      {
+        "input": -9223372036854775806,
+        "expected": -9223372036854775807,
+        "actual": -9223372036854775805,
+        "passed": false
+      },
+      {
+        "input": -9223372036854775807,
+        "expected": -9223372036854775808,
+        "actual": -9223372036854775806,
+        "passed": false
+      },
+      {
+        "input": 0,
+        "expected": -1,
+        "actual": 1,
+        "passed": false
+      },
+      {
+        "input": 1,
+        "expected": 0,
+        "actual": 2,
+        "passed": false
+      }
+    ]
+  }
+}

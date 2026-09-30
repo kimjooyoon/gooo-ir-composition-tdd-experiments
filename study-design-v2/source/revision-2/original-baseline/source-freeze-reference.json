@@ -1,0 +1,11 @@
+{
+  "original_cohort": "cohorts/ir-composition-curriculum-2026-09-30",
+  "design_freeze_sha256": "e66f71f3bc02350168bb3958628bf5d1a3e02096ed758cbfbe83f987b71eb9b8",
+  "original_candidate_validity_sha256": "4fc85020179f75ca2daddd4debeb21e06c1df627ea41a21213904927c8f88a8d",
+  "original_candidate_compile_errors_sha256": "69d99f25cc2b3050cf90db8a334b5c78074c31b25a55520c46e486cc9cd289d4",
+  "denominator": 96,
+  "compiled_candidates": 93,
+  "compile_failed_candidates": 3,
+  "unknown_candidates": 0,
+  "note": "The original and revision-2 cohorts are two revisions of the same 32 intent IDs, not 64 distinct intentions."
+}

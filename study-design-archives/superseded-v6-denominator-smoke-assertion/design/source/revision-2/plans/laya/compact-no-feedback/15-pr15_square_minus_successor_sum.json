@@ -1,0 +1,54 @@
+{
+  "schema": "gooo/body-codegen-ir-search-plan/v1",
+  "intent": "Subtract the input plus four from the square of the input.",
+  "hole_id": "choice",
+  "candidates": [
+    {
+      "id": "option_a",
+      "expression": "input - 4"
+    },
+    {
+      "id": "option_b",
+      "expression": "input + 4"
+    },
+    {
+      "id": "option_c",
+      "expression": "input + 2"
+    }
+  ],
+  "test_cases": [
+    {
+      "input": -2,
+      "expected": 2
+    },
+    {
+      "input": 0,
+      "expected": -4
+    },
+    {
+      "input": 3,
+      "expected": 2
+    },
+    {
+      "input": 6,
+      "expected": 26
+    }
+  ],
+  "holdout_test_cases": [
+    {
+      "input": -10,
+      "expected": 106
+    },
+    {
+      "input": 5,
+      "expected": 16
+    },
+    {
+      "input": 20,
+      "expected": 376
+    }
+  ],
+  "max_attempts": 3,
+  "provider_model": "english",
+  "prompt_profile": "compact"
+}

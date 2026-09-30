@@ -1,0 +1,4 @@
+package bodycodegen
+namespace bodycodegen
+entity Integer id "bodycodegen://entity/integer"
+activity C12(Integer) -> Integer computes "let amount = input; amount = amount + 3; if amount > 10 { amount = 10 } else { amount = amount }; amount = amount - 1; return __GOOO_BODY_HOLE_choice__"

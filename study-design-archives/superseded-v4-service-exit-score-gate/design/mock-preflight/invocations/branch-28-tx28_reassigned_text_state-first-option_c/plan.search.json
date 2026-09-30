@@ -1,0 +1,36 @@
+{
+  "candidates": [
+    {
+      "expression": "\"ready\"",
+      "id": "option_a"
+    },
+    {
+      "expression": "\"idle-pending\"",
+      "id": "option_b"
+    },
+    {
+      "expression": "\"done\"",
+      "id": "option_c"
+    }
+  ],
+  "hole_id": "choice",
+  "intent": "Start with the idle-pending text state, replace it with ready for positive input, and return 2 only for ready.",
+  "max_attempts": 3,
+  "prompt_profile": "compact",
+  "provider_model": "multilingual",
+  "schema": "gooo/body-codegen-ir-search-plan/v1",
+  "test_cases": [
+    {
+      "expected": -2,
+      "input": -1
+    },
+    {
+      "expected": -2,
+      "input": 0
+    },
+    {
+      "expected": 2,
+      "input": 1
+    }
+  ]
+}

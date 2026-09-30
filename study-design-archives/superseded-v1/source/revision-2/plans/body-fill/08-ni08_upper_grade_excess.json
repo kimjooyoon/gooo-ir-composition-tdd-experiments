@@ -1,0 +1,41 @@
+{
+  "schema": "gooo/body-codegen-ir-fill-plan/v1",
+  "intent": "Return -1 below 60, 0 from 60 through 79, and the excess above 80 from 80 onward.",
+  "hole_id": "choice",
+  "candidates": [
+    {
+      "id": "option_a",
+      "expression": "input - 79"
+    },
+    {
+      "id": "option_b",
+      "expression": "input - 81"
+    },
+    {
+      "id": "option_c",
+      "expression": "input - 80"
+    }
+  ],
+  "test_cases": [
+    {
+      "input": 59,
+      "expected": -1
+    },
+    {
+      "input": 60,
+      "expected": 0
+    },
+    {
+      "input": 79,
+      "expected": 0
+    },
+    {
+      "input": 80,
+      "expected": 0
+    },
+    {
+      "input": 81,
+      "expected": 1
+    }
+  ]
+}

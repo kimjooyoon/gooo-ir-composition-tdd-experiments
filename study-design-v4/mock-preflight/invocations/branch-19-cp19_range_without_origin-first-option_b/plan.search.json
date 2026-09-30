@@ -1,0 +1,44 @@
+{
+  "candidates": [
+    {
+      "expression": "input >= -3 && input <= 3 && input != 0",
+      "id": "option_a"
+    },
+    {
+      "expression": "input >= -3 && input <= 3",
+      "id": "option_b"
+    },
+    {
+      "expression": "input < -3 || input > 3",
+      "id": "option_c"
+    }
+  ],
+  "hole_id": "choice",
+  "intent": "Return 1 inside the inclusive range -3 through 3 except at zero; return 0 elsewhere.",
+  "max_attempts": 3,
+  "prompt_profile": "compact",
+  "provider_model": "multilingual",
+  "schema": "gooo/body-codegen-ir-search-plan/v1",
+  "test_cases": [
+    {
+      "expected": 0,
+      "input": -4
+    },
+    {
+      "expected": 1,
+      "input": -3
+    },
+    {
+      "expected": 0,
+      "input": 0
+    },
+    {
+      "expected": 1,
+      "input": 3
+    },
+    {
+      "expected": 0,
+      "input": 4
+    }
+  ]
+}

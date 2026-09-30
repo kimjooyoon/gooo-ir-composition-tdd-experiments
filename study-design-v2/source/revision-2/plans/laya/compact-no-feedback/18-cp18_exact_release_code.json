@@ -1,0 +1,50 @@
+{
+  "schema": "gooo/body-codegen-ir-search-plan/v1",
+  "intent": "Return 1 only for release code 7; neighboring codes are not release code 7.",
+  "hole_id": "choice",
+  "candidates": [
+    {
+      "id": "option_a",
+      "expression": "input == 8"
+    },
+    {
+      "id": "option_b",
+      "expression": "input == 7"
+    },
+    {
+      "id": "option_c",
+      "expression": "input >= 7"
+    }
+  ],
+  "test_cases": [
+    {
+      "input": 6,
+      "expected": 0
+    },
+    {
+      "input": 7,
+      "expected": 1
+    },
+    {
+      "input": 8,
+      "expected": 0
+    }
+  ],
+  "holdout_test_cases": [
+    {
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "input": 9,
+      "expected": 0
+    },
+    {
+      "input": 100,
+      "expected": 0
+    }
+  ],
+  "max_attempts": 3,
+  "provider_model": "english",
+  "prompt_profile": "compact"
+}

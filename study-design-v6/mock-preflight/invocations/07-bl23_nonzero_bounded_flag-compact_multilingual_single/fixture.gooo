@@ -1,0 +1,4 @@
+package bodycodegen
+namespace bodycodegen
+entity Integer id "bodycodegen://entity/integer"
+activity C23(Integer) -> Integer computes "let nonzero = input != 0; let bounded = input >= -4 && input <= 4; let eligible = nonzero && bounded; if eligible && __GOOO_BODY_HOLE_choice__ { return 9 } else { return 0 }"

@@ -1,0 +1,70 @@
+{
+  "schema": "gooo/body-codegen-ir-search-plan/v1",
+  "intent": "Double values while the product fits; values beyond either half-range saturate at the corresponding int64 endpoint.",
+  "hole_id": "choice",
+  "candidates": [
+    {
+      "id": "option_a",
+      "expression": "input * 2"
+    },
+    {
+      "id": "option_b",
+      "expression": "input * 3"
+    },
+    {
+      "id": "option_c",
+      "expression": "input + 2"
+    }
+  ],
+  "test_cases": [
+    {
+      "input": -2,
+      "expected": -4
+    },
+    {
+      "input": -1,
+      "expected": -2
+    },
+    {
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "input": 1,
+      "expected": 2
+    },
+    {
+      "input": 2,
+      "expected": 4
+    }
+  ],
+  "holdout_test_cases": [
+    {
+      "input": 9223372036854775807,
+      "expected": 9223372036854775807
+    },
+    {
+      "input": 4611686018427387903,
+      "expected": 9223372036854775806
+    },
+    {
+      "input": 4611686018427387904,
+      "expected": 9223372036854775807
+    },
+    {
+      "input": -9223372036854775808,
+      "expected": -9223372036854775808
+    },
+    {
+      "input": -4611686018427387904,
+      "expected": -9223372036854775808
+    },
+    {
+      "input": -4611686018427387905,
+      "expected": -9223372036854775808
+    }
+  ],
+  "max_attempts": 3,
+  "provider_model": "english",
+  "prompt_profile": "compact"
+}

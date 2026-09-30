@@ -1,0 +1,37 @@
+{
+  "schema": "gooo/body-codegen-ir-fill-plan/v1",
+  "intent": "Return the nonnegative magnitude; map the unrepresentable absolute value of the minimum int64 to the maximum int64.",
+  "hole_id": "choice",
+  "candidates": [
+    {
+      "id": "option_a",
+      "expression": "input"
+    },
+    {
+      "id": "option_b",
+      "expression": "0 - magnitude"
+    },
+    {
+      "id": "option_c",
+      "expression": "magnitude"
+    }
+  ],
+  "test_cases": [
+    {
+      "input": -3,
+      "expected": 3
+    },
+    {
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "input": 5,
+      "expected": 5
+    },
+    {
+      "input": 7,
+      "expected": 7
+    }
+  ]
+}

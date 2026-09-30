@@ -1,0 +1,95 @@
+{
+  "schema": "gooo/body-codegen-ir-search-plan/v1",
+  "intent": "Return 2 for inputs from 3 through 8 inclusive, and -1 otherwise.",
+  "hole_id": "choice",
+  "candidates": [
+    {
+      "id": "option_a",
+      "expression": "input >= 3 && input <= 8"
+    },
+    {
+      "id": "option_b",
+      "expression": "input > 3 && input <= 8"
+    },
+    {
+      "id": "option_c",
+      "expression": "input >= 3 && input < 8"
+    }
+  ],
+  "test_cases": [
+    {
+      "input": -1,
+      "expected": -1
+    },
+    {
+      "input": 2,
+      "expected": -1
+    },
+    {
+      "input": 3,
+      "expected": 2
+    },
+    {
+      "input": 8,
+      "expected": 2
+    },
+    {
+      "input": 9,
+      "expected": -1
+    }
+  ],
+  "holdout_test_cases": [
+    {
+      "input": -10,
+      "expected": -1
+    },
+    {
+      "input": 4,
+      "expected": 2
+    },
+    {
+      "input": 12,
+      "expected": -1
+    }
+  ],
+  "max_attempts": 3,
+  "provider_model": "english",
+  "prompt_profile": "compact",
+  "external_training_feedback": {
+    "source_digest": "sha256:43b1b9f76f8cc1f7cd5333c5807b0103cd4e3c230487edf1df7fa3c825b9cc83",
+    "training_suite_sha256": "sha256:b521acfc8227af1f1294460c8e9a87560fa2565b4f21bcc3fad3e6d7a685474c",
+    "candidate_id": "option_b",
+    "observations": [
+      {
+        "input": -1,
+        "expected": -1,
+        "actual": -1,
+        "passed": true
+      },
+      {
+        "input": 2,
+        "expected": -1,
+        "actual": -1,
+        "passed": true
+      },
+      {
+        "input": 3,
+        "expected": 2,
+        "actual": -1,
+        "passed": false
+      },
+      {
+        "input": 8,
+        "expected": 2,
+        "actual": 2,
+        "passed": true
+      },
+      {
+        "input": 9,
+        "expected": -1,
+        "actual": -1,
+        "passed": true
+      }
+    ]
+  }
+}

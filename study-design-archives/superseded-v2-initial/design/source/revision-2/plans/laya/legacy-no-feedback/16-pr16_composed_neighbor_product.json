@@ -1,0 +1,53 @@
+{
+  "schema": "gooo/body-codegen-ir-search-plan/v1",
+  "intent": "Multiply the saved successor by the input plus two, then subtract the original input.",
+  "hole_id": "choice",
+  "candidates": [
+    {
+      "id": "option_a",
+      "expression": "input + 2"
+    },
+    {
+      "id": "option_b",
+      "expression": "input + 1"
+    },
+    {
+      "id": "option_c",
+      "expression": "input + 3"
+    }
+  ],
+  "test_cases": [
+    {
+      "input": -3,
+      "expected": 5
+    },
+    {
+      "input": 0,
+      "expected": 2
+    },
+    {
+      "input": 2,
+      "expected": 10
+    },
+    {
+      "input": 5,
+      "expected": 37
+    }
+  ],
+  "holdout_test_cases": [
+    {
+      "input": -10,
+      "expected": 82
+    },
+    {
+      "input": 4,
+      "expected": 26
+    },
+    {
+      "input": 12,
+      "expected": 170
+    }
+  ],
+  "max_attempts": 3,
+  "provider_model": "english"
+}

@@ -1,0 +1,1 @@
+{"model":"laya-rl-agent","answers":{"body_ir_search":{"type":"choice","choice":"option_a","probabilities":{"option_a":1.0}}},"usage":{"input_tokens":0,"output_tokens":0},"routing":{"model":"multilingual","repo":"local-mock-only","reason":"model-free protocol preflight; no inference","detection":{"script":"unknown","language":"und","is_english":null,"language_undecided":true}}}

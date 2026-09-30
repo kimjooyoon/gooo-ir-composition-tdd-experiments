@@ -1,0 +1,33 @@
+{
+  "schema": "gooo/body-codegen-ir-fill-plan/v1",
+  "intent": "Return 1 for every nonzero integer, including both negative and positive values; return 0 only for zero.",
+  "hole_id": "choice",
+  "candidates": [
+    {
+      "id": "option_a",
+      "expression": "input < 0 && input > 0"
+    },
+    {
+      "id": "option_b",
+      "expression": "input >= 0"
+    },
+    {
+      "id": "option_c",
+      "expression": "input < 0 || input > 0"
+    }
+  ],
+  "test_cases": [
+    {
+      "input": -1,
+      "expected": 1
+    },
+    {
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "input": 1,
+      "expected": 1
+    }
+  ]
+}

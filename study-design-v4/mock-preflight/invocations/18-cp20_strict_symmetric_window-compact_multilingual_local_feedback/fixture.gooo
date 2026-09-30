@@ -1,0 +1,4 @@
+package bodycodegen
+namespace bodycodegen
+entity Integer id "bodycodegen://entity/integer"
+activity C20(Integer) -> Integer computes "if __GOOO_BODY_HOLE_choice__ { return 4 } else { return -4 }"

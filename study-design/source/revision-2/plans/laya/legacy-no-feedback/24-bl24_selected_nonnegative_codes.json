@@ -1,0 +1,57 @@
+{
+  "schema": "gooo/body-codegen-ir-search-plan/v1",
+  "intent": "Select code 2, plus code 4 only when nonnegative; all negative codes and other nonnegative codes return zero.",
+  "hole_id": "choice",
+  "candidates": [
+    {
+      "id": "option_a",
+      "expression": "input == 2"
+    },
+    {
+      "id": "option_b",
+      "expression": "selected"
+    },
+    {
+      "id": "option_c",
+      "expression": "selected && input != 4"
+    }
+  ],
+  "test_cases": [
+    {
+      "input": -1,
+      "expected": 0
+    },
+    {
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "input": 2,
+      "expected": 6
+    },
+    {
+      "input": 4,
+      "expected": 6
+    },
+    {
+      "input": 5,
+      "expected": 0
+    }
+  ],
+  "holdout_test_cases": [
+    {
+      "input": -100,
+      "expected": 0
+    },
+    {
+      "input": 1,
+      "expected": 0
+    },
+    {
+      "input": 10,
+      "expected": 0
+    }
+  ],
+  "max_attempts": 3,
+  "provider_model": "english"
+}

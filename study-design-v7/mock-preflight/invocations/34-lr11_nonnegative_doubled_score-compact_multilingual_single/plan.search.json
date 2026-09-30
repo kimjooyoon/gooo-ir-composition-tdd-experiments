@@ -1,0 +1,40 @@
+{
+  "candidates": [
+    {
+      "expression": "input * 2 + 1",
+      "id": "option_a"
+    },
+    {
+      "expression": "input",
+      "id": "option_b"
+    },
+    {
+      "expression": "score",
+      "id": "option_c"
+    }
+  ],
+  "hole_id": "choice",
+  "intent": "Double the input; add one when the doubled score is nonnegative and reset negative scores to zero.",
+  "max_attempts": 1,
+  "prompt_profile": "compact",
+  "provider_model": "multilingual",
+  "schema": "gooo/body-codegen-ir-search-plan/v1",
+  "test_cases": [
+    {
+      "expected": 0,
+      "input": -2
+    },
+    {
+      "expected": 0,
+      "input": -1
+    },
+    {
+      "expected": 1,
+      "input": 0
+    },
+    {
+      "expected": 5,
+      "input": 2
+    }
+  ]
+}

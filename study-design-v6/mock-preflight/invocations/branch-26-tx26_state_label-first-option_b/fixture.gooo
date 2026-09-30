@@ -1,0 +1,4 @@
+package bodycodegen
+namespace bodycodegen
+entity Integer id "bodycodegen://entity/integer"
+activity C26(Integer) -> Integer computes "let status = \"pending\"; if input == 0 { status = \"closed\" } else { if input > 0 { status = \"open\" } else { status = \"error\" } }; if status == __GOOO_BODY_HOLE_choice__ { return 1 } else { return 0 }"

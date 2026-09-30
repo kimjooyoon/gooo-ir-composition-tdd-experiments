@@ -1,0 +1,4 @@
+package bodycodegen
+namespace bodycodegen
+entity Integer id "bodycodegen://entity/integer"
+activity C21(Integer) -> Integer computes "let low = input >= -2; let high = input <= 2; let allowed = low && high; if allowed && __GOOO_BODY_HOLE_choice__ { return 1 } else { return 0 }"

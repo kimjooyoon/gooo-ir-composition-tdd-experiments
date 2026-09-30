@@ -1,0 +1,43 @@
+{
+  "source_digest": "sha256:33d2d46dfe8c2b51de4ceb67f651d50b0d5384cd28965a8a0e8095a228471f0d",
+  "training_suite_sha256": "sha256:b304a1021324bfa095c4e4da4f070e1b26b6fa049c295d848b8116e786cc36de",
+  "candidate_id": "option_b",
+  "observations": [
+    {
+      "input": -7,
+      "expected": 9,
+      "actual": 0,
+      "passed": false
+    },
+    {
+      "input": -6,
+      "expected": 9,
+      "actual": 0,
+      "passed": false
+    },
+    {
+      "input": -5,
+      "expected": 0,
+      "actual": 0,
+      "passed": true
+    },
+    {
+      "input": 7,
+      "expected": 0,
+      "actual": 9,
+      "passed": false
+    },
+    {
+      "input": 8,
+      "expected": 9,
+      "actual": 9,
+      "passed": true
+    },
+    {
+      "input": 9,
+      "expected": 9,
+      "actual": 9,
+      "passed": true
+    }
+  ]
+}

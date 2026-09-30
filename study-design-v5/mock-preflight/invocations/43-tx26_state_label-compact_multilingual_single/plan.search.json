@@ -1,0 +1,36 @@
+{
+  "candidates": [
+    {
+      "expression": "\"closed\"",
+      "id": "option_a"
+    },
+    {
+      "expression": "\"error\"",
+      "id": "option_b"
+    },
+    {
+      "expression": "\"open\"",
+      "id": "option_c"
+    }
+  ],
+  "hole_id": "choice",
+  "intent": "Classify zero as closed, positive input as open, and negative input as error; return one only for open.",
+  "max_attempts": 1,
+  "prompt_profile": "compact",
+  "provider_model": "multilingual",
+  "schema": "gooo/body-codegen-ir-search-plan/v1",
+  "test_cases": [
+    {
+      "expected": 0,
+      "input": -1
+    },
+    {
+      "expected": 0,
+      "input": 0
+    },
+    {
+      "expected": 1,
+      "input": 1
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "schema": "gooo/body-codegen-ir-fill-plan/v1",
+  "intent": "Return 7 only for the two isolated inputs -4 and 4; return 0 for the gap and the exterior.",
+  "hole_id": "choice",
+  "candidates": [
+    {
+      "id": "option_a",
+      "expression": "input < -4 || input > 4"
+    },
+    {
+      "id": "option_b",
+      "expression": "input == -4 || input == 4"
+    },
+    {
+      "id": "option_c",
+      "expression": "input >= -4 && input <= 4"
+    }
+  ],
+  "test_cases": [
+    {
+      "input": -5,
+      "expected": 0
+    },
+    {
+      "input": -4,
+      "expected": 7
+    },
+    {
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "input": 4,
+      "expected": 7
+    },
+    {
+      "input": 5,
+      "expected": 0
+    }
+  ]
+}

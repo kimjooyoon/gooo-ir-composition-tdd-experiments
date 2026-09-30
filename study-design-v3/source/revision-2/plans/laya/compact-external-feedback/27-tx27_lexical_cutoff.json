@@ -1,0 +1,71 @@
+{
+  "schema": "gooo/body-codegen-ir-search-plan/v1",
+  "intent": "Assign amber to negative inputs and zinc otherwise; return 1 exactly when the label sorts before gold.",
+  "hole_id": "choice",
+  "candidates": [
+    {
+      "id": "option_a",
+      "expression": "\"zoo\""
+    },
+    {
+      "id": "option_b",
+      "expression": "\"gold\""
+    },
+    {
+      "id": "option_c",
+      "expression": "\"amber\""
+    }
+  ],
+  "test_cases": [
+    {
+      "input": -1,
+      "expected": 1
+    },
+    {
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "input": 1,
+      "expected": 0
+    }
+  ],
+  "holdout_test_cases": [
+    {
+      "input": -2,
+      "expected": 1
+    },
+    {
+      "input": 2,
+      "expected": 0
+    }
+  ],
+  "max_attempts": 3,
+  "provider_model": "english",
+  "prompt_profile": "compact",
+  "external_training_feedback": {
+    "source_digest": "sha256:b8da9519f04a52e9772aaeed4c0e4edfb7f6977847d282f75b6b653eed61ff79",
+    "training_suite_sha256": "sha256:7cb986db6370cc1f2b421868261e2671e0572d828d26a864a1af480da3afd5b4",
+    "candidate_id": "option_c",
+    "observations": [
+      {
+        "input": -1,
+        "expected": 1,
+        "actual": 0,
+        "passed": false
+      },
+      {
+        "input": 0,
+        "expected": 0,
+        "actual": 0,
+        "passed": true
+      },
+      {
+        "input": 1,
+        "expected": 0,
+        "actual": 0,
+        "passed": true
+      }
+    ]
+  }
+}

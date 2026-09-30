@@ -1,0 +1,10 @@
+{
+  "schema": "gooo/ir-composition-tdd-freeze-validation-receipt/v1",
+  "validator_path": "scripts/validate_frozen_study.py",
+  "validator_sha256": "9397f4226e805547bd8be85e9f182ef50d2871617023eed0d7f98929eabbf73a",
+  "report_sha256": "572c91603eebc9bb1db3fb1dacc8d1a0e3a55b3265e7b88ce0a8b9acd53e0a40",
+  "design_sha256": "ecce451059062b11f6fa8c8198bcfa53318d0533dddd5e1c5d119e22066bcd0b",
+  "actual_laya_calls": 0,
+  "go_toolchain_calls": 0,
+  "status": "PASS"
+}

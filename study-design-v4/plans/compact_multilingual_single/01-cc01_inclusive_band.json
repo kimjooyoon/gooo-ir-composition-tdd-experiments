@@ -1,0 +1,44 @@
+{
+  "candidates": [
+    {
+      "expression": "input >= 3 && input <= 8",
+      "id": "option_a"
+    },
+    {
+      "expression": "input > 3 && input <= 8",
+      "id": "option_b"
+    },
+    {
+      "expression": "input >= 3 && input < 8",
+      "id": "option_c"
+    }
+  ],
+  "hole_id": "choice",
+  "intent": "Return 2 for inputs from 3 through 8 inclusive, and -1 otherwise.",
+  "max_attempts": 1,
+  "prompt_profile": "compact",
+  "provider_model": "multilingual",
+  "schema": "gooo/body-codegen-ir-search-plan/v1",
+  "test_cases": [
+    {
+      "expected": -1,
+      "input": -1
+    },
+    {
+      "expected": -1,
+      "input": 2
+    },
+    {
+      "expected": 2,
+      "input": 3
+    },
+    {
+      "expected": 2,
+      "input": 8
+    },
+    {
+      "expected": -1,
+      "input": 9
+    }
+  ]
+}

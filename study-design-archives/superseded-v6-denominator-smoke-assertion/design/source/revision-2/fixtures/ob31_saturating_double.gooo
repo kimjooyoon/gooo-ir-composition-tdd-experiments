@@ -1,0 +1,4 @@
+package bodycodegen
+namespace bodycodegen
+entity Integer id "bodycodegen://entity/integer"
+activity C31(Integer) -> Integer computes "if input > 4611686018427387903 { return 9223372036854775807 } else { if input < (-4611686018427387903 - 1) { return (-9223372036854775807 - 1) } else { return __GOOO_BODY_HOLE_choice__ } }"

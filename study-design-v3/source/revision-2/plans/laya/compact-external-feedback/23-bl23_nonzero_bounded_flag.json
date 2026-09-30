@@ -1,0 +1,109 @@
+{
+  "schema": "gooo/body-codegen-ir-search-plan/v1",
+  "intent": "Return 9 only when a saved nonzero predicate and a saved inclusive -4 through 4 range predicate are both true.",
+  "hole_id": "choice",
+  "candidates": [
+    {
+      "id": "option_a",
+      "expression": "input != -1"
+    },
+    {
+      "id": "option_b",
+      "expression": "input > 0"
+    },
+    {
+      "id": "option_c",
+      "expression": "true"
+    }
+  ],
+  "test_cases": [
+    {
+      "input": -5,
+      "expected": 0
+    },
+    {
+      "input": -4,
+      "expected": 9
+    },
+    {
+      "input": -1,
+      "expected": 9
+    },
+    {
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "input": 4,
+      "expected": 9
+    },
+    {
+      "input": 5,
+      "expected": 0
+    }
+  ],
+  "holdout_test_cases": [
+    {
+      "input": -100,
+      "expected": 0
+    },
+    {
+      "input": -2,
+      "expected": 9
+    },
+    {
+      "input": 1,
+      "expected": 9
+    },
+    {
+      "input": 100,
+      "expected": 0
+    }
+  ],
+  "max_attempts": 3,
+  "provider_model": "english",
+  "prompt_profile": "compact",
+  "external_training_feedback": {
+    "source_digest": "sha256:10de6bb3ce6b06c6734d4f2af73f8693f561032f8c9744ea83a47d1ada9b8994",
+    "training_suite_sha256": "sha256:8e70b192fa649628f1eb2b7e9f7673569a0ef42551d3a86743a96e57263ccd21",
+    "candidate_id": "option_a",
+    "observations": [
+      {
+        "input": -5,
+        "expected": 0,
+        "actual": 0,
+        "passed": true
+      },
+      {
+        "input": -4,
+        "expected": 9,
+        "actual": 9,
+        "passed": true
+      },
+      {
+        "input": -1,
+        "expected": 9,
+        "actual": 0,
+        "passed": false
+      },
+      {
+        "input": 0,
+        "expected": 0,
+        "actual": 0,
+        "passed": true
+      },
+      {
+        "input": 4,
+        "expected": 9,
+        "actual": 9,
+        "passed": true
+      },
+      {
+        "input": 5,
+        "expected": 0,
+        "actual": 0,
+        "passed": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,4 @@
+package bodycodegen
+namespace bodycodegen
+entity Integer id "bodycodegen://entity/integer"
+activity C25(Integer) -> Integer computes "let label = \"neutral\"; if input < 0 { label = \"negative\" } else { label = \"nonnegative\" }; if label == __GOOO_BODY_HOLE_choice__ { return -1 } else { return 1 }"

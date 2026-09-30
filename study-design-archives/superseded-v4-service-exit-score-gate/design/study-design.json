@@ -1,0 +1,96 @@
+{
+  "arms": [
+    {
+      "external_training_feedback": false,
+      "feedback_semantics": "native prior-attempt typecheck/training results only",
+      "id": "compact_multilingual_single",
+      "max_attempts": 1,
+      "prompt_profile": "compact",
+      "provider_model": "multilingual"
+    },
+    {
+      "external_training_feedback": false,
+      "feedback_semantics": "native prior-attempt typecheck/training results only",
+      "id": "compact_multilingual_local_feedback",
+      "max_attempts": 3,
+      "prompt_profile": "compact",
+      "provider_model": "multilingual"
+    }
+  ],
+  "capture_proxy_dependency": {
+    "bytes": 110236,
+    "path_at_freeze": "/Users/alice/meta-go/research/metaprogramming/gooo-ci-context-codegen-experiments/scripts/run_pinned_context_study.py",
+    "reused_symbol": "CaptureProxy",
+    "sha256": "58b414b6dfa5070666514eae4bc044474c8ca19162a825fd2afc749023075dea"
+  },
+  "compiler": {
+    "build_info_raw_sha256": "7a5ddd40745db83a691f8e40b0273147411dcc39f05c94fa1cffd52621a77af4",
+    "cgo_enabled": true,
+    "go_version": "go1.27.0",
+    "goarch": "arm64",
+    "goos": "darwin",
+    "path": "/private/tmp/gooo-composition-tdd-f3e576ad-20260930",
+    "sha256": "ecbae47a877f57117e4f493ab85adc0279956c437a68e9fa374bee1b3772db1f",
+    "source_revision": "f3e576ad55796c0d42b2af8b86f874b49baa61d8",
+    "trimpath_expected": true,
+    "vcs_modified": false
+  },
+  "holdout_policy": "holdout vectors omitted from every CLI search plan and provider request; load only after capture for independent Go postselection scoring",
+  "metrics": {
+    "denominators": "planned 32 per arm; report observed and unresolved separately; failures remain planned failures",
+    "emitted_source": [
+      "independent_go_training_score",
+      "independent_go_holdout_score",
+      "source_unit_completeness_receipt_separate"
+    ],
+    "local_adjustment": [
+      "emitted_candidate_training_passes_minus_first_proposal_training_passes",
+      "improved_cells",
+      "unchanged_cells",
+      "declined_cells"
+    ],
+    "model_proposal": [
+      "first_attempt_candidate_id",
+      "first_attempt_finite_training_passes",
+      "first_attempt_training_total",
+      "first_attempt_matches_intended_candidate"
+    ]
+  },
+  "mock_preflight_path": "mock-preflight/summary.json",
+  "mock_preflight_sha256": "fefb14afb79f5a3724ecf09b4638c232f33221bdf7b0cb23239947e4e7817c9d",
+  "phase_plan_path": "phase-plans.json",
+  "phase_plan_sha256": "e3ceeaa24d187e1a14c52e4c946b99751e305607491f4164f96e8b822e5b023e",
+  "planned_cells": 64,
+  "preflight_policy": "capture all reachable first and second provider request states; retain duplicate template roles separately; validate wrong-routing fallback, sole-candidate deterministic path, and aggregate denominators",
+  "preparation_revision": 4,
+  "provider": {
+    "live_calls_authorized": false,
+    "live_calls_during_preparation": 0,
+    "measured_provider_post_cap": 96,
+    "model": "multilingual",
+    "model_cache_snapshot": "/Users/alice/.cache/huggingface/hub/models--convaiinnovations--laya/snapshots/55cf4c4ebb4ebe31b2550e8bdf3bd21b99753851",
+    "model_revision": "55cf4c4ebb4ebe31b2550e8bdf3bd21b99753851",
+    "provider_post_caps_by_arm": {
+      "compact_multilingual_local_feedback": 64,
+      "compact_multilingual_single": 32
+    },
+    "retry_policy": "none; at most one provider POST per native attempt",
+    "warmup_calls": 0
+  },
+  "schema": "gooo/ir-composition-tdd-study-design/v4",
+  "source": {
+    "design_freeze_sha256": "9ef3d4bf5c3be68ef4da9c0e7c712eefb313d6bd325446e229e48b8441e33aca",
+    "intent_count": 32,
+    "new_intentions": 0,
+    "path": "source/revision-2",
+    "revision_manifest_sha256": "d29362bcf9894ac53dc34eb44685cfeaf46b99841574e9473285fac00bfd1dd1",
+    "tree_inventory_path": "source-provenance.json",
+    "tree_inventory_sha256": "096571230a819686ead32b0809bb49bdec267e9d5be9582d9524693711b3f5c2"
+  },
+  "status": "frozen_before_live_provider_calls",
+  "study_code_provenance": {
+    "capture_script_sha256": "9fcd91f74424d876bea0eff5054b6f18c9e48c8f16c2ed567cc8d101e07bb793",
+    "preparation_script_sha256": "51ecccca5603ea9c57861db543e4a2484dbf5a762565175b6a14b9b41f7d47e3"
+  },
+  "study_id": "ir-composition-tdd-2026-09-30"
+}

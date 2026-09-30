@@ -1,0 +1,85 @@
+{
+  "schema": "gooo/body-codegen-ir-search-plan/v1",
+  "intent": "Subtract the input plus four from the square of the input.",
+  "hole_id": "choice",
+  "candidates": [
+    {
+      "id": "option_a",
+      "expression": "input - 4"
+    },
+    {
+      "id": "option_b",
+      "expression": "input + 4"
+    },
+    {
+      "id": "option_c",
+      "expression": "input + 2"
+    }
+  ],
+  "test_cases": [
+    {
+      "input": -2,
+      "expected": 2
+    },
+    {
+      "input": 0,
+      "expected": -4
+    },
+    {
+      "input": 3,
+      "expected": 2
+    },
+    {
+      "input": 6,
+      "expected": 26
+    }
+  ],
+  "holdout_test_cases": [
+    {
+      "input": -10,
+      "expected": 106
+    },
+    {
+      "input": 5,
+      "expected": 16
+    },
+    {
+      "input": 20,
+      "expected": 376
+    }
+  ],
+  "max_attempts": 3,
+  "provider_model": "english",
+  "prompt_profile": "compact",
+  "external_training_feedback": {
+    "source_digest": "sha256:b1e47eff4920a473ee13dc5e87bf33821fa48e9bbf469097601e356f6792383b",
+    "training_suite_sha256": "sha256:679e53011c5651c385da48f971d28dcfb554814fc01c72c531c0123d77aca60e",
+    "candidate_id": "option_a",
+    "observations": [
+      {
+        "input": -2,
+        "expected": 2,
+        "actual": 10,
+        "passed": false
+      },
+      {
+        "input": 0,
+        "expected": -4,
+        "actual": 4,
+        "passed": false
+      },
+      {
+        "input": 3,
+        "expected": 2,
+        "actual": 10,
+        "passed": false
+      },
+      {
+        "input": 6,
+        "expected": 26,
+        "actual": 34,
+        "passed": false
+      }
+    ]
+  }
+}

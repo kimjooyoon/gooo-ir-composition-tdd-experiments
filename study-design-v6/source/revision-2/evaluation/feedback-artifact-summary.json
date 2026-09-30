@@ -1,0 +1,264 @@
+{
+  "schema": "gooo/ir-composition-revision2-source-bound-feedback/v1",
+  "model_calls": 0,
+  "evidence": "actual Go 1.27 compiled revision-2 candidate outputs on training cases",
+  "authority": "advisory prior observations; not authenticated CI proof or semantic authority",
+  "designs": [
+    {
+      "id": "cc01_inclusive_band",
+      "candidate_id": "option_b",
+      "source_digest": "sha256:43b1b9f76f8cc1f7cd5333c5807b0103cd4e3c230487edf1df7fa3c825b9cc83",
+      "training_suite_sha256": "sha256:b521acfc8227af1f1294460c8e9a87560fa2565b4f21bcc3fad3e6d7a685474c",
+      "observation_count": 5,
+      "failed_observation_count": 1
+    },
+    {
+      "id": "cc02_nonzero_disjunction",
+      "candidate_id": "option_a",
+      "source_digest": "sha256:7d46348d7c4862be945f89d0297a8f1f7722b45f3687b1c8ba5b3d20f66b799c",
+      "training_suite_sha256": "sha256:66730fc6e31527339a4ad71bfbbcad4d94698c2db3b52b02b471ad9107ab914e",
+      "observation_count": 3,
+      "failed_observation_count": 2
+    },
+    {
+      "id": "cc03_two_islands",
+      "candidate_id": "option_c",
+      "source_digest": "sha256:23d2a251e11af1ced7653848770d2bf98f8a788d2cf729d2405389febd3a9b3b",
+      "training_suite_sha256": "sha256:1fd6c844c6f00d0de2bdaae0129bf9bf9a9221bd7be87455c0ead4a8a4c26c3a",
+      "observation_count": 5,
+      "failed_observation_count": 1
+    },
+    {
+      "id": "cc04_outer_cutoffs",
+      "candidate_id": "option_b",
+      "source_digest": "sha256:33d2d46dfe8c2b51de4ceb67f651d50b0d5384cd28965a8a0e8095a228471f0d",
+      "training_suite_sha256": "sha256:b304a1021324bfa095c4e4da4f070e1b26b6fa049c295d848b8116e786cc36de",
+      "observation_count": 6,
+      "failed_observation_count": 3
+    },
+    {
+      "id": "ni05_negative_then_double",
+      "candidate_id": "option_b",
+      "source_digest": "sha256:345836e4624f2376cfb595846900069c1c0274df80ab1fabf8349520fdc162bf",
+      "training_suite_sha256": "sha256:12b50cd7f66ac7851531f325fef9d338d5872462fe13db40ef18ecb478718691",
+      "observation_count": 5,
+      "failed_observation_count": 2
+    },
+    {
+      "id": "ni06_surcharge_discount",
+      "candidate_id": "option_a",
+      "source_digest": "sha256:5b92ebb63da75bead14b67ed53ee0c0146c677636e832a629ad602e8baab6774",
+      "training_suite_sha256": "sha256:7f5f6453b52a3f85b9ebf0508c2384879315d7af58978104715779d10bad5e2b",
+      "observation_count": 5,
+      "failed_observation_count": 3
+    },
+    {
+      "id": "ni07_zero_special_negative_offset",
+      "candidate_id": "option_b",
+      "source_digest": "sha256:1e8411cc79dd21a35809eaed2aab716c7e89957c14ebdd59b92b1191e88530d6",
+      "training_suite_sha256": "sha256:e74b9bcb53fd86bddd1c36ec5c2304431d53fcc50a3a5c27443e41e5ead66e35",
+      "observation_count": 4,
+      "failed_observation_count": 2
+    },
+    {
+      "id": "ni08_upper_grade_excess",
+      "candidate_id": "option_a",
+      "source_digest": "sha256:181f61c636c859d6b59dbacc8d3d7d96dcc0656a0443a98fbce2a04b623d0b08",
+      "training_suite_sha256": "sha256:76c2b4e11db97da08bae5a926925dc26128830c5bc8ca6e367be0ae3c6dc3ceb",
+      "observation_count": 5,
+      "failed_observation_count": 2
+    },
+    {
+      "id": "lr09_compound_total",
+      "candidate_id": "option_a",
+      "source_digest": "sha256:a97d6784cf459fa0bc97233c9ebc8717f526bf7b2c66913c996aeea332e35e70",
+      "training_suite_sha256": "sha256:4dbb8c1dfb6720ce41de6bc521513d59338c5b04bd2005e3429a9aa96428edfc",
+      "observation_count": 4,
+      "failed_observation_count": 3
+    },
+    {
+      "id": "lr10_floor_then_increment",
+      "candidate_id": "option_b",
+      "source_digest": "sha256:c6913b96fb9c961ebe03f01a77ea6102643a70e56536c681c1c4047475246386",
+      "training_suite_sha256": "sha256:ff29555223cdec0ea574f4593b77a93fc886f8fb50e55fb9ecc0f82615375f34",
+      "observation_count": 4,
+      "failed_observation_count": 4
+    },
+    {
+      "id": "lr11_nonnegative_doubled_score",
+      "candidate_id": "option_a",
+      "source_digest": "sha256:723574de9db64f39818b041cb51f2d2efcd16b19c268ebff3d320e332cdf75e5",
+      "training_suite_sha256": "sha256:7935c8200526c15f63bdad5648ca037c18eea6b6ad2c57bda97f444d58a2e51b",
+      "observation_count": 4,
+      "failed_observation_count": 2
+    },
+    {
+      "id": "lr12_cap_after_adjustment",
+      "candidate_id": "option_c",
+      "source_digest": "sha256:3067882d6a4bea607f6f52b665fe0d0137b02fa6b997ac13c81d767a713aef08",
+      "training_suite_sha256": "sha256:c8c5881fd56c2d6d8975c6b5d0521ca3ab2ff56b2f7fa0b5946de9248506e530",
+      "observation_count": 4,
+      "failed_observation_count": 1
+    },
+    {
+      "id": "pr13_subtract_tripled_sum",
+      "candidate_id": "option_b",
+      "source_digest": "sha256:5b928f522d938b1d33b7938fe69d2a794f810180cc714f7d18bc52840da90650",
+      "training_suite_sha256": "sha256:2d9dec6e81463bd30ff28b2252193058312252d025bfe7d79181a8d85901ae19",
+      "observation_count": 4,
+      "failed_observation_count": 4
+    },
+    {
+      "id": "pr14_product_neighbor_factors",
+      "candidate_id": "option_a",
+      "source_digest": "sha256:9097cdde2e20f84f06bd7ec9a48a5c8408e0f0b174748e507867eac58d6184d8",
+      "training_suite_sha256": "sha256:56fab4ee41e85a420813348a339360e184799a4a6f307fbc8b297561a7bd71b4",
+      "observation_count": 4,
+      "failed_observation_count": 3
+    },
+    {
+      "id": "pr15_square_minus_successor_sum",
+      "candidate_id": "option_a",
+      "source_digest": "sha256:b1e47eff4920a473ee13dc5e87bf33821fa48e9bbf469097601e356f6792383b",
+      "training_suite_sha256": "sha256:679e53011c5651c385da48f971d28dcfb554814fc01c72c531c0123d77aca60e",
+      "observation_count": 4,
+      "failed_observation_count": 4
+    },
+    {
+      "id": "pr16_composed_neighbor_product",
+      "candidate_id": "option_b",
+      "source_digest": "sha256:d50988243d7598ea1f76b85204f30d4046b3c113f2df39c483abe0d99d02fa23",
+      "training_suite_sha256": "sha256:c526a748ee48d218406f2ed4492b2abfcb4ad5533f6efe5dffdd3a464f24856c",
+      "observation_count": 4,
+      "failed_observation_count": 4
+    },
+    {
+      "id": "cp17_nonpositive_inclusive",
+      "candidate_id": "option_a",
+      "source_digest": "sha256:33a902cfd0202bd368fc9e380868946a7f209102e1480d17d93aa86e2e8d5b4f",
+      "training_suite_sha256": "sha256:2dbf2c65064191021a9a3c7d6a84b905d3595b7374db3b6ae551d534e5af9c9c",
+      "observation_count": 3,
+      "failed_observation_count": 1
+    },
+    {
+      "id": "cp18_exact_release_code",
+      "candidate_id": "option_c",
+      "source_digest": "sha256:9f63084c701a1e34f2e5cbfdc862442235d1f0dd48e295e6a59afe4f4ac68641",
+      "training_suite_sha256": "sha256:06f2348bb44ed141f24e11c4f8314f8b627344228169e8089c2b16fbf2462ecb",
+      "observation_count": 3,
+      "failed_observation_count": 1
+    },
+    {
+      "id": "cp19_range_without_origin",
+      "candidate_id": "option_b",
+      "source_digest": "sha256:800f1985b3af0c308e04365473c75059c1fc882d6a0445a6eff4b5808c3635e5",
+      "training_suite_sha256": "sha256:d18034ee4bfcae01f1b796ca3f14787a5cd93aacf2dee69f32d2b749426ce105",
+      "observation_count": 5,
+      "failed_observation_count": 1
+    },
+    {
+      "id": "cp20_strict_symmetric_window",
+      "candidate_id": "option_b",
+      "source_digest": "sha256:a99ac35a84dcd79e2f44e8a6e666ac5836a743e1490710c6fec670d07fe9d4c6",
+      "training_suite_sha256": "sha256:b0a8b31aa1ad85e785e33b89361a8760537f95906496b9ab349ebe94ef636591",
+      "observation_count": 6,
+      "failed_observation_count": 1
+    },
+    {
+      "id": "bl21_saved_range_predicates",
+      "candidate_id": "option_a",
+      "source_digest": "sha256:8e2af75c17c052fd7b44a1f2fb106d92bd1bead0b278f8f2f170aad16ec70780",
+      "training_suite_sha256": "sha256:be4f8d01c9fd51f5f1861b4f103f8e9892170df16152f9f7c4c6e37d7e6968ab",
+      "observation_count": 5,
+      "failed_observation_count": 1
+    },
+    {
+      "id": "bl22_reassigned_valid_flag",
+      "candidate_id": "option_b",
+      "source_digest": "sha256:52d2dda62d04084de338728b5cb725342e6319a0432c6fedfd59a27b6d44abd6",
+      "training_suite_sha256": "sha256:5ead94448c07860c6c704449457f7e20389d1908bbd85244b68a823f313ed60b",
+      "observation_count": 5,
+      "failed_observation_count": 1
+    },
+    {
+      "id": "bl23_nonzero_bounded_flag",
+      "candidate_id": "option_a",
+      "source_digest": "sha256:10de6bb3ce6b06c6734d4f2af73f8693f561032f8c9744ea83a47d1ada9b8994",
+      "training_suite_sha256": "sha256:8e70b192fa649628f1eb2b7e9f7673569a0ef42551d3a86743a96e57263ccd21",
+      "observation_count": 6,
+      "failed_observation_count": 1
+    },
+    {
+      "id": "bl24_selected_nonnegative_codes",
+      "candidate_id": "option_a",
+      "source_digest": "sha256:bc77b8e7e499bf06f8e2de315988199b3e1b5caa0dcb055820cae2067b24478b",
+      "training_suite_sha256": "sha256:27d579b7cc362fffb7c5c06eb314323e767f21a6e48a809bc34c02ded2069340",
+      "observation_count": 5,
+      "failed_observation_count": 1
+    },
+    {
+      "id": "tx25_sign_label",
+      "candidate_id": "option_c",
+      "source_digest": "sha256:efa85435aff410ef43981757ac9e39dc535d1def1b12be5d659671dc9b981e21",
+      "training_suite_sha256": "sha256:d97636ae265e5c6cd91a3f3d1422d2b0f5f572fc0bdbea8ab5f5e7da71788632",
+      "observation_count": 3,
+      "failed_observation_count": 1
+    },
+    {
+      "id": "tx26_state_label",
+      "candidate_id": "option_a",
+      "source_digest": "sha256:509a24c6caa067dfce851883d3aa11f3c57a9bcc9a6709b0e5390aa6421022a6",
+      "training_suite_sha256": "sha256:d3b4204e8a483b5b3e4c36465367689fc0b579c540eb79c5594882b6aea2c4c4",
+      "observation_count": 3,
+      "failed_observation_count": 2
+    },
+    {
+      "id": "tx27_lexical_cutoff",
+      "candidate_id": "option_c",
+      "source_digest": "sha256:b8da9519f04a52e9772aaeed4c0e4edfb7f6977847d282f75b6b653eed61ff79",
+      "training_suite_sha256": "sha256:7cb986db6370cc1f2b421868261e2671e0572d828d26a864a1af480da3afd5b4",
+      "observation_count": 3,
+      "failed_observation_count": 1
+    },
+    {
+      "id": "tx28_reassigned_text_state",
+      "candidate_id": "option_c",
+      "source_digest": "sha256:dd1b18c25dc33e245de0b0ae5eb25fbcaf2d84d70b7332ba7e962bc776d93ee3",
+      "training_suite_sha256": "sha256:e3fc56ef58ee36b792b06542ac1673b6bddd4d5e1433311267c63b3fbff6f9bb",
+      "observation_count": 3,
+      "failed_observation_count": 1
+    },
+    {
+      "id": "ob29_saturating_increment",
+      "candidate_id": "option_a",
+      "source_digest": "sha256:3902ff2de37d1b01f70b6af72c31e2685f575dbb6de1d1b9a2b0ab1d72aa7c11",
+      "training_suite_sha256": "sha256:9a604716d297d35b96543b01012238180e503e1b4213714bd82930bafe723fb7",
+      "observation_count": 4,
+      "failed_observation_count": 4
+    },
+    {
+      "id": "ob30_saturating_decrement",
+      "candidate_id": "option_a",
+      "source_digest": "sha256:923ce738356e902a5b77a908bcf77e89a66fc895adabc6556bd19457675bcca7",
+      "training_suite_sha256": "sha256:3bb1f3603f3055078916bf97e0ff1b06de2e8492a7266d910c3bce731c30ec6e",
+      "observation_count": 4,
+      "failed_observation_count": 4
+    },
+    {
+      "id": "ob31_saturating_double",
+      "candidate_id": "option_b",
+      "source_digest": "sha256:a0c2af13d992ea6d1a04aed6864f0a2768f15baf30a477b952a98a7098de1794",
+      "training_suite_sha256": "sha256:957eda992ea6fc060834218a4bc105cc06be1b2105e32472d21426c562ec40d0",
+      "observation_count": 5,
+      "failed_observation_count": 4
+    },
+    {
+      "id": "ob32_clamped_absolute",
+      "candidate_id": "option_a",
+      "source_digest": "sha256:93dbc7f839a1cc76a6dfba47c2f4b54a02fe0455502552a06c8b5849fa04ea91",
+      "training_suite_sha256": "sha256:1b82b12497d17b70ceb898255eb0978dab2baae3040b232680a6a5f43dcc422a",
+      "observation_count": 4,
+      "failed_observation_count": 1
+    }
+  ]
+}

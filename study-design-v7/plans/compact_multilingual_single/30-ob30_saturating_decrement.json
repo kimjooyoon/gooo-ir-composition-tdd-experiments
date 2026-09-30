@@ -1,0 +1,40 @@
+{
+  "candidates": [
+    {
+      "expression": "input + 1",
+      "id": "option_a"
+    },
+    {
+      "expression": "input - 1",
+      "id": "option_b"
+    },
+    {
+      "expression": "input",
+      "id": "option_c"
+    }
+  ],
+  "hole_id": "choice",
+  "intent": "Decrement every int64 input except the minimum, which remains at the minimum instead of wrapping.",
+  "max_attempts": 1,
+  "prompt_profile": "compact",
+  "provider_model": "multilingual",
+  "schema": "gooo/body-codegen-ir-search-plan/v1",
+  "test_cases": [
+    {
+      "expected": -9223372036854775807,
+      "input": -9223372036854775806
+    },
+    {
+      "expected": -9223372036854775808,
+      "input": -9223372036854775807
+    },
+    {
+      "expected": -1,
+      "input": 0
+    },
+    {
+      "expected": 0,
+      "input": 1
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "schema": "gooo/ir-composition-original-candidate-compile-errors/v1",
+  "go_version": "go1.27.0",
+  "compile_fail_count": 3,
+  "denominator": 96,
+  "cases": [
+    {
+      "id": "bl21_saved_range_predicates",
+      "candidate_id": "option_a",
+      "error": "declared and not used: allowed"
+    },
+    {
+      "id": "bl21_saved_range_predicates",
+      "candidate_id": "option_c",
+      "error": "declared and not used: allowed"
+    },
+    {
+      "id": "bl23_nonzero_bounded_flag",
+      "candidate_id": "option_b",
+      "error": "declared and not used: bounded"
+    }
+  ],
+  "source": "original frozen candidate function bodies compiled without repair in isolated packages",
+  "model_calls": 0
+}

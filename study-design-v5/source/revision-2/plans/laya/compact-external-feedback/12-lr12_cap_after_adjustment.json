@@ -1,0 +1,85 @@
+{
+  "schema": "gooo/body-codegen-ir-search-plan/v1",
+  "intent": "Add three, cap the adjusted amount at ten, subtract one from that capped local, and return it.",
+  "hole_id": "choice",
+  "candidates": [
+    {
+      "id": "option_a",
+      "expression": "amount + 1"
+    },
+    {
+      "id": "option_b",
+      "expression": "amount"
+    },
+    {
+      "id": "option_c",
+      "expression": "input + 2"
+    }
+  ],
+  "test_cases": [
+    {
+      "input": -5,
+      "expected": -3
+    },
+    {
+      "input": 0,
+      "expected": 2
+    },
+    {
+      "input": 7,
+      "expected": 9
+    },
+    {
+      "input": 8,
+      "expected": 9
+    }
+  ],
+  "holdout_test_cases": [
+    {
+      "input": -20,
+      "expected": -18
+    },
+    {
+      "input": 10,
+      "expected": 9
+    },
+    {
+      "input": 100,
+      "expected": 9
+    }
+  ],
+  "max_attempts": 3,
+  "provider_model": "english",
+  "prompt_profile": "compact",
+  "external_training_feedback": {
+    "source_digest": "sha256:3067882d6a4bea607f6f52b665fe0d0137b02fa6b997ac13c81d767a713aef08",
+    "training_suite_sha256": "sha256:c8c5881fd56c2d6d8975c6b5d0521ca3ab2ff56b2f7fa0b5946de9248506e530",
+    "candidate_id": "option_c",
+    "observations": [
+      {
+        "input": -5,
+        "expected": -3,
+        "actual": -3,
+        "passed": true
+      },
+      {
+        "input": 0,
+        "expected": 2,
+        "actual": 2,
+        "passed": true
+      },
+      {
+        "input": 7,
+        "expected": 9,
+        "actual": 9,
+        "passed": true
+      },
+      {
+        "input": 8,
+        "expected": 9,
+        "actual": 10,
+        "passed": false
+      }
+    ]
+  }
+}

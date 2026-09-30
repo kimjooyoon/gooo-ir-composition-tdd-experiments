@@ -1,0 +1,91 @@
+{
+  "schema": "gooo/body-codegen-ir-search-plan/v1",
+  "intent": "Return 7 only for the two isolated inputs -4 and 4; return 0 for the gap and the exterior.",
+  "hole_id": "choice",
+  "candidates": [
+    {
+      "id": "option_a",
+      "expression": "input < -4 || input > 4"
+    },
+    {
+      "id": "option_b",
+      "expression": "input == -4 || input == 4"
+    },
+    {
+      "id": "option_c",
+      "expression": "input >= -4 && input <= 4"
+    }
+  ],
+  "test_cases": [
+    {
+      "input": -5,
+      "expected": 0
+    },
+    {
+      "input": -4,
+      "expected": 7
+    },
+    {
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "input": 4,
+      "expected": 7
+    },
+    {
+      "input": 5,
+      "expected": 0
+    }
+  ],
+  "holdout_test_cases": [
+    {
+      "input": -100,
+      "expected": 0
+    },
+    {
+      "input": 2,
+      "expected": 0
+    }
+  ],
+  "max_attempts": 3,
+  "provider_model": "english",
+  "prompt_profile": "compact",
+  "external_training_feedback": {
+    "source_digest": "sha256:23d2a251e11af1ced7653848770d2bf98f8a788d2cf729d2405389febd3a9b3b",
+    "training_suite_sha256": "sha256:1fd6c844c6f00d0de2bdaae0129bf9bf9a9221bd7be87455c0ead4a8a4c26c3a",
+    "candidate_id": "option_c",
+    "observations": [
+      {
+        "input": -5,
+        "expected": 0,
+        "actual": 0,
+        "passed": true
+      },
+      {
+        "input": -4,
+        "expected": 7,
+        "actual": 7,
+        "passed": true
+      },
+      {
+        "input": 0,
+        "expected": 0,
+        "actual": 7,
+        "passed": false
+      },
+      {
+        "input": 4,
+        "expected": 7,
+        "actual": 7,
+        "passed": true
+      },
+      {
+        "input": 5,
+        "expected": 0,
+        "actual": 0,
+        "passed": true
+      }
+    ]
+  }
+}

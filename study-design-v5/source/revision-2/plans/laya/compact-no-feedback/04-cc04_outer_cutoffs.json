@@ -1,0 +1,62 @@
+{
+  "schema": "gooo/body-codegen-ir-search-plan/v1",
+  "intent": "Return 9 when the input is at most -6 or at least 8; return 0 in the middle interval.",
+  "hole_id": "choice",
+  "candidates": [
+    {
+      "id": "option_a",
+      "expression": "input <= -6 || input >= 8"
+    },
+    {
+      "id": "option_b",
+      "expression": "input <= -8 || input >= 6"
+    },
+    {
+      "id": "option_c",
+      "expression": "input <= -6 && input >= 8"
+    }
+  ],
+  "test_cases": [
+    {
+      "input": -7,
+      "expected": 9
+    },
+    {
+      "input": -6,
+      "expected": 9
+    },
+    {
+      "input": -5,
+      "expected": 0
+    },
+    {
+      "input": 7,
+      "expected": 0
+    },
+    {
+      "input": 8,
+      "expected": 9
+    },
+    {
+      "input": 9,
+      "expected": 9
+    }
+  ],
+  "holdout_test_cases": [
+    {
+      "input": -100,
+      "expected": 9
+    },
+    {
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "input": 100,
+      "expected": 9
+    }
+  ],
+  "max_attempts": 3,
+  "provider_model": "english",
+  "prompt_profile": "compact"
+}

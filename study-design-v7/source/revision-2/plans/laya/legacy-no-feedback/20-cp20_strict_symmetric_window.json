@@ -1,0 +1,61 @@
+{
+  "schema": "gooo/body-codegen-ir-search-plan/v1",
+  "intent": "Return 4 only strictly between -5 and 5; both endpoints and everything outside return -4.",
+  "hole_id": "choice",
+  "candidates": [
+    {
+      "id": "option_a",
+      "expression": "input >= -5 && input <= 5"
+    },
+    {
+      "id": "option_b",
+      "expression": "input > -5 && input <= 5"
+    },
+    {
+      "id": "option_c",
+      "expression": "input > -5 && input < 5"
+    }
+  ],
+  "test_cases": [
+    {
+      "input": -6,
+      "expected": -4
+    },
+    {
+      "input": -5,
+      "expected": -4
+    },
+    {
+      "input": -4,
+      "expected": 4
+    },
+    {
+      "input": 4,
+      "expected": 4
+    },
+    {
+      "input": 5,
+      "expected": -4
+    },
+    {
+      "input": 6,
+      "expected": -4
+    }
+  ],
+  "holdout_test_cases": [
+    {
+      "input": -100,
+      "expected": -4
+    },
+    {
+      "input": 0,
+      "expected": 4
+    },
+    {
+      "input": 100,
+      "expected": -4
+    }
+  ],
+  "max_attempts": 3,
+  "provider_model": "english"
+}

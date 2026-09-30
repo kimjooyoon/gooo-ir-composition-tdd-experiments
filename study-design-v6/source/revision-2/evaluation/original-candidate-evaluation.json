@@ -1,0 +1,4573 @@
+{
+  "schema": "gooo/ir-composition-original-candidate-evaluation/v1",
+  "denominator_basis": "96 declared original candidates; compilation, execution, and unknown are separate counts",
+  "reference_go_test_exit_code": 0,
+  "reference_python_case_count": 228,
+  "go_test_exit_code": 1,
+  "candidate_denominator": 96,
+  "compiled_candidates": 93,
+  "compile_failed_candidates": 3,
+  "unknown_candidates": 0,
+  "actual_input_rows": 660,
+  "candidate_input_rows_planned": 684,
+  "errors": [
+    {
+      "case_id": "bl21_saved_range_predicates",
+      "candidate_id": "option_a",
+      "package_status": "fail",
+      "expected_original_invalid": true,
+      "error": "FAIL\texample.invalid/gooo/ir-composition-revision2-original/case21_bl21_saved_range_predicates_option_a [build failed]\n"
+    },
+    {
+      "case_id": "bl21_saved_range_predicates",
+      "candidate_id": "option_c",
+      "package_status": "fail",
+      "expected_original_invalid": true,
+      "error": "FAIL\texample.invalid/gooo/ir-composition-revision2-original/case21_bl21_saved_range_predicates_option_c [build failed]\n"
+    },
+    {
+      "case_id": "bl23_nonzero_bounded_flag",
+      "candidate_id": "option_b",
+      "package_status": "fail",
+      "expected_original_invalid": true,
+      "error": "FAIL\texample.invalid/gooo/ir-composition-revision2-original/case23_bl23_nonzero_bounded_flag_option_b [build failed]\n"
+    }
+  ],
+  "stdout_sha256": "fbeef76e6df0f7923272c3bfaa8317f2cde9048dc319e69c27e24f183718c186",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "designs": {
+    "cc01_inclusive_band/option_a": {
+      "status": "compiled_and_executed",
+      "rows": [
+        {
+          "split": "training",
+          "input": -1,
+          "expected": -1,
+          "actual": -1
+        },
+        {
+          "split": "training",
+          "input": 2,
+          "expected": -1,
+          "actual": -1
+        },
+        {
+          "split": "training",
+          "input": 3,
+          "expected": 2,
+          "actual": 2
+        },
+        {
+          "split": "training",
+          "input": 8,
+          "expected": 2,
+          "actual": 2
+        },
+        {
+          "split": "training",
+          "input": 9,
+          "expected": -1,
+          "actual": -1
+        },
+        {
+          "split": "evaluation",
+          "input": -10,
+          "expected": -1,
+          "actual": -1
+        },
+        {
+          "split": "evaluation",
+          "input": 4,
+          "expected": 2,
+          "actual": 2
+        },
+        {
+          "split": "evaluation",
+          "input": 12,
+          "expected": -1,
+          "actual": -1
+        }
+      ],
+      "result_path": "evaluation/original-candidates/case01_cc01_inclusive_band_option_a/candidate-results.json"
+    },
+    "cc01_inclusive_band/option_b": {
+      "status": "compiled_and_executed",
+      "rows": [
+        {
+          "split": "training",
+          "input": -1,
+          "expected": -1,
+          "actual": -1
+        },
+        {
+          "split": "training",
+          "input": 2,
+          "expected": -1,
+          "actual": -1
+        },
+        {
+          "split": "training",
+          "input": 3,
+          "expected": 2,
+          "actual": -1
+        },
+        {
+          "split": "training",
+          "input": 8,
+          "expected": 2,
+          "actual": 2
+        },
+        {
+          "split": "training",
+          "input": 9,
+          "expected": -1,
+          "actual": -1
+        },
+        {
+          "split": "evaluation",
+          "input": -10,
+          "expected": -1,
+          "actual": -1
+        },
+        {
+          "split": "evaluation",
+          "input": 4,
+          "expected": 2,
+          "actual": 2
+        },
+        {
+          "split": "evaluation",
+          "input": 12,
+          "expected": -1,
+          "actual": -1
+        }
+      ],
+      "result_path": "evaluation/original-candidates/case01_cc01_inclusive_band_option_b/candidate-results.json"
+    },
+    "cc01_inclusive_band/option_c": {
+      "status": "compiled_and_executed",
+      "rows": [
+        {
+          "split": "training",
+          "input": -1,
+          "expected": -1,
+          "actual": -1
+        },
+        {
+          "split": "training",
+          "input": 2,
+          "expected": -1,
+          "actual": -1
+        },
+        {
+          "split": "training",
+          "input": 3,
+          "expected": 2,
+          "actual": 2
+        },
+        {
+          "split": "training",
+          "input": 8,
+          "expected": 2,
+          "actual": -1
+        },
+        {
+          "split": "training",
+          "input": 9,
+          "expected": -1,
+          "actual": -1
+        },
+        {
+          "split": "evaluation",
+          "input": -10,
+          "expected": -1,
+          "actual": -1
+        },
+        {
+          "split": "evaluation",
+          "input": 4,
+          "expected": 2,
+          "actual": 2
+        },
+        {
+          "split": "evaluation",
+          "input": 12,
+          "expected": -1,
+          "actual": -1
+        }
+      ],
+      "result_path": "evaluation/original-candidates/case01_cc01_inclusive_band_option_c/candidate-results.json"
+    },
+    "cc02_nonzero_disjunction/option_a": {
+      "status": "compiled_and_executed",
+      "rows": [
+        {
+          "split": "training",
+          "input": -1,
+          "expected": 1,
+          "actual": 0
+        },
+        {
+          "split": "training",
+          "input": 0,
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "split": "training",
+          "input": 1,
+          "expected": 1,
+          "actual": 0
+        },
+        {
+          "split": "evaluation",
+          "input": -7,
+          "expected": 1,
+          "actual": 0
+        },
+        {
+          "split": "evaluation",
+          "input": 12,
+          "expected": 1,
+          "actual": 0
+        }
+      ],
+      "result_path": "evaluation/original-candidates/case02_cc02_nonzero_disjunction_option_a/candidate-results.json"
+    },
+    "cc02_nonzero_disjunction/option_b": {
+      "status": "compiled_and_executed",
+      "rows": [
+        {
+          "split": "training",
+          "input": -1,
+          "expected": 1,
+          "actual": 0
+        },
+        {
+          "split": "training",
+          "input": 0,
+          "expected": 0,
+          "actual": 1
+        },
+        {
+          "split": "training",
+          "input": 1,
+          "expected": 1,
+          "actual": 1
+        },
+        {
+          "split": "evaluation",
+          "input": -7,
+          "expected": 1,
+          "actual": 0
+        },
+        {
+          "split": "evaluation",
+          "input": 12,
+          "expected": 1,
+          "actual": 1
+        }
+      ],
+      "result_path": "evaluation/original-candidates/case02_cc02_nonzero_disjunction_option_b/candidate-results.json"
+    },
+    "cc02_nonzero_disjunction/option_c": {
+      "status": "compiled_and_executed",
+      "rows": [
+        {
+          "split": "training",
+          "input": -1,
+          "expected": 1,
+          "actual": 1
+        },
+        {
+          "split": "training",
+          "input": 0,
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "split": "training",
+          "input": 1,
+          "expected": 1,
+          "actual": 1
+        },
+        {
+          "split": "evaluation",
+          "input": -7,
+          "expected": 1,
+          "actual": 1
+        },
+        {
+          "split": "evaluation",
+          "input": 12,
+          "expected": 1,
+          "actual": 1
+        }
+      ],
+      "result_path": "evaluation/original-candidates/case02_cc02_nonzero_disjunction_option_c/candidate-results.json"
+    },
+    "cc03_two_islands/option_a": {
+      "status": "compiled_and_executed",
+      "rows": [
+        {
+          "split": "training",
+          "input": -5,
+          "expected": 0,
+          "actual": 7
+        },
+        {
+          "split": "training",
+          "input": -4,
+          "expected": 7,
+          "actual": 0
+        },
+        {
+          "split": "training",
+          "input": 0,
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "split": "training",
+          "input": 4,
+          "expected": 7,
+          "actual": 0
+        },
+        {
+          "split": "training",
+          "input": 5,
+          "expected": 0,
+          "actual": 7
+        },
+        {
+          "split": "evaluation",
+          "input": -100,
+          "expected": 0,
+          "actual": 7
+        },
+        {
+          "split": "evaluation",
+          "input": 2,
+          "expected": 0,
+          "actual": 0
+        }
+      ],
+      "result_path": "evaluation/original-candidates/case03_cc03_two_islands_option_a/candidate-results.json"
+    },
+    "cc03_two_islands/option_b": {
+      "status": "compiled_and_executed",
+      "rows": [
+        {
+          "split": "training",
+          "input": -5,
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "split": "training",
+          "input": -4,
+          "expected": 7,
+          "actual": 7
+        },
+        {
+          "split": "training",
+          "input": 0,
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "split": "training",
+          "input": 4,
+          "expected": 7,
+          "actual": 7
+        },
+        {
+          "split": "training",
+          "input": 5,
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "split": "evaluation",
+          "input": -100,
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "split": "evaluation",
+          "input": 2,
+          "expected": 0,
+          "actual": 0
+        }
+      ],
+      "result_path": "evaluation/original-candidates/case03_cc03_two_islands_option_b/candidate-results.json"
+    },
+    "cc03_two_islands/option_c": {
+      "status": "compiled_and_executed",
+      "rows": [
+        {
+          "split": "training",
+          "input": -5,
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "split": "training",
+          "input": -4,
+          "expected": 7,
+          "actual": 7
+        },
+        {
+          "split": "training",
+          "input": 0,
+          "expected": 0,
+          "actual": 7
+        },
+        {
+          "split": "training",
+          "input": 4,
+          "expected": 7,
+          "actual": 7
+        },
+        {
+          "split": "training",
+          "input": 5,
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "split": "evaluation",
+          "input": -100,
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "split": "evaluation",
+          "input": 2,
+          "expected": 0,
+          "actual": 7
+        }
+      ],
+      "result_path": "evaluation/original-candidates/case03_cc03_two_islands_option_c/candidate-results.json"
+    },
+    "cc04_outer_cutoffs/option_a": {
+      "status": "compiled_and_executed",
+      "rows": [
+        {
+          "split": "training",
+          "input": -7,
+          "expected": 9,
+          "actual": 9
+        },
+        {
+          "split": "training",
+          "input": -6,
+          "expected": 9,
+          "actual": 9
+        },
+        {
+          "split": "training",
+          "input": -5,
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "split": "training",
+          "input": 7,
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "split": "training",
+          "input": 8,
+          "expected": 9,
+          "actual": 9
+        },
+        {
+          "split": "training",
+          "input": 9,
+          "expected": 9,
+          "actual": 9
+        },
+        {
+          "split": "evaluation",
+          "input": -100,
+          "expected": 9,
+          "actual": 9
+        },
+        {
+          "split": "evaluation",
+          "input": 0,
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "split": "evaluation",
+          "input": 100,
+          "expected": 9,
+          "actual": 9
+        }
+      ],
+      "result_path": "evaluation/original-candidates/case04_cc04_outer_cutoffs_option_a/candidate-results.json"
+    },
+    "cc04_outer_cutoffs/option_b": {
+      "status": "compiled_and_executed",
+      "rows": [
+        {
+          "split": "training",
+          "input": -7,
+          "expected": 9,
+          "actual": 0
+        },
+        {
+          "split": "training",
+          "input": -6,
+          "expected": 9,
+          "actual": 0
+        },
+        {
+          "split": "training",
+          "input": -5,
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "split": "training",
+          "input": 7,
+          "expected": 0,
+          "actual": 9
+        },
+        {
+          "split": "training",
+          "input": 8,
+          "expected": 9,
+          "actual": 9
+        },
+        {
+          "split": "training",
+          "input": 9,
+          "expected": 9,
+          "actual": 9
+        },
+        {
+          "split": "evaluation",
+          "input": -100,
+          "expected": 9,
+          "actual": 9
+        },
+        {
+          "split": "evaluation",
+          "input": 0,
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "split": "evaluation",
+          "input": 100,
+          "expected": 9,
+          "actual": 9
+        }
+      ],
+      "result_path": "evaluation/original-candidates/case04_cc04_outer_cutoffs_option_b/candidate-results.json"
+    },
+    "cc04_outer_cutoffs/option_c": {
+      "status": "compiled_and_executed",
+      "rows": [
+        {
+          "split": "training",
+          "input": -7,
+          "expected": 9,
+          "actual": 0
+        },
+        {
+          "split": "training",
+          "input": -6,
+          "expected": 9,
+          "actual": 0
+        },
+        {
+          "split": "training",
+          "input": -5,
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "split": "training",
+          "input": 7,
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "split": "training",
+          "input": 8,
+          "expected": 9,
+          "actual": 0
+        },
+        {
+          "split": "training",
+          "input": 9,
+          "expected": 9,
+          "actual": 0
+        },
+        {
+          "split": "evaluation",
+          "input": -100,
+          "expected": 9,
+          "actual": 0
+        },
+        {
+          "split": "evaluation",
+          "input": 0,
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "split": "evaluation",
+          "input": 100,
+          "expected": 9,
+          "actual": 0
+        }
+      ],
+      "result_path": "evaluation/original-candidates/case04_cc04_outer_cutoffs_option_c/candidate-results.json"
+    },
+    "ni05_negative_then_double/option_a": {
+      "status": "compiled_and_executed",
+      "rows": [
+        {
+          "split": "training",
+          "input": -1,
+          "expected": -1,
+          "actual": -1
+        },
+        {
+          "split": "training",
+          "input": 0,
+          "expected": 0,
+          "actual": 2
+        },
+        {
+          "split": "training",
+          "input": 1,
+          "expected": 2,
+          "actual": 3
+        },
+        {
+          "split": "training",
+          "input": 9,
+          "expected": 18,
+          "actual": 11
+        },
+        {
+          "split": "training",
+          "input": 10,
+          "expected": 20,
+          "actual": 20
+        },
+        {
+          "split": "evaluation",
+          "input": -5,
+          "expected": -1,
+          "actual": -1
+        },
+        {
+          "split": "evaluation",
+          "input": 5,
+          "expected": 10,
+          "actual": 7
+        },
+        {
+          "split": "evaluation",
+          "input": 11,
+          "expected": 20,
+          "actual": 20
+        }
+      ],
+      "result_path": "evaluation/original-candidates/case05_ni05_negative_then_double_option_a/candidate-results.json"
+    },
+    "ni05_negative_then_double/option_b": {
+      "status": "compiled_and_executed",
+      "rows": [
+        {
+          "split": "training",
+          "input": -1,
+          "expected": -1,
+          "actual": -1
+        },
+        {
+          "split": "training",
+          "input": 0,
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "split": "training",
+          "input": 1,
+          "expected": 2,
+          "actual": 3
+        },
+        {
+          "split": "training",
+          "input": 9,
+          "expected": 18,
+          "actual": 27
+        },
+        {
+          "split": "training",
+          "input": 10,
+          "expected": 20,
+          "actual": 20
+        },
+        {
+          "split": "evaluation",
+          "input": -5,
+          "expected": -1,
+          "actual": -1
+        },
+        {
+          "split": "evaluation",
+          "input": 5,
+          "expected": 10,
+          "actual": 15
+        },
+        {
+          "split": "evaluation",
+          "input": 11,
+          "expected": 20,
+          "actual": 20
+        }
+      ],
+      "result_path": "evaluation/original-candidates/case05_ni05_negative_then_double_option_b/candidate-results.json"
+    },
+    "ni05_negative_then_double/option_c": {
+      "status": "compiled_and_executed",
+      "rows": [
+        {
+          "split": "training",
+          "input": -1,
+          "expected": -1,
+          "actual": -1
+        },
+        {
+          "split": "training",
+          "input": 0,
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "split": "training",
+          "input": 1,
+          "expected": 2,
+          "actual": 2
+        },
+        {
+          "split": "training",
+          "input": 9,
+          "expected": 18,
+          "actual": 18
+        },
+        {
+          "split": "training",
+          "input": 10,
+          "expected": 20,
+          "actual": 20
+        },
+        {
+          "split": "evaluation",
+          "input": -5,
+          "expected": -1,
+          "actual": -1
+        },
+        {
+          "split": "evaluation",
+          "input": 5,
+          "expected": 10,
+          "actual": 10
+        },
+        {
+          "split": "evaluation",
+          "input": 11,
+          "expected": 20,
+          "actual": 20
+        }
+      ],
+      "result_path": "evaluation/original-candidates/case05_ni05_negative_then_double_option_c/candidate-results.json"
+    },
+    "ni06_surcharge_discount/option_a": {
+      "status": "compiled_and_executed",
+      "rows": [
+        {
+          "split": "training",
+          "input": -1,
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "split": "training",
+          "input": 0,
+          "expected": 10,
+          "actual": 11
+        },
+        {
+          "split": "training",
+          "input": 1,
+          "expected": 11,
+          "actual": 12
+        },
+        {
+          "split": "training",
+          "input": 100,
+          "expected": 110,
+          "actual": 111
+        },
+        {
+          "split": "training",
+          "input": 101,
+          "expected": 91,
+          "actual": 91
+        },
+        {
+          "split": "evaluation",
+          "input": -5,
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "split": "evaluation",
+          "input": 50,
+          "expected": 60,
+          "actual": 61
+        },
+        {
+          "split": "evaluation",
+          "input": 111,
+          "expected": 101,
+          "actual": 101
+        }
+      ],
+      "result_path": "evaluation/original-candidates/case06_ni06_surcharge_discount_option_a/candidate-results.json"
+    },
+    "ni06_surcharge_discount/option_b": {
+      "status": "compiled_and_executed",
+      "rows": [
+        {
+          "split": "training",
+          "input": -1,
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "split": "training",
+          "input": 0,
+          "expected": 10,
+          "actual": 10
+        },
+        {
+          "split": "training",
+          "input": 1,
+          "expected": 11,
+          "actual": 11
+        },
+        {
+          "split": "training",
+          "input": 100,
+          "expected": 110,
+          "actual": 110
+        },
+        {
+          "split": "training",
+          "input": 101,
+          "expected": 91,
+          "actual": 91
+        },
+        {
+          "split": "evaluation",
+          "input": -5,
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "split": "evaluation",
+          "input": 50,
+          "expected": 60,
+          "actual": 60
+        },
+        {
+          "split": "evaluation",
+          "input": 111,
+          "expected": 101,
+          "actual": 101
+        }
+      ],
+      "result_path": "evaluation/original-candidates/case06_ni06_surcharge_discount_option_b/candidate-results.json"
+    },
+    "ni06_surcharge_discount/option_c": {
+      "status": "compiled_and_executed",
+      "rows": [
+        {
+          "split": "training",
+          "input": -1,
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "split": "training",
+          "input": 0,
+          "expected": 10,
+          "actual": 9
+        },
+        {
+          "split": "training",
+          "input": 1,
+          "expected": 11,
+          "actual": 10
+        },
+        {
+          "split": "training",
+          "input": 100,
+          "expected": 110,
+          "actual": 109
+        },
+        {
+          "split": "training",
+          "input": 101,
+          "expected": 91,
+          "actual": 91
+        },
+        {
+          "split": "evaluation",
+          "input": -5,
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "split": "evaluation",
+          "input": 50,
+          "expected": 60,
+          "actual": 59
+        },
+        {
+          "split": "evaluation",
+          "input": 111,
+          "expected": 101,
+          "actual": 101
+        }
+      ],
+      "result_path": "evaluation/original-candidates/case06_ni06_surcharge_discount_option_c/candidate-results.json"
+    },
+    "ni07_zero_special_negative_offset/option_a": {
+      "status": "compiled_and_executed",
+      "rows": [
+        {
+          "split": "training",
+          "input": -2,
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "split": "training",
+          "input": -1,
+          "expected": 1,
+          "actual": 1
+        },
+        {
+          "split": "training",
+          "input": 0,
+          "expected": 5,
+          "actual": 5
+        },
+        {
+          "split": "training",
+          "input": 1,
+          "expected": 3,
+          "actual": 3
+        },
+        {
+          "split": "evaluation",
+          "input": -9,
+          "expected": -7,
+          "actual": -7
+        },
+        {
+          "split": "evaluation",
+          "input": 2,
+          "expected": 3,
+          "actual": 3
+        },
+        {
+          "split": "evaluation",
+          "input": 50,
+          "expected": 3,
+          "actual": 3
+        }
+      ],
+      "result_path": "evaluation/original-candidates/case07_ni07_zero_special_negative_offset_option_a/candidate-results.json"
+    },
+    "ni07_zero_special_negative_offset/option_b": {
+      "status": "compiled_and_executed",
+      "rows": [
+        {
+          "split": "training",
+          "input": -2,
+          "expected": 0,
+          "actual": -4
+        },
+        {
+          "split": "training",
+          "input": -1,
+          "expected": 1,
+          "actual": -3
+        },
+        {
+          "split": "training",
+          "input": 0,
+          "expected": 5,
+          "actual": 5
+        },
+        {
+          "split": "training",
+          "input": 1,
+          "expected": 3,
+          "actual": 3
+        },
+        {
+          "split": "evaluation",
+          "input": -9,
+          "expected": -7,
+          "actual": -11
+        },
+        {
+          "split": "evaluation",
+          "input": 2,
+          "expected": 3,
+          "actual": 3
+        },
+        {
+          "split": "evaluation",
+          "input": 50,
+          "expected": 3,
+          "actual": 3
+        }
+      ],
+      "result_path": "evaluation/original-candidates/case07_ni07_zero_special_negative_offset_option_b/candidate-results.json"
+    },
+    "ni07_zero_special_negative_offset/option_c": {
+      "status": "compiled_and_executed",
+      "rows": [
+        {
+          "split": "training",
+          "input": -2,
+          "expected": 0,
+          "actual": -1
+        },
+        {
+          "split": "training",
+          "input": -1,
+          "expected": 1,
+          "actual": 0
+        },
+        {
+          "split": "training",
+          "input": 0,
+          "expected": 5,
+          "actual": 5
+        },
+        {
+          "split": "training",
+          "input": 1,
+          "expected": 3,
+          "actual": 3
+        },
+        {
+          "split": "evaluation",
+          "input": -9,
+          "expected": -7,
+          "actual": -8
+        },
+        {
+          "split": "evaluation",
+          "input": 2,
+          "expected": 3,
+          "actual": 3
+        },
+        {
+          "split": "evaluation",
+          "input": 50,
+          "expected": 3,
+          "actual": 3
+        }
+      ],
+      "result_path": "evaluation/original-candidates/case07_ni07_zero_special_negative_offset_option_c/candidate-results.json"
+    },
+    "ni08_upper_grade_excess/option_a": {
+      "status": "compiled_and_executed",
+      "rows": [
+        {
+          "split": "training",
+          "input": 59,
+          "expected": -1,
+          "actual": -1
+        },
+        {
+          "split": "training",
+          "input": 60,
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "split": "training",
+          "input": 79,
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "split": "training",
+          "input": 80,
+          "expected": 0,
+          "actual": 1
+        },
+        {
+          "split": "training",
+          "input": 81,
+          "expected": 1,
+          "actual": 2
+        },
+        {
+          "split": "evaluation",
+          "input": -1,
+          "expected": -1,
+          "actual": -1
+        },
+        {
+          "split": "evaluation",
+          "input": 70,
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "split": "evaluation",
+          "input": 100,
+          "expected": 20,
+          "actual": 21
+        }
+      ],
+      "result_path": "evaluation/original-candidates/case08_ni08_upper_grade_excess_option_a/candidate-results.json"
+    },
+    "ni08_upper_grade_excess/option_b": {
+      "status": "compiled_and_executed",
+      "rows": [
+        {
+          "split": "training",
+          "input": 59,
+          "expected": -1,
+          "actual": -1
+        },
+        {
+          "split": "training",
+          "input": 60,
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "split": "training",
+          "input": 79,
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "split": "training",
+          "input": 80,
+          "expected": 0,
+          "actual": -1
+        },
+        {
+          "split": "training",
+          "input": 81,
+          "expected": 1,
+          "actual": 0
+        },
+        {
+          "split": "evaluation",
+          "input": -1,
+          "expected": -1,
+          "actual": -1
+        },
+        {
+          "split": "evaluation",
+          "input": 70,
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "split": "evaluation",
+          "input": 100,
+          "expected": 20,
+          "actual": 19
+        }
+      ],
+      "result_path": "evaluation/original-candidates/case08_ni08_upper_grade_excess_option_b/candidate-results.json"
+    },
+    "ni08_upper_grade_excess/option_c": {
+      "status": "compiled_and_executed",
+      "rows": [
+        {
+          "split": "training",
+          "input": 59,
+          "expected": -1,
+          "actual": -1
+        },
+        {
+          "split": "training",
+          "input": 60,
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "split": "training",
+          "input": 79,
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "split": "training",
+          "input": 80,
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "split": "training",
+          "input": 81,
+          "expected": 1,
+          "actual": 1
+        },
+        {
+          "split": "evaluation",
+          "input": -1,
+          "expected": -1,
+          "actual": -1
+        },
+        {
+          "split": "evaluation",
+          "input": 70,
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "split": "evaluation",
+          "input": 100,
+          "expected": 20,
+          "actual": 20
+        }
+      ],
+      "result_path": "evaluation/original-candidates/case08_ni08_upper_grade_excess_option_c/candidate-results.json"
+    },
+    "lr09_compound_total/option_a": {
+      "status": "compiled_and_executed",
+      "rows": [
+        {
+          "split": "training",
+          "input": -5,
+          "expected": 0,
+          "actual": 5
+        },
+        {
+          "split": "training",
+          "input": 0,
+          "expected": 10,
+          "actual": 10
+        },
+        {
+          "split": "training",
+          "input": 1,
+          "expected": 12,
+          "actual": 11
+        },
+        {
+          "split": "training",
+          "input": 4,
+          "expected": 18,
+          "actual": 14
+        },
+        {
+          "split": "evaluation",
+          "input": -10,
+          "expected": -10,
+          "actual": 0
+        },
+        {
+          "split": "evaluation",
+          "input": 8,
+          "expected": 26,
+          "actual": 18
+        },
+        {
+          "split": "evaluation",
+          "input": 10,
+          "expected": 30,
+          "actual": 20
+        }
+      ],
+      "result_path": "evaluation/original-candidates/case09_lr09_compound_total_option_a/candidate-results.json"
+    },
+    "lr09_compound_total/option_b": {
+      "status": "compiled_and_executed",
+      "rows": [
+        {
+          "split": "training",
+          "input": -5,
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "split": "training",
+          "input": 0,
+          "expected": 10,
+          "actual": 10
+        },
+        {
+          "split": "training",
+          "input": 1,
+          "expected": 12,
+          "actual": 12
+        },
+        {
+          "split": "training",
+          "input": 4,
+          "expected": 18,
+          "actual": 18
+        },
+        {
+          "split": "evaluation",
+          "input": -10,
+          "expected": -10,
+          "actual": -10
+        },
+        {
+          "split": "evaluation",
+          "input": 8,
+          "expected": 26,
+          "actual": 26
+        },
+        {
+          "split": "evaluation",
+          "input": 10,
+          "expected": 30,
+          "actual": 30
+        }
+      ],
+      "result_path": "evaluation/original-candidates/case09_lr09_compound_total_option_b/candidate-results.json"
+    },
+    "lr09_compound_total/option_c": {
+      "status": "compiled_and_executed",
+      "rows": [
+        {
+          "split": "training",
+          "input": -5,
+          "expected": 0,
+          "actual": -5
+        },
+        {
+          "split": "training",
+          "input": 0,
+          "expected": 10,
+          "actual": 5
+        },
+        {
+          "split": "training",
+          "input": 1,
+          "expected": 12,
+          "actual": 7
+        },
+        {
+          "split": "training",
+          "input": 4,
+          "expected": 18,
+          "actual": 13
+        },
+        {
+          "split": "evaluation",
+          "input": -10,
+          "expected": -10,
+          "actual": -15
+        },
+        {
+          "split": "evaluation",
+          "input": 8,
+          "expected": 26,
+          "actual": 21
+        },
+        {
+          "split": "evaluation",
+          "input": 10,
+          "expected": 30,
+          "actual": 25
+        }
+      ],
+      "result_path": "evaluation/original-candidates/case09_lr09_compound_total_option_c/candidate-results.json"
+    },
+    "lr10_floor_then_increment/option_a": {
+      "status": "compiled_and_executed",
+      "rows": [
+        {
+          "split": "training",
+          "input": -1,
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "split": "training",
+          "input": 0,
+          "expected": 1,
+          "actual": 1
+        },
+        {
+          "split": "training",
+          "input": 1,
+          "expected": 2,
+          "actual": 2
+        },
+        {
+          "split": "training",
+          "input": 5,
+          "expected": 6,
+          "actual": 6
+        },
+        {
+          "split": "evaluation",
+          "input": -10,
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "split": "evaluation",
+          "input": 4,
+          "expected": 5,
+          "actual": 5
+        },
+        {
+          "split": "evaluation",
+          "input": 20,
+          "expected": 21,
+          "actual": 21
+        }
+      ],
+      "result_path": "evaluation/original-candidates/case10_lr10_floor_then_increment_option_a/candidate-results.json"
+    },
+    "lr10_floor_then_increment/option_b": {
+      "status": "compiled_and_executed",
+      "rows": [
+        {
+          "split": "training",
+          "input": -1,
+          "expected": 0,
+          "actual": -1
+        },
+        {
+          "split": "training",
+          "input": 0,
+          "expected": 1,
+          "actual": 0
+        },
+        {
+          "split": "training",
+          "input": 1,
+          "expected": 2,
+          "actual": 1
+        },
+        {
+          "split": "training",
+          "input": 5,
+          "expected": 6,
+          "actual": 5
+        },
+        {
+          "split": "evaluation",
+          "input": -10,
+          "expected": 0,
+          "actual": -10
+        },
+        {
+          "split": "evaluation",
+          "input": 4,
+          "expected": 5,
+          "actual": 4
+        },
+        {
+          "split": "evaluation",
+          "input": 20,
+          "expected": 21,
+          "actual": 20
+        }
+      ],
+      "result_path": "evaluation/original-candidates/case10_lr10_floor_then_increment_option_b/candidate-results.json"
+    },
+    "lr10_floor_then_increment/option_c": {
+      "status": "compiled_and_executed",
+      "rows": [
+        {
+          "split": "training",
+          "input": -1,
+          "expected": 0,
+          "actual": 1
+        },
+        {
+          "split": "training",
+          "input": 0,
+          "expected": 1,
+          "actual": 2
+        },
+        {
+          "split": "training",
+          "input": 1,
+          "expected": 2,
+          "actual": 3
+        },
+        {
+          "split": "training",
+          "input": 5,
+          "expected": 6,
+          "actual": 7
+        },
+        {
+          "split": "evaluation",
+          "input": -10,
+          "expected": 0,
+          "actual": 1
+        },
+        {
+          "split": "evaluation",
+          "input": 4,
+          "expected": 5,
+          "actual": 6
+        },
+        {
+          "split": "evaluation",
+          "input": 20,
+          "expected": 21,
+          "actual": 22
+        }
+      ],
+      "result_path": "evaluation/original-candidates/case10_lr10_floor_then_increment_option_c/candidate-results.json"
+    },
+    "lr11_nonnegative_doubled_score/option_a": {
+      "status": "compiled_and_executed",
+      "rows": [
+        {
+          "split": "training",
+          "input": -2,
+          "expected": 0,
+          "actual": -3
+        },
+        {
+          "split": "training",
+          "input": -1,
+          "expected": 0,
+          "actual": -1
+        },
+        {
+          "split": "training",
+          "input": 0,
+          "expected": 1,
+          "actual": 1
+        },
+        {
+          "split": "training",
+          "input": 2,
+          "expected": 5,
+          "actual": 5
+        },
+        {
+          "split": "evaluation",
+          "input": -10,
+          "expected": 0,
+          "actual": -19
+        },
+        {
+          "split": "evaluation",
+          "input": 3,
+          "expected": 7,
+          "actual": 7
+        },
+        {
+          "split": "evaluation",
+          "input": 10,
+          "expected": 21,
+          "actual": 21
+        }
+      ],
+      "result_path": "evaluation/original-candidates/case11_lr11_nonnegative_doubled_score_option_a/candidate-results.json"
+    },
+    "lr11_nonnegative_doubled_score/option_b": {
+      "status": "compiled_and_executed",
+      "rows": [
+        {
+          "split": "training",
+          "input": -2,
+          "expected": 0,
+          "actual": -2
+        },
+        {
+          "split": "training",
+          "input": -1,
+          "expected": 0,
+          "actual": -1
+        },
+        {
+          "split": "training",
+          "input": 0,
+          "expected": 1,
+          "actual": 0
+        },
+        {
+          "split": "training",
+          "input": 2,
+          "expected": 5,
+          "actual": 2
+        },
+        {
+          "split": "evaluation",
+          "input": -10,
+          "expected": 0,
+          "actual": -10
+        },
+        {
+          "split": "evaluation",
+          "input": 3,
+          "expected": 7,
+          "actual": 3
+        },
+        {
+          "split": "evaluation",
+          "input": 10,
+          "expected": 21,
+          "actual": 10
+        }
+      ],
+      "result_path": "evaluation/original-candidates/case11_lr11_nonnegative_doubled_score_option_b/candidate-results.json"
+    },
+    "lr11_nonnegative_doubled_score/option_c": {
+      "status": "compiled_and_executed",
+      "rows": [
+        {
+          "split": "training",
+          "input": -2,
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "split": "training",
+          "input": -1,
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "split": "training",
+          "input": 0,
+          "expected": 1,
+          "actual": 1
+        },
+        {
+          "split": "training",
+          "input": 2,
+          "expected": 5,
+          "actual": 5
+        },
+        {
+          "split": "evaluation",
+          "input": -10,
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "split": "evaluation",
+          "input": 3,
+          "expected": 7,
+          "actual": 7
+        },
+        {
+          "split": "evaluation",
+          "input": 10,
+          "expected": 21,
+          "actual": 21
+        }
+      ],
+      "result_path": "evaluation/original-candidates/case11_lr11_nonnegative_doubled_score_option_c/candidate-results.json"
+    },
+    "lr12_cap_after_adjustment/option_a": {
+      "status": "compiled_and_executed",
+      "rows": [
+        {
+          "split": "training",
+          "input": -5,
+          "expected": -3,
+          "actual": -2
+        },
+        {
+          "split": "training",
+          "input": 0,
+          "expected": 2,
+          "actual": 3
+        },
+        {
+          "split": "training",
+          "input": 7,
+          "expected": 9,
+          "actual": 10
+        },
+        {
+          "split": "training",
+          "input": 8,
+          "expected": 9,
+          "actual": 10
+        },
+        {
+          "split": "evaluation",
+          "input": -20,
+          "expected": -18,
+          "actual": -17
+        },
+        {
+          "split": "evaluation",
+          "input": 10,
+          "expected": 9,
+          "actual": 10
+        },
+        {
+          "split": "evaluation",
+          "input": 100,
+          "expected": 9,
+          "actual": 10
+        }
+      ],
+      "result_path": "evaluation/original-candidates/case12_lr12_cap_after_adjustment_option_a/candidate-results.json"
+    },
+    "lr12_cap_after_adjustment/option_b": {
+      "status": "compiled_and_executed",
+      "rows": [
+        {
+          "split": "training",
+          "input": -5,
+          "expected": -3,
+          "actual": -3
+        },
+        {
+          "split": "training",
+          "input": 0,
+          "expected": 2,
+          "actual": 2
+        },
+        {
+          "split": "training",
+          "input": 7,
+          "expected": 9,
+          "actual": 9
+        },
+        {
+          "split": "training",
+          "input": 8,
+          "expected": 9,
+          "actual": 9
+        },
+        {
+          "split": "evaluation",
+          "input": -20,
+          "expected": -18,
+          "actual": -18
+        },
+        {
+          "split": "evaluation",
+          "input": 10,
+          "expected": 9,
+          "actual": 9
+        },
+        {
+          "split": "evaluation",
+          "input": 100,
+          "expected": 9,
+          "actual": 9
+        }
+      ],
+      "result_path": "evaluation/original-candidates/case12_lr12_cap_after_adjustment_option_b/candidate-results.json"
+    },
+    "lr12_cap_after_adjustment/option_c": {
+      "status": "compiled_and_executed",
+      "rows": [
+        {
+          "split": "training",
+          "input": -5,
+          "expected": -3,
+          "actual": -3
+        },
+        {
+          "split": "training",
+          "input": 0,
+          "expected": 2,
+          "actual": 2
+        },
+        {
+          "split": "training",
+          "input": 7,
+          "expected": 9,
+          "actual": 9
+        },
+        {
+          "split": "training",
+          "input": 8,
+          "expected": 9,
+          "actual": 10
+        },
+        {
+          "split": "evaluation",
+          "input": -20,
+          "expected": -18,
+          "actual": -18
+        },
+        {
+          "split": "evaluation",
+          "input": 10,
+          "expected": 9,
+          "actual": 12
+        },
+        {
+          "split": "evaluation",
+          "input": 100,
+          "expected": 9,
+          "actual": 102
+        }
+      ],
+      "result_path": "evaluation/original-candidates/case12_lr12_cap_after_adjustment_option_c/candidate-results.json"
+    },
+    "pr13_subtract_tripled_sum/option_a": {
+      "status": "compiled_and_executed",
+      "rows": [
+        {
+          "split": "training",
+          "input": -2,
+          "expected": 100,
+          "actual": 100
+        },
+        {
+          "split": "training",
+          "input": 0,
+          "expected": 94,
+          "actual": 94
+        },
+        {
+          "split": "training",
+          "input": 3,
+          "expected": 85,
+          "actual": 85
+        },
+        {
+          "split": "training",
+          "input": 5,
+          "expected": 79,
+          "actual": 79
+        },
+        {
+          "split": "evaluation",
+          "input": -10,
+          "expected": 124,
+          "actual": 124
+        },
+        {
+          "split": "evaluation",
+          "input": 7,
+          "expected": 73,
+          "actual": 73
+        },
+        {
+          "split": "evaluation",
+          "input": 20,
+          "expected": 34,
+          "actual": 34
+        }
+      ],
+      "result_path": "evaluation/original-candidates/case13_pr13_subtract_tripled_sum_option_a/candidate-results.json"
+    },
+    "pr13_subtract_tripled_sum/option_b": {
+      "status": "compiled_and_executed",
+      "rows": [
+        {
+          "split": "training",
+          "input": -2,
+          "expected": 100,
+          "actual": 97
+        },
+        {
+          "split": "training",
+          "input": 0,
+          "expected": 94,
+          "actual": 91
+        },
+        {
+          "split": "training",
+          "input": 3,
+          "expected": 85,
+          "actual": 82
+        },
+        {
+          "split": "training",
+          "input": 5,
+          "expected": 79,
+          "actual": 76
+        },
+        {
+          "split": "evaluation",
+          "input": -10,
+          "expected": 124,
+          "actual": 121
+        },
+        {
+          "split": "evaluation",
+          "input": 7,
+          "expected": 73,
+          "actual": 70
+        },
+        {
+          "split": "evaluation",
+          "input": 20,
+          "expected": 34,
+          "actual": 31
+        }
+      ],
+      "result_path": "evaluation/original-candidates/case13_pr13_subtract_tripled_sum_option_b/candidate-results.json"
+    },
+    "pr13_subtract_tripled_sum/option_c": {
+      "status": "compiled_and_executed",
+      "rows": [
+        {
+          "split": "training",
+          "input": -2,
+          "expected": 100,
+          "actual": 112
+        },
+        {
+          "split": "training",
+          "input": 0,
+          "expected": 94,
+          "actual": 106
+        },
+        {
+          "split": "training",
+          "input": 3,
+          "expected": 85,
+          "actual": 97
+        },
+        {
+          "split": "training",
+          "input": 5,
+          "expected": 79,
+          "actual": 91
+        },
+        {
+          "split": "evaluation",
+          "input": -10,
+          "expected": 124,
+          "actual": 136
+        },
+        {
+          "split": "evaluation",
+          "input": 7,
+          "expected": 73,
+          "actual": 85
+        },
+        {
+          "split": "evaluation",
+          "input": 20,
+          "expected": 34,
+          "actual": 46
+        }
+      ],
+      "result_path": "evaluation/original-candidates/case13_pr13_subtract_tripled_sum_option_c/candidate-results.json"
+    },
+    "pr14_product_neighbor_factors/option_a": {
+      "status": "compiled_and_executed",
+      "rows": [
+        {
+          "split": "training",
+          "input": -3,
+          "expected": 25,
+          "actual": 35
+        },
+        {
+          "split": "training",
+          "input": 0,
+          "expected": -2,
+          "actual": 2
+        },
+        {
+          "split": "training",
+          "input": 2,
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "split": "training",
+          "input": 5,
+          "expected": 33,
+          "actual": 27
+        },
+        {
+          "split": "evaluation",
+          "input": -10,
+          "expected": 228,
+          "actual": 252
+        },
+        {
+          "split": "evaluation",
+          "input": 4,
+          "expected": 18,
+          "actual": 14
+        },
+        {
+          "split": "evaluation",
+          "input": 10,
+          "expected": 168,
+          "actual": 152
+        }
+      ],
+      "result_path": "evaluation/original-candidates/case14_pr14_product_neighbor_factors_option_a/candidate-results.json"
+    },
+    "pr14_product_neighbor_factors/option_b": {
+      "status": "compiled_and_executed",
+      "rows": [
+        {
+          "split": "training",
+          "input": -3,
+          "expected": 25,
+          "actual": 30
+        },
+        {
+          "split": "training",
+          "input": 0,
+          "expected": -2,
+          "actual": 0
+        },
+        {
+          "split": "training",
+          "input": 2,
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "split": "training",
+          "input": 5,
+          "expected": 33,
+          "actual": 30
+        },
+        {
+          "split": "evaluation",
+          "input": -10,
+          "expected": 228,
+          "actual": 240
+        },
+        {
+          "split": "evaluation",
+          "input": 4,
+          "expected": 18,
+          "actual": 16
+        },
+        {
+          "split": "evaluation",
+          "input": 10,
+          "expected": 168,
+          "actual": 160
+        }
+      ],
+      "result_path": "evaluation/original-candidates/case14_pr14_product_neighbor_factors_option_b/candidate-results.json"
+    },
+    "pr14_product_neighbor_factors/option_c": {
+      "status": "compiled_and_executed",
+      "rows": [
+        {
+          "split": "training",
+          "input": -3,
+          "expected": 25,
+          "actual": 25
+        },
+        {
+          "split": "training",
+          "input": 0,
+          "expected": -2,
+          "actual": -2
+        },
+        {
+          "split": "training",
+          "input": 2,
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "split": "training",
+          "input": 5,
+          "expected": 33,
+          "actual": 33
+        },
+        {
+          "split": "evaluation",
+          "input": -10,
+          "expected": 228,
+          "actual": 228
+        },
+        {
+          "split": "evaluation",
+          "input": 4,
+          "expected": 18,
+          "actual": 18
+        },
+        {
+          "split": "evaluation",
+          "input": 10,
+          "expected": 168,
+          "actual": 168
+        }
+      ],
+      "result_path": "evaluation/original-candidates/case14_pr14_product_neighbor_factors_option_c/candidate-results.json"
+    },
+    "pr15_square_minus_successor_sum/option_a": {
+      "status": "compiled_and_executed",
+      "rows": [
+        {
+          "split": "training",
+          "input": -2,
+          "expected": 2,
+          "actual": 10
+        },
+        {
+          "split": "training",
+          "input": 0,
+          "expected": -4,
+          "actual": 4
+        },
+        {
+          "split": "training",
+          "input": 3,
+          "expected": 2,
+          "actual": 10
+        },
+        {
+          "split": "training",
+          "input": 6,
+          "expected": 26,
+          "actual": 34
+        },
+        {
+          "split": "evaluation",
+          "input": -10,
+          "expected": 106,
+          "actual": 114
+        },
+        {
+          "split": "evaluation",
+          "input": 5,
+          "expected": 16,
+          "actual": 24
+        },
+        {
+          "split": "evaluation",
+          "input": 20,
+          "expected": 376,
+          "actual": 384
+        }
+      ],
+      "result_path": "evaluation/original-candidates/case15_pr15_square_minus_successor_sum_option_a/candidate-results.json"
+    },
+    "pr15_square_minus_successor_sum/option_b": {
+      "status": "compiled_and_executed",
+      "rows": [
+        {
+          "split": "training",
+          "input": -2,
+          "expected": 2,
+          "actual": 2
+        },
+        {
+          "split": "training",
+          "input": 0,
+          "expected": -4,
+          "actual": -4
+        },
+        {
+          "split": "training",
+          "input": 3,
+          "expected": 2,
+          "actual": 2
+        },
+        {
+          "split": "training",
+          "input": 6,
+          "expected": 26,
+          "actual": 26
+        },
+        {
+          "split": "evaluation",
+          "input": -10,
+          "expected": 106,
+          "actual": 106
+        },
+        {
+          "split": "evaluation",
+          "input": 5,
+          "expected": 16,
+          "actual": 16
+        },
+        {
+          "split": "evaluation",
+          "input": 20,
+          "expected": 376,
+          "actual": 376
+        }
+      ],
+      "result_path": "evaluation/original-candidates/case15_pr15_square_minus_successor_sum_option_b/candidate-results.json"
+    },
+    "pr15_square_minus_successor_sum/option_c": {
+      "status": "compiled_and_executed",
+      "rows": [
+        {
+          "split": "training",
+          "input": -2,
+          "expected": 2,
+          "actual": 4
+        },
+        {
+          "split": "training",
+          "input": 0,
+          "expected": -4,
+          "actual": -2
+        },
+        {
+          "split": "training",
+          "input": 3,
+          "expected": 2,
+          "actual": 4
+        },
+        {
+          "split": "training",
+          "input": 6,
+          "expected": 26,
+          "actual": 28
+        },
+        {
+          "split": "evaluation",
+          "input": -10,
+          "expected": 106,
+          "actual": 108
+        },
+        {
+          "split": "evaluation",
+          "input": 5,
+          "expected": 16,
+          "actual": 18
+        },
+        {
+          "split": "evaluation",
+          "input": 20,
+          "expected": 376,
+          "actual": 378
+        }
+      ],
+      "result_path": "evaluation/original-candidates/case15_pr15_square_minus_successor_sum_option_c/candidate-results.json"
+    },
+    "pr16_composed_neighbor_product/option_a": {
+      "status": "compiled_and_executed",
+      "rows": [
+        {
+          "split": "training",
+          "input": -3,
+          "expected": 5,
+          "actual": 5
+        },
+        {
+          "split": "training",
+          "input": 0,
+          "expected": 2,
+          "actual": 2
+        },
+        {
+          "split": "training",
+          "input": 2,
+          "expected": 10,
+          "actual": 10
+        },
+        {
+          "split": "training",
+          "input": 5,
+          "expected": 37,
+          "actual": 37
+        },
+        {
+          "split": "evaluation",
+          "input": -10,
+          "expected": 82,
+          "actual": 82
+        },
+        {
+          "split": "evaluation",
+          "input": 4,
+          "expected": 26,
+          "actual": 26
+        },
+        {
+          "split": "evaluation",
+          "input": 12,
+          "expected": 170,
+          "actual": 170
+        }
+      ],
+      "result_path": "evaluation/original-candidates/case16_pr16_composed_neighbor_product_option_a/candidate-results.json"
+    },
+    "pr16_composed_neighbor_product/option_b": {
+      "status": "compiled_and_executed",
+      "rows": [
+        {
+          "split": "training",
+          "input": -3,
+          "expected": 5,
+          "actual": 7
+        },
+        {
+          "split": "training",
+          "input": 0,
+          "expected": 2,
+          "actual": 1
+        },
+        {
+          "split": "training",
+          "input": 2,
+          "expected": 10,
+          "actual": 7
+        },
+        {
+          "split": "training",
+          "input": 5,
+          "expected": 37,
+          "actual": 31
+        },
+        {
+          "split": "evaluation",
+          "input": -10,
+          "expected": 82,
+          "actual": 91
+        },
+        {
+          "split": "evaluation",
+          "input": 4,
+          "expected": 26,
+          "actual": 21
+        },
+        {
+          "split": "evaluation",
+          "input": 12,
+          "expected": 170,
+          "actual": 157
+        }
+      ],
+      "result_path": "evaluation/original-candidates/case16_pr16_composed_neighbor_product_option_b/candidate-results.json"
+    },
+    "pr16_composed_neighbor_product/option_c": {
+      "status": "compiled_and_executed",
+      "rows": [
+        {
+          "split": "training",
+          "input": -3,
+          "expected": 5,
+          "actual": 3
+        },
+        {
+          "split": "training",
+          "input": 0,
+          "expected": 2,
+          "actual": 3
+        },
+        {
+          "split": "training",
+          "input": 2,
+          "expected": 10,
+          "actual": 13
+        },
+        {
+          "split": "training",
+          "input": 5,
+          "expected": 37,
+          "actual": 43
+        },
+        {
+          "split": "evaluation",
+          "input": -10,
+          "expected": 82,
+          "actual": 73
+        },
+        {
+          "split": "evaluation",
+          "input": 4,
+          "expected": 26,
+          "actual": 31
+        },
+        {
+          "split": "evaluation",
+          "input": 12,
+          "expected": 170,
+          "actual": 183
+        }
+      ],
+      "result_path": "evaluation/original-candidates/case16_pr16_composed_neighbor_product_option_c/candidate-results.json"
+    },
+    "cp17_nonpositive_inclusive/option_a": {
+      "status": "compiled_and_executed",
+      "rows": [
+        {
+          "split": "training",
+          "input": -1,
+          "expected": 1,
+          "actual": 1
+        },
+        {
+          "split": "training",
+          "input": 0,
+          "expected": 1,
+          "actual": 0
+        },
+        {
+          "split": "training",
+          "input": 1,
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "split": "evaluation",
+          "input": -9,
+          "expected": 1,
+          "actual": 1
+        },
+        {
+          "split": "evaluation",
+          "input": 5,
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "split": "evaluation",
+          "input": 10,
+          "expected": 0,
+          "actual": 0
+        }
+      ],
+      "result_path": "evaluation/original-candidates/case17_cp17_nonpositive_inclusive_option_a/candidate-results.json"
+    },
+    "cp17_nonpositive_inclusive/option_b": {
+      "status": "compiled_and_executed",
+      "rows": [
+        {
+          "split": "training",
+          "input": -1,
+          "expected": 1,
+          "actual": 0
+        },
+        {
+          "split": "training",
+          "input": 0,
+          "expected": 1,
+          "actual": 1
+        },
+        {
+          "split": "training",
+          "input": 1,
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "split": "evaluation",
+          "input": -9,
+          "expected": 1,
+          "actual": 0
+        },
+        {
+          "split": "evaluation",
+          "input": 5,
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "split": "evaluation",
+          "input": 10,
+          "expected": 0,
+          "actual": 0
+        }
+      ],
+      "result_path": "evaluation/original-candidates/case17_cp17_nonpositive_inclusive_option_b/candidate-results.json"
+    },
+    "cp17_nonpositive_inclusive/option_c": {
+      "status": "compiled_and_executed",
+      "rows": [
+        {
+          "split": "training",
+          "input": -1,
+          "expected": 1,
+          "actual": 1
+        },
+        {
+          "split": "training",
+          "input": 0,
+          "expected": 1,
+          "actual": 1
+        },
+        {
+          "split": "training",
+          "input": 1,
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "split": "evaluation",
+          "input": -9,
+          "expected": 1,
+          "actual": 1
+        },
+        {
+          "split": "evaluation",
+          "input": 5,
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "split": "evaluation",
+          "input": 10,
+          "expected": 0,
+          "actual": 0
+        }
+      ],
+      "result_path": "evaluation/original-candidates/case17_cp17_nonpositive_inclusive_option_c/candidate-results.json"
+    },
+    "cp18_exact_release_code/option_a": {
+      "status": "compiled_and_executed",
+      "rows": [
+        {
+          "split": "training",
+          "input": 6,
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "split": "training",
+          "input": 7,
+          "expected": 1,
+          "actual": 0
+        },
+        {
+          "split": "training",
+          "input": 8,
+          "expected": 0,
+          "actual": 1
+        },
+        {
+          "split": "evaluation",
+          "input": 0,
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "split": "evaluation",
+          "input": 9,
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "split": "evaluation",
+          "input": 100,
+          "expected": 0,
+          "actual": 0
+        }
+      ],
+      "result_path": "evaluation/original-candidates/case18_cp18_exact_release_code_option_a/candidate-results.json"
+    },
+    "cp18_exact_release_code/option_b": {
+      "status": "compiled_and_executed",
+      "rows": [
+        {
+          "split": "training",
+          "input": 6,
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "split": "training",
+          "input": 7,
+          "expected": 1,
+          "actual": 1
+        },
+        {
+          "split": "training",
+          "input": 8,
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "split": "evaluation",
+          "input": 0,
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "split": "evaluation",
+          "input": 9,
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "split": "evaluation",
+          "input": 100,
+          "expected": 0,
+          "actual": 0
+        }
+      ],
+      "result_path": "evaluation/original-candidates/case18_cp18_exact_release_code_option_b/candidate-results.json"
+    },
+    "cp18_exact_release_code/option_c": {
+      "status": "compiled_and_executed",
+      "rows": [
+        {
+          "split": "training",
+          "input": 6,
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "split": "training",
+          "input": 7,
+          "expected": 1,
+          "actual": 1
+        },
+        {
+          "split": "training",
+          "input": 8,
+          "expected": 0,
+          "actual": 1
+        },
+        {
+          "split": "evaluation",
+          "input": 0,
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "split": "evaluation",
+          "input": 9,
+          "expected": 0,
+          "actual": 1
+        },
+        {
+          "split": "evaluation",
+          "input": 100,
+          "expected": 0,
+          "actual": 1
+        }
+      ],
+      "result_path": "evaluation/original-candidates/case18_cp18_exact_release_code_option_c/candidate-results.json"
+    },
+    "cp19_range_without_origin/option_a": {
+      "status": "compiled_and_executed",
+      "rows": [
+        {
+          "split": "training",
+          "input": -4,
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "split": "training",
+          "input": -3,
+          "expected": 1,
+          "actual": 1
+        },
+        {
+          "split": "training",
+          "input": 0,
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "split": "training",
+          "input": 3,
+          "expected": 1,
+          "actual": 1
+        },
+        {
+          "split": "training",
+          "input": 4,
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "split": "evaluation",
+          "input": -100,
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "split": "evaluation",
+          "input": 2,
+          "expected": 1,
+          "actual": 1
+        },
+        {
+          "split": "evaluation",
+          "input": 100,
+          "expected": 0,
+          "actual": 0
+        }
+      ],
+      "result_path": "evaluation/original-candidates/case19_cp19_range_without_origin_option_a/candidate-results.json"
+    },
+    "cp19_range_without_origin/option_b": {
+      "status": "compiled_and_executed",
+      "rows": [
+        {
+          "split": "training",
+          "input": -4,
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "split": "training",
+          "input": -3,
+          "expected": 1,
+          "actual": 1
+        },
+        {
+          "split": "training",
+          "input": 0,
+          "expected": 0,
+          "actual": 1
+        },
+        {
+          "split": "training",
+          "input": 3,
+          "expected": 1,
+          "actual": 1
+        },
+        {
+          "split": "training",
+          "input": 4,
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "split": "evaluation",
+          "input": -100,
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "split": "evaluation",
+          "input": 2,
+          "expected": 1,
+          "actual": 1
+        },
+        {
+          "split": "evaluation",
+          "input": 100,
+          "expected": 0,
+          "actual": 0
+        }
+      ],
+      "result_path": "evaluation/original-candidates/case19_cp19_range_without_origin_option_b/candidate-results.json"
+    },
+    "cp19_range_without_origin/option_c": {
+      "status": "compiled_and_executed",
+      "rows": [
+        {
+          "split": "training",
+          "input": -4,
+          "expected": 0,
+          "actual": 1
+        },
+        {
+          "split": "training",
+          "input": -3,
+          "expected": 1,
+          "actual": 0
+        },
+        {
+          "split": "training",
+          "input": 0,
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "split": "training",
+          "input": 3,
+          "expected": 1,
+          "actual": 0
+        },
+        {
+          "split": "training",
+          "input": 4,
+          "expected": 0,
+          "actual": 1
+        },
+        {
+          "split": "evaluation",
+          "input": -100,
+          "expected": 0,
+          "actual": 1
+        },
+        {
+          "split": "evaluation",
+          "input": 2,
+          "expected": 1,
+          "actual": 0
+        },
+        {
+          "split": "evaluation",
+          "input": 100,
+          "expected": 0,
+          "actual": 1
+        }
+      ],
+      "result_path": "evaluation/original-candidates/case19_cp19_range_without_origin_option_c/candidate-results.json"
+    },
+    "cp20_strict_symmetric_window/option_a": {
+      "status": "compiled_and_executed",
+      "rows": [
+        {
+          "split": "training",
+          "input": -6,
+          "expected": -4,
+          "actual": -4
+        },
+        {
+          "split": "training",
+          "input": -5,
+          "expected": -4,
+          "actual": 4
+        },
+        {
+          "split": "training",
+          "input": -4,
+          "expected": 4,
+          "actual": 4
+        },
+        {
+          "split": "training",
+          "input": 4,
+          "expected": 4,
+          "actual": 4
+        },
+        {
+          "split": "training",
+          "input": 5,
+          "expected": -4,
+          "actual": 4
+        },
+        {
+          "split": "training",
+          "input": 6,
+          "expected": -4,
+          "actual": -4
+        },
+        {
+          "split": "evaluation",
+          "input": -100,
+          "expected": -4,
+          "actual": -4
+        },
+        {
+          "split": "evaluation",
+          "input": 0,
+          "expected": 4,
+          "actual": 4
+        },
+        {
+          "split": "evaluation",
+          "input": 100,
+          "expected": -4,
+          "actual": -4
+        }
+      ],
+      "result_path": "evaluation/original-candidates/case20_cp20_strict_symmetric_window_option_a/candidate-results.json"
+    },
+    "cp20_strict_symmetric_window/option_b": {
+      "status": "compiled_and_executed",
+      "rows": [
+        {
+          "split": "training",
+          "input": -6,
+          "expected": -4,
+          "actual": -4
+        },
+        {
+          "split": "training",
+          "input": -5,
+          "expected": -4,
+          "actual": -4
+        },
+        {
+          "split": "training",
+          "input": -4,
+          "expected": 4,
+          "actual": 4
+        },
+        {
+          "split": "training",
+          "input": 4,
+          "expected": 4,
+          "actual": 4
+        },
+        {
+          "split": "training",
+          "input": 5,
+          "expected": -4,
+          "actual": 4
+        },
+        {
+          "split": "training",
+          "input": 6,
+          "expected": -4,
+          "actual": -4
+        },
+        {
+          "split": "evaluation",
+          "input": -100,
+          "expected": -4,
+          "actual": -4
+        },
+        {
+          "split": "evaluation",
+          "input": 0,
+          "expected": 4,
+          "actual": 4
+        },
+        {
+          "split": "evaluation",
+          "input": 100,
+          "expected": -4,
+          "actual": -4
+        }
+      ],
+      "result_path": "evaluation/original-candidates/case20_cp20_strict_symmetric_window_option_b/candidate-results.json"
+    },
+    "cp20_strict_symmetric_window/option_c": {
+      "status": "compiled_and_executed",
+      "rows": [
+        {
+          "split": "training",
+          "input": -6,
+          "expected": -4,
+          "actual": -4
+        },
+        {
+          "split": "training",
+          "input": -5,
+          "expected": -4,
+          "actual": -4
+        },
+        {
+          "split": "training",
+          "input": -4,
+          "expected": 4,
+          "actual": 4
+        },
+        {
+          "split": "training",
+          "input": 4,
+          "expected": 4,
+          "actual": 4
+        },
+        {
+          "split": "training",
+          "input": 5,
+          "expected": -4,
+          "actual": -4
+        },
+        {
+          "split": "training",
+          "input": 6,
+          "expected": -4,
+          "actual": -4
+        },
+        {
+          "split": "evaluation",
+          "input": -100,
+          "expected": -4,
+          "actual": -4
+        },
+        {
+          "split": "evaluation",
+          "input": 0,
+          "expected": 4,
+          "actual": 4
+        },
+        {
+          "split": "evaluation",
+          "input": 100,
+          "expected": -4,
+          "actual": -4
+        }
+      ],
+      "result_path": "evaluation/original-candidates/case20_cp20_strict_symmetric_window_option_c/candidate-results.json"
+    },
+    "bl21_saved_range_predicates/option_a": {
+      "status": "compile_or_execution_failed",
+      "rows": [],
+      "error": "FAIL\texample.invalid/gooo/ir-composition-revision2-original/case21_bl21_saved_range_predicates_option_a [build failed]\n"
+    },
+    "bl21_saved_range_predicates/option_b": {
+      "status": "compiled_and_executed",
+      "rows": [
+        {
+          "split": "training",
+          "input": -3,
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "split": "training",
+          "input": -2,
+          "expected": 1,
+          "actual": 1
+        },
+        {
+          "split": "training",
+          "input": 0,
+          "expected": 1,
+          "actual": 1
+        },
+        {
+          "split": "training",
+          "input": 2,
+          "expected": 1,
+          "actual": 1
+        },
+        {
+          "split": "training",
+          "input": 3,
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "split": "evaluation",
+          "input": -10,
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "split": "evaluation",
+          "input": 1,
+          "expected": 1,
+          "actual": 1
+        },
+        {
+          "split": "evaluation",
+          "input": 10,
+          "expected": 0,
+          "actual": 0
+        }
+      ],
+      "result_path": "evaluation/original-candidates/case21_bl21_saved_range_predicates_option_b/candidate-results.json"
+    },
+    "bl21_saved_range_predicates/option_c": {
+      "status": "compile_or_execution_failed",
+      "rows": [],
+      "error": "FAIL\texample.invalid/gooo/ir-composition-revision2-original/case21_bl21_saved_range_predicates_option_c [build failed]\n"
+    },
+    "bl22_reassigned_valid_flag/option_a": {
+      "status": "compiled_and_executed",
+      "rows": [
+        {
+          "split": "training",
+          "input": -1,
+          "expected": -5,
+          "actual": -5
+        },
+        {
+          "split": "training",
+          "input": 0,
+          "expected": 5,
+          "actual": 5
+        },
+        {
+          "split": "training",
+          "input": 5,
+          "expected": 5,
+          "actual": 5
+        },
+        {
+          "split": "training",
+          "input": 6,
+          "expected": -5,
+          "actual": -5
+        },
+        {
+          "split": "evaluation",
+          "input": -10,
+          "expected": -5,
+          "actual": -5
+        },
+        {
+          "split": "evaluation",
+          "input": 2,
+          "expected": 5,
+          "actual": 5
+        },
+        {
+          "split": "evaluation",
+          "input": 100,
+          "expected": -5,
+          "actual": -5
+        }
+      ],
+      "result_path": "evaluation/original-candidates/case22_bl22_reassigned_valid_flag_option_a/candidate-results.json"
+    },
+    "bl22_reassigned_valid_flag/option_b": {
+      "status": "compiled_and_executed",
+      "rows": [
+        {
+          "split": "training",
+          "input": -1,
+          "expected": -5,
+          "actual": -5
+        },
+        {
+          "split": "training",
+          "input": 0,
+          "expected": 5,
+          "actual": 5
+        },
+        {
+          "split": "training",
+          "input": 5,
+          "expected": 5,
+          "actual": 5
+        },
+        {
+          "split": "training",
+          "input": 6,
+          "expected": -5,
+          "actual": -5
+        },
+        {
+          "split": "evaluation",
+          "input": -10,
+          "expected": -5,
+          "actual": -5
+        },
+        {
+          "split": "evaluation",
+          "input": 2,
+          "expected": 5,
+          "actual": 5
+        },
+        {
+          "split": "evaluation",
+          "input": 100,
+          "expected": -5,
+          "actual": -5
+        }
+      ],
+      "result_path": "evaluation/original-candidates/case22_bl22_reassigned_valid_flag_option_b/candidate-results.json"
+    },
+    "bl22_reassigned_valid_flag/option_c": {
+      "status": "compiled_and_executed",
+      "rows": [
+        {
+          "split": "training",
+          "input": -1,
+          "expected": -5,
+          "actual": 5
+        },
+        {
+          "split": "training",
+          "input": 0,
+          "expected": 5,
+          "actual": 5
+        },
+        {
+          "split": "training",
+          "input": 5,
+          "expected": 5,
+          "actual": 5
+        },
+        {
+          "split": "training",
+          "input": 6,
+          "expected": -5,
+          "actual": -5
+        },
+        {
+          "split": "evaluation",
+          "input": -10,
+          "expected": -5,
+          "actual": 5
+        },
+        {
+          "split": "evaluation",
+          "input": 2,
+          "expected": 5,
+          "actual": 5
+        },
+        {
+          "split": "evaluation",
+          "input": 100,
+          "expected": -5,
+          "actual": -5
+        }
+      ],
+      "result_path": "evaluation/original-candidates/case22_bl22_reassigned_valid_flag_option_c/candidate-results.json"
+    },
+    "bl23_nonzero_bounded_flag/option_a": {
+      "status": "compiled_and_executed",
+      "rows": [
+        {
+          "split": "training",
+          "input": -5,
+          "expected": 0,
+          "actual": 9
+        },
+        {
+          "split": "training",
+          "input": -4,
+          "expected": 9,
+          "actual": 9
+        },
+        {
+          "split": "training",
+          "input": 0,
+          "expected": 0,
+          "actual": 9
+        },
+        {
+          "split": "training",
+          "input": 4,
+          "expected": 9,
+          "actual": 9
+        },
+        {
+          "split": "training",
+          "input": 5,
+          "expected": 0,
+          "actual": 9
+        },
+        {
+          "split": "evaluation",
+          "input": -100,
+          "expected": 0,
+          "actual": 9
+        },
+        {
+          "split": "evaluation",
+          "input": 3,
+          "expected": 9,
+          "actual": 9
+        },
+        {
+          "split": "evaluation",
+          "input": 100,
+          "expected": 0,
+          "actual": 9
+        }
+      ],
+      "result_path": "evaluation/original-candidates/case23_bl23_nonzero_bounded_flag_option_a/candidate-results.json"
+    },
+    "bl23_nonzero_bounded_flag/option_b": {
+      "status": "compile_or_execution_failed",
+      "rows": [],
+      "error": "FAIL\texample.invalid/gooo/ir-composition-revision2-original/case23_bl23_nonzero_bounded_flag_option_b [build failed]\n"
+    },
+    "bl23_nonzero_bounded_flag/option_c": {
+      "status": "compiled_and_executed",
+      "rows": [
+        {
+          "split": "training",
+          "input": -5,
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "split": "training",
+          "input": -4,
+          "expected": 9,
+          "actual": 9
+        },
+        {
+          "split": "training",
+          "input": 0,
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "split": "training",
+          "input": 4,
+          "expected": 9,
+          "actual": 9
+        },
+        {
+          "split": "training",
+          "input": 5,
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "split": "evaluation",
+          "input": -100,
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "split": "evaluation",
+          "input": 3,
+          "expected": 9,
+          "actual": 9
+        },
+        {
+          "split": "evaluation",
+          "input": 100,
+          "expected": 0,
+          "actual": 0
+        }
+      ],
+      "result_path": "evaluation/original-candidates/case23_bl23_nonzero_bounded_flag_option_c/candidate-results.json"
+    },
+    "bl24_selected_nonnegative_codes/option_a": {
+      "status": "compiled_and_executed",
+      "rows": [
+        {
+          "split": "training",
+          "input": -1,
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "split": "training",
+          "input": 0,
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "split": "training",
+          "input": 2,
+          "expected": 6,
+          "actual": 6
+        },
+        {
+          "split": "training",
+          "input": 4,
+          "expected": 6,
+          "actual": 0
+        },
+        {
+          "split": "training",
+          "input": 5,
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "split": "evaluation",
+          "input": -100,
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "split": "evaluation",
+          "input": 1,
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "split": "evaluation",
+          "input": 10,
+          "expected": 0,
+          "actual": 0
+        }
+      ],
+      "result_path": "evaluation/original-candidates/case24_bl24_selected_nonnegative_codes_option_a/candidate-results.json"
+    },
+    "bl24_selected_nonnegative_codes/option_b": {
+      "status": "compiled_and_executed",
+      "rows": [
+        {
+          "split": "training",
+          "input": -1,
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "split": "training",
+          "input": 0,
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "split": "training",
+          "input": 2,
+          "expected": 6,
+          "actual": 6
+        },
+        {
+          "split": "training",
+          "input": 4,
+          "expected": 6,
+          "actual": 6
+        },
+        {
+          "split": "training",
+          "input": 5,
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "split": "evaluation",
+          "input": -100,
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "split": "evaluation",
+          "input": 1,
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "split": "evaluation",
+          "input": 10,
+          "expected": 0,
+          "actual": 0
+        }
+      ],
+      "result_path": "evaluation/original-candidates/case24_bl24_selected_nonnegative_codes_option_b/candidate-results.json"
+    },
+    "bl24_selected_nonnegative_codes/option_c": {
+      "status": "compiled_and_executed",
+      "rows": [
+        {
+          "split": "training",
+          "input": -1,
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "split": "training",
+          "input": 0,
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "split": "training",
+          "input": 2,
+          "expected": 6,
+          "actual": 6
+        },
+        {
+          "split": "training",
+          "input": 4,
+          "expected": 6,
+          "actual": 0
+        },
+        {
+          "split": "training",
+          "input": 5,
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "split": "evaluation",
+          "input": -100,
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "split": "evaluation",
+          "input": 1,
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "split": "evaluation",
+          "input": 10,
+          "expected": 0,
+          "actual": 0
+        }
+      ],
+      "result_path": "evaluation/original-candidates/case24_bl24_selected_nonnegative_codes_option_c/candidate-results.json"
+    },
+    "tx25_sign_label/option_a": {
+      "status": "compiled_and_executed",
+      "rows": [
+        {
+          "split": "training",
+          "input": -1,
+          "expected": -1,
+          "actual": -1
+        },
+        {
+          "split": "training",
+          "input": 0,
+          "expected": 1,
+          "actual": 1
+        },
+        {
+          "split": "training",
+          "input": 1,
+          "expected": 1,
+          "actual": 1
+        },
+        {
+          "split": "evaluation",
+          "input": -20,
+          "expected": -1,
+          "actual": -1
+        },
+        {
+          "split": "evaluation",
+          "input": 20,
+          "expected": 1,
+          "actual": 1
+        }
+      ],
+      "result_path": "evaluation/original-candidates/case25_tx25_sign_label_option_a/candidate-results.json"
+    },
+    "tx25_sign_label/option_b": {
+      "status": "compiled_and_executed",
+      "rows": [
+        {
+          "split": "training",
+          "input": -1,
+          "expected": -1,
+          "actual": 1
+        },
+        {
+          "split": "training",
+          "input": 0,
+          "expected": 1,
+          "actual": -1
+        },
+        {
+          "split": "training",
+          "input": 1,
+          "expected": 1,
+          "actual": -1
+        },
+        {
+          "split": "evaluation",
+          "input": -20,
+          "expected": -1,
+          "actual": 1
+        },
+        {
+          "split": "evaluation",
+          "input": 20,
+          "expected": 1,
+          "actual": -1
+        }
+      ],
+      "result_path": "evaluation/original-candidates/case25_tx25_sign_label_option_b/candidate-results.json"
+    },
+    "tx25_sign_label/option_c": {
+      "status": "compiled_and_executed",
+      "rows": [
+        {
+          "split": "training",
+          "input": -1,
+          "expected": -1,
+          "actual": 1
+        },
+        {
+          "split": "training",
+          "input": 0,
+          "expected": 1,
+          "actual": 1
+        },
+        {
+          "split": "training",
+          "input": 1,
+          "expected": 1,
+          "actual": 1
+        },
+        {
+          "split": "evaluation",
+          "input": -20,
+          "expected": -1,
+          "actual": 1
+        },
+        {
+          "split": "evaluation",
+          "input": 20,
+          "expected": 1,
+          "actual": 1
+        }
+      ],
+      "result_path": "evaluation/original-candidates/case25_tx25_sign_label_option_c/candidate-results.json"
+    },
+    "tx26_state_label/option_a": {
+      "status": "compiled_and_executed",
+      "rows": [
+        {
+          "split": "training",
+          "input": -1,
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "split": "training",
+          "input": 0,
+          "expected": 0,
+          "actual": 1
+        },
+        {
+          "split": "training",
+          "input": 1,
+          "expected": 1,
+          "actual": 0
+        },
+        {
+          "split": "evaluation",
+          "input": -20,
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "split": "evaluation",
+          "input": 7,
+          "expected": 1,
+          "actual": 0
+        }
+      ],
+      "result_path": "evaluation/original-candidates/case26_tx26_state_label_option_a/candidate-results.json"
+    },
+    "tx26_state_label/option_b": {
+      "status": "compiled_and_executed",
+      "rows": [
+        {
+          "split": "training",
+          "input": -1,
+          "expected": 0,
+          "actual": 1
+        },
+        {
+          "split": "training",
+          "input": 0,
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "split": "training",
+          "input": 1,
+          "expected": 1,
+          "actual": 0
+        },
+        {
+          "split": "evaluation",
+          "input": -20,
+          "expected": 0,
+          "actual": 1
+        },
+        {
+          "split": "evaluation",
+          "input": 7,
+          "expected": 1,
+          "actual": 0
+        }
+      ],
+      "result_path": "evaluation/original-candidates/case26_tx26_state_label_option_b/candidate-results.json"
+    },
+    "tx26_state_label/option_c": {
+      "status": "compiled_and_executed",
+      "rows": [
+        {
+          "split": "training",
+          "input": -1,
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "split": "training",
+          "input": 0,
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "split": "training",
+          "input": 1,
+          "expected": 1,
+          "actual": 1
+        },
+        {
+          "split": "evaluation",
+          "input": -20,
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "split": "evaluation",
+          "input": 7,
+          "expected": 1,
+          "actual": 1
+        }
+      ],
+      "result_path": "evaluation/original-candidates/case26_tx26_state_label_option_c/candidate-results.json"
+    },
+    "tx27_lexical_cutoff/option_a": {
+      "status": "compiled_and_executed",
+      "rows": [
+        {
+          "split": "training",
+          "input": -1,
+          "expected": 1,
+          "actual": 1
+        },
+        {
+          "split": "training",
+          "input": 0,
+          "expected": 0,
+          "actual": 1
+        },
+        {
+          "split": "training",
+          "input": 1,
+          "expected": 0,
+          "actual": 1
+        },
+        {
+          "split": "evaluation",
+          "input": -2,
+          "expected": 1,
+          "actual": 1
+        },
+        {
+          "split": "evaluation",
+          "input": 2,
+          "expected": 0,
+          "actual": 1
+        }
+      ],
+      "result_path": "evaluation/original-candidates/case27_tx27_lexical_cutoff_option_a/candidate-results.json"
+    },
+    "tx27_lexical_cutoff/option_b": {
+      "status": "compiled_and_executed",
+      "rows": [
+        {
+          "split": "training",
+          "input": -1,
+          "expected": 1,
+          "actual": 1
+        },
+        {
+          "split": "training",
+          "input": 0,
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "split": "training",
+          "input": 1,
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "split": "evaluation",
+          "input": -2,
+          "expected": 1,
+          "actual": 1
+        },
+        {
+          "split": "evaluation",
+          "input": 2,
+          "expected": 0,
+          "actual": 0
+        }
+      ],
+      "result_path": "evaluation/original-candidates/case27_tx27_lexical_cutoff_option_b/candidate-results.json"
+    },
+    "tx27_lexical_cutoff/option_c": {
+      "status": "compiled_and_executed",
+      "rows": [
+        {
+          "split": "training",
+          "input": -1,
+          "expected": 1,
+          "actual": 0
+        },
+        {
+          "split": "training",
+          "input": 0,
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "split": "training",
+          "input": 1,
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "split": "evaluation",
+          "input": -2,
+          "expected": 1,
+          "actual": 0
+        },
+        {
+          "split": "evaluation",
+          "input": 2,
+          "expected": 0,
+          "actual": 0
+        }
+      ],
+      "result_path": "evaluation/original-candidates/case27_tx27_lexical_cutoff_option_c/candidate-results.json"
+    },
+    "tx28_reassigned_text_state/option_a": {
+      "status": "compiled_and_executed",
+      "rows": [
+        {
+          "split": "training",
+          "input": -1,
+          "expected": -2,
+          "actual": -2
+        },
+        {
+          "split": "training",
+          "input": 0,
+          "expected": -2,
+          "actual": -2
+        },
+        {
+          "split": "training",
+          "input": 1,
+          "expected": 2,
+          "actual": 2
+        },
+        {
+          "split": "evaluation",
+          "input": -10,
+          "expected": -2,
+          "actual": -2
+        },
+        {
+          "split": "evaluation",
+          "input": 100,
+          "expected": 2,
+          "actual": 2
+        }
+      ],
+      "result_path": "evaluation/original-candidates/case28_tx28_reassigned_text_state_option_a/candidate-results.json"
+    },
+    "tx28_reassigned_text_state/option_b": {
+      "status": "compiled_and_executed",
+      "rows": [
+        {
+          "split": "training",
+          "input": -1,
+          "expected": -2,
+          "actual": 2
+        },
+        {
+          "split": "training",
+          "input": 0,
+          "expected": -2,
+          "actual": 2
+        },
+        {
+          "split": "training",
+          "input": 1,
+          "expected": 2,
+          "actual": -2
+        },
+        {
+          "split": "evaluation",
+          "input": -10,
+          "expected": -2,
+          "actual": 2
+        },
+        {
+          "split": "evaluation",
+          "input": 100,
+          "expected": 2,
+          "actual": -2
+        }
+      ],
+      "result_path": "evaluation/original-candidates/case28_tx28_reassigned_text_state_option_b/candidate-results.json"
+    },
+    "tx28_reassigned_text_state/option_c": {
+      "status": "compiled_and_executed",
+      "rows": [
+        {
+          "split": "training",
+          "input": -1,
+          "expected": -2,
+          "actual": -2
+        },
+        {
+          "split": "training",
+          "input": 0,
+          "expected": -2,
+          "actual": -2
+        },
+        {
+          "split": "training",
+          "input": 1,
+          "expected": 2,
+          "actual": -2
+        },
+        {
+          "split": "evaluation",
+          "input": -10,
+          "expected": -2,
+          "actual": -2
+        },
+        {
+          "split": "evaluation",
+          "input": 100,
+          "expected": 2,
+          "actual": -2
+        }
+      ],
+      "result_path": "evaluation/original-candidates/case28_tx28_reassigned_text_state_option_c/candidate-results.json"
+    },
+    "ob29_saturating_increment/option_a": {
+      "status": "compiled_and_executed",
+      "rows": [
+        {
+          "split": "training",
+          "input": 0,
+          "expected": 1,
+          "actual": 0
+        },
+        {
+          "split": "training",
+          "input": 1,
+          "expected": 2,
+          "actual": 1
+        },
+        {
+          "split": "training",
+          "input": 9223372036854775805,
+          "expected": 9223372036854775806,
+          "actual": 9223372036854775805
+        },
+        {
+          "split": "training",
+          "input": 9223372036854775806,
+          "expected": 9223372036854775807,
+          "actual": 9223372036854775806
+        },
+        {
+          "split": "evaluation",
+          "input": 9223372036854775807,
+          "expected": 9223372036854775807,
+          "actual": 9223372036854775807
+        },
+        {
+          "split": "evaluation",
+          "input": 9223372036854775804,
+          "expected": 9223372036854775805,
+          "actual": 9223372036854775804
+        },
+        {
+          "split": "evaluation",
+          "input": -1,
+          "expected": 0,
+          "actual": -1
+        }
+      ],
+      "result_path": "evaluation/original-candidates/case29_ob29_saturating_increment_option_a/candidate-results.json"
+    },
+    "ob29_saturating_increment/option_b": {
+      "status": "compiled_and_executed",
+      "rows": [
+        {
+          "split": "training",
+          "input": 0,
+          "expected": 1,
+          "actual": -1
+        },
+        {
+          "split": "training",
+          "input": 1,
+          "expected": 2,
+          "actual": 0
+        },
+        {
+          "split": "training",
+          "input": 9223372036854775805,
+          "expected": 9223372036854775806,
+          "actual": 9223372036854775804
+        },
+        {
+          "split": "training",
+          "input": 9223372036854775806,
+          "expected": 9223372036854775807,
+          "actual": 9223372036854775805
+        },
+        {
+          "split": "evaluation",
+          "input": 9223372036854775807,
+          "expected": 9223372036854775807,
+          "actual": 9223372036854775807
+        },
+        {
+          "split": "evaluation",
+          "input": 9223372036854775804,
+          "expected": 9223372036854775805,
+          "actual": 9223372036854775803
+        },
+        {
+          "split": "evaluation",
+          "input": -1,
+          "expected": 0,
+          "actual": -2
+        }
+      ],
+      "result_path": "evaluation/original-candidates/case29_ob29_saturating_increment_option_b/candidate-results.json"
+    },
+    "ob29_saturating_increment/option_c": {
+      "status": "compiled_and_executed",
+      "rows": [
+        {
+          "split": "training",
+          "input": 0,
+          "expected": 1,
+          "actual": 1
+        },
+        {
+          "split": "training",
+          "input": 1,
+          "expected": 2,
+          "actual": 2
+        },
+        {
+          "split": "training",
+          "input": 9223372036854775805,
+          "expected": 9223372036854775806,
+          "actual": 9223372036854775806
+        },
+        {
+          "split": "training",
+          "input": 9223372036854775806,
+          "expected": 9223372036854775807,
+          "actual": 9223372036854775807
+        },
+        {
+          "split": "evaluation",
+          "input": 9223372036854775807,
+          "expected": 9223372036854775807,
+          "actual": 9223372036854775807
+        },
+        {
+          "split": "evaluation",
+          "input": 9223372036854775804,
+          "expected": 9223372036854775805,
+          "actual": 9223372036854775805
+        },
+        {
+          "split": "evaluation",
+          "input": -1,
+          "expected": 0,
+          "actual": 0
+        }
+      ],
+      "result_path": "evaluation/original-candidates/case29_ob29_saturating_increment_option_c/candidate-results.json"
+    },
+    "ob30_saturating_decrement/option_a": {
+      "status": "compiled_and_executed",
+      "rows": [
+        {
+          "split": "training",
+          "input": -9223372036854775806,
+          "expected": -9223372036854775807,
+          "actual": -9223372036854775805
+        },
+        {
+          "split": "training",
+          "input": -9223372036854775807,
+          "expected": -9223372036854775808,
+          "actual": -9223372036854775806
+        },
+        {
+          "split": "training",
+          "input": 0,
+          "expected": -1,
+          "actual": 1
+        },
+        {
+          "split": "training",
+          "input": 1,
+          "expected": 0,
+          "actual": 2
+        },
+        {
+          "split": "evaluation",
+          "input": -9223372036854775808,
+          "expected": -9223372036854775808,
+          "actual": -9223372036854775808
+        },
+        {
+          "split": "evaluation",
+          "input": -9223372036854775805,
+          "expected": -9223372036854775806,
+          "actual": -9223372036854775804
+        },
+        {
+          "split": "evaluation",
+          "input": 10,
+          "expected": 9,
+          "actual": 11
+        }
+      ],
+      "result_path": "evaluation/original-candidates/case30_ob30_saturating_decrement_option_a/candidate-results.json"
+    },
+    "ob30_saturating_decrement/option_b": {
+      "status": "compiled_and_executed",
+      "rows": [
+        {
+          "split": "training",
+          "input": -9223372036854775806,
+          "expected": -9223372036854775807,
+          "actual": -9223372036854775807
+        },
+        {
+          "split": "training",
+          "input": -9223372036854775807,
+          "expected": -9223372036854775808,
+          "actual": -9223372036854775808
+        },
+        {
+          "split": "training",
+          "input": 0,
+          "expected": -1,
+          "actual": -1
+        },
+        {
+          "split": "training",
+          "input": 1,
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "split": "evaluation",
+          "input": -9223372036854775808,
+          "expected": -9223372036854775808,
+          "actual": -9223372036854775808
+        },
+        {
+          "split": "evaluation",
+          "input": -9223372036854775805,
+          "expected": -9223372036854775806,
+          "actual": -9223372036854775806
+        },
+        {
+          "split": "evaluation",
+          "input": 10,
+          "expected": 9,
+          "actual": 9
+        }
+      ],
+      "result_path": "evaluation/original-candidates/case30_ob30_saturating_decrement_option_b/candidate-results.json"
+    },
+    "ob30_saturating_decrement/option_c": {
+      "status": "compiled_and_executed",
+      "rows": [
+        {
+          "split": "training",
+          "input": -9223372036854775806,
+          "expected": -9223372036854775807,
+          "actual": -9223372036854775806
+        },
+        {
+          "split": "training",
+          "input": -9223372036854775807,
+          "expected": -9223372036854775808,
+          "actual": -9223372036854775807
+        },
+        {
+          "split": "training",
+          "input": 0,
+          "expected": -1,
+          "actual": 0
+        },
+        {
+          "split": "training",
+          "input": 1,
+          "expected": 0,
+          "actual": 1
+        },
+        {
+          "split": "evaluation",
+          "input": -9223372036854775808,
+          "expected": -9223372036854775808,
+          "actual": -9223372036854775808
+        },
+        {
+          "split": "evaluation",
+          "input": -9223372036854775805,
+          "expected": -9223372036854775806,
+          "actual": -9223372036854775805
+        },
+        {
+          "split": "evaluation",
+          "input": 10,
+          "expected": 9,
+          "actual": 10
+        }
+      ],
+      "result_path": "evaluation/original-candidates/case30_ob30_saturating_decrement_option_c/candidate-results.json"
+    },
+    "ob31_saturating_double/option_a": {
+      "status": "compiled_and_executed",
+      "rows": [
+        {
+          "split": "training",
+          "input": -2,
+          "expected": -4,
+          "actual": -4
+        },
+        {
+          "split": "training",
+          "input": -1,
+          "expected": -2,
+          "actual": -2
+        },
+        {
+          "split": "training",
+          "input": 0,
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "split": "training",
+          "input": 1,
+          "expected": 2,
+          "actual": 2
+        },
+        {
+          "split": "training",
+          "input": 2,
+          "expected": 4,
+          "actual": 4
+        },
+        {
+          "split": "evaluation",
+          "input": 9223372036854775807,
+          "expected": 9223372036854775807,
+          "actual": 9223372036854775807
+        },
+        {
+          "split": "evaluation",
+          "input": 4611686018427387903,
+          "expected": 9223372036854775806,
+          "actual": 9223372036854775806
+        },
+        {
+          "split": "evaluation",
+          "input": 4611686018427387904,
+          "expected": 9223372036854775807,
+          "actual": 9223372036854775807
+        },
+        {
+          "split": "evaluation",
+          "input": -9223372036854775808,
+          "expected": -9223372036854775808,
+          "actual": -9223372036854775808
+        },
+        {
+          "split": "evaluation",
+          "input": -4611686018427387904,
+          "expected": -9223372036854775808,
+          "actual": -9223372036854775808
+        },
+        {
+          "split": "evaluation",
+          "input": -4611686018427387905,
+          "expected": -9223372036854775808,
+          "actual": -9223372036854775808
+        }
+      ],
+      "result_path": "evaluation/original-candidates/case31_ob31_saturating_double_option_a/candidate-results.json"
+    },
+    "ob31_saturating_double/option_b": {
+      "status": "compiled_and_executed",
+      "rows": [
+        {
+          "split": "training",
+          "input": -2,
+          "expected": -4,
+          "actual": -6
+        },
+        {
+          "split": "training",
+          "input": -1,
+          "expected": -2,
+          "actual": -3
+        },
+        {
+          "split": "training",
+          "input": 0,
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "split": "training",
+          "input": 1,
+          "expected": 2,
+          "actual": 3
+        },
+        {
+          "split": "training",
+          "input": 2,
+          "expected": 4,
+          "actual": 6
+        },
+        {
+          "split": "evaluation",
+          "input": 9223372036854775807,
+          "expected": 9223372036854775807,
+          "actual": 9223372036854775807
+        },
+        {
+          "split": "evaluation",
+          "input": 4611686018427387903,
+          "expected": 9223372036854775806,
+          "actual": -4611686018427387907
+        },
+        {
+          "split": "evaluation",
+          "input": 4611686018427387904,
+          "expected": 9223372036854775807,
+          "actual": 9223372036854775807
+        },
+        {
+          "split": "evaluation",
+          "input": -9223372036854775808,
+          "expected": -9223372036854775808,
+          "actual": -9223372036854775808
+        },
+        {
+          "split": "evaluation",
+          "input": -4611686018427387904,
+          "expected": -9223372036854775808,
+          "actual": 4611686018427387904
+        },
+        {
+          "split": "evaluation",
+          "input": -4611686018427387905,
+          "expected": -9223372036854775808,
+          "actual": -9223372036854775808
+        }
+      ],
+      "result_path": "evaluation/original-candidates/case31_ob31_saturating_double_option_b/candidate-results.json"
+    },
+    "ob31_saturating_double/option_c": {
+      "status": "compiled_and_executed",
+      "rows": [
+        {
+          "split": "training",
+          "input": -2,
+          "expected": -4,
+          "actual": 0
+        },
+        {
+          "split": "training",
+          "input": -1,
+          "expected": -2,
+          "actual": 1
+        },
+        {
+          "split": "training",
+          "input": 0,
+          "expected": 0,
+          "actual": 2
+        },
+        {
+          "split": "training",
+          "input": 1,
+          "expected": 2,
+          "actual": 3
+        },
+        {
+          "split": "training",
+          "input": 2,
+          "expected": 4,
+          "actual": 4
+        },
+        {
+          "split": "evaluation",
+          "input": 9223372036854775807,
+          "expected": 9223372036854775807,
+          "actual": 9223372036854775807
+        },
+        {
+          "split": "evaluation",
+          "input": 4611686018427387903,
+          "expected": 9223372036854775806,
+          "actual": 4611686018427387905
+        },
+        {
+          "split": "evaluation",
+          "input": 4611686018427387904,
+          "expected": 9223372036854775807,
+          "actual": 9223372036854775807
+        },
+        {
+          "split": "evaluation",
+          "input": -9223372036854775808,
+          "expected": -9223372036854775808,
+          "actual": -9223372036854775808
+        },
+        {
+          "split": "evaluation",
+          "input": -4611686018427387904,
+          "expected": -9223372036854775808,
+          "actual": -4611686018427387902
+        },
+        {
+          "split": "evaluation",
+          "input": -4611686018427387905,
+          "expected": -9223372036854775808,
+          "actual": -9223372036854775808
+        }
+      ],
+      "result_path": "evaluation/original-candidates/case31_ob31_saturating_double_option_c/candidate-results.json"
+    },
+    "ob32_clamped_absolute/option_a": {
+      "status": "compiled_and_executed",
+      "rows": [
+        {
+          "split": "training",
+          "input": -3,
+          "expected": 3,
+          "actual": -3
+        },
+        {
+          "split": "training",
+          "input": 0,
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "split": "training",
+          "input": 5,
+          "expected": 5,
+          "actual": 5
+        },
+        {
+          "split": "training",
+          "input": 7,
+          "expected": 7,
+          "actual": 7
+        },
+        {
+          "split": "evaluation",
+          "input": -9223372036854775808,
+          "expected": 9223372036854775807,
+          "actual": 9223372036854775807
+        },
+        {
+          "split": "evaluation",
+          "input": -9223372036854775807,
+          "expected": 9223372036854775807,
+          "actual": -9223372036854775807
+        },
+        {
+          "split": "evaluation",
+          "input": 9223372036854775807,
+          "expected": 9223372036854775807,
+          "actual": 9223372036854775807
+        }
+      ],
+      "result_path": "evaluation/original-candidates/case32_ob32_clamped_absolute_option_a/candidate-results.json"
+    },
+    "ob32_clamped_absolute/option_b": {
+      "status": "compiled_and_executed",
+      "rows": [
+        {
+          "split": "training",
+          "input": -3,
+          "expected": 3,
+          "actual": -3
+        },
+        {
+          "split": "training",
+          "input": 0,
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "split": "training",
+          "input": 5,
+          "expected": 5,
+          "actual": -5
+        },
+        {
+          "split": "training",
+          "input": 7,
+          "expected": 7,
+          "actual": -7
+        },
+        {
+          "split": "evaluation",
+          "input": -9223372036854775808,
+          "expected": 9223372036854775807,
+          "actual": 9223372036854775807
+        },
+        {
+          "split": "evaluation",
+          "input": -9223372036854775807,
+          "expected": 9223372036854775807,
+          "actual": -9223372036854775807
+        },
+        {
+          "split": "evaluation",
+          "input": 9223372036854775807,
+          "expected": 9223372036854775807,
+          "actual": -9223372036854775807
+        }
+      ],
+      "result_path": "evaluation/original-candidates/case32_ob32_clamped_absolute_option_b/candidate-results.json"
+    },
+    "ob32_clamped_absolute/option_c": {
+      "status": "compiled_and_executed",
+      "rows": [
+        {
+          "split": "training",
+          "input": -3,
+          "expected": 3,
+          "actual": 3
+        },
+        {
+          "split": "training",
+          "input": 0,
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "split": "training",
+          "input": 5,
+          "expected": 5,
+          "actual": 5
+        },
+        {
+          "split": "training",
+          "input": 7,
+          "expected": 7,
+          "actual": 7
+        },
+        {
+          "split": "evaluation",
+          "input": -9223372036854775808,
+          "expected": 9223372036854775807,
+          "actual": 9223372036854775807
+        },
+        {
+          "split": "evaluation",
+          "input": -9223372036854775807,
+          "expected": 9223372036854775807,
+          "actual": 9223372036854775807
+        },
+        {
+          "split": "evaluation",
+          "input": 9223372036854775807,
+          "expected": 9223372036854775807,
+          "actual": 9223372036854775807
+        }
+      ],
+      "result_path": "evaluation/original-candidates/case32_ob32_clamped_absolute_option_c/candidate-results.json"
+    }
+  }
+}

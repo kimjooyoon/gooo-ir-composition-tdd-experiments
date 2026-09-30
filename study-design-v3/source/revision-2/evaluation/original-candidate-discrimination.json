@@ -1,0 +1,459 @@
+{
+  "schema": "gooo/ir-composition-original-candidate-discrimination/v1",
+  "training_only": true,
+  "candidate_denominator": 96,
+  "compile_validity_denominator": 96,
+  "compiled_candidates": 93,
+  "compile_failed_candidates": 3,
+  "unknown_candidates": 0,
+  "designs": [
+    {
+      "id": "cc01_inclusive_band",
+      "original_candidate_compile_status": {
+        "option_a": "compiled_and_executed",
+        "option_b": "compiled_and_executed",
+        "option_c": "compiled_and_executed"
+      },
+      "training_pass_counts_for_compiled_candidates": {
+        "option_a": 5,
+        "option_b": 4,
+        "option_c": 4
+      },
+      "both_distractors_separated": true
+    },
+    {
+      "id": "cc02_nonzero_disjunction",
+      "original_candidate_compile_status": {
+        "option_a": "compiled_and_executed",
+        "option_b": "compiled_and_executed",
+        "option_c": "compiled_and_executed"
+      },
+      "training_pass_counts_for_compiled_candidates": {
+        "option_a": 1,
+        "option_b": 1,
+        "option_c": 3
+      },
+      "both_distractors_separated": true
+    },
+    {
+      "id": "cc03_two_islands",
+      "original_candidate_compile_status": {
+        "option_a": "compiled_and_executed",
+        "option_b": "compiled_and_executed",
+        "option_c": "compiled_and_executed"
+      },
+      "training_pass_counts_for_compiled_candidates": {
+        "option_a": 1,
+        "option_b": 5,
+        "option_c": 4
+      },
+      "both_distractors_separated": true
+    },
+    {
+      "id": "cc04_outer_cutoffs",
+      "original_candidate_compile_status": {
+        "option_a": "compiled_and_executed",
+        "option_b": "compiled_and_executed",
+        "option_c": "compiled_and_executed"
+      },
+      "training_pass_counts_for_compiled_candidates": {
+        "option_a": 6,
+        "option_b": 3,
+        "option_c": 2
+      },
+      "both_distractors_separated": true
+    },
+    {
+      "id": "ni05_negative_then_double",
+      "original_candidate_compile_status": {
+        "option_a": "compiled_and_executed",
+        "option_b": "compiled_and_executed",
+        "option_c": "compiled_and_executed"
+      },
+      "training_pass_counts_for_compiled_candidates": {
+        "option_a": 2,
+        "option_b": 3,
+        "option_c": 5
+      },
+      "both_distractors_separated": true
+    },
+    {
+      "id": "ni06_surcharge_discount",
+      "original_candidate_compile_status": {
+        "option_a": "compiled_and_executed",
+        "option_b": "compiled_and_executed",
+        "option_c": "compiled_and_executed"
+      },
+      "training_pass_counts_for_compiled_candidates": {
+        "option_a": 2,
+        "option_b": 5,
+        "option_c": 2
+      },
+      "both_distractors_separated": true
+    },
+    {
+      "id": "ni07_zero_special_negative_offset",
+      "original_candidate_compile_status": {
+        "option_a": "compiled_and_executed",
+        "option_b": "compiled_and_executed",
+        "option_c": "compiled_and_executed"
+      },
+      "training_pass_counts_for_compiled_candidates": {
+        "option_a": 4,
+        "option_b": 2,
+        "option_c": 2
+      },
+      "both_distractors_separated": true
+    },
+    {
+      "id": "ni08_upper_grade_excess",
+      "original_candidate_compile_status": {
+        "option_a": "compiled_and_executed",
+        "option_b": "compiled_and_executed",
+        "option_c": "compiled_and_executed"
+      },
+      "training_pass_counts_for_compiled_candidates": {
+        "option_a": 3,
+        "option_b": 3,
+        "option_c": 5
+      },
+      "both_distractors_separated": true
+    },
+    {
+      "id": "lr09_compound_total",
+      "original_candidate_compile_status": {
+        "option_a": "compiled_and_executed",
+        "option_b": "compiled_and_executed",
+        "option_c": "compiled_and_executed"
+      },
+      "training_pass_counts_for_compiled_candidates": {
+        "option_a": 1,
+        "option_b": 4,
+        "option_c": 0
+      },
+      "both_distractors_separated": true
+    },
+    {
+      "id": "lr10_floor_then_increment",
+      "original_candidate_compile_status": {
+        "option_a": "compiled_and_executed",
+        "option_b": "compiled_and_executed",
+        "option_c": "compiled_and_executed"
+      },
+      "training_pass_counts_for_compiled_candidates": {
+        "option_a": 4,
+        "option_b": 0,
+        "option_c": 0
+      },
+      "both_distractors_separated": true
+    },
+    {
+      "id": "lr11_nonnegative_doubled_score",
+      "original_candidate_compile_status": {
+        "option_a": "compiled_and_executed",
+        "option_b": "compiled_and_executed",
+        "option_c": "compiled_and_executed"
+      },
+      "training_pass_counts_for_compiled_candidates": {
+        "option_a": 2,
+        "option_b": 0,
+        "option_c": 4
+      },
+      "both_distractors_separated": true
+    },
+    {
+      "id": "lr12_cap_after_adjustment",
+      "original_candidate_compile_status": {
+        "option_a": "compiled_and_executed",
+        "option_b": "compiled_and_executed",
+        "option_c": "compiled_and_executed"
+      },
+      "training_pass_counts_for_compiled_candidates": {
+        "option_a": 0,
+        "option_b": 4,
+        "option_c": 3
+      },
+      "both_distractors_separated": true
+    },
+    {
+      "id": "pr13_subtract_tripled_sum",
+      "original_candidate_compile_status": {
+        "option_a": "compiled_and_executed",
+        "option_b": "compiled_and_executed",
+        "option_c": "compiled_and_executed"
+      },
+      "training_pass_counts_for_compiled_candidates": {
+        "option_a": 4,
+        "option_b": 0,
+        "option_c": 0
+      },
+      "both_distractors_separated": true
+    },
+    {
+      "id": "pr14_product_neighbor_factors",
+      "original_candidate_compile_status": {
+        "option_a": "compiled_and_executed",
+        "option_b": "compiled_and_executed",
+        "option_c": "compiled_and_executed"
+      },
+      "training_pass_counts_for_compiled_candidates": {
+        "option_a": 1,
+        "option_b": 1,
+        "option_c": 4
+      },
+      "both_distractors_separated": true
+    },
+    {
+      "id": "pr15_square_minus_successor_sum",
+      "original_candidate_compile_status": {
+        "option_a": "compiled_and_executed",
+        "option_b": "compiled_and_executed",
+        "option_c": "compiled_and_executed"
+      },
+      "training_pass_counts_for_compiled_candidates": {
+        "option_a": 0,
+        "option_b": 4,
+        "option_c": 0
+      },
+      "both_distractors_separated": true
+    },
+    {
+      "id": "pr16_composed_neighbor_product",
+      "original_candidate_compile_status": {
+        "option_a": "compiled_and_executed",
+        "option_b": "compiled_and_executed",
+        "option_c": "compiled_and_executed"
+      },
+      "training_pass_counts_for_compiled_candidates": {
+        "option_a": 4,
+        "option_b": 0,
+        "option_c": 0
+      },
+      "both_distractors_separated": true
+    },
+    {
+      "id": "cp17_nonpositive_inclusive",
+      "original_candidate_compile_status": {
+        "option_a": "compiled_and_executed",
+        "option_b": "compiled_and_executed",
+        "option_c": "compiled_and_executed"
+      },
+      "training_pass_counts_for_compiled_candidates": {
+        "option_a": 2,
+        "option_b": 2,
+        "option_c": 3
+      },
+      "both_distractors_separated": true
+    },
+    {
+      "id": "cp18_exact_release_code",
+      "original_candidate_compile_status": {
+        "option_a": "compiled_and_executed",
+        "option_b": "compiled_and_executed",
+        "option_c": "compiled_and_executed"
+      },
+      "training_pass_counts_for_compiled_candidates": {
+        "option_a": 1,
+        "option_b": 3,
+        "option_c": 2
+      },
+      "both_distractors_separated": true
+    },
+    {
+      "id": "cp19_range_without_origin",
+      "original_candidate_compile_status": {
+        "option_a": "compiled_and_executed",
+        "option_b": "compiled_and_executed",
+        "option_c": "compiled_and_executed"
+      },
+      "training_pass_counts_for_compiled_candidates": {
+        "option_a": 5,
+        "option_b": 4,
+        "option_c": 1
+      },
+      "both_distractors_separated": true
+    },
+    {
+      "id": "cp20_strict_symmetric_window",
+      "original_candidate_compile_status": {
+        "option_a": "compiled_and_executed",
+        "option_b": "compiled_and_executed",
+        "option_c": "compiled_and_executed"
+      },
+      "training_pass_counts_for_compiled_candidates": {
+        "option_a": 4,
+        "option_b": 5,
+        "option_c": 6
+      },
+      "both_distractors_separated": true
+    },
+    {
+      "id": "bl21_saved_range_predicates",
+      "original_candidate_compile_status": {
+        "option_a": "compile_or_execution_failed",
+        "option_b": "compiled_and_executed",
+        "option_c": "compile_or_execution_failed"
+      },
+      "training_pass_counts_for_compiled_candidates": {
+        "option_a": 0,
+        "option_b": 5,
+        "option_c": 0
+      },
+      "both_distractors_separated": null
+    },
+    {
+      "id": "bl22_reassigned_valid_flag",
+      "original_candidate_compile_status": {
+        "option_a": "compiled_and_executed",
+        "option_b": "compiled_and_executed",
+        "option_c": "compiled_and_executed"
+      },
+      "training_pass_counts_for_compiled_candidates": {
+        "option_a": 4,
+        "option_b": 4,
+        "option_c": 3
+      },
+      "both_distractors_separated": false
+    },
+    {
+      "id": "bl23_nonzero_bounded_flag",
+      "original_candidate_compile_status": {
+        "option_a": "compiled_and_executed",
+        "option_b": "compile_or_execution_failed",
+        "option_c": "compiled_and_executed"
+      },
+      "training_pass_counts_for_compiled_candidates": {
+        "option_a": 2,
+        "option_b": 0,
+        "option_c": 5
+      },
+      "both_distractors_separated": null
+    },
+    {
+      "id": "bl24_selected_nonnegative_codes",
+      "original_candidate_compile_status": {
+        "option_a": "compiled_and_executed",
+        "option_b": "compiled_and_executed",
+        "option_c": "compiled_and_executed"
+      },
+      "training_pass_counts_for_compiled_candidates": {
+        "option_a": 4,
+        "option_b": 5,
+        "option_c": 4
+      },
+      "both_distractors_separated": true
+    },
+    {
+      "id": "tx25_sign_label",
+      "original_candidate_compile_status": {
+        "option_a": "compiled_and_executed",
+        "option_b": "compiled_and_executed",
+        "option_c": "compiled_and_executed"
+      },
+      "training_pass_counts_for_compiled_candidates": {
+        "option_a": 3,
+        "option_b": 0,
+        "option_c": 2
+      },
+      "both_distractors_separated": true
+    },
+    {
+      "id": "tx26_state_label",
+      "original_candidate_compile_status": {
+        "option_a": "compiled_and_executed",
+        "option_b": "compiled_and_executed",
+        "option_c": "compiled_and_executed"
+      },
+      "training_pass_counts_for_compiled_candidates": {
+        "option_a": 1,
+        "option_b": 1,
+        "option_c": 3
+      },
+      "both_distractors_separated": true
+    },
+    {
+      "id": "tx27_lexical_cutoff",
+      "original_candidate_compile_status": {
+        "option_a": "compiled_and_executed",
+        "option_b": "compiled_and_executed",
+        "option_c": "compiled_and_executed"
+      },
+      "training_pass_counts_for_compiled_candidates": {
+        "option_a": 1,
+        "option_b": 3,
+        "option_c": 2
+      },
+      "both_distractors_separated": true
+    },
+    {
+      "id": "tx28_reassigned_text_state",
+      "original_candidate_compile_status": {
+        "option_a": "compiled_and_executed",
+        "option_b": "compiled_and_executed",
+        "option_c": "compiled_and_executed"
+      },
+      "training_pass_counts_for_compiled_candidates": {
+        "option_a": 3,
+        "option_b": 0,
+        "option_c": 2
+      },
+      "both_distractors_separated": true
+    },
+    {
+      "id": "ob29_saturating_increment",
+      "original_candidate_compile_status": {
+        "option_a": "compiled_and_executed",
+        "option_b": "compiled_and_executed",
+        "option_c": "compiled_and_executed"
+      },
+      "training_pass_counts_for_compiled_candidates": {
+        "option_a": 0,
+        "option_b": 0,
+        "option_c": 4
+      },
+      "both_distractors_separated": true
+    },
+    {
+      "id": "ob30_saturating_decrement",
+      "original_candidate_compile_status": {
+        "option_a": "compiled_and_executed",
+        "option_b": "compiled_and_executed",
+        "option_c": "compiled_and_executed"
+      },
+      "training_pass_counts_for_compiled_candidates": {
+        "option_a": 0,
+        "option_b": 4,
+        "option_c": 0
+      },
+      "both_distractors_separated": true
+    },
+    {
+      "id": "ob31_saturating_double",
+      "original_candidate_compile_status": {
+        "option_a": "compiled_and_executed",
+        "option_b": "compiled_and_executed",
+        "option_c": "compiled_and_executed"
+      },
+      "training_pass_counts_for_compiled_candidates": {
+        "option_a": 5,
+        "option_b": 1,
+        "option_c": 1
+      },
+      "both_distractors_separated": true
+    },
+    {
+      "id": "ob32_clamped_absolute",
+      "original_candidate_compile_status": {
+        "option_a": "compiled_and_executed",
+        "option_b": "compiled_and_executed",
+        "option_c": "compiled_and_executed"
+      },
+      "training_pass_counts_for_compiled_candidates": {
+        "option_a": 3,
+        "option_b": 1,
+        "option_c": 4
+      },
+      "both_distractors_separated": true
+    }
+  ]
+}

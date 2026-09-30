@@ -1,0 +1,4 @@
+package bodycodegen
+namespace bodycodegen
+entity Integer id "bodycodegen://entity/integer"
+activity C32(Integer) -> Integer computes "let magnitude = input; if input < 0 { magnitude = 0 - magnitude } else { magnitude = input }; if input == (-9223372036854775807 - 1) { return 9223372036854775807 } else { return __GOOO_BODY_HOLE_choice__ }"

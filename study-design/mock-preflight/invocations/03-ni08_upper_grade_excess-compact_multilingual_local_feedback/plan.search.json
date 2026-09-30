@@ -1,0 +1,44 @@
+{
+  "candidates": [
+    {
+      "expression": "input - 79",
+      "id": "option_a"
+    },
+    {
+      "expression": "input - 81",
+      "id": "option_b"
+    },
+    {
+      "expression": "input - 80",
+      "id": "option_c"
+    }
+  ],
+  "hole_id": "choice",
+  "intent": "Return -1 below 60, 0 from 60 through 79, and the excess above 80 from 80 onward.",
+  "max_attempts": 3,
+  "prompt_profile": "compact",
+  "provider_model": "multilingual",
+  "schema": "gooo/body-codegen-ir-search-plan/v1",
+  "test_cases": [
+    {
+      "expected": -1,
+      "input": 59
+    },
+    {
+      "expected": 0,
+      "input": 60
+    },
+    {
+      "expected": 0,
+      "input": 79
+    },
+    {
+      "expected": 0,
+      "input": 80
+    },
+    {
+      "expected": 1,
+      "input": 81
+    }
+  ]
+}

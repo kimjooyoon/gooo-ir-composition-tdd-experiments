@@ -1,0 +1,1766 @@
+[
+  {
+    "invocation_id": "01-ni06_surcharge_discount-compact_multilingual_single",
+    "request": {
+      "model": "multilingual",
+      "questions": {
+        "body_ir_search": {
+          "criteria": {
+            "option_a": "Try this exact expression: input + 11",
+            "option_b": "Try this exact expression: input + 10",
+            "option_c": "Try this exact expression: input + 9"
+          },
+          "instructions": "Choose one untried expression to fill the Gooo body hole. Use the declared intent and any prior failures or advisory observations. This choice will be typechecked and tested after selection.",
+          "type": "choice"
+        }
+      },
+      "state": {
+        "request": "{\"schema\":\"gooo/body-codegen-ir-search-state/v1\",\"stage\":\"choose_before_candidate_evaluation\",\"activity\":\"C06\",\"activity_id\":\"bodycodegen://activity/c06\",\"body_ir\":\"if input \\u003c 0 { return 0 } else { if input \\u003e 100 { return input - 10 } else { return __GOOO_BODY_HOLE_choice__ } }\",\"intent\":\"Reject negative quantities as 0, add 10 through quantity 100, then discount quantities above 100 by 10.\",\"training_test_count\":5,\"remaining_candidates\":[{\"id\":\"option_a\",\"expression\":\"input + 11\"},{\"id\":\"option_b\",\"expression\":\"input + 10\"},{\"id\":\"option_c\",\"expression\":\"input + 9\"}],\"prior_attempts\":[]}"
+      }
+    },
+    "request_sha256": "a7eada39c27c42c8f8d52bcd3bce59907d76327664a15bcddc4e7a1b8189a579"
+  },
+  {
+    "invocation_id": "02-bl24_selected_nonnegative_codes-compact_multilingual_local_feedback",
+    "request": {
+      "model": "multilingual",
+      "questions": {
+        "body_ir_search": {
+          "criteria": {
+            "option_a": "Try this exact expression: input == 2",
+            "option_b": "Try this exact expression: selected",
+            "option_c": "Try this exact expression: selected && input != 4"
+          },
+          "instructions": "Choose one untried expression to fill the Gooo body hole. Use the declared intent and any prior failures or advisory observations. This choice will be typechecked and tested after selection.",
+          "type": "choice"
+        }
+      },
+      "state": {
+        "request": "{\"schema\":\"gooo/body-codegen-ir-search-state/v1\",\"stage\":\"choose_before_candidate_evaluation\",\"activity\":\"C24\",\"activity_id\":\"bodycodegen://activity/c24\",\"body_ir\":\"var selected = input == 2; if input \\u003c 0 { selected = false } else { selected = selected || input == 4 }; if __GOOO_BODY_HOLE_choice__ { return 6 } else { return 0 }\",\"intent\":\"Select code 2, plus code 4 only when nonnegative; all negative codes and other nonnegative codes return zero.\",\"training_test_count\":5,\"remaining_candidates\":[{\"id\":\"option_a\",\"expression\":\"input == 2\"},{\"id\":\"option_b\",\"expression\":\"selected\"},{\"id\":\"option_c\",\"expression\":\"selected \\u0026\\u0026 input != 4\"}],\"prior_attempts\":[]}"
+      }
+    },
+    "request_sha256": "970d6a16a47adf29f97abcea018e099e63d27796978a86b43a4416c468a818a7"
+  },
+  {
+    "invocation_id": "02-bl24_selected_nonnegative_codes-compact_multilingual_local_feedback",
+    "request": {
+      "model": "multilingual",
+      "questions": {
+        "body_ir_search": {
+          "criteria": {
+            "option_b": "Try this exact expression: selected",
+            "option_c": "Try this exact expression: selected && input != 4"
+          },
+          "instructions": "Choose one untried expression to fill the Gooo body hole. Use the declared intent and any prior failures or advisory observations. This choice will be typechecked and tested after selection.",
+          "type": "choice"
+        }
+      },
+      "state": {
+        "request": "{\"schema\":\"gooo/body-codegen-ir-search-state/v1\",\"stage\":\"choose_before_candidate_evaluation\",\"activity\":\"C24\",\"activity_id\":\"bodycodegen://activity/c24\",\"body_ir\":\"var selected = input == 2; if input \\u003c 0 { selected = false } else { selected = selected || input == 4 }; if __GOOO_BODY_HOLE_choice__ { return 6 } else { return 0 }\",\"intent\":\"Select code 2, plus code 4 only when nonnegative; all negative codes and other nonnegative codes return zero.\",\"training_test_count\":5,\"remaining_candidates\":[{\"id\":\"option_b\",\"expression\":\"selected\"},{\"id\":\"option_c\",\"expression\":\"selected \\u0026\\u0026 input != 4\"}],\"prior_attempts\":[{\"candidate_id\":\"option_a\",\"typecheck_passed\":true,\"scoring_completed\":true,\"test_cases_passed\":4,\"test_cases_total\":5,\"accuracy_percent\":80,\"failed_cases\":[{\"input\":4,\"expected\":6,\"actual\":0,\"passed\":false}],\"failed_cases_total\":1,\"failed_cases_truncated\":false}]}"
+      }
+    },
+    "request_sha256": "6d0142b7fe9faa23d46f1796be6498a581c1ea98ce8e8a4de7abea8ed09bca9d"
+  },
+  {
+    "invocation_id": "03-ni08_upper_grade_excess-compact_multilingual_local_feedback",
+    "request": {
+      "model": "multilingual",
+      "questions": {
+        "body_ir_search": {
+          "criteria": {
+            "option_a": "Try this exact expression: input - 79",
+            "option_b": "Try this exact expression: input - 81",
+            "option_c": "Try this exact expression: input - 80"
+          },
+          "instructions": "Choose one untried expression to fill the Gooo body hole. Use the declared intent and any prior failures or advisory observations. This choice will be typechecked and tested after selection.",
+          "type": "choice"
+        }
+      },
+      "state": {
+        "request": "{\"schema\":\"gooo/body-codegen-ir-search-state/v1\",\"stage\":\"choose_before_candidate_evaluation\",\"activity\":\"C08\",\"activity_id\":\"bodycodegen://activity/c08\",\"body_ir\":\"if input \\u003c 60 { return -1 } else { if input \\u003c 80 { return 0 } else { return __GOOO_BODY_HOLE_choice__ } }\",\"intent\":\"Return -1 below 60, 0 from 60 through 79, and the excess above 80 from 80 onward.\",\"training_test_count\":5,\"remaining_candidates\":[{\"id\":\"option_a\",\"expression\":\"input - 79\"},{\"id\":\"option_b\",\"expression\":\"input - 81\"},{\"id\":\"option_c\",\"expression\":\"input - 80\"}],\"prior_attempts\":[]}"
+      }
+    },
+    "request_sha256": "6d7ad0adb3d07c21925eae06e03a70d730f8daa037efe64ffa90efef2bcbd710"
+  },
+  {
+    "invocation_id": "03-ni08_upper_grade_excess-compact_multilingual_local_feedback",
+    "request": {
+      "model": "multilingual",
+      "questions": {
+        "body_ir_search": {
+          "criteria": {
+            "option_b": "Try this exact expression: input - 81",
+            "option_c": "Try this exact expression: input - 80"
+          },
+          "instructions": "Choose one untried expression to fill the Gooo body hole. Use the declared intent and any prior failures or advisory observations. This choice will be typechecked and tested after selection.",
+          "type": "choice"
+        }
+      },
+      "state": {
+        "request": "{\"schema\":\"gooo/body-codegen-ir-search-state/v1\",\"stage\":\"choose_before_candidate_evaluation\",\"activity\":\"C08\",\"activity_id\":\"bodycodegen://activity/c08\",\"body_ir\":\"if input \\u003c 60 { return -1 } else { if input \\u003c 80 { return 0 } else { return __GOOO_BODY_HOLE_choice__ } }\",\"intent\":\"Return -1 below 60, 0 from 60 through 79, and the excess above 80 from 80 onward.\",\"training_test_count\":5,\"remaining_candidates\":[{\"id\":\"option_b\",\"expression\":\"input - 81\"},{\"id\":\"option_c\",\"expression\":\"input - 80\"}],\"prior_attempts\":[{\"candidate_id\":\"option_a\",\"typecheck_passed\":true,\"scoring_completed\":true,\"test_cases_passed\":3,\"test_cases_total\":5,\"accuracy_percent\":60,\"failed_cases\":[{\"input\":80,\"expected\":0,\"actual\":1,\"passed\":false},{\"input\":81,\"expected\":1,\"actual\":2,\"passed\":false}],\"failed_cases_total\":2,\"failed_cases_truncated\":false}]}"
+      }
+    },
+    "request_sha256": "8d652c6233b6dea5c3fb868a3da20c5d659635eaa2c1a6040f1a958ccea66db7"
+  },
+  {
+    "invocation_id": "04-lr10_floor_then_increment-compact_multilingual_single",
+    "request": {
+      "model": "multilingual",
+      "questions": {
+        "body_ir_search": {
+          "criteria": {
+            "option_a": "Try this exact expression: adjusted",
+            "option_b": "Try this exact expression: input",
+            "option_c": "Try this exact expression: adjusted + 1"
+          },
+          "instructions": "Choose one untried expression to fill the Gooo body hole. Use the declared intent and any prior failures or advisory observations. This choice will be typechecked and tested after selection.",
+          "type": "choice"
+        }
+      },
+      "state": {
+        "request": "{\"schema\":\"gooo/body-codegen-ir-search-state/v1\",\"stage\":\"choose_before_candidate_evaluation\",\"activity\":\"C10\",\"activity_id\":\"bodycodegen://activity/c10\",\"body_ir\":\"var adjusted = input; if adjusted \\u003c 0 { adjusted = 0 } else { adjusted = adjusted + 1 }; return __GOOO_BODY_HOLE_choice__\",\"intent\":\"Replace negative input with zero; otherwise increment it once, then return the updated local.\",\"training_test_count\":4,\"remaining_candidates\":[{\"id\":\"option_a\",\"expression\":\"adjusted\"},{\"id\":\"option_b\",\"expression\":\"input\"},{\"id\":\"option_c\",\"expression\":\"adjusted + 1\"}],\"prior_attempts\":[]}"
+      }
+    },
+    "request_sha256": "70ef0cf3b3193b6d675d565acf20fcea559dac75832ae4f56e96a3ec785bee46"
+  },
+  {
+    "invocation_id": "05-pr16_composed_neighbor_product-compact_multilingual_single",
+    "request": {
+      "model": "multilingual",
+      "questions": {
+        "body_ir_search": {
+          "criteria": {
+            "option_a": "Try this exact expression: input + 2",
+            "option_b": "Try this exact expression: input + 1",
+            "option_c": "Try this exact expression: input + 3"
+          },
+          "instructions": "Choose one untried expression to fill the Gooo body hole. Use the declared intent and any prior failures or advisory observations. This choice will be typechecked and tested after selection.",
+          "type": "choice"
+        }
+      },
+      "state": {
+        "request": "{\"schema\":\"gooo/body-codegen-ir-search-state/v1\",\"stage\":\"choose_before_candidate_evaluation\",\"activity\":\"C16\",\"activity_id\":\"bodycodegen://activity/c16\",\"body_ir\":\"var next = input + 1; return next * __GOOO_BODY_HOLE_choice__ - input\",\"intent\":\"Multiply the saved successor by the input plus two, then subtract the original input.\",\"training_test_count\":4,\"remaining_candidates\":[{\"id\":\"option_a\",\"expression\":\"input + 2\"},{\"id\":\"option_b\",\"expression\":\"input + 1\"},{\"id\":\"option_c\",\"expression\":\"input + 3\"}],\"prior_attempts\":[]}"
+      }
+    },
+    "request_sha256": "4d99c1486c16dda65a8bac56eac5b8747445c7469bf7891d8c6b09dded238283"
+  },
+  {
+    "invocation_id": "06-lr11_nonnegative_doubled_score-compact_multilingual_local_feedback",
+    "request": {
+      "model": "multilingual",
+      "questions": {
+        "body_ir_search": {
+          "criteria": {
+            "option_a": "Try this exact expression: input * 2 + 1",
+            "option_b": "Try this exact expression: input",
+            "option_c": "Try this exact expression: score"
+          },
+          "instructions": "Choose one untried expression to fill the Gooo body hole. Use the declared intent and any prior failures or advisory observations. This choice will be typechecked and tested after selection.",
+          "type": "choice"
+        }
+      },
+      "state": {
+        "request": "{\"schema\":\"gooo/body-codegen-ir-search-state/v1\",\"stage\":\"choose_before_candidate_evaluation\",\"activity\":\"C11\",\"activity_id\":\"bodycodegen://activity/c11\",\"body_ir\":\"var score = input * 2; var nonnegative = score \\u003e= 0; if nonnegative { score = score + 1 } else { score = 0 }; return __GOOO_BODY_HOLE_choice__\",\"intent\":\"Double the input; add one when the doubled score is nonnegative and reset negative scores to zero.\",\"training_test_count\":4,\"remaining_candidates\":[{\"id\":\"option_a\",\"expression\":\"input * 2 + 1\"},{\"id\":\"option_b\",\"expression\":\"input\"},{\"id\":\"option_c\",\"expression\":\"score\"}],\"prior_attempts\":[]}"
+      }
+    },
+    "request_sha256": "040bc9bedbcd0471b90de9f2300f91feeb7fa709faddbd2bbb5151ecd9e560ca"
+  },
+  {
+    "invocation_id": "06-lr11_nonnegative_doubled_score-compact_multilingual_local_feedback",
+    "request": {
+      "model": "multilingual",
+      "questions": {
+        "body_ir_search": {
+          "criteria": {
+            "option_b": "Try this exact expression: input",
+            "option_c": "Try this exact expression: score"
+          },
+          "instructions": "Choose one untried expression to fill the Gooo body hole. Use the declared intent and any prior failures or advisory observations. This choice will be typechecked and tested after selection.",
+          "type": "choice"
+        }
+      },
+      "state": {
+        "request": "{\"schema\":\"gooo/body-codegen-ir-search-state/v1\",\"stage\":\"choose_before_candidate_evaluation\",\"activity\":\"C11\",\"activity_id\":\"bodycodegen://activity/c11\",\"body_ir\":\"var score = input * 2; var nonnegative = score \\u003e= 0; if nonnegative { score = score + 1 } else { score = 0 }; return __GOOO_BODY_HOLE_choice__\",\"intent\":\"Double the input; add one when the doubled score is nonnegative and reset negative scores to zero.\",\"training_test_count\":4,\"remaining_candidates\":[{\"id\":\"option_b\",\"expression\":\"input\"},{\"id\":\"option_c\",\"expression\":\"score\"}],\"prior_attempts\":[{\"candidate_id\":\"option_a\",\"typecheck_passed\":true,\"scoring_completed\":true,\"test_cases_passed\":2,\"test_cases_total\":4,\"accuracy_percent\":50,\"failed_cases\":[{\"input\":-2,\"expected\":0,\"actual\":-3,\"passed\":false},{\"input\":-1,\"expected\":0,\"actual\":-1,\"passed\":false}],\"failed_cases_total\":2,\"failed_cases_truncated\":false}]}"
+      }
+    },
+    "request_sha256": "74ad4d0f4fe08c3147ccd0d39d905d27d6c58c8f93c16c5e2af987dc60aa9984"
+  },
+  {
+    "invocation_id": "07-bl23_nonzero_bounded_flag-compact_multilingual_single",
+    "request": {
+      "model": "multilingual",
+      "questions": {
+        "body_ir_search": {
+          "criteria": {
+            "option_a": "Try this exact expression: input != -1",
+            "option_b": "Try this exact expression: input > 0",
+            "option_c": "Try this exact expression: true"
+          },
+          "instructions": "Choose one untried expression to fill the Gooo body hole. Use the declared intent and any prior failures or advisory observations. This choice will be typechecked and tested after selection.",
+          "type": "choice"
+        }
+      },
+      "state": {
+        "request": "{\"schema\":\"gooo/body-codegen-ir-search-state/v1\",\"stage\":\"choose_before_candidate_evaluation\",\"activity\":\"C23\",\"activity_id\":\"bodycodegen://activity/c23\",\"body_ir\":\"var nonzero = input != 0; var bounded = input \\u003e= -4 \\u0026\\u0026 input \\u003c= 4; var eligible = nonzero \\u0026\\u0026 bounded; if eligible \\u0026\\u0026 __GOOO_BODY_HOLE_choice__ { return 9 } else { return 0 }\",\"intent\":\"Return 9 only when a saved nonzero predicate and a saved inclusive -4 through 4 range predicate are both true.\",\"training_test_count\":6,\"remaining_candidates\":[{\"id\":\"option_a\",\"expression\":\"input != -1\"},{\"id\":\"option_b\",\"expression\":\"input \\u003e 0\"},{\"id\":\"option_c\",\"expression\":\"true\"}],\"prior_attempts\":[]}"
+      }
+    },
+    "request_sha256": "6bfb5daaf78c6b5edd850c41cfdcf352da792a0004df673f48eb46584e692286"
+  },
+  {
+    "invocation_id": "08-ob30_saturating_decrement-compact_multilingual_single",
+    "request": {
+      "model": "multilingual",
+      "questions": {
+        "body_ir_search": {
+          "criteria": {
+            "option_a": "Try this exact expression: input + 1",
+            "option_b": "Try this exact expression: input - 1",
+            "option_c": "Try this exact expression: input"
+          },
+          "instructions": "Choose one untried expression to fill the Gooo body hole. Use the declared intent and any prior failures or advisory observations. This choice will be typechecked and tested after selection.",
+          "type": "choice"
+        }
+      },
+      "state": {
+        "request": "{\"schema\":\"gooo/body-codegen-ir-search-state/v1\",\"stage\":\"choose_before_candidate_evaluation\",\"activity\":\"C30\",\"activity_id\":\"bodycodegen://activity/c30\",\"body_ir\":\"if input == (-9223372036854775807 - 1) { return input } else { return __GOOO_BODY_HOLE_choice__ }\",\"intent\":\"Decrement every int64 input except the minimum, which remains at the minimum instead of wrapping.\",\"training_test_count\":4,\"remaining_candidates\":[{\"id\":\"option_a\",\"expression\":\"input + 1\"},{\"id\":\"option_b\",\"expression\":\"input - 1\"},{\"id\":\"option_c\",\"expression\":\"input\"}],\"prior_attempts\":[]}"
+      }
+    },
+    "request_sha256": "80ca64730a2e62110a244c40cea62b53df83f815681353b16be992e0c5f0fb7d"
+  },
+  {
+    "invocation_id": "09-ni05_negative_then_double-compact_multilingual_local_feedback",
+    "request": {
+      "model": "multilingual",
+      "questions": {
+        "body_ir_search": {
+          "criteria": {
+            "option_a": "Try this exact expression: input + 2",
+            "option_b": "Try this exact expression: input * 3",
+            "option_c": "Try this exact expression: input * 2"
+          },
+          "instructions": "Choose one untried expression to fill the Gooo body hole. Use the declared intent and any prior failures or advisory observations. This choice will be typechecked and tested after selection.",
+          "type": "choice"
+        }
+      },
+      "state": {
+        "request": "{\"schema\":\"gooo/body-codegen-ir-search-state/v1\",\"stage\":\"choose_before_candidate_evaluation\",\"activity\":\"C05\",\"activity_id\":\"bodycodegen://activity/c05\",\"body_ir\":\"if input \\u003c 0 { return -1 } else { if input \\u003c 10 { return __GOOO_BODY_HOLE_choice__ } else { return 20 } }\",\"intent\":\"Return -1 for a negative input, double inputs from 0 through 9, and return 20 from 10 onward.\",\"training_test_count\":5,\"remaining_candidates\":[{\"id\":\"option_a\",\"expression\":\"input + 2\"},{\"id\":\"option_b\",\"expression\":\"input * 3\"},{\"id\":\"option_c\",\"expression\":\"input * 2\"}],\"prior_attempts\":[]}"
+      }
+    },
+    "request_sha256": "a4a97c1913e5bc22ab40b9b2744ce3eef8de8b2db06d334d34875e70024dd11d"
+  },
+  {
+    "invocation_id": "09-ni05_negative_then_double-compact_multilingual_local_feedback",
+    "request": {
+      "model": "multilingual",
+      "questions": {
+        "body_ir_search": {
+          "criteria": {
+            "option_b": "Try this exact expression: input * 3",
+            "option_c": "Try this exact expression: input * 2"
+          },
+          "instructions": "Choose one untried expression to fill the Gooo body hole. Use the declared intent and any prior failures or advisory observations. This choice will be typechecked and tested after selection.",
+          "type": "choice"
+        }
+      },
+      "state": {
+        "request": "{\"schema\":\"gooo/body-codegen-ir-search-state/v1\",\"stage\":\"choose_before_candidate_evaluation\",\"activity\":\"C05\",\"activity_id\":\"bodycodegen://activity/c05\",\"body_ir\":\"if input \\u003c 0 { return -1 } else { if input \\u003c 10 { return __GOOO_BODY_HOLE_choice__ } else { return 20 } }\",\"intent\":\"Return -1 for a negative input, double inputs from 0 through 9, and return 20 from 10 onward.\",\"training_test_count\":5,\"remaining_candidates\":[{\"id\":\"option_b\",\"expression\":\"input * 3\"},{\"id\":\"option_c\",\"expression\":\"input * 2\"}],\"prior_attempts\":[{\"candidate_id\":\"option_a\",\"typecheck_passed\":true,\"scoring_completed\":true,\"test_cases_passed\":2,\"test_cases_total\":5,\"accuracy_percent\":40,\"failed_cases\":[{\"input\":0,\"expected\":0,\"actual\":2,\"passed\":false},{\"input\":1,\"expected\":2,\"actual\":3,\"passed\":false},{\"input\":9,\"expected\":18,\"actual\":11,\"passed\":false}],\"failed_cases_total\":3,\"failed_cases_truncated\":false}]}"
+      }
+    },
+    "request_sha256": "05bba4e457c96432320081530ed048ae2ff376a5b965b919b57c9276f9dd18ff"
+  },
+  {
+    "invocation_id": "10-tx27_lexical_cutoff-compact_multilingual_single",
+    "request": {
+      "model": "multilingual",
+      "questions": {
+        "body_ir_search": {
+          "criteria": {
+            "option_a": "Try this exact expression: \"zoo\"",
+            "option_b": "Try this exact expression: \"gold\"",
+            "option_c": "Try this exact expression: \"amber\""
+          },
+          "instructions": "Choose one untried expression to fill the Gooo body hole. Use the declared intent and any prior failures or advisory observations. This choice will be typechecked and tested after selection.",
+          "type": "choice"
+        }
+      },
+      "state": {
+        "request": "{\"schema\":\"gooo/body-codegen-ir-search-state/v1\",\"stage\":\"choose_before_candidate_evaluation\",\"activity\":\"C27\",\"activity_id\":\"bodycodegen://activity/c27\",\"body_ir\":\"var label = \\\"plum\\\"; if input \\u003c 0 { label = \\\"amber\\\" } else { label = \\\"zinc\\\" }; if label \\u003c __GOOO_BODY_HOLE_choice__ { return 1 } else { return 0 }\",\"intent\":\"Assign amber to negative inputs and zinc otherwise; return 1 exactly when the label sorts before gold.\",\"training_test_count\":3,\"remaining_candidates\":[{\"id\":\"option_a\",\"expression\":\"\\\"zoo\\\"\"},{\"id\":\"option_b\",\"expression\":\"\\\"gold\\\"\"},{\"id\":\"option_c\",\"expression\":\"\\\"amber\\\"\"}],\"prior_attempts\":[]}"
+      }
+    },
+    "request_sha256": "890ff433f1c125f756d78a4feec01f08fa9a96b6317f2428a74e540d36991213"
+  },
+  {
+    "invocation_id": "11-tx28_reassigned_text_state-compact_multilingual_local_feedback",
+    "request": {
+      "model": "multilingual",
+      "questions": {
+        "body_ir_search": {
+          "criteria": {
+            "option_a": "Try this exact expression: \"ready\"",
+            "option_b": "Try this exact expression: \"idle-pending\"",
+            "option_c": "Try this exact expression: \"done\""
+          },
+          "instructions": "Choose one untried expression to fill the Gooo body hole. Use the declared intent and any prior failures or advisory observations. This choice will be typechecked and tested after selection.",
+          "type": "choice"
+        }
+      },
+      "state": {
+        "request": "{\"schema\":\"gooo/body-codegen-ir-search-state/v1\",\"stage\":\"choose_before_candidate_evaluation\",\"activity\":\"C28\",\"activity_id\":\"bodycodegen://activity/c28\",\"body_ir\":\"var status = \\\"idle\\\" + \\\"-pending\\\"; if input \\u003e 0 { status = \\\"ready\\\" } else { status = status }; if status == __GOOO_BODY_HOLE_choice__ { return 2 } else { return -2 }\",\"intent\":\"Start with the idle-pending text state, replace it with ready for positive input, and return 2 only for ready.\",\"training_test_count\":3,\"remaining_candidates\":[{\"id\":\"option_a\",\"expression\":\"\\\"ready\\\"\"},{\"id\":\"option_b\",\"expression\":\"\\\"idle-pending\\\"\"},{\"id\":\"option_c\",\"expression\":\"\\\"done\\\"\"}],\"prior_attempts\":[]}"
+      }
+    },
+    "request_sha256": "9aa8f6af3d1737aa3dfc1e1f6022eabd3c5ee5a845cbb01863b10fa1ef92d56b"
+  },
+  {
+    "invocation_id": "12-ni07_zero_special_negative_offset-compact_multilingual_local_feedback",
+    "request": {
+      "model": "multilingual",
+      "questions": {
+        "body_ir_search": {
+          "criteria": {
+            "option_a": "Try this exact expression: input + 2",
+            "option_b": "Try this exact expression: input - 2",
+            "option_c": "Try this exact expression: input + 1"
+          },
+          "instructions": "Choose one untried expression to fill the Gooo body hole. Use the declared intent and any prior failures or advisory observations. This choice will be typechecked and tested after selection.",
+          "type": "choice"
+        }
+      },
+      "state": {
+        "request": "{\"schema\":\"gooo/body-codegen-ir-search-state/v1\",\"stage\":\"choose_before_candidate_evaluation\",\"activity\":\"C07\",\"activity_id\":\"bodycodegen://activity/c07\",\"body_ir\":\"if input \\u003e= 0 { if input == 0 { return 5 } else { return 3 } } else { return __GOOO_BODY_HOLE_choice__ }\",\"intent\":\"Map zero to 5, positive inputs to 3, and negative inputs to the input plus 2.\",\"training_test_count\":4,\"remaining_candidates\":[{\"id\":\"option_a\",\"expression\":\"input + 2\"},{\"id\":\"option_b\",\"expression\":\"input - 2\"},{\"id\":\"option_c\",\"expression\":\"input + 1\"}],\"prior_attempts\":[]}"
+      }
+    },
+    "request_sha256": "7d354620786464e8fe85b5a47d1e4bba44c4296cc631823e3560c3cfbdf21290"
+  },
+  {
+    "invocation_id": "13-cp17_nonpositive_inclusive-compact_multilingual_local_feedback",
+    "request": {
+      "model": "multilingual",
+      "questions": {
+        "body_ir_search": {
+          "criteria": {
+            "option_a": "Try this exact expression: input < 0",
+            "option_b": "Try this exact expression: input == 0",
+            "option_c": "Try this exact expression: input <= 0"
+          },
+          "instructions": "Choose one untried expression to fill the Gooo body hole. Use the declared intent and any prior failures or advisory observations. This choice will be typechecked and tested after selection.",
+          "type": "choice"
+        }
+      },
+      "state": {
+        "request": "{\"schema\":\"gooo/body-codegen-ir-search-state/v1\",\"stage\":\"choose_before_candidate_evaluation\",\"activity\":\"C17\",\"activity_id\":\"bodycodegen://activity/c17\",\"body_ir\":\"if __GOOO_BODY_HOLE_choice__ { return 1 } else { return 0 }\",\"intent\":\"Return 1 for every input at or below zero, including zero, and 0 for positive inputs.\",\"training_test_count\":3,\"remaining_candidates\":[{\"id\":\"option_a\",\"expression\":\"input \\u003c 0\"},{\"id\":\"option_b\",\"expression\":\"input == 0\"},{\"id\":\"option_c\",\"expression\":\"input \\u003c= 0\"}],\"prior_attempts\":[]}"
+      }
+    },
+    "request_sha256": "fbec231dc655ad62e06fc4b2696b32ea99e839ca266ddd52426a6a0010cf3332"
+  },
+  {
+    "invocation_id": "13-cp17_nonpositive_inclusive-compact_multilingual_local_feedback",
+    "request": {
+      "model": "multilingual",
+      "questions": {
+        "body_ir_search": {
+          "criteria": {
+            "option_b": "Try this exact expression: input == 0",
+            "option_c": "Try this exact expression: input <= 0"
+          },
+          "instructions": "Choose one untried expression to fill the Gooo body hole. Use the declared intent and any prior failures or advisory observations. This choice will be typechecked and tested after selection.",
+          "type": "choice"
+        }
+      },
+      "state": {
+        "request": "{\"schema\":\"gooo/body-codegen-ir-search-state/v1\",\"stage\":\"choose_before_candidate_evaluation\",\"activity\":\"C17\",\"activity_id\":\"bodycodegen://activity/c17\",\"body_ir\":\"if __GOOO_BODY_HOLE_choice__ { return 1 } else { return 0 }\",\"intent\":\"Return 1 for every input at or below zero, including zero, and 0 for positive inputs.\",\"training_test_count\":3,\"remaining_candidates\":[{\"id\":\"option_b\",\"expression\":\"input == 0\"},{\"id\":\"option_c\",\"expression\":\"input \\u003c= 0\"}],\"prior_attempts\":[{\"candidate_id\":\"option_a\",\"typecheck_passed\":true,\"scoring_completed\":true,\"test_cases_passed\":2,\"test_cases_total\":3,\"accuracy_percent\":66.66666666666667,\"failed_cases\":[{\"input\":0,\"expected\":1,\"actual\":0,\"passed\":false}],\"failed_cases_total\":1,\"failed_cases_truncated\":false}]}"
+      }
+    },
+    "request_sha256": "bae2d9af54f2d2fc1d80d034b05290a830ba95ef46161da18cf885cfd79f3dcb"
+  },
+  {
+    "invocation_id": "14-lr12_cap_after_adjustment-compact_multilingual_local_feedback",
+    "request": {
+      "model": "multilingual",
+      "questions": {
+        "body_ir_search": {
+          "criteria": {
+            "option_a": "Try this exact expression: amount + 1",
+            "option_b": "Try this exact expression: amount",
+            "option_c": "Try this exact expression: input + 2"
+          },
+          "instructions": "Choose one untried expression to fill the Gooo body hole. Use the declared intent and any prior failures or advisory observations. This choice will be typechecked and tested after selection.",
+          "type": "choice"
+        }
+      },
+      "state": {
+        "request": "{\"schema\":\"gooo/body-codegen-ir-search-state/v1\",\"stage\":\"choose_before_candidate_evaluation\",\"activity\":\"C12\",\"activity_id\":\"bodycodegen://activity/c12\",\"body_ir\":\"var amount = input; amount = amount + 3; if amount \\u003e 10 { amount = 10 } else { amount = amount }; amount = amount - 1; return __GOOO_BODY_HOLE_choice__\",\"intent\":\"Add three, cap the adjusted amount at ten, subtract one from that capped local, and return it.\",\"training_test_count\":4,\"remaining_candidates\":[{\"id\":\"option_a\",\"expression\":\"amount + 1\"},{\"id\":\"option_b\",\"expression\":\"amount\"},{\"id\":\"option_c\",\"expression\":\"input + 2\"}],\"prior_attempts\":[]}"
+      }
+    },
+    "request_sha256": "34da13f57c33944239c2b3aeabf2ca0ab666364bf0ac9eab8f34de2d5c37ef69"
+  },
+  {
+    "invocation_id": "14-lr12_cap_after_adjustment-compact_multilingual_local_feedback",
+    "request": {
+      "model": "multilingual",
+      "questions": {
+        "body_ir_search": {
+          "criteria": {
+            "option_b": "Try this exact expression: amount",
+            "option_c": "Try this exact expression: input + 2"
+          },
+          "instructions": "Choose one untried expression to fill the Gooo body hole. Use the declared intent and any prior failures or advisory observations. This choice will be typechecked and tested after selection.",
+          "type": "choice"
+        }
+      },
+      "state": {
+        "request": "{\"schema\":\"gooo/body-codegen-ir-search-state/v1\",\"stage\":\"choose_before_candidate_evaluation\",\"activity\":\"C12\",\"activity_id\":\"bodycodegen://activity/c12\",\"body_ir\":\"var amount = input; amount = amount + 3; if amount \\u003e 10 { amount = 10 } else { amount = amount }; amount = amount - 1; return __GOOO_BODY_HOLE_choice__\",\"intent\":\"Add three, cap the adjusted amount at ten, subtract one from that capped local, and return it.\",\"training_test_count\":4,\"remaining_candidates\":[{\"id\":\"option_b\",\"expression\":\"amount\"},{\"id\":\"option_c\",\"expression\":\"input + 2\"}],\"prior_attempts\":[{\"candidate_id\":\"option_a\",\"typecheck_passed\":true,\"scoring_completed\":true,\"test_cases_passed\":0,\"test_cases_total\":4,\"accuracy_percent\":0,\"failed_cases\":[{\"input\":-5,\"expected\":-3,\"actual\":-2,\"passed\":false},{\"input\":0,\"expected\":2,\"actual\":3,\"passed\":false},{\"input\":7,\"expected\":9,\"actual\":10,\"passed\":false},{\"input\":8,\"expected\":9,\"actual\":10,\"passed\":false}],\"failed_cases_total\":4,\"failed_cases_truncated\":false}]}"
+      }
+    },
+    "request_sha256": "646f75a7dc67ca156fd069804c3fae207e13dfacfa98d87add587bb5ce20d2b9"
+  },
+  {
+    "invocation_id": "15-ni07_zero_special_negative_offset-compact_multilingual_single",
+    "request": {
+      "model": "multilingual",
+      "questions": {
+        "body_ir_search": {
+          "criteria": {
+            "option_a": "Try this exact expression: input + 2",
+            "option_b": "Try this exact expression: input - 2",
+            "option_c": "Try this exact expression: input + 1"
+          },
+          "instructions": "Choose one untried expression to fill the Gooo body hole. Use the declared intent and any prior failures or advisory observations. This choice will be typechecked and tested after selection.",
+          "type": "choice"
+        }
+      },
+      "state": {
+        "request": "{\"schema\":\"gooo/body-codegen-ir-search-state/v1\",\"stage\":\"choose_before_candidate_evaluation\",\"activity\":\"C07\",\"activity_id\":\"bodycodegen://activity/c07\",\"body_ir\":\"if input \\u003e= 0 { if input == 0 { return 5 } else { return 3 } } else { return __GOOO_BODY_HOLE_choice__ }\",\"intent\":\"Map zero to 5, positive inputs to 3, and negative inputs to the input plus 2.\",\"training_test_count\":4,\"remaining_candidates\":[{\"id\":\"option_a\",\"expression\":\"input + 2\"},{\"id\":\"option_b\",\"expression\":\"input - 2\"},{\"id\":\"option_c\",\"expression\":\"input + 1\"}],\"prior_attempts\":[]}"
+      }
+    },
+    "request_sha256": "7d354620786464e8fe85b5a47d1e4bba44c4296cc631823e3560c3cfbdf21290"
+  },
+  {
+    "invocation_id": "16-cp20_strict_symmetric_window-compact_multilingual_single",
+    "request": {
+      "model": "multilingual",
+      "questions": {
+        "body_ir_search": {
+          "criteria": {
+            "option_a": "Try this exact expression: input >= -5 && input <= 5",
+            "option_b": "Try this exact expression: input > -5 && input <= 5",
+            "option_c": "Try this exact expression: input > -5 && input < 5"
+          },
+          "instructions": "Choose one untried expression to fill the Gooo body hole. Use the declared intent and any prior failures or advisory observations. This choice will be typechecked and tested after selection.",
+          "type": "choice"
+        }
+      },
+      "state": {
+        "request": "{\"schema\":\"gooo/body-codegen-ir-search-state/v1\",\"stage\":\"choose_before_candidate_evaluation\",\"activity\":\"C20\",\"activity_id\":\"bodycodegen://activity/c20\",\"body_ir\":\"if __GOOO_BODY_HOLE_choice__ { return 4 } else { return -4 }\",\"intent\":\"Return 4 only strictly between -5 and 5; both endpoints and everything outside return -4.\",\"training_test_count\":6,\"remaining_candidates\":[{\"id\":\"option_a\",\"expression\":\"input \\u003e= -5 \\u0026\\u0026 input \\u003c= 5\"},{\"id\":\"option_b\",\"expression\":\"input \\u003e -5 \\u0026\\u0026 input \\u003c= 5\"},{\"id\":\"option_c\",\"expression\":\"input \\u003e -5 \\u0026\\u0026 input \\u003c 5\"}],\"prior_attempts\":[]}"
+      }
+    },
+    "request_sha256": "d2ff8abd3cee6dd11bf773d53f870e3f5740eb84ff1002bc4d11f1d0388a2a4e"
+  },
+  {
+    "invocation_id": "17-ob29_saturating_increment-compact_multilingual_single",
+    "request": {
+      "model": "multilingual",
+      "questions": {
+        "body_ir_search": {
+          "criteria": {
+            "option_a": "Try this exact expression: input",
+            "option_b": "Try this exact expression: input - 1",
+            "option_c": "Try this exact expression: input + 1"
+          },
+          "instructions": "Choose one untried expression to fill the Gooo body hole. Use the declared intent and any prior failures or advisory observations. This choice will be typechecked and tested after selection.",
+          "type": "choice"
+        }
+      },
+      "state": {
+        "request": "{\"schema\":\"gooo/body-codegen-ir-search-state/v1\",\"stage\":\"choose_before_candidate_evaluation\",\"activity\":\"C29\",\"activity_id\":\"bodycodegen://activity/c29\",\"body_ir\":\"if input == 9223372036854775807 { return input } else { return __GOOO_BODY_HOLE_choice__ }\",\"intent\":\"Increment every int64 input except the maximum, which remains at the maximum instead of wrapping.\",\"training_test_count\":4,\"remaining_candidates\":[{\"id\":\"option_a\",\"expression\":\"input\"},{\"id\":\"option_b\",\"expression\":\"input - 1\"},{\"id\":\"option_c\",\"expression\":\"input + 1\"}],\"prior_attempts\":[]}"
+      }
+    },
+    "request_sha256": "0805d74851411b75ef76a2efac9ff1d72207f4d5b944ee605523c2bd88059b54"
+  },
+  {
+    "invocation_id": "18-cp20_strict_symmetric_window-compact_multilingual_local_feedback",
+    "request": {
+      "model": "multilingual",
+      "questions": {
+        "body_ir_search": {
+          "criteria": {
+            "option_a": "Try this exact expression: input >= -5 && input <= 5",
+            "option_b": "Try this exact expression: input > -5 && input <= 5",
+            "option_c": "Try this exact expression: input > -5 && input < 5"
+          },
+          "instructions": "Choose one untried expression to fill the Gooo body hole. Use the declared intent and any prior failures or advisory observations. This choice will be typechecked and tested after selection.",
+          "type": "choice"
+        }
+      },
+      "state": {
+        "request": "{\"schema\":\"gooo/body-codegen-ir-search-state/v1\",\"stage\":\"choose_before_candidate_evaluation\",\"activity\":\"C20\",\"activity_id\":\"bodycodegen://activity/c20\",\"body_ir\":\"if __GOOO_BODY_HOLE_choice__ { return 4 } else { return -4 }\",\"intent\":\"Return 4 only strictly between -5 and 5; both endpoints and everything outside return -4.\",\"training_test_count\":6,\"remaining_candidates\":[{\"id\":\"option_a\",\"expression\":\"input \\u003e= -5 \\u0026\\u0026 input \\u003c= 5\"},{\"id\":\"option_b\",\"expression\":\"input \\u003e -5 \\u0026\\u0026 input \\u003c= 5\"},{\"id\":\"option_c\",\"expression\":\"input \\u003e -5 \\u0026\\u0026 input \\u003c 5\"}],\"prior_attempts\":[]}"
+      }
+    },
+    "request_sha256": "d2ff8abd3cee6dd11bf773d53f870e3f5740eb84ff1002bc4d11f1d0388a2a4e"
+  },
+  {
+    "invocation_id": "18-cp20_strict_symmetric_window-compact_multilingual_local_feedback",
+    "request": {
+      "model": "multilingual",
+      "questions": {
+        "body_ir_search": {
+          "criteria": {
+            "option_b": "Try this exact expression: input > -5 && input <= 5",
+            "option_c": "Try this exact expression: input > -5 && input < 5"
+          },
+          "instructions": "Choose one untried expression to fill the Gooo body hole. Use the declared intent and any prior failures or advisory observations. This choice will be typechecked and tested after selection.",
+          "type": "choice"
+        }
+      },
+      "state": {
+        "request": "{\"schema\":\"gooo/body-codegen-ir-search-state/v1\",\"stage\":\"choose_before_candidate_evaluation\",\"activity\":\"C20\",\"activity_id\":\"bodycodegen://activity/c20\",\"body_ir\":\"if __GOOO_BODY_HOLE_choice__ { return 4 } else { return -4 }\",\"intent\":\"Return 4 only strictly between -5 and 5; both endpoints and everything outside return -4.\",\"training_test_count\":6,\"remaining_candidates\":[{\"id\":\"option_b\",\"expression\":\"input \\u003e -5 \\u0026\\u0026 input \\u003c= 5\"},{\"id\":\"option_c\",\"expression\":\"input \\u003e -5 \\u0026\\u0026 input \\u003c 5\"}],\"prior_attempts\":[{\"candidate_id\":\"option_a\",\"typecheck_passed\":true,\"scoring_completed\":true,\"test_cases_passed\":4,\"test_cases_total\":6,\"accuracy_percent\":66.66666666666667,\"failed_cases\":[{\"input\":-5,\"expected\":-4,\"actual\":4,\"passed\":false},{\"input\":5,\"expected\":-4,\"actual\":4,\"passed\":false}],\"failed_cases_total\":2,\"failed_cases_truncated\":false}]}"
+      }
+    },
+    "request_sha256": "5744b95891b3613ef6d5ceb6b71b3a1aea9f353cb088b812ec6c4c3363ba72c8"
+  },
+  {
+    "invocation_id": "19-tx25_sign_label-compact_multilingual_single",
+    "request": {
+      "model": "multilingual",
+      "questions": {
+        "body_ir_search": {
+          "criteria": {
+            "option_a": "Try this exact expression: \"negative\"",
+            "option_b": "Try this exact expression: \"nonnegative\"",
+            "option_c": "Try this exact expression: \"neutral\""
+          },
+          "instructions": "Choose one untried expression to fill the Gooo body hole. Use the declared intent and any prior failures or advisory observations. This choice will be typechecked and tested after selection.",
+          "type": "choice"
+        }
+      },
+      "state": {
+        "request": "{\"schema\":\"gooo/body-codegen-ir-search-state/v1\",\"stage\":\"choose_before_candidate_evaluation\",\"activity\":\"C25\",\"activity_id\":\"bodycodegen://activity/c25\",\"body_ir\":\"var label = \\\"neutral\\\"; if input \\u003c 0 { label = \\\"negative\\\" } else { label = \\\"nonnegative\\\" }; if label == __GOOO_BODY_HOLE_choice__ { return -1 } else { return 1 }\",\"intent\":\"Label the input as negative or nonnegative; return -1 for the negative label and 1 for the other label.\",\"training_test_count\":3,\"remaining_candidates\":[{\"id\":\"option_a\",\"expression\":\"\\\"negative\\\"\"},{\"id\":\"option_b\",\"expression\":\"\\\"nonnegative\\\"\"},{\"id\":\"option_c\",\"expression\":\"\\\"neutral\\\"\"}],\"prior_attempts\":[]}"
+      }
+    },
+    "request_sha256": "1cb1ed0de6999b4f1ba52877a867b0225b278a34a0ff98fc3d826f8437148564"
+  },
+  {
+    "invocation_id": "20-ob29_saturating_increment-compact_multilingual_local_feedback",
+    "request": {
+      "model": "multilingual",
+      "questions": {
+        "body_ir_search": {
+          "criteria": {
+            "option_a": "Try this exact expression: input",
+            "option_b": "Try this exact expression: input - 1",
+            "option_c": "Try this exact expression: input + 1"
+          },
+          "instructions": "Choose one untried expression to fill the Gooo body hole. Use the declared intent and any prior failures or advisory observations. This choice will be typechecked and tested after selection.",
+          "type": "choice"
+        }
+      },
+      "state": {
+        "request": "{\"schema\":\"gooo/body-codegen-ir-search-state/v1\",\"stage\":\"choose_before_candidate_evaluation\",\"activity\":\"C29\",\"activity_id\":\"bodycodegen://activity/c29\",\"body_ir\":\"if input == 9223372036854775807 { return input } else { return __GOOO_BODY_HOLE_choice__ }\",\"intent\":\"Increment every int64 input except the maximum, which remains at the maximum instead of wrapping.\",\"training_test_count\":4,\"remaining_candidates\":[{\"id\":\"option_a\",\"expression\":\"input\"},{\"id\":\"option_b\",\"expression\":\"input - 1\"},{\"id\":\"option_c\",\"expression\":\"input + 1\"}],\"prior_attempts\":[]}"
+      }
+    },
+    "request_sha256": "0805d74851411b75ef76a2efac9ff1d72207f4d5b944ee605523c2bd88059b54"
+  },
+  {
+    "invocation_id": "20-ob29_saturating_increment-compact_multilingual_local_feedback",
+    "request": {
+      "model": "multilingual",
+      "questions": {
+        "body_ir_search": {
+          "criteria": {
+            "option_b": "Try this exact expression: input - 1",
+            "option_c": "Try this exact expression: input + 1"
+          },
+          "instructions": "Choose one untried expression to fill the Gooo body hole. Use the declared intent and any prior failures or advisory observations. This choice will be typechecked and tested after selection.",
+          "type": "choice"
+        }
+      },
+      "state": {
+        "request": "{\"schema\":\"gooo/body-codegen-ir-search-state/v1\",\"stage\":\"choose_before_candidate_evaluation\",\"activity\":\"C29\",\"activity_id\":\"bodycodegen://activity/c29\",\"body_ir\":\"if input == 9223372036854775807 { return input } else { return __GOOO_BODY_HOLE_choice__ }\",\"intent\":\"Increment every int64 input except the maximum, which remains at the maximum instead of wrapping.\",\"training_test_count\":4,\"remaining_candidates\":[{\"id\":\"option_b\",\"expression\":\"input - 1\"},{\"id\":\"option_c\",\"expression\":\"input + 1\"}],\"prior_attempts\":[{\"candidate_id\":\"option_a\",\"typecheck_passed\":true,\"scoring_completed\":true,\"test_cases_passed\":0,\"test_cases_total\":4,\"accuracy_percent\":0,\"failed_cases\":[{\"input\":0,\"expected\":1,\"actual\":0,\"passed\":false},{\"input\":1,\"expected\":2,\"actual\":1,\"passed\":false},{\"input\":9223372036854775805,\"expected\":9223372036854775806,\"actual\":9223372036854775805,\"passed\":false},{\"input\":9223372036854775806,\"expected\":9223372036854775807,\"actual\":9223372036854775806,\"passed\":false}],\"failed_cases_total\":4,\"failed_cases_truncated\":false}]}"
+      }
+    },
+    "request_sha256": "1f9c8bde2733c899d0b95941223d6156cac21b54bfb7b27faea9cd802f288085"
+  },
+  {
+    "invocation_id": "21-cc04_outer_cutoffs-compact_multilingual_single",
+    "request": {
+      "model": "multilingual",
+      "questions": {
+        "body_ir_search": {
+          "criteria": {
+            "option_a": "Try this exact expression: input <= -6 || input >= 8",
+            "option_b": "Try this exact expression: input <= -8 || input >= 6",
+            "option_c": "Try this exact expression: input <= -6 && input >= 8"
+          },
+          "instructions": "Choose one untried expression to fill the Gooo body hole. Use the declared intent and any prior failures or advisory observations. This choice will be typechecked and tested after selection.",
+          "type": "choice"
+        }
+      },
+      "state": {
+        "request": "{\"schema\":\"gooo/body-codegen-ir-search-state/v1\",\"stage\":\"choose_before_candidate_evaluation\",\"activity\":\"C04\",\"activity_id\":\"bodycodegen://activity/c04\",\"body_ir\":\"if __GOOO_BODY_HOLE_choice__ { return 9 } else { return 0 }\",\"intent\":\"Return 9 when the input is at most -6 or at least 8; return 0 in the middle interval.\",\"training_test_count\":6,\"remaining_candidates\":[{\"id\":\"option_a\",\"expression\":\"input \\u003c= -6 || input \\u003e= 8\"},{\"id\":\"option_b\",\"expression\":\"input \\u003c= -8 || input \\u003e= 6\"},{\"id\":\"option_c\",\"expression\":\"input \\u003c= -6 \\u0026\\u0026 input \\u003e= 8\"}],\"prior_attempts\":[]}"
+      }
+    },
+    "request_sha256": "0e0774eaf118e58b05084be5f2c3c310702731db3ddee02d48abc044b8dfc8b5"
+  },
+  {
+    "invocation_id": "22-tx25_sign_label-compact_multilingual_local_feedback",
+    "request": {
+      "model": "multilingual",
+      "questions": {
+        "body_ir_search": {
+          "criteria": {
+            "option_a": "Try this exact expression: \"negative\"",
+            "option_b": "Try this exact expression: \"nonnegative\"",
+            "option_c": "Try this exact expression: \"neutral\""
+          },
+          "instructions": "Choose one untried expression to fill the Gooo body hole. Use the declared intent and any prior failures or advisory observations. This choice will be typechecked and tested after selection.",
+          "type": "choice"
+        }
+      },
+      "state": {
+        "request": "{\"schema\":\"gooo/body-codegen-ir-search-state/v1\",\"stage\":\"choose_before_candidate_evaluation\",\"activity\":\"C25\",\"activity_id\":\"bodycodegen://activity/c25\",\"body_ir\":\"var label = \\\"neutral\\\"; if input \\u003c 0 { label = \\\"negative\\\" } else { label = \\\"nonnegative\\\" }; if label == __GOOO_BODY_HOLE_choice__ { return -1 } else { return 1 }\",\"intent\":\"Label the input as negative or nonnegative; return -1 for the negative label and 1 for the other label.\",\"training_test_count\":3,\"remaining_candidates\":[{\"id\":\"option_a\",\"expression\":\"\\\"negative\\\"\"},{\"id\":\"option_b\",\"expression\":\"\\\"nonnegative\\\"\"},{\"id\":\"option_c\",\"expression\":\"\\\"neutral\\\"\"}],\"prior_attempts\":[]}"
+      }
+    },
+    "request_sha256": "1cb1ed0de6999b4f1ba52877a867b0225b278a34a0ff98fc3d826f8437148564"
+  },
+  {
+    "invocation_id": "23-tx27_lexical_cutoff-compact_multilingual_local_feedback",
+    "request": {
+      "model": "multilingual",
+      "questions": {
+        "body_ir_search": {
+          "criteria": {
+            "option_a": "Try this exact expression: \"zoo\"",
+            "option_b": "Try this exact expression: \"gold\"",
+            "option_c": "Try this exact expression: \"amber\""
+          },
+          "instructions": "Choose one untried expression to fill the Gooo body hole. Use the declared intent and any prior failures or advisory observations. This choice will be typechecked and tested after selection.",
+          "type": "choice"
+        }
+      },
+      "state": {
+        "request": "{\"schema\":\"gooo/body-codegen-ir-search-state/v1\",\"stage\":\"choose_before_candidate_evaluation\",\"activity\":\"C27\",\"activity_id\":\"bodycodegen://activity/c27\",\"body_ir\":\"var label = \\\"plum\\\"; if input \\u003c 0 { label = \\\"amber\\\" } else { label = \\\"zinc\\\" }; if label \\u003c __GOOO_BODY_HOLE_choice__ { return 1 } else { return 0 }\",\"intent\":\"Assign amber to negative inputs and zinc otherwise; return 1 exactly when the label sorts before gold.\",\"training_test_count\":3,\"remaining_candidates\":[{\"id\":\"option_a\",\"expression\":\"\\\"zoo\\\"\"},{\"id\":\"option_b\",\"expression\":\"\\\"gold\\\"\"},{\"id\":\"option_c\",\"expression\":\"\\\"amber\\\"\"}],\"prior_attempts\":[]}"
+      }
+    },
+    "request_sha256": "890ff433f1c125f756d78a4feec01f08fa9a96b6317f2428a74e540d36991213"
+  },
+  {
+    "invocation_id": "23-tx27_lexical_cutoff-compact_multilingual_local_feedback",
+    "request": {
+      "model": "multilingual",
+      "questions": {
+        "body_ir_search": {
+          "criteria": {
+            "option_b": "Try this exact expression: \"gold\"",
+            "option_c": "Try this exact expression: \"amber\""
+          },
+          "instructions": "Choose one untried expression to fill the Gooo body hole. Use the declared intent and any prior failures or advisory observations. This choice will be typechecked and tested after selection.",
+          "type": "choice"
+        }
+      },
+      "state": {
+        "request": "{\"schema\":\"gooo/body-codegen-ir-search-state/v1\",\"stage\":\"choose_before_candidate_evaluation\",\"activity\":\"C27\",\"activity_id\":\"bodycodegen://activity/c27\",\"body_ir\":\"var label = \\\"plum\\\"; if input \\u003c 0 { label = \\\"amber\\\" } else { label = \\\"zinc\\\" }; if label \\u003c __GOOO_BODY_HOLE_choice__ { return 1 } else { return 0 }\",\"intent\":\"Assign amber to negative inputs and zinc otherwise; return 1 exactly when the label sorts before gold.\",\"training_test_count\":3,\"remaining_candidates\":[{\"id\":\"option_b\",\"expression\":\"\\\"gold\\\"\"},{\"id\":\"option_c\",\"expression\":\"\\\"amber\\\"\"}],\"prior_attempts\":[{\"candidate_id\":\"option_a\",\"typecheck_passed\":true,\"scoring_completed\":true,\"test_cases_passed\":1,\"test_cases_total\":3,\"accuracy_percent\":33.333333333333336,\"failed_cases\":[{\"input\":0,\"expected\":0,\"actual\":1,\"passed\":false},{\"input\":1,\"expected\":0,\"actual\":1,\"passed\":false}],\"failed_cases_total\":2,\"failed_cases_truncated\":false}]}"
+      }
+    },
+    "request_sha256": "d7cfc5619a09335d8daa46261c0ffc2dde7fc68ce9693882fc8a1c3d57454992"
+  },
+  {
+    "invocation_id": "24-tx26_state_label-compact_multilingual_local_feedback",
+    "request": {
+      "model": "multilingual",
+      "questions": {
+        "body_ir_search": {
+          "criteria": {
+            "option_a": "Try this exact expression: \"closed\"",
+            "option_b": "Try this exact expression: \"error\"",
+            "option_c": "Try this exact expression: \"open\""
+          },
+          "instructions": "Choose one untried expression to fill the Gooo body hole. Use the declared intent and any prior failures or advisory observations. This choice will be typechecked and tested after selection.",
+          "type": "choice"
+        }
+      },
+      "state": {
+        "request": "{\"schema\":\"gooo/body-codegen-ir-search-state/v1\",\"stage\":\"choose_before_candidate_evaluation\",\"activity\":\"C26\",\"activity_id\":\"bodycodegen://activity/c26\",\"body_ir\":\"var status = \\\"pending\\\"; if input == 0 { status = \\\"closed\\\" } else { if input \\u003e 0 { status = \\\"open\\\" } else { status = \\\"error\\\" } }; if status == __GOOO_BODY_HOLE_choice__ { return 1 } else { return 0 }\",\"intent\":\"Classify zero as closed, positive input as open, and negative input as error; return one only for open.\",\"training_test_count\":3,\"remaining_candidates\":[{\"id\":\"option_a\",\"expression\":\"\\\"closed\\\"\"},{\"id\":\"option_b\",\"expression\":\"\\\"error\\\"\"},{\"id\":\"option_c\",\"expression\":\"\\\"open\\\"\"}],\"prior_attempts\":[]}"
+      }
+    },
+    "request_sha256": "6508e003ceeafb6d8ee6617640bb8af940f47d0713408d01be663cfae2fd92c8"
+  },
+  {
+    "invocation_id": "24-tx26_state_label-compact_multilingual_local_feedback",
+    "request": {
+      "model": "multilingual",
+      "questions": {
+        "body_ir_search": {
+          "criteria": {
+            "option_b": "Try this exact expression: \"error\"",
+            "option_c": "Try this exact expression: \"open\""
+          },
+          "instructions": "Choose one untried expression to fill the Gooo body hole. Use the declared intent and any prior failures or advisory observations. This choice will be typechecked and tested after selection.",
+          "type": "choice"
+        }
+      },
+      "state": {
+        "request": "{\"schema\":\"gooo/body-codegen-ir-search-state/v1\",\"stage\":\"choose_before_candidate_evaluation\",\"activity\":\"C26\",\"activity_id\":\"bodycodegen://activity/c26\",\"body_ir\":\"var status = \\\"pending\\\"; if input == 0 { status = \\\"closed\\\" } else { if input \\u003e 0 { status = \\\"open\\\" } else { status = \\\"error\\\" } }; if status == __GOOO_BODY_HOLE_choice__ { return 1 } else { return 0 }\",\"intent\":\"Classify zero as closed, positive input as open, and negative input as error; return one only for open.\",\"training_test_count\":3,\"remaining_candidates\":[{\"id\":\"option_b\",\"expression\":\"\\\"error\\\"\"},{\"id\":\"option_c\",\"expression\":\"\\\"open\\\"\"}],\"prior_attempts\":[{\"candidate_id\":\"option_a\",\"typecheck_passed\":true,\"scoring_completed\":true,\"test_cases_passed\":1,\"test_cases_total\":3,\"accuracy_percent\":33.333333333333336,\"failed_cases\":[{\"input\":0,\"expected\":0,\"actual\":1,\"passed\":false},{\"input\":1,\"expected\":1,\"actual\":0,\"passed\":false}],\"failed_cases_total\":2,\"failed_cases_truncated\":false}]}"
+      }
+    },
+    "request_sha256": "734c624b74fc8ea1bb6313a7eacfab8858ab92b92d4f92b5969d6a74596c28c0"
+  },
+  {
+    "invocation_id": "25-ob32_clamped_absolute-compact_multilingual_local_feedback",
+    "request": {
+      "model": "multilingual",
+      "questions": {
+        "body_ir_search": {
+          "criteria": {
+            "option_a": "Try this exact expression: input",
+            "option_b": "Try this exact expression: 0 - magnitude",
+            "option_c": "Try this exact expression: magnitude"
+          },
+          "instructions": "Choose one untried expression to fill the Gooo body hole. Use the declared intent and any prior failures or advisory observations. This choice will be typechecked and tested after selection.",
+          "type": "choice"
+        }
+      },
+      "state": {
+        "request": "{\"schema\":\"gooo/body-codegen-ir-search-state/v1\",\"stage\":\"choose_before_candidate_evaluation\",\"activity\":\"C32\",\"activity_id\":\"bodycodegen://activity/c32\",\"body_ir\":\"var magnitude = input; if input \\u003c 0 { magnitude = 0 - magnitude } else { magnitude = input }; if input == (-9223372036854775807 - 1) { return 9223372036854775807 } else { return __GOOO_BODY_HOLE_choice__ }\",\"intent\":\"Return the nonnegative magnitude; map the unrepresentable absolute value of the minimum int64 to the maximum int64.\",\"training_test_count\":4,\"remaining_candidates\":[{\"id\":\"option_a\",\"expression\":\"input\"},{\"id\":\"option_b\",\"expression\":\"0 - magnitude\"},{\"id\":\"option_c\",\"expression\":\"magnitude\"}],\"prior_attempts\":[]}"
+      }
+    },
+    "request_sha256": "acdaf9fa6ffc91f0c985949cfeca7abc0cf1fc5a28dcf60fb97e5890f4383bfd"
+  },
+  {
+    "invocation_id": "25-ob32_clamped_absolute-compact_multilingual_local_feedback",
+    "request": {
+      "model": "multilingual",
+      "questions": {
+        "body_ir_search": {
+          "criteria": {
+            "option_b": "Try this exact expression: 0 - magnitude",
+            "option_c": "Try this exact expression: magnitude"
+          },
+          "instructions": "Choose one untried expression to fill the Gooo body hole. Use the declared intent and any prior failures or advisory observations. This choice will be typechecked and tested after selection.",
+          "type": "choice"
+        }
+      },
+      "state": {
+        "request": "{\"schema\":\"gooo/body-codegen-ir-search-state/v1\",\"stage\":\"choose_before_candidate_evaluation\",\"activity\":\"C32\",\"activity_id\":\"bodycodegen://activity/c32\",\"body_ir\":\"var magnitude = input; if input \\u003c 0 { magnitude = 0 - magnitude } else { magnitude = input }; if input == (-9223372036854775807 - 1) { return 9223372036854775807 } else { return __GOOO_BODY_HOLE_choice__ }\",\"intent\":\"Return the nonnegative magnitude; map the unrepresentable absolute value of the minimum int64 to the maximum int64.\",\"training_test_count\":4,\"remaining_candidates\":[{\"id\":\"option_b\",\"expression\":\"0 - magnitude\"},{\"id\":\"option_c\",\"expression\":\"magnitude\"}],\"prior_attempts\":[{\"candidate_id\":\"option_a\",\"typecheck_passed\":true,\"scoring_completed\":true,\"test_cases_passed\":3,\"test_cases_total\":4,\"accuracy_percent\":75,\"failed_cases\":[{\"input\":-3,\"expected\":3,\"actual\":-3,\"passed\":false}],\"failed_cases_total\":1,\"failed_cases_truncated\":false}]}"
+      }
+    },
+    "request_sha256": "2e243e910e0c79184d3b938989e5908b7f5640fcb8cde787a49fd78adc17fe53"
+  },
+  {
+    "invocation_id": "26-ni05_negative_then_double-compact_multilingual_single",
+    "request": {
+      "model": "multilingual",
+      "questions": {
+        "body_ir_search": {
+          "criteria": {
+            "option_a": "Try this exact expression: input + 2",
+            "option_b": "Try this exact expression: input * 3",
+            "option_c": "Try this exact expression: input * 2"
+          },
+          "instructions": "Choose one untried expression to fill the Gooo body hole. Use the declared intent and any prior failures or advisory observations. This choice will be typechecked and tested after selection.",
+          "type": "choice"
+        }
+      },
+      "state": {
+        "request": "{\"schema\":\"gooo/body-codegen-ir-search-state/v1\",\"stage\":\"choose_before_candidate_evaluation\",\"activity\":\"C05\",\"activity_id\":\"bodycodegen://activity/c05\",\"body_ir\":\"if input \\u003c 0 { return -1 } else { if input \\u003c 10 { return __GOOO_BODY_HOLE_choice__ } else { return 20 } }\",\"intent\":\"Return -1 for a negative input, double inputs from 0 through 9, and return 20 from 10 onward.\",\"training_test_count\":5,\"remaining_candidates\":[{\"id\":\"option_a\",\"expression\":\"input + 2\"},{\"id\":\"option_b\",\"expression\":\"input * 3\"},{\"id\":\"option_c\",\"expression\":\"input * 2\"}],\"prior_attempts\":[]}"
+      }
+    },
+    "request_sha256": "a4a97c1913e5bc22ab40b9b2744ce3eef8de8b2db06d334d34875e70024dd11d"
+  },
+  {
+    "invocation_id": "27-lr09_compound_total-compact_multilingual_single",
+    "request": {
+      "model": "multilingual",
+      "questions": {
+        "body_ir_search": {
+          "criteria": {
+            "option_a": "Try this exact expression: input + 10",
+            "option_b": "Try this exact expression: total",
+            "option_c": "Try this exact expression: input * 2 + 5"
+          },
+          "instructions": "Choose one untried expression to fill the Gooo body hole. Use the declared intent and any prior failures or advisory observations. This choice will be typechecked and tested after selection.",
+          "type": "choice"
+        }
+      },
+      "state": {
+        "request": "{\"schema\":\"gooo/body-codegen-ir-search-state/v1\",\"stage\":\"choose_before_candidate_evaluation\",\"activity\":\"C09\",\"activity_id\":\"bodycodegen://activity/c09\",\"body_ir\":\"var total = input + 5; total = total * 2; return __GOOO_BODY_HOLE_choice__\",\"intent\":\"Add five to an amount, double the updated total, and return that reassigned total.\",\"training_test_count\":4,\"remaining_candidates\":[{\"id\":\"option_a\",\"expression\":\"input + 10\"},{\"id\":\"option_b\",\"expression\":\"total\"},{\"id\":\"option_c\",\"expression\":\"input * 2 + 5\"}],\"prior_attempts\":[]}"
+      }
+    },
+    "request_sha256": "a0bd06fdbbad4567ef7ca833b983e46606b2aef5fcea49f922188405b2febd4f"
+  },
+  {
+    "invocation_id": "28-cc01_inclusive_band-compact_multilingual_single",
+    "request": {
+      "model": "multilingual",
+      "questions": {
+        "body_ir_search": {
+          "criteria": {
+            "option_a": "Try this exact expression: input >= 3 && input <= 8",
+            "option_b": "Try this exact expression: input > 3 && input <= 8",
+            "option_c": "Try this exact expression: input >= 3 && input < 8"
+          },
+          "instructions": "Choose one untried expression to fill the Gooo body hole. Use the declared intent and any prior failures or advisory observations. This choice will be typechecked and tested after selection.",
+          "type": "choice"
+        }
+      },
+      "state": {
+        "request": "{\"schema\":\"gooo/body-codegen-ir-search-state/v1\",\"stage\":\"choose_before_candidate_evaluation\",\"activity\":\"C01\",\"activity_id\":\"bodycodegen://activity/c01\",\"body_ir\":\"if __GOOO_BODY_HOLE_choice__ { return 2 } else { return -1 }\",\"intent\":\"Return 2 for inputs from 3 through 8 inclusive, and -1 otherwise.\",\"training_test_count\":5,\"remaining_candidates\":[{\"id\":\"option_a\",\"expression\":\"input \\u003e= 3 \\u0026\\u0026 input \\u003c= 8\"},{\"id\":\"option_b\",\"expression\":\"input \\u003e 3 \\u0026\\u0026 input \\u003c= 8\"},{\"id\":\"option_c\",\"expression\":\"input \\u003e= 3 \\u0026\\u0026 input \\u003c 8\"}],\"prior_attempts\":[]}"
+      }
+    },
+    "request_sha256": "9f8bc75805b637de6c0dc5b4f512253e7bf8d7277c8f8bb3aa1ee9d5df487a2d"
+  },
+  {
+    "invocation_id": "29-cc04_outer_cutoffs-compact_multilingual_local_feedback",
+    "request": {
+      "model": "multilingual",
+      "questions": {
+        "body_ir_search": {
+          "criteria": {
+            "option_a": "Try this exact expression: input <= -6 || input >= 8",
+            "option_b": "Try this exact expression: input <= -8 || input >= 6",
+            "option_c": "Try this exact expression: input <= -6 && input >= 8"
+          },
+          "instructions": "Choose one untried expression to fill the Gooo body hole. Use the declared intent and any prior failures or advisory observations. This choice will be typechecked and tested after selection.",
+          "type": "choice"
+        }
+      },
+      "state": {
+        "request": "{\"schema\":\"gooo/body-codegen-ir-search-state/v1\",\"stage\":\"choose_before_candidate_evaluation\",\"activity\":\"C04\",\"activity_id\":\"bodycodegen://activity/c04\",\"body_ir\":\"if __GOOO_BODY_HOLE_choice__ { return 9 } else { return 0 }\",\"intent\":\"Return 9 when the input is at most -6 or at least 8; return 0 in the middle interval.\",\"training_test_count\":6,\"remaining_candidates\":[{\"id\":\"option_a\",\"expression\":\"input \\u003c= -6 || input \\u003e= 8\"},{\"id\":\"option_b\",\"expression\":\"input \\u003c= -8 || input \\u003e= 6\"},{\"id\":\"option_c\",\"expression\":\"input \\u003c= -6 \\u0026\\u0026 input \\u003e= 8\"}],\"prior_attempts\":[]}"
+      }
+    },
+    "request_sha256": "0e0774eaf118e58b05084be5f2c3c310702731db3ddee02d48abc044b8dfc8b5"
+  },
+  {
+    "invocation_id": "30-bl22_reassigned_valid_flag-compact_multilingual_single",
+    "request": {
+      "model": "multilingual",
+      "questions": {
+        "body_ir_search": {
+          "criteria": {
+            "option_a": "Try this exact expression: valid",
+            "option_b": "Try this exact expression: valid || input == 10",
+            "option_c": "Try this exact expression: input <= 5"
+          },
+          "instructions": "Choose one untried expression to fill the Gooo body hole. Use the declared intent and any prior failures or advisory observations. This choice will be typechecked and tested after selection.",
+          "type": "choice"
+        }
+      },
+      "state": {
+        "request": "{\"schema\":\"gooo/body-codegen-ir-search-state/v1\",\"stage\":\"choose_before_candidate_evaluation\",\"activity\":\"C22\",\"activity_id\":\"bodycodegen://activity/c22\",\"body_ir\":\"var valid = input \\u003e= 0; valid = valid \\u0026\\u0026 input \\u003c= 5; if __GOOO_BODY_HOLE_choice__ { return 5 } else { return -5 }\",\"intent\":\"Build a nonnegative flag, refine it in place to require an input no greater than five, then return 5 only when valid.\",\"training_test_count\":5,\"remaining_candidates\":[{\"id\":\"option_a\",\"expression\":\"valid\"},{\"id\":\"option_b\",\"expression\":\"valid || input == 10\"},{\"id\":\"option_c\",\"expression\":\"input \\u003c= 5\"}],\"prior_attempts\":[]}"
+      }
+    },
+    "request_sha256": "13b51a3e57966716ea4d1565c8f2c51237e66d0c5a1cc0907e33f0c6991d30e1"
+  },
+  {
+    "invocation_id": "31-pr15_square_minus_successor_sum-compact_multilingual_single",
+    "request": {
+      "model": "multilingual",
+      "questions": {
+        "body_ir_search": {
+          "criteria": {
+            "option_a": "Try this exact expression: input - 4",
+            "option_b": "Try this exact expression: input + 4",
+            "option_c": "Try this exact expression: input + 2"
+          },
+          "instructions": "Choose one untried expression to fill the Gooo body hole. Use the declared intent and any prior failures or advisory observations. This choice will be typechecked and tested after selection.",
+          "type": "choice"
+        }
+      },
+      "state": {
+        "request": "{\"schema\":\"gooo/body-codegen-ir-search-state/v1\",\"stage\":\"choose_before_candidate_evaluation\",\"activity\":\"C15\",\"activity_id\":\"bodycodegen://activity/c15\",\"body_ir\":\"return input * input - __GOOO_BODY_HOLE_choice__\",\"intent\":\"Subtract the input plus four from the square of the input.\",\"training_test_count\":4,\"remaining_candidates\":[{\"id\":\"option_a\",\"expression\":\"input - 4\"},{\"id\":\"option_b\",\"expression\":\"input + 4\"},{\"id\":\"option_c\",\"expression\":\"input + 2\"}],\"prior_attempts\":[]}"
+      }
+    },
+    "request_sha256": "bbb6374b9d2208f6884a545f2700523a79dcd87a4c175ed78f06d87fae3fc8eb"
+  },
+  {
+    "invocation_id": "32-ob32_clamped_absolute-compact_multilingual_single",
+    "request": {
+      "model": "multilingual",
+      "questions": {
+        "body_ir_search": {
+          "criteria": {
+            "option_a": "Try this exact expression: input",
+            "option_b": "Try this exact expression: 0 - magnitude",
+            "option_c": "Try this exact expression: magnitude"
+          },
+          "instructions": "Choose one untried expression to fill the Gooo body hole. Use the declared intent and any prior failures or advisory observations. This choice will be typechecked and tested after selection.",
+          "type": "choice"
+        }
+      },
+      "state": {
+        "request": "{\"schema\":\"gooo/body-codegen-ir-search-state/v1\",\"stage\":\"choose_before_candidate_evaluation\",\"activity\":\"C32\",\"activity_id\":\"bodycodegen://activity/c32\",\"body_ir\":\"var magnitude = input; if input \\u003c 0 { magnitude = 0 - magnitude } else { magnitude = input }; if input == (-9223372036854775807 - 1) { return 9223372036854775807 } else { return __GOOO_BODY_HOLE_choice__ }\",\"intent\":\"Return the nonnegative magnitude; map the unrepresentable absolute value of the minimum int64 to the maximum int64.\",\"training_test_count\":4,\"remaining_candidates\":[{\"id\":\"option_a\",\"expression\":\"input\"},{\"id\":\"option_b\",\"expression\":\"0 - magnitude\"},{\"id\":\"option_c\",\"expression\":\"magnitude\"}],\"prior_attempts\":[]}"
+      }
+    },
+    "request_sha256": "acdaf9fa6ffc91f0c985949cfeca7abc0cf1fc5a28dcf60fb97e5890f4383bfd"
+  },
+  {
+    "invocation_id": "33-cp18_exact_release_code-compact_multilingual_local_feedback",
+    "request": {
+      "model": "multilingual",
+      "questions": {
+        "body_ir_search": {
+          "criteria": {
+            "option_a": "Try this exact expression: input == 8",
+            "option_b": "Try this exact expression: input == 7",
+            "option_c": "Try this exact expression: input >= 7"
+          },
+          "instructions": "Choose one untried expression to fill the Gooo body hole. Use the declared intent and any prior failures or advisory observations. This choice will be typechecked and tested after selection.",
+          "type": "choice"
+        }
+      },
+      "state": {
+        "request": "{\"schema\":\"gooo/body-codegen-ir-search-state/v1\",\"stage\":\"choose_before_candidate_evaluation\",\"activity\":\"C18\",\"activity_id\":\"bodycodegen://activity/c18\",\"body_ir\":\"if __GOOO_BODY_HOLE_choice__ { return 1 } else { return 0 }\",\"intent\":\"Return 1 only for release code 7; neighboring codes are not release code 7.\",\"training_test_count\":3,\"remaining_candidates\":[{\"id\":\"option_a\",\"expression\":\"input == 8\"},{\"id\":\"option_b\",\"expression\":\"input == 7\"},{\"id\":\"option_c\",\"expression\":\"input \\u003e= 7\"}],\"prior_attempts\":[]}"
+      }
+    },
+    "request_sha256": "9399e17c0b331aaf479d5c7c3701910f29ba38bc78da5bc07552792cb174007c"
+  },
+  {
+    "invocation_id": "33-cp18_exact_release_code-compact_multilingual_local_feedback",
+    "request": {
+      "model": "multilingual",
+      "questions": {
+        "body_ir_search": {
+          "criteria": {
+            "option_b": "Try this exact expression: input == 7",
+            "option_c": "Try this exact expression: input >= 7"
+          },
+          "instructions": "Choose one untried expression to fill the Gooo body hole. Use the declared intent and any prior failures or advisory observations. This choice will be typechecked and tested after selection.",
+          "type": "choice"
+        }
+      },
+      "state": {
+        "request": "{\"schema\":\"gooo/body-codegen-ir-search-state/v1\",\"stage\":\"choose_before_candidate_evaluation\",\"activity\":\"C18\",\"activity_id\":\"bodycodegen://activity/c18\",\"body_ir\":\"if __GOOO_BODY_HOLE_choice__ { return 1 } else { return 0 }\",\"intent\":\"Return 1 only for release code 7; neighboring codes are not release code 7.\",\"training_test_count\":3,\"remaining_candidates\":[{\"id\":\"option_b\",\"expression\":\"input == 7\"},{\"id\":\"option_c\",\"expression\":\"input \\u003e= 7\"}],\"prior_attempts\":[{\"candidate_id\":\"option_a\",\"typecheck_passed\":true,\"scoring_completed\":true,\"test_cases_passed\":1,\"test_cases_total\":3,\"accuracy_percent\":33.333333333333336,\"failed_cases\":[{\"input\":7,\"expected\":1,\"actual\":0,\"passed\":false},{\"input\":8,\"expected\":0,\"actual\":1,\"passed\":false}],\"failed_cases_total\":2,\"failed_cases_truncated\":false}]}"
+      }
+    },
+    "request_sha256": "a84437d4706fa6a38a6f201c25eea997189d558d4403be319083874316930114"
+  },
+  {
+    "invocation_id": "34-lr11_nonnegative_doubled_score-compact_multilingual_single",
+    "request": {
+      "model": "multilingual",
+      "questions": {
+        "body_ir_search": {
+          "criteria": {
+            "option_a": "Try this exact expression: input * 2 + 1",
+            "option_b": "Try this exact expression: input",
+            "option_c": "Try this exact expression: score"
+          },
+          "instructions": "Choose one untried expression to fill the Gooo body hole. Use the declared intent and any prior failures or advisory observations. This choice will be typechecked and tested after selection.",
+          "type": "choice"
+        }
+      },
+      "state": {
+        "request": "{\"schema\":\"gooo/body-codegen-ir-search-state/v1\",\"stage\":\"choose_before_candidate_evaluation\",\"activity\":\"C11\",\"activity_id\":\"bodycodegen://activity/c11\",\"body_ir\":\"var score = input * 2; var nonnegative = score \\u003e= 0; if nonnegative { score = score + 1 } else { score = 0 }; return __GOOO_BODY_HOLE_choice__\",\"intent\":\"Double the input; add one when the doubled score is nonnegative and reset negative scores to zero.\",\"training_test_count\":4,\"remaining_candidates\":[{\"id\":\"option_a\",\"expression\":\"input * 2 + 1\"},{\"id\":\"option_b\",\"expression\":\"input\"},{\"id\":\"option_c\",\"expression\":\"score\"}],\"prior_attempts\":[]}"
+      }
+    },
+    "request_sha256": "040bc9bedbcd0471b90de9f2300f91feeb7fa709faddbd2bbb5151ecd9e560ca"
+  },
+  {
+    "invocation_id": "35-pr13_subtract_tripled_sum-compact_multilingual_single",
+    "request": {
+      "model": "multilingual",
+      "questions": {
+        "body_ir_search": {
+          "criteria": {
+            "option_a": "Try this exact expression: input + 2",
+            "option_b": "Try this exact expression: input + 3",
+            "option_c": "Try this exact expression: input - 2"
+          },
+          "instructions": "Choose one untried expression to fill the Gooo body hole. Use the declared intent and any prior failures or advisory observations. This choice will be typechecked and tested after selection.",
+          "type": "choice"
+        }
+      },
+      "state": {
+        "request": "{\"schema\":\"gooo/body-codegen-ir-search-state/v1\",\"stage\":\"choose_before_candidate_evaluation\",\"activity\":\"C13\",\"activity_id\":\"bodycodegen://activity/c13\",\"body_ir\":\"return 100 - __GOOO_BODY_HOLE_choice__ * 3\",\"intent\":\"Subtract three times the sum of the input and two from one hundred.\",\"training_test_count\":4,\"remaining_candidates\":[{\"id\":\"option_a\",\"expression\":\"input + 2\"},{\"id\":\"option_b\",\"expression\":\"input + 3\"},{\"id\":\"option_c\",\"expression\":\"input - 2\"}],\"prior_attempts\":[]}"
+      }
+    },
+    "request_sha256": "8880a10cc6f9551e17654ea6ede5ec191e40817f67ff6ccd0bd8c6fa2eddf74d"
+  },
+  {
+    "invocation_id": "36-cc03_two_islands-compact_multilingual_single",
+    "request": {
+      "model": "multilingual",
+      "questions": {
+        "body_ir_search": {
+          "criteria": {
+            "option_a": "Try this exact expression: input < -4 || input > 4",
+            "option_b": "Try this exact expression: input == -4 || input == 4",
+            "option_c": "Try this exact expression: input >= -4 && input <= 4"
+          },
+          "instructions": "Choose one untried expression to fill the Gooo body hole. Use the declared intent and any prior failures or advisory observations. This choice will be typechecked and tested after selection.",
+          "type": "choice"
+        }
+      },
+      "state": {
+        "request": "{\"schema\":\"gooo/body-codegen-ir-search-state/v1\",\"stage\":\"choose_before_candidate_evaluation\",\"activity\":\"C03\",\"activity_id\":\"bodycodegen://activity/c03\",\"body_ir\":\"if __GOOO_BODY_HOLE_choice__ { return 7 } else { return 0 }\",\"intent\":\"Return 7 only for the two isolated inputs -4 and 4; return 0 for the gap and the exterior.\",\"training_test_count\":5,\"remaining_candidates\":[{\"id\":\"option_a\",\"expression\":\"input \\u003c -4 || input \\u003e 4\"},{\"id\":\"option_b\",\"expression\":\"input == -4 || input == 4\"},{\"id\":\"option_c\",\"expression\":\"input \\u003e= -4 \\u0026\\u0026 input \\u003c= 4\"}],\"prior_attempts\":[]}"
+      }
+    },
+    "request_sha256": "7947e6d26001472bbbf10064bdf1b725428000ed4db08ebe62bff9ea0cca6633"
+  },
+  {
+    "invocation_id": "37-lr12_cap_after_adjustment-compact_multilingual_single",
+    "request": {
+      "model": "multilingual",
+      "questions": {
+        "body_ir_search": {
+          "criteria": {
+            "option_a": "Try this exact expression: amount + 1",
+            "option_b": "Try this exact expression: amount",
+            "option_c": "Try this exact expression: input + 2"
+          },
+          "instructions": "Choose one untried expression to fill the Gooo body hole. Use the declared intent and any prior failures or advisory observations. This choice will be typechecked and tested after selection.",
+          "type": "choice"
+        }
+      },
+      "state": {
+        "request": "{\"schema\":\"gooo/body-codegen-ir-search-state/v1\",\"stage\":\"choose_before_candidate_evaluation\",\"activity\":\"C12\",\"activity_id\":\"bodycodegen://activity/c12\",\"body_ir\":\"var amount = input; amount = amount + 3; if amount \\u003e 10 { amount = 10 } else { amount = amount }; amount = amount - 1; return __GOOO_BODY_HOLE_choice__\",\"intent\":\"Add three, cap the adjusted amount at ten, subtract one from that capped local, and return it.\",\"training_test_count\":4,\"remaining_candidates\":[{\"id\":\"option_a\",\"expression\":\"amount + 1\"},{\"id\":\"option_b\",\"expression\":\"amount\"},{\"id\":\"option_c\",\"expression\":\"input + 2\"}],\"prior_attempts\":[]}"
+      }
+    },
+    "request_sha256": "34da13f57c33944239c2b3aeabf2ca0ab666364bf0ac9eab8f34de2d5c37ef69"
+  },
+  {
+    "invocation_id": "38-cp18_exact_release_code-compact_multilingual_single",
+    "request": {
+      "model": "multilingual",
+      "questions": {
+        "body_ir_search": {
+          "criteria": {
+            "option_a": "Try this exact expression: input == 8",
+            "option_b": "Try this exact expression: input == 7",
+            "option_c": "Try this exact expression: input >= 7"
+          },
+          "instructions": "Choose one untried expression to fill the Gooo body hole. Use the declared intent and any prior failures or advisory observations. This choice will be typechecked and tested after selection.",
+          "type": "choice"
+        }
+      },
+      "state": {
+        "request": "{\"schema\":\"gooo/body-codegen-ir-search-state/v1\",\"stage\":\"choose_before_candidate_evaluation\",\"activity\":\"C18\",\"activity_id\":\"bodycodegen://activity/c18\",\"body_ir\":\"if __GOOO_BODY_HOLE_choice__ { return 1 } else { return 0 }\",\"intent\":\"Return 1 only for release code 7; neighboring codes are not release code 7.\",\"training_test_count\":3,\"remaining_candidates\":[{\"id\":\"option_a\",\"expression\":\"input == 8\"},{\"id\":\"option_b\",\"expression\":\"input == 7\"},{\"id\":\"option_c\",\"expression\":\"input \\u003e= 7\"}],\"prior_attempts\":[]}"
+      }
+    },
+    "request_sha256": "9399e17c0b331aaf479d5c7c3701910f29ba38bc78da5bc07552792cb174007c"
+  },
+  {
+    "invocation_id": "39-ni06_surcharge_discount-compact_multilingual_local_feedback",
+    "request": {
+      "model": "multilingual",
+      "questions": {
+        "body_ir_search": {
+          "criteria": {
+            "option_a": "Try this exact expression: input + 11",
+            "option_b": "Try this exact expression: input + 10",
+            "option_c": "Try this exact expression: input + 9"
+          },
+          "instructions": "Choose one untried expression to fill the Gooo body hole. Use the declared intent and any prior failures or advisory observations. This choice will be typechecked and tested after selection.",
+          "type": "choice"
+        }
+      },
+      "state": {
+        "request": "{\"schema\":\"gooo/body-codegen-ir-search-state/v1\",\"stage\":\"choose_before_candidate_evaluation\",\"activity\":\"C06\",\"activity_id\":\"bodycodegen://activity/c06\",\"body_ir\":\"if input \\u003c 0 { return 0 } else { if input \\u003e 100 { return input - 10 } else { return __GOOO_BODY_HOLE_choice__ } }\",\"intent\":\"Reject negative quantities as 0, add 10 through quantity 100, then discount quantities above 100 by 10.\",\"training_test_count\":5,\"remaining_candidates\":[{\"id\":\"option_a\",\"expression\":\"input + 11\"},{\"id\":\"option_b\",\"expression\":\"input + 10\"},{\"id\":\"option_c\",\"expression\":\"input + 9\"}],\"prior_attempts\":[]}"
+      }
+    },
+    "request_sha256": "a7eada39c27c42c8f8d52bcd3bce59907d76327664a15bcddc4e7a1b8189a579"
+  },
+  {
+    "invocation_id": "39-ni06_surcharge_discount-compact_multilingual_local_feedback",
+    "request": {
+      "model": "multilingual",
+      "questions": {
+        "body_ir_search": {
+          "criteria": {
+            "option_b": "Try this exact expression: input + 10",
+            "option_c": "Try this exact expression: input + 9"
+          },
+          "instructions": "Choose one untried expression to fill the Gooo body hole. Use the declared intent and any prior failures or advisory observations. This choice will be typechecked and tested after selection.",
+          "type": "choice"
+        }
+      },
+      "state": {
+        "request": "{\"schema\":\"gooo/body-codegen-ir-search-state/v1\",\"stage\":\"choose_before_candidate_evaluation\",\"activity\":\"C06\",\"activity_id\":\"bodycodegen://activity/c06\",\"body_ir\":\"if input \\u003c 0 { return 0 } else { if input \\u003e 100 { return input - 10 } else { return __GOOO_BODY_HOLE_choice__ } }\",\"intent\":\"Reject negative quantities as 0, add 10 through quantity 100, then discount quantities above 100 by 10.\",\"training_test_count\":5,\"remaining_candidates\":[{\"id\":\"option_b\",\"expression\":\"input + 10\"},{\"id\":\"option_c\",\"expression\":\"input + 9\"}],\"prior_attempts\":[{\"candidate_id\":\"option_a\",\"typecheck_passed\":true,\"scoring_completed\":true,\"test_cases_passed\":2,\"test_cases_total\":5,\"accuracy_percent\":40,\"failed_cases\":[{\"input\":0,\"expected\":10,\"actual\":11,\"passed\":false},{\"input\":1,\"expected\":11,\"actual\":12,\"passed\":false},{\"input\":100,\"expected\":110,\"actual\":111,\"passed\":false}],\"failed_cases_total\":3,\"failed_cases_truncated\":false}]}"
+      }
+    },
+    "request_sha256": "50838983a1b2a01009626dae255494affa53ba202c037ea1aa679d38ea7de7cf"
+  },
+  {
+    "invocation_id": "40-cc03_two_islands-compact_multilingual_local_feedback",
+    "request": {
+      "model": "multilingual",
+      "questions": {
+        "body_ir_search": {
+          "criteria": {
+            "option_a": "Try this exact expression: input < -4 || input > 4",
+            "option_b": "Try this exact expression: input == -4 || input == 4",
+            "option_c": "Try this exact expression: input >= -4 && input <= 4"
+          },
+          "instructions": "Choose one untried expression to fill the Gooo body hole. Use the declared intent and any prior failures or advisory observations. This choice will be typechecked and tested after selection.",
+          "type": "choice"
+        }
+      },
+      "state": {
+        "request": "{\"schema\":\"gooo/body-codegen-ir-search-state/v1\",\"stage\":\"choose_before_candidate_evaluation\",\"activity\":\"C03\",\"activity_id\":\"bodycodegen://activity/c03\",\"body_ir\":\"if __GOOO_BODY_HOLE_choice__ { return 7 } else { return 0 }\",\"intent\":\"Return 7 only for the two isolated inputs -4 and 4; return 0 for the gap and the exterior.\",\"training_test_count\":5,\"remaining_candidates\":[{\"id\":\"option_a\",\"expression\":\"input \\u003c -4 || input \\u003e 4\"},{\"id\":\"option_b\",\"expression\":\"input == -4 || input == 4\"},{\"id\":\"option_c\",\"expression\":\"input \\u003e= -4 \\u0026\\u0026 input \\u003c= 4\"}],\"prior_attempts\":[]}"
+      }
+    },
+    "request_sha256": "7947e6d26001472bbbf10064bdf1b725428000ed4db08ebe62bff9ea0cca6633"
+  },
+  {
+    "invocation_id": "40-cc03_two_islands-compact_multilingual_local_feedback",
+    "request": {
+      "model": "multilingual",
+      "questions": {
+        "body_ir_search": {
+          "criteria": {
+            "option_b": "Try this exact expression: input == -4 || input == 4",
+            "option_c": "Try this exact expression: input >= -4 && input <= 4"
+          },
+          "instructions": "Choose one untried expression to fill the Gooo body hole. Use the declared intent and any prior failures or advisory observations. This choice will be typechecked and tested after selection.",
+          "type": "choice"
+        }
+      },
+      "state": {
+        "request": "{\"schema\":\"gooo/body-codegen-ir-search-state/v1\",\"stage\":\"choose_before_candidate_evaluation\",\"activity\":\"C03\",\"activity_id\":\"bodycodegen://activity/c03\",\"body_ir\":\"if __GOOO_BODY_HOLE_choice__ { return 7 } else { return 0 }\",\"intent\":\"Return 7 only for the two isolated inputs -4 and 4; return 0 for the gap and the exterior.\",\"training_test_count\":5,\"remaining_candidates\":[{\"id\":\"option_b\",\"expression\":\"input == -4 || input == 4\"},{\"id\":\"option_c\",\"expression\":\"input \\u003e= -4 \\u0026\\u0026 input \\u003c= 4\"}],\"prior_attempts\":[{\"candidate_id\":\"option_a\",\"typecheck_passed\":true,\"scoring_completed\":true,\"test_cases_passed\":1,\"test_cases_total\":5,\"accuracy_percent\":20,\"failed_cases\":[{\"input\":-5,\"expected\":0,\"actual\":7,\"passed\":false},{\"input\":-4,\"expected\":7,\"actual\":0,\"passed\":false},{\"input\":4,\"expected\":7,\"actual\":0,\"passed\":false},{\"input\":5,\"expected\":0,\"actual\":7,\"passed\":false}],\"failed_cases_total\":4,\"failed_cases_truncated\":false}]}"
+      }
+    },
+    "request_sha256": "d746ddfa48d70d4e0d404cd90bcdf3ecd32747d75d125ef45d1bbdb82012608f"
+  },
+  {
+    "invocation_id": "41-pr16_composed_neighbor_product-compact_multilingual_local_feedback",
+    "request": {
+      "model": "multilingual",
+      "questions": {
+        "body_ir_search": {
+          "criteria": {
+            "option_a": "Try this exact expression: input + 2",
+            "option_b": "Try this exact expression: input + 1",
+            "option_c": "Try this exact expression: input + 3"
+          },
+          "instructions": "Choose one untried expression to fill the Gooo body hole. Use the declared intent and any prior failures or advisory observations. This choice will be typechecked and tested after selection.",
+          "type": "choice"
+        }
+      },
+      "state": {
+        "request": "{\"schema\":\"gooo/body-codegen-ir-search-state/v1\",\"stage\":\"choose_before_candidate_evaluation\",\"activity\":\"C16\",\"activity_id\":\"bodycodegen://activity/c16\",\"body_ir\":\"var next = input + 1; return next * __GOOO_BODY_HOLE_choice__ - input\",\"intent\":\"Multiply the saved successor by the input plus two, then subtract the original input.\",\"training_test_count\":4,\"remaining_candidates\":[{\"id\":\"option_a\",\"expression\":\"input + 2\"},{\"id\":\"option_b\",\"expression\":\"input + 1\"},{\"id\":\"option_c\",\"expression\":\"input + 3\"}],\"prior_attempts\":[]}"
+      }
+    },
+    "request_sha256": "4d99c1486c16dda65a8bac56eac5b8747445c7469bf7891d8c6b09dded238283"
+  },
+  {
+    "invocation_id": "42-cc02_nonzero_disjunction-compact_multilingual_single",
+    "request": {
+      "model": "multilingual",
+      "questions": {
+        "body_ir_search": {
+          "criteria": {
+            "option_a": "Try this exact expression: input < 0 && input > 0",
+            "option_b": "Try this exact expression: input >= 0",
+            "option_c": "Try this exact expression: input < 0 || input > 0"
+          },
+          "instructions": "Choose one untried expression to fill the Gooo body hole. Use the declared intent and any prior failures or advisory observations. This choice will be typechecked and tested after selection.",
+          "type": "choice"
+        }
+      },
+      "state": {
+        "request": "{\"schema\":\"gooo/body-codegen-ir-search-state/v1\",\"stage\":\"choose_before_candidate_evaluation\",\"activity\":\"C02\",\"activity_id\":\"bodycodegen://activity/c02\",\"body_ir\":\"if __GOOO_BODY_HOLE_choice__ { return 1 } else { return 0 }\",\"intent\":\"Return 1 for every nonzero integer, including both negative and positive values; return 0 only for zero.\",\"training_test_count\":3,\"remaining_candidates\":[{\"id\":\"option_a\",\"expression\":\"input \\u003c 0 \\u0026\\u0026 input \\u003e 0\"},{\"id\":\"option_b\",\"expression\":\"input \\u003e= 0\"},{\"id\":\"option_c\",\"expression\":\"input \\u003c 0 || input \\u003e 0\"}],\"prior_attempts\":[]}"
+      }
+    },
+    "request_sha256": "b23ed677b7a64f5807ccbbae9aae97edfb378c4a25ceb158f3802e7b12f29eac"
+  },
+  {
+    "invocation_id": "43-tx26_state_label-compact_multilingual_single",
+    "request": {
+      "model": "multilingual",
+      "questions": {
+        "body_ir_search": {
+          "criteria": {
+            "option_a": "Try this exact expression: \"closed\"",
+            "option_b": "Try this exact expression: \"error\"",
+            "option_c": "Try this exact expression: \"open\""
+          },
+          "instructions": "Choose one untried expression to fill the Gooo body hole. Use the declared intent and any prior failures or advisory observations. This choice will be typechecked and tested after selection.",
+          "type": "choice"
+        }
+      },
+      "state": {
+        "request": "{\"schema\":\"gooo/body-codegen-ir-search-state/v1\",\"stage\":\"choose_before_candidate_evaluation\",\"activity\":\"C26\",\"activity_id\":\"bodycodegen://activity/c26\",\"body_ir\":\"var status = \\\"pending\\\"; if input == 0 { status = \\\"closed\\\" } else { if input \\u003e 0 { status = \\\"open\\\" } else { status = \\\"error\\\" } }; if status == __GOOO_BODY_HOLE_choice__ { return 1 } else { return 0 }\",\"intent\":\"Classify zero as closed, positive input as open, and negative input as error; return one only for open.\",\"training_test_count\":3,\"remaining_candidates\":[{\"id\":\"option_a\",\"expression\":\"\\\"closed\\\"\"},{\"id\":\"option_b\",\"expression\":\"\\\"error\\\"\"},{\"id\":\"option_c\",\"expression\":\"\\\"open\\\"\"}],\"prior_attempts\":[]}"
+      }
+    },
+    "request_sha256": "6508e003ceeafb6d8ee6617640bb8af940f47d0713408d01be663cfae2fd92c8"
+  },
+  {
+    "invocation_id": "44-pr14_product_neighbor_factors-compact_multilingual_local_feedback",
+    "request": {
+      "model": "multilingual",
+      "questions": {
+        "body_ir_search": {
+          "criteria": {
+            "option_a": "Try this exact expression: input - 1",
+            "option_b": "Try this exact expression: input",
+            "option_c": "Try this exact expression: input + 1"
+          },
+          "instructions": "Choose one untried expression to fill the Gooo body hole. Use the declared intent and any prior failures or advisory observations. This choice will be typechecked and tested after selection.",
+          "type": "choice"
+        }
+      },
+      "state": {
+        "request": "{\"schema\":\"gooo/body-codegen-ir-search-state/v1\",\"stage\":\"choose_before_candidate_evaluation\",\"activity\":\"C14\",\"activity_id\":\"bodycodegen://activity/c14\",\"body_ir\":\"return (input + __GOOO_BODY_HOLE_choice__) * (input - 2)\",\"intent\":\"Multiply the input plus its successor by the input minus two.\",\"training_test_count\":4,\"remaining_candidates\":[{\"id\":\"option_a\",\"expression\":\"input - 1\"},{\"id\":\"option_b\",\"expression\":\"input\"},{\"id\":\"option_c\",\"expression\":\"input + 1\"}],\"prior_attempts\":[]}"
+      }
+    },
+    "request_sha256": "89c4a06f006dab1acb7093db0fed818c6b3e969a99e437e9937352e224d8bce2"
+  },
+  {
+    "invocation_id": "44-pr14_product_neighbor_factors-compact_multilingual_local_feedback",
+    "request": {
+      "model": "multilingual",
+      "questions": {
+        "body_ir_search": {
+          "criteria": {
+            "option_b": "Try this exact expression: input",
+            "option_c": "Try this exact expression: input + 1"
+          },
+          "instructions": "Choose one untried expression to fill the Gooo body hole. Use the declared intent and any prior failures or advisory observations. This choice will be typechecked and tested after selection.",
+          "type": "choice"
+        }
+      },
+      "state": {
+        "request": "{\"schema\":\"gooo/body-codegen-ir-search-state/v1\",\"stage\":\"choose_before_candidate_evaluation\",\"activity\":\"C14\",\"activity_id\":\"bodycodegen://activity/c14\",\"body_ir\":\"return (input + __GOOO_BODY_HOLE_choice__) * (input - 2)\",\"intent\":\"Multiply the input plus its successor by the input minus two.\",\"training_test_count\":4,\"remaining_candidates\":[{\"id\":\"option_b\",\"expression\":\"input\"},{\"id\":\"option_c\",\"expression\":\"input + 1\"}],\"prior_attempts\":[{\"candidate_id\":\"option_a\",\"typecheck_passed\":true,\"scoring_completed\":true,\"test_cases_passed\":1,\"test_cases_total\":4,\"accuracy_percent\":25,\"failed_cases\":[{\"input\":-3,\"expected\":25,\"actual\":35,\"passed\":false},{\"input\":0,\"expected\":-2,\"actual\":2,\"passed\":false},{\"input\":5,\"expected\":33,\"actual\":27,\"passed\":false}],\"failed_cases_total\":3,\"failed_cases_truncated\":false}]}"
+      }
+    },
+    "request_sha256": "76ca396af98f5bbe2cc4fcb65948c6c18284955b1a81af99f2fd0d7dc7db32df"
+  },
+  {
+    "invocation_id": "45-cp19_range_without_origin-compact_multilingual_local_feedback",
+    "request": {
+      "model": "multilingual",
+      "questions": {
+        "body_ir_search": {
+          "criteria": {
+            "option_a": "Try this exact expression: input >= -3 && input <= 3 && input != 0",
+            "option_b": "Try this exact expression: input >= -3 && input <= 3",
+            "option_c": "Try this exact expression: input < -3 || input > 3"
+          },
+          "instructions": "Choose one untried expression to fill the Gooo body hole. Use the declared intent and any prior failures or advisory observations. This choice will be typechecked and tested after selection.",
+          "type": "choice"
+        }
+      },
+      "state": {
+        "request": "{\"schema\":\"gooo/body-codegen-ir-search-state/v1\",\"stage\":\"choose_before_candidate_evaluation\",\"activity\":\"C19\",\"activity_id\":\"bodycodegen://activity/c19\",\"body_ir\":\"if __GOOO_BODY_HOLE_choice__ { return 1 } else { return 0 }\",\"intent\":\"Return 1 inside the inclusive range -3 through 3 except at zero; return 0 elsewhere.\",\"training_test_count\":5,\"remaining_candidates\":[{\"id\":\"option_a\",\"expression\":\"input \\u003e= -3 \\u0026\\u0026 input \\u003c= 3 \\u0026\\u0026 input != 0\"},{\"id\":\"option_b\",\"expression\":\"input \\u003e= -3 \\u0026\\u0026 input \\u003c= 3\"},{\"id\":\"option_c\",\"expression\":\"input \\u003c -3 || input \\u003e 3\"}],\"prior_attempts\":[]}"
+      }
+    },
+    "request_sha256": "019db9f810666cfeb9030fdbe1031110e992cfcece8414d0545a1cb88a4eec9d"
+  },
+  {
+    "invocation_id": "46-pr15_square_minus_successor_sum-compact_multilingual_local_feedback",
+    "request": {
+      "model": "multilingual",
+      "questions": {
+        "body_ir_search": {
+          "criteria": {
+            "option_a": "Try this exact expression: input - 4",
+            "option_b": "Try this exact expression: input + 4",
+            "option_c": "Try this exact expression: input + 2"
+          },
+          "instructions": "Choose one untried expression to fill the Gooo body hole. Use the declared intent and any prior failures or advisory observations. This choice will be typechecked and tested after selection.",
+          "type": "choice"
+        }
+      },
+      "state": {
+        "request": "{\"schema\":\"gooo/body-codegen-ir-search-state/v1\",\"stage\":\"choose_before_candidate_evaluation\",\"activity\":\"C15\",\"activity_id\":\"bodycodegen://activity/c15\",\"body_ir\":\"return input * input - __GOOO_BODY_HOLE_choice__\",\"intent\":\"Subtract the input plus four from the square of the input.\",\"training_test_count\":4,\"remaining_candidates\":[{\"id\":\"option_a\",\"expression\":\"input - 4\"},{\"id\":\"option_b\",\"expression\":\"input + 4\"},{\"id\":\"option_c\",\"expression\":\"input + 2\"}],\"prior_attempts\":[]}"
+      }
+    },
+    "request_sha256": "bbb6374b9d2208f6884a545f2700523a79dcd87a4c175ed78f06d87fae3fc8eb"
+  },
+  {
+    "invocation_id": "46-pr15_square_minus_successor_sum-compact_multilingual_local_feedback",
+    "request": {
+      "model": "multilingual",
+      "questions": {
+        "body_ir_search": {
+          "criteria": {
+            "option_b": "Try this exact expression: input + 4",
+            "option_c": "Try this exact expression: input + 2"
+          },
+          "instructions": "Choose one untried expression to fill the Gooo body hole. Use the declared intent and any prior failures or advisory observations. This choice will be typechecked and tested after selection.",
+          "type": "choice"
+        }
+      },
+      "state": {
+        "request": "{\"schema\":\"gooo/body-codegen-ir-search-state/v1\",\"stage\":\"choose_before_candidate_evaluation\",\"activity\":\"C15\",\"activity_id\":\"bodycodegen://activity/c15\",\"body_ir\":\"return input * input - __GOOO_BODY_HOLE_choice__\",\"intent\":\"Subtract the input plus four from the square of the input.\",\"training_test_count\":4,\"remaining_candidates\":[{\"id\":\"option_b\",\"expression\":\"input + 4\"},{\"id\":\"option_c\",\"expression\":\"input + 2\"}],\"prior_attempts\":[{\"candidate_id\":\"option_a\",\"typecheck_passed\":true,\"scoring_completed\":true,\"test_cases_passed\":0,\"test_cases_total\":4,\"accuracy_percent\":0,\"failed_cases\":[{\"input\":-2,\"expected\":2,\"actual\":10,\"passed\":false},{\"input\":0,\"expected\":-4,\"actual\":4,\"passed\":false},{\"input\":3,\"expected\":2,\"actual\":10,\"passed\":false},{\"input\":6,\"expected\":26,\"actual\":34,\"passed\":false}],\"failed_cases_total\":4,\"failed_cases_truncated\":false}]}"
+      }
+    },
+    "request_sha256": "34d6c1b3673d7433acfc4b82b6ea55fb3a33c1631f2673f6eac8fe14d0ec79b5"
+  },
+  {
+    "invocation_id": "47-lr09_compound_total-compact_multilingual_local_feedback",
+    "request": {
+      "model": "multilingual",
+      "questions": {
+        "body_ir_search": {
+          "criteria": {
+            "option_a": "Try this exact expression: input + 10",
+            "option_b": "Try this exact expression: total",
+            "option_c": "Try this exact expression: input * 2 + 5"
+          },
+          "instructions": "Choose one untried expression to fill the Gooo body hole. Use the declared intent and any prior failures or advisory observations. This choice will be typechecked and tested after selection.",
+          "type": "choice"
+        }
+      },
+      "state": {
+        "request": "{\"schema\":\"gooo/body-codegen-ir-search-state/v1\",\"stage\":\"choose_before_candidate_evaluation\",\"activity\":\"C09\",\"activity_id\":\"bodycodegen://activity/c09\",\"body_ir\":\"var total = input + 5; total = total * 2; return __GOOO_BODY_HOLE_choice__\",\"intent\":\"Add five to an amount, double the updated total, and return that reassigned total.\",\"training_test_count\":4,\"remaining_candidates\":[{\"id\":\"option_a\",\"expression\":\"input + 10\"},{\"id\":\"option_b\",\"expression\":\"total\"},{\"id\":\"option_c\",\"expression\":\"input * 2 + 5\"}],\"prior_attempts\":[]}"
+      }
+    },
+    "request_sha256": "a0bd06fdbbad4567ef7ca833b983e46606b2aef5fcea49f922188405b2febd4f"
+  },
+  {
+    "invocation_id": "47-lr09_compound_total-compact_multilingual_local_feedback",
+    "request": {
+      "model": "multilingual",
+      "questions": {
+        "body_ir_search": {
+          "criteria": {
+            "option_b": "Try this exact expression: total",
+            "option_c": "Try this exact expression: input * 2 + 5"
+          },
+          "instructions": "Choose one untried expression to fill the Gooo body hole. Use the declared intent and any prior failures or advisory observations. This choice will be typechecked and tested after selection.",
+          "type": "choice"
+        }
+      },
+      "state": {
+        "request": "{\"schema\":\"gooo/body-codegen-ir-search-state/v1\",\"stage\":\"choose_before_candidate_evaluation\",\"activity\":\"C09\",\"activity_id\":\"bodycodegen://activity/c09\",\"body_ir\":\"var total = input + 5; total = total * 2; return __GOOO_BODY_HOLE_choice__\",\"intent\":\"Add five to an amount, double the updated total, and return that reassigned total.\",\"training_test_count\":4,\"remaining_candidates\":[{\"id\":\"option_b\",\"expression\":\"total\"},{\"id\":\"option_c\",\"expression\":\"input * 2 + 5\"}],\"prior_attempts\":[{\"candidate_id\":\"option_a\",\"typecheck_passed\":true,\"scoring_completed\":true,\"test_cases_passed\":1,\"test_cases_total\":4,\"accuracy_percent\":25,\"failed_cases\":[{\"input\":-5,\"expected\":0,\"actual\":5,\"passed\":false},{\"input\":1,\"expected\":12,\"actual\":11,\"passed\":false},{\"input\":4,\"expected\":18,\"actual\":14,\"passed\":false}],\"failed_cases_total\":3,\"failed_cases_truncated\":false}]}"
+      }
+    },
+    "request_sha256": "b963ee57ada96c99000f095662d2128c798a89d043dccc075e415764778b4bd7"
+  },
+  {
+    "invocation_id": "48-tx28_reassigned_text_state-compact_multilingual_single",
+    "request": {
+      "model": "multilingual",
+      "questions": {
+        "body_ir_search": {
+          "criteria": {
+            "option_a": "Try this exact expression: \"ready\"",
+            "option_b": "Try this exact expression: \"idle-pending\"",
+            "option_c": "Try this exact expression: \"done\""
+          },
+          "instructions": "Choose one untried expression to fill the Gooo body hole. Use the declared intent and any prior failures or advisory observations. This choice will be typechecked and tested after selection.",
+          "type": "choice"
+        }
+      },
+      "state": {
+        "request": "{\"schema\":\"gooo/body-codegen-ir-search-state/v1\",\"stage\":\"choose_before_candidate_evaluation\",\"activity\":\"C28\",\"activity_id\":\"bodycodegen://activity/c28\",\"body_ir\":\"var status = \\\"idle\\\" + \\\"-pending\\\"; if input \\u003e 0 { status = \\\"ready\\\" } else { status = status }; if status == __GOOO_BODY_HOLE_choice__ { return 2 } else { return -2 }\",\"intent\":\"Start with the idle-pending text state, replace it with ready for positive input, and return 2 only for ready.\",\"training_test_count\":3,\"remaining_candidates\":[{\"id\":\"option_a\",\"expression\":\"\\\"ready\\\"\"},{\"id\":\"option_b\",\"expression\":\"\\\"idle-pending\\\"\"},{\"id\":\"option_c\",\"expression\":\"\\\"done\\\"\"}],\"prior_attempts\":[]}"
+      }
+    },
+    "request_sha256": "9aa8f6af3d1737aa3dfc1e1f6022eabd3c5ee5a845cbb01863b10fa1ef92d56b"
+  },
+  {
+    "invocation_id": "49-cp19_range_without_origin-compact_multilingual_single",
+    "request": {
+      "model": "multilingual",
+      "questions": {
+        "body_ir_search": {
+          "criteria": {
+            "option_a": "Try this exact expression: input >= -3 && input <= 3 && input != 0",
+            "option_b": "Try this exact expression: input >= -3 && input <= 3",
+            "option_c": "Try this exact expression: input < -3 || input > 3"
+          },
+          "instructions": "Choose one untried expression to fill the Gooo body hole. Use the declared intent and any prior failures or advisory observations. This choice will be typechecked and tested after selection.",
+          "type": "choice"
+        }
+      },
+      "state": {
+        "request": "{\"schema\":\"gooo/body-codegen-ir-search-state/v1\",\"stage\":\"choose_before_candidate_evaluation\",\"activity\":\"C19\",\"activity_id\":\"bodycodegen://activity/c19\",\"body_ir\":\"if __GOOO_BODY_HOLE_choice__ { return 1 } else { return 0 }\",\"intent\":\"Return 1 inside the inclusive range -3 through 3 except at zero; return 0 elsewhere.\",\"training_test_count\":5,\"remaining_candidates\":[{\"id\":\"option_a\",\"expression\":\"input \\u003e= -3 \\u0026\\u0026 input \\u003c= 3 \\u0026\\u0026 input != 0\"},{\"id\":\"option_b\",\"expression\":\"input \\u003e= -3 \\u0026\\u0026 input \\u003c= 3\"},{\"id\":\"option_c\",\"expression\":\"input \\u003c -3 || input \\u003e 3\"}],\"prior_attempts\":[]}"
+      }
+    },
+    "request_sha256": "019db9f810666cfeb9030fdbe1031110e992cfcece8414d0545a1cb88a4eec9d"
+  },
+  {
+    "invocation_id": "50-cc02_nonzero_disjunction-compact_multilingual_local_feedback",
+    "request": {
+      "model": "multilingual",
+      "questions": {
+        "body_ir_search": {
+          "criteria": {
+            "option_a": "Try this exact expression: input < 0 && input > 0",
+            "option_b": "Try this exact expression: input >= 0",
+            "option_c": "Try this exact expression: input < 0 || input > 0"
+          },
+          "instructions": "Choose one untried expression to fill the Gooo body hole. Use the declared intent and any prior failures or advisory observations. This choice will be typechecked and tested after selection.",
+          "type": "choice"
+        }
+      },
+      "state": {
+        "request": "{\"schema\":\"gooo/body-codegen-ir-search-state/v1\",\"stage\":\"choose_before_candidate_evaluation\",\"activity\":\"C02\",\"activity_id\":\"bodycodegen://activity/c02\",\"body_ir\":\"if __GOOO_BODY_HOLE_choice__ { return 1 } else { return 0 }\",\"intent\":\"Return 1 for every nonzero integer, including both negative and positive values; return 0 only for zero.\",\"training_test_count\":3,\"remaining_candidates\":[{\"id\":\"option_a\",\"expression\":\"input \\u003c 0 \\u0026\\u0026 input \\u003e 0\"},{\"id\":\"option_b\",\"expression\":\"input \\u003e= 0\"},{\"id\":\"option_c\",\"expression\":\"input \\u003c 0 || input \\u003e 0\"}],\"prior_attempts\":[]}"
+      }
+    },
+    "request_sha256": "b23ed677b7a64f5807ccbbae9aae97edfb378c4a25ceb158f3802e7b12f29eac"
+  },
+  {
+    "invocation_id": "50-cc02_nonzero_disjunction-compact_multilingual_local_feedback",
+    "request": {
+      "model": "multilingual",
+      "questions": {
+        "body_ir_search": {
+          "criteria": {
+            "option_b": "Try this exact expression: input >= 0",
+            "option_c": "Try this exact expression: input < 0 || input > 0"
+          },
+          "instructions": "Choose one untried expression to fill the Gooo body hole. Use the declared intent and any prior failures or advisory observations. This choice will be typechecked and tested after selection.",
+          "type": "choice"
+        }
+      },
+      "state": {
+        "request": "{\"schema\":\"gooo/body-codegen-ir-search-state/v1\",\"stage\":\"choose_before_candidate_evaluation\",\"activity\":\"C02\",\"activity_id\":\"bodycodegen://activity/c02\",\"body_ir\":\"if __GOOO_BODY_HOLE_choice__ { return 1 } else { return 0 }\",\"intent\":\"Return 1 for every nonzero integer, including both negative and positive values; return 0 only for zero.\",\"training_test_count\":3,\"remaining_candidates\":[{\"id\":\"option_b\",\"expression\":\"input \\u003e= 0\"},{\"id\":\"option_c\",\"expression\":\"input \\u003c 0 || input \\u003e 0\"}],\"prior_attempts\":[{\"candidate_id\":\"option_a\",\"typecheck_passed\":true,\"scoring_completed\":true,\"test_cases_passed\":1,\"test_cases_total\":3,\"accuracy_percent\":33.333333333333336,\"failed_cases\":[{\"input\":-1,\"expected\":1,\"actual\":0,\"passed\":false},{\"input\":1,\"expected\":1,\"actual\":0,\"passed\":false}],\"failed_cases_total\":2,\"failed_cases_truncated\":false}]}"
+      }
+    },
+    "request_sha256": "82eb0ae870b82e6e8a0e9a9a88312942fe5902e2ed0ae31b6fad77f20a1630e3"
+  },
+  {
+    "invocation_id": "51-cc01_inclusive_band-compact_multilingual_local_feedback",
+    "request": {
+      "model": "multilingual",
+      "questions": {
+        "body_ir_search": {
+          "criteria": {
+            "option_a": "Try this exact expression: input >= 3 && input <= 8",
+            "option_b": "Try this exact expression: input > 3 && input <= 8",
+            "option_c": "Try this exact expression: input >= 3 && input < 8"
+          },
+          "instructions": "Choose one untried expression to fill the Gooo body hole. Use the declared intent and any prior failures or advisory observations. This choice will be typechecked and tested after selection.",
+          "type": "choice"
+        }
+      },
+      "state": {
+        "request": "{\"schema\":\"gooo/body-codegen-ir-search-state/v1\",\"stage\":\"choose_before_candidate_evaluation\",\"activity\":\"C01\",\"activity_id\":\"bodycodegen://activity/c01\",\"body_ir\":\"if __GOOO_BODY_HOLE_choice__ { return 2 } else { return -1 }\",\"intent\":\"Return 2 for inputs from 3 through 8 inclusive, and -1 otherwise.\",\"training_test_count\":5,\"remaining_candidates\":[{\"id\":\"option_a\",\"expression\":\"input \\u003e= 3 \\u0026\\u0026 input \\u003c= 8\"},{\"id\":\"option_b\",\"expression\":\"input \\u003e 3 \\u0026\\u0026 input \\u003c= 8\"},{\"id\":\"option_c\",\"expression\":\"input \\u003e= 3 \\u0026\\u0026 input \\u003c 8\"}],\"prior_attempts\":[]}"
+      }
+    },
+    "request_sha256": "9f8bc75805b637de6c0dc5b4f512253e7bf8d7277c8f8bb3aa1ee9d5df487a2d"
+  },
+  {
+    "invocation_id": "52-pr14_product_neighbor_factors-compact_multilingual_single",
+    "request": {
+      "model": "multilingual",
+      "questions": {
+        "body_ir_search": {
+          "criteria": {
+            "option_a": "Try this exact expression: input - 1",
+            "option_b": "Try this exact expression: input",
+            "option_c": "Try this exact expression: input + 1"
+          },
+          "instructions": "Choose one untried expression to fill the Gooo body hole. Use the declared intent and any prior failures or advisory observations. This choice will be typechecked and tested after selection.",
+          "type": "choice"
+        }
+      },
+      "state": {
+        "request": "{\"schema\":\"gooo/body-codegen-ir-search-state/v1\",\"stage\":\"choose_before_candidate_evaluation\",\"activity\":\"C14\",\"activity_id\":\"bodycodegen://activity/c14\",\"body_ir\":\"return (input + __GOOO_BODY_HOLE_choice__) * (input - 2)\",\"intent\":\"Multiply the input plus its successor by the input minus two.\",\"training_test_count\":4,\"remaining_candidates\":[{\"id\":\"option_a\",\"expression\":\"input - 1\"},{\"id\":\"option_b\",\"expression\":\"input\"},{\"id\":\"option_c\",\"expression\":\"input + 1\"}],\"prior_attempts\":[]}"
+      }
+    },
+    "request_sha256": "89c4a06f006dab1acb7093db0fed818c6b3e969a99e437e9937352e224d8bce2"
+  },
+  {
+    "invocation_id": "53-bl21_saved_range_predicates-compact_multilingual_local_feedback",
+    "request": {
+      "model": "multilingual",
+      "questions": {
+        "body_ir_search": {
+          "criteria": {
+            "option_a": "Try this exact expression: input != 0",
+            "option_b": "Try this exact expression: true",
+            "option_c": "Try this exact expression: input > -2"
+          },
+          "instructions": "Choose one untried expression to fill the Gooo body hole. Use the declared intent and any prior failures or advisory observations. This choice will be typechecked and tested after selection.",
+          "type": "choice"
+        }
+      },
+      "state": {
+        "request": "{\"schema\":\"gooo/body-codegen-ir-search-state/v1\",\"stage\":\"choose_before_candidate_evaluation\",\"activity\":\"C21\",\"activity_id\":\"bodycodegen://activity/c21\",\"body_ir\":\"var low = input \\u003e= -2; var high = input \\u003c= 2; var allowed = low \\u0026\\u0026 high; if allowed \\u0026\\u0026 __GOOO_BODY_HOLE_choice__ { return 1 } else { return 0 }\",\"intent\":\"Save lower and upper range predicates, combine them, and return 1 only for values from -2 through 2.\",\"training_test_count\":5,\"remaining_candidates\":[{\"id\":\"option_a\",\"expression\":\"input != 0\"},{\"id\":\"option_b\",\"expression\":\"true\"},{\"id\":\"option_c\",\"expression\":\"input \\u003e -2\"}],\"prior_attempts\":[]}"
+      }
+    },
+    "request_sha256": "707d7b077664e67d091a437bf946cca300d6d00ab7c3dbef3027270fd96d9a19"
+  },
+  {
+    "invocation_id": "53-bl21_saved_range_predicates-compact_multilingual_local_feedback",
+    "request": {
+      "model": "multilingual",
+      "questions": {
+        "body_ir_search": {
+          "criteria": {
+            "option_b": "Try this exact expression: true",
+            "option_c": "Try this exact expression: input > -2"
+          },
+          "instructions": "Choose one untried expression to fill the Gooo body hole. Use the declared intent and any prior failures or advisory observations. This choice will be typechecked and tested after selection.",
+          "type": "choice"
+        }
+      },
+      "state": {
+        "request": "{\"schema\":\"gooo/body-codegen-ir-search-state/v1\",\"stage\":\"choose_before_candidate_evaluation\",\"activity\":\"C21\",\"activity_id\":\"bodycodegen://activity/c21\",\"body_ir\":\"var low = input \\u003e= -2; var high = input \\u003c= 2; var allowed = low \\u0026\\u0026 high; if allowed \\u0026\\u0026 __GOOO_BODY_HOLE_choice__ { return 1 } else { return 0 }\",\"intent\":\"Save lower and upper range predicates, combine them, and return 1 only for values from -2 through 2.\",\"training_test_count\":5,\"remaining_candidates\":[{\"id\":\"option_b\",\"expression\":\"true\"},{\"id\":\"option_c\",\"expression\":\"input \\u003e -2\"}],\"prior_attempts\":[{\"candidate_id\":\"option_a\",\"typecheck_passed\":true,\"scoring_completed\":true,\"test_cases_passed\":4,\"test_cases_total\":5,\"accuracy_percent\":80,\"failed_cases\":[{\"input\":0,\"expected\":1,\"actual\":0,\"passed\":false}],\"failed_cases_total\":1,\"failed_cases_truncated\":false}]}"
+      }
+    },
+    "request_sha256": "de5c2bc8173080e6836dcda77bac927706db77cf27f3cefe3fee7c7b4f708797"
+  },
+  {
+    "invocation_id": "54-ob31_saturating_double-compact_multilingual_single",
+    "request": {
+      "model": "multilingual",
+      "questions": {
+        "body_ir_search": {
+          "criteria": {
+            "option_a": "Try this exact expression: input * 2",
+            "option_b": "Try this exact expression: input * 3",
+            "option_c": "Try this exact expression: input + 2"
+          },
+          "instructions": "Choose one untried expression to fill the Gooo body hole. Use the declared intent and any prior failures or advisory observations. This choice will be typechecked and tested after selection.",
+          "type": "choice"
+        }
+      },
+      "state": {
+        "request": "{\"schema\":\"gooo/body-codegen-ir-search-state/v1\",\"stage\":\"choose_before_candidate_evaluation\",\"activity\":\"C31\",\"activity_id\":\"bodycodegen://activity/c31\",\"body_ir\":\"if input \\u003e 4611686018427387903 { return 9223372036854775807 } else { if input \\u003c (-4611686018427387903 - 1) { return (-9223372036854775807 - 1) } else { return __GOOO_BODY_HOLE_choice__ } }\",\"intent\":\"Double values while the product fits; values beyond either half-range saturate at the corresponding int64 endpoint.\",\"training_test_count\":5,\"remaining_candidates\":[{\"id\":\"option_a\",\"expression\":\"input * 2\"},{\"id\":\"option_b\",\"expression\":\"input * 3\"},{\"id\":\"option_c\",\"expression\":\"input + 2\"}],\"prior_attempts\":[]}"
+      }
+    },
+    "request_sha256": "37e224c989baf784f15778454ee1ada28a5560a99ef3e322189862a319f4c8a6"
+  },
+  {
+    "invocation_id": "55-bl23_nonzero_bounded_flag-compact_multilingual_local_feedback",
+    "request": {
+      "model": "multilingual",
+      "questions": {
+        "body_ir_search": {
+          "criteria": {
+            "option_a": "Try this exact expression: input != -1",
+            "option_b": "Try this exact expression: input > 0",
+            "option_c": "Try this exact expression: true"
+          },
+          "instructions": "Choose one untried expression to fill the Gooo body hole. Use the declared intent and any prior failures or advisory observations. This choice will be typechecked and tested after selection.",
+          "type": "choice"
+        }
+      },
+      "state": {
+        "request": "{\"schema\":\"gooo/body-codegen-ir-search-state/v1\",\"stage\":\"choose_before_candidate_evaluation\",\"activity\":\"C23\",\"activity_id\":\"bodycodegen://activity/c23\",\"body_ir\":\"var nonzero = input != 0; var bounded = input \\u003e= -4 \\u0026\\u0026 input \\u003c= 4; var eligible = nonzero \\u0026\\u0026 bounded; if eligible \\u0026\\u0026 __GOOO_BODY_HOLE_choice__ { return 9 } else { return 0 }\",\"intent\":\"Return 9 only when a saved nonzero predicate and a saved inclusive -4 through 4 range predicate are both true.\",\"training_test_count\":6,\"remaining_candidates\":[{\"id\":\"option_a\",\"expression\":\"input != -1\"},{\"id\":\"option_b\",\"expression\":\"input \\u003e 0\"},{\"id\":\"option_c\",\"expression\":\"true\"}],\"prior_attempts\":[]}"
+      }
+    },
+    "request_sha256": "6bfb5daaf78c6b5edd850c41cfdcf352da792a0004df673f48eb46584e692286"
+  },
+  {
+    "invocation_id": "55-bl23_nonzero_bounded_flag-compact_multilingual_local_feedback",
+    "request": {
+      "model": "multilingual",
+      "questions": {
+        "body_ir_search": {
+          "criteria": {
+            "option_b": "Try this exact expression: input > 0",
+            "option_c": "Try this exact expression: true"
+          },
+          "instructions": "Choose one untried expression to fill the Gooo body hole. Use the declared intent and any prior failures or advisory observations. This choice will be typechecked and tested after selection.",
+          "type": "choice"
+        }
+      },
+      "state": {
+        "request": "{\"schema\":\"gooo/body-codegen-ir-search-state/v1\",\"stage\":\"choose_before_candidate_evaluation\",\"activity\":\"C23\",\"activity_id\":\"bodycodegen://activity/c23\",\"body_ir\":\"var nonzero = input != 0; var bounded = input \\u003e= -4 \\u0026\\u0026 input \\u003c= 4; var eligible = nonzero \\u0026\\u0026 bounded; if eligible \\u0026\\u0026 __GOOO_BODY_HOLE_choice__ { return 9 } else { return 0 }\",\"intent\":\"Return 9 only when a saved nonzero predicate and a saved inclusive -4 through 4 range predicate are both true.\",\"training_test_count\":6,\"remaining_candidates\":[{\"id\":\"option_b\",\"expression\":\"input \\u003e 0\"},{\"id\":\"option_c\",\"expression\":\"true\"}],\"prior_attempts\":[{\"candidate_id\":\"option_a\",\"typecheck_passed\":true,\"scoring_completed\":true,\"test_cases_passed\":5,\"test_cases_total\":6,\"accuracy_percent\":83.33333333333333,\"failed_cases\":[{\"input\":-1,\"expected\":9,\"actual\":0,\"passed\":false}],\"failed_cases_total\":1,\"failed_cases_truncated\":false}]}"
+      }
+    },
+    "request_sha256": "b5d6d0a5ad2882e272f9f721ce23b538f5a8f7f6e8823e20868fb7f2014cf99b"
+  },
+  {
+    "invocation_id": "56-cp17_nonpositive_inclusive-compact_multilingual_single",
+    "request": {
+      "model": "multilingual",
+      "questions": {
+        "body_ir_search": {
+          "criteria": {
+            "option_a": "Try this exact expression: input < 0",
+            "option_b": "Try this exact expression: input == 0",
+            "option_c": "Try this exact expression: input <= 0"
+          },
+          "instructions": "Choose one untried expression to fill the Gooo body hole. Use the declared intent and any prior failures or advisory observations. This choice will be typechecked and tested after selection.",
+          "type": "choice"
+        }
+      },
+      "state": {
+        "request": "{\"schema\":\"gooo/body-codegen-ir-search-state/v1\",\"stage\":\"choose_before_candidate_evaluation\",\"activity\":\"C17\",\"activity_id\":\"bodycodegen://activity/c17\",\"body_ir\":\"if __GOOO_BODY_HOLE_choice__ { return 1 } else { return 0 }\",\"intent\":\"Return 1 for every input at or below zero, including zero, and 0 for positive inputs.\",\"training_test_count\":3,\"remaining_candidates\":[{\"id\":\"option_a\",\"expression\":\"input \\u003c 0\"},{\"id\":\"option_b\",\"expression\":\"input == 0\"},{\"id\":\"option_c\",\"expression\":\"input \\u003c= 0\"}],\"prior_attempts\":[]}"
+      }
+    },
+    "request_sha256": "fbec231dc655ad62e06fc4b2696b32ea99e839ca266ddd52426a6a0010cf3332"
+  },
+  {
+    "invocation_id": "57-ob31_saturating_double-compact_multilingual_local_feedback",
+    "request": {
+      "model": "multilingual",
+      "questions": {
+        "body_ir_search": {
+          "criteria": {
+            "option_a": "Try this exact expression: input * 2",
+            "option_b": "Try this exact expression: input * 3",
+            "option_c": "Try this exact expression: input + 2"
+          },
+          "instructions": "Choose one untried expression to fill the Gooo body hole. Use the declared intent and any prior failures or advisory observations. This choice will be typechecked and tested after selection.",
+          "type": "choice"
+        }
+      },
+      "state": {
+        "request": "{\"schema\":\"gooo/body-codegen-ir-search-state/v1\",\"stage\":\"choose_before_candidate_evaluation\",\"activity\":\"C31\",\"activity_id\":\"bodycodegen://activity/c31\",\"body_ir\":\"if input \\u003e 4611686018427387903 { return 9223372036854775807 } else { if input \\u003c (-4611686018427387903 - 1) { return (-9223372036854775807 - 1) } else { return __GOOO_BODY_HOLE_choice__ } }\",\"intent\":\"Double values while the product fits; values beyond either half-range saturate at the corresponding int64 endpoint.\",\"training_test_count\":5,\"remaining_candidates\":[{\"id\":\"option_a\",\"expression\":\"input * 2\"},{\"id\":\"option_b\",\"expression\":\"input * 3\"},{\"id\":\"option_c\",\"expression\":\"input + 2\"}],\"prior_attempts\":[]}"
+      }
+    },
+    "request_sha256": "37e224c989baf784f15778454ee1ada28a5560a99ef3e322189862a319f4c8a6"
+  },
+  {
+    "invocation_id": "58-lr10_floor_then_increment-compact_multilingual_local_feedback",
+    "request": {
+      "model": "multilingual",
+      "questions": {
+        "body_ir_search": {
+          "criteria": {
+            "option_a": "Try this exact expression: adjusted",
+            "option_b": "Try this exact expression: input",
+            "option_c": "Try this exact expression: adjusted + 1"
+          },
+          "instructions": "Choose one untried expression to fill the Gooo body hole. Use the declared intent and any prior failures or advisory observations. This choice will be typechecked and tested after selection.",
+          "type": "choice"
+        }
+      },
+      "state": {
+        "request": "{\"schema\":\"gooo/body-codegen-ir-search-state/v1\",\"stage\":\"choose_before_candidate_evaluation\",\"activity\":\"C10\",\"activity_id\":\"bodycodegen://activity/c10\",\"body_ir\":\"var adjusted = input; if adjusted \\u003c 0 { adjusted = 0 } else { adjusted = adjusted + 1 }; return __GOOO_BODY_HOLE_choice__\",\"intent\":\"Replace negative input with zero; otherwise increment it once, then return the updated local.\",\"training_test_count\":4,\"remaining_candidates\":[{\"id\":\"option_a\",\"expression\":\"adjusted\"},{\"id\":\"option_b\",\"expression\":\"input\"},{\"id\":\"option_c\",\"expression\":\"adjusted + 1\"}],\"prior_attempts\":[]}"
+      }
+    },
+    "request_sha256": "70ef0cf3b3193b6d675d565acf20fcea559dac75832ae4f56e96a3ec785bee46"
+  },
+  {
+    "invocation_id": "59-bl22_reassigned_valid_flag-compact_multilingual_local_feedback",
+    "request": {
+      "model": "multilingual",
+      "questions": {
+        "body_ir_search": {
+          "criteria": {
+            "option_a": "Try this exact expression: valid",
+            "option_b": "Try this exact expression: valid || input == 10",
+            "option_c": "Try this exact expression: input <= 5"
+          },
+          "instructions": "Choose one untried expression to fill the Gooo body hole. Use the declared intent and any prior failures or advisory observations. This choice will be typechecked and tested after selection.",
+          "type": "choice"
+        }
+      },
+      "state": {
+        "request": "{\"schema\":\"gooo/body-codegen-ir-search-state/v1\",\"stage\":\"choose_before_candidate_evaluation\",\"activity\":\"C22\",\"activity_id\":\"bodycodegen://activity/c22\",\"body_ir\":\"var valid = input \\u003e= 0; valid = valid \\u0026\\u0026 input \\u003c= 5; if __GOOO_BODY_HOLE_choice__ { return 5 } else { return -5 }\",\"intent\":\"Build a nonnegative flag, refine it in place to require an input no greater than five, then return 5 only when valid.\",\"training_test_count\":5,\"remaining_candidates\":[{\"id\":\"option_a\",\"expression\":\"valid\"},{\"id\":\"option_b\",\"expression\":\"valid || input == 10\"},{\"id\":\"option_c\",\"expression\":\"input \\u003c= 5\"}],\"prior_attempts\":[]}"
+      }
+    },
+    "request_sha256": "13b51a3e57966716ea4d1565c8f2c51237e66d0c5a1cc0907e33f0c6991d30e1"
+  },
+  {
+    "invocation_id": "60-ni08_upper_grade_excess-compact_multilingual_single",
+    "request": {
+      "model": "multilingual",
+      "questions": {
+        "body_ir_search": {
+          "criteria": {
+            "option_a": "Try this exact expression: input - 79",
+            "option_b": "Try this exact expression: input - 81",
+            "option_c": "Try this exact expression: input - 80"
+          },
+          "instructions": "Choose one untried expression to fill the Gooo body hole. Use the declared intent and any prior failures or advisory observations. This choice will be typechecked and tested after selection.",
+          "type": "choice"
+        }
+      },
+      "state": {
+        "request": "{\"schema\":\"gooo/body-codegen-ir-search-state/v1\",\"stage\":\"choose_before_candidate_evaluation\",\"activity\":\"C08\",\"activity_id\":\"bodycodegen://activity/c08\",\"body_ir\":\"if input \\u003c 60 { return -1 } else { if input \\u003c 80 { return 0 } else { return __GOOO_BODY_HOLE_choice__ } }\",\"intent\":\"Return -1 below 60, 0 from 60 through 79, and the excess above 80 from 80 onward.\",\"training_test_count\":5,\"remaining_candidates\":[{\"id\":\"option_a\",\"expression\":\"input - 79\"},{\"id\":\"option_b\",\"expression\":\"input - 81\"},{\"id\":\"option_c\",\"expression\":\"input - 80\"}],\"prior_attempts\":[]}"
+      }
+    },
+    "request_sha256": "6d7ad0adb3d07c21925eae06e03a70d730f8daa037efe64ffa90efef2bcbd710"
+  },
+  {
+    "invocation_id": "61-bl24_selected_nonnegative_codes-compact_multilingual_single",
+    "request": {
+      "model": "multilingual",
+      "questions": {
+        "body_ir_search": {
+          "criteria": {
+            "option_a": "Try this exact expression: input == 2",
+            "option_b": "Try this exact expression: selected",
+            "option_c": "Try this exact expression: selected && input != 4"
+          },
+          "instructions": "Choose one untried expression to fill the Gooo body hole. Use the declared intent and any prior failures or advisory observations. This choice will be typechecked and tested after selection.",
+          "type": "choice"
+        }
+      },
+      "state": {
+        "request": "{\"schema\":\"gooo/body-codegen-ir-search-state/v1\",\"stage\":\"choose_before_candidate_evaluation\",\"activity\":\"C24\",\"activity_id\":\"bodycodegen://activity/c24\",\"body_ir\":\"var selected = input == 2; if input \\u003c 0 { selected = false } else { selected = selected || input == 4 }; if __GOOO_BODY_HOLE_choice__ { return 6 } else { return 0 }\",\"intent\":\"Select code 2, plus code 4 only when nonnegative; all negative codes and other nonnegative codes return zero.\",\"training_test_count\":5,\"remaining_candidates\":[{\"id\":\"option_a\",\"expression\":\"input == 2\"},{\"id\":\"option_b\",\"expression\":\"selected\"},{\"id\":\"option_c\",\"expression\":\"selected \\u0026\\u0026 input != 4\"}],\"prior_attempts\":[]}"
+      }
+    },
+    "request_sha256": "970d6a16a47adf29f97abcea018e099e63d27796978a86b43a4416c468a818a7"
+  },
+  {
+    "invocation_id": "62-bl21_saved_range_predicates-compact_multilingual_single",
+    "request": {
+      "model": "multilingual",
+      "questions": {
+        "body_ir_search": {
+          "criteria": {
+            "option_a": "Try this exact expression: input != 0",
+            "option_b": "Try this exact expression: true",
+            "option_c": "Try this exact expression: input > -2"
+          },
+          "instructions": "Choose one untried expression to fill the Gooo body hole. Use the declared intent and any prior failures or advisory observations. This choice will be typechecked and tested after selection.",
+          "type": "choice"
+        }
+      },
+      "state": {
+        "request": "{\"schema\":\"gooo/body-codegen-ir-search-state/v1\",\"stage\":\"choose_before_candidate_evaluation\",\"activity\":\"C21\",\"activity_id\":\"bodycodegen://activity/c21\",\"body_ir\":\"var low = input \\u003e= -2; var high = input \\u003c= 2; var allowed = low \\u0026\\u0026 high; if allowed \\u0026\\u0026 __GOOO_BODY_HOLE_choice__ { return 1 } else { return 0 }\",\"intent\":\"Save lower and upper range predicates, combine them, and return 1 only for values from -2 through 2.\",\"training_test_count\":5,\"remaining_candidates\":[{\"id\":\"option_a\",\"expression\":\"input != 0\"},{\"id\":\"option_b\",\"expression\":\"true\"},{\"id\":\"option_c\",\"expression\":\"input \\u003e -2\"}],\"prior_attempts\":[]}"
+      }
+    },
+    "request_sha256": "707d7b077664e67d091a437bf946cca300d6d00ab7c3dbef3027270fd96d9a19"
+  },
+  {
+    "invocation_id": "63-pr13_subtract_tripled_sum-compact_multilingual_local_feedback",
+    "request": {
+      "model": "multilingual",
+      "questions": {
+        "body_ir_search": {
+          "criteria": {
+            "option_a": "Try this exact expression: input + 2",
+            "option_b": "Try this exact expression: input + 3",
+            "option_c": "Try this exact expression: input - 2"
+          },
+          "instructions": "Choose one untried expression to fill the Gooo body hole. Use the declared intent and any prior failures or advisory observations. This choice will be typechecked and tested after selection.",
+          "type": "choice"
+        }
+      },
+      "state": {
+        "request": "{\"schema\":\"gooo/body-codegen-ir-search-state/v1\",\"stage\":\"choose_before_candidate_evaluation\",\"activity\":\"C13\",\"activity_id\":\"bodycodegen://activity/c13\",\"body_ir\":\"return 100 - __GOOO_BODY_HOLE_choice__ * 3\",\"intent\":\"Subtract three times the sum of the input and two from one hundred.\",\"training_test_count\":4,\"remaining_candidates\":[{\"id\":\"option_a\",\"expression\":\"input + 2\"},{\"id\":\"option_b\",\"expression\":\"input + 3\"},{\"id\":\"option_c\",\"expression\":\"input - 2\"}],\"prior_attempts\":[]}"
+      }
+    },
+    "request_sha256": "8880a10cc6f9551e17654ea6ede5ec191e40817f67ff6ccd0bd8c6fa2eddf74d"
+  },
+  {
+    "invocation_id": "64-ob30_saturating_decrement-compact_multilingual_local_feedback",
+    "request": {
+      "model": "multilingual",
+      "questions": {
+        "body_ir_search": {
+          "criteria": {
+            "option_a": "Try this exact expression: input + 1",
+            "option_b": "Try this exact expression: input - 1",
+            "option_c": "Try this exact expression: input"
+          },
+          "instructions": "Choose one untried expression to fill the Gooo body hole. Use the declared intent and any prior failures or advisory observations. This choice will be typechecked and tested after selection.",
+          "type": "choice"
+        }
+      },
+      "state": {
+        "request": "{\"schema\":\"gooo/body-codegen-ir-search-state/v1\",\"stage\":\"choose_before_candidate_evaluation\",\"activity\":\"C30\",\"activity_id\":\"bodycodegen://activity/c30\",\"body_ir\":\"if input == (-9223372036854775807 - 1) { return input } else { return __GOOO_BODY_HOLE_choice__ }\",\"intent\":\"Decrement every int64 input except the minimum, which remains at the minimum instead of wrapping.\",\"training_test_count\":4,\"remaining_candidates\":[{\"id\":\"option_a\",\"expression\":\"input + 1\"},{\"id\":\"option_b\",\"expression\":\"input - 1\"},{\"id\":\"option_c\",\"expression\":\"input\"}],\"prior_attempts\":[]}"
+      }
+    },
+    "request_sha256": "80ca64730a2e62110a244c40cea62b53df83f815681353b16be992e0c5f0fb7d"
+  },
+  {
+    "invocation_id": "64-ob30_saturating_decrement-compact_multilingual_local_feedback",
+    "request": {
+      "model": "multilingual",
+      "questions": {
+        "body_ir_search": {
+          "criteria": {
+            "option_b": "Try this exact expression: input - 1",
+            "option_c": "Try this exact expression: input"
+          },
+          "instructions": "Choose one untried expression to fill the Gooo body hole. Use the declared intent and any prior failures or advisory observations. This choice will be typechecked and tested after selection.",
+          "type": "choice"
+        }
+      },
+      "state": {
+        "request": "{\"schema\":\"gooo/body-codegen-ir-search-state/v1\",\"stage\":\"choose_before_candidate_evaluation\",\"activity\":\"C30\",\"activity_id\":\"bodycodegen://activity/c30\",\"body_ir\":\"if input == (-9223372036854775807 - 1) { return input } else { return __GOOO_BODY_HOLE_choice__ }\",\"intent\":\"Decrement every int64 input except the minimum, which remains at the minimum instead of wrapping.\",\"training_test_count\":4,\"remaining_candidates\":[{\"id\":\"option_b\",\"expression\":\"input - 1\"},{\"id\":\"option_c\",\"expression\":\"input\"}],\"prior_attempts\":[{\"candidate_id\":\"option_a\",\"typecheck_passed\":true,\"scoring_completed\":true,\"test_cases_passed\":0,\"test_cases_total\":4,\"accuracy_percent\":0,\"failed_cases\":[{\"input\":-9223372036854775806,\"expected\":-9223372036854775807,\"actual\":-9223372036854775805,\"passed\":false},{\"input\":-9223372036854775807,\"expected\":-9223372036854775808,\"actual\":-9223372036854775806,\"passed\":false},{\"input\":0,\"expected\":-1,\"actual\":1,\"passed\":false},{\"input\":1,\"expected\":0,\"actual\":2,\"passed\":false}],\"failed_cases_total\":4,\"failed_cases_truncated\":false}]}"
+      }
+    },
+    "request_sha256": "2d37e4fe17cc60d85dd7402df4183a5b945faa3f42f1b065e1b388d08a6074a6"
+  }
+]

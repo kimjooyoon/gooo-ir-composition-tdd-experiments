@@ -1,0 +1,48 @@
+{
+  "candidates": [
+    {
+      "expression": "input != -1",
+      "id": "option_a"
+    },
+    {
+      "expression": "input > 0",
+      "id": "option_b"
+    },
+    {
+      "expression": "true",
+      "id": "option_c"
+    }
+  ],
+  "hole_id": "choice",
+  "intent": "Return 9 only when a saved nonzero predicate and a saved inclusive -4 through 4 range predicate are both true.",
+  "max_attempts": 3,
+  "prompt_profile": "compact",
+  "provider_model": "multilingual",
+  "schema": "gooo/body-codegen-ir-search-plan/v1",
+  "test_cases": [
+    {
+      "expected": 0,
+      "input": -5
+    },
+    {
+      "expected": 9,
+      "input": -4
+    },
+    {
+      "expected": 9,
+      "input": -1
+    },
+    {
+      "expected": 0,
+      "input": 0
+    },
+    {
+      "expected": 9,
+      "input": 4
+    },
+    {
+      "expected": 0,
+      "input": 5
+    }
+  ]
+}

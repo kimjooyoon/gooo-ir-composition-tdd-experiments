@@ -1,0 +1,44 @@
+{
+  "candidates": [
+    {
+      "expression": "input * 2",
+      "id": "option_a"
+    },
+    {
+      "expression": "input * 3",
+      "id": "option_b"
+    },
+    {
+      "expression": "input + 2",
+      "id": "option_c"
+    }
+  ],
+  "hole_id": "choice",
+  "intent": "Double values while the product fits; values beyond either half-range saturate at the corresponding int64 endpoint.",
+  "max_attempts": 3,
+  "prompt_profile": "compact",
+  "provider_model": "multilingual",
+  "schema": "gooo/body-codegen-ir-search-plan/v1",
+  "test_cases": [
+    {
+      "expected": -4,
+      "input": -2
+    },
+    {
+      "expected": -2,
+      "input": -1
+    },
+    {
+      "expected": 0,
+      "input": 0
+    },
+    {
+      "expected": 2,
+      "input": 1
+    },
+    {
+      "expected": 4,
+      "input": 2
+    }
+  ]
+}

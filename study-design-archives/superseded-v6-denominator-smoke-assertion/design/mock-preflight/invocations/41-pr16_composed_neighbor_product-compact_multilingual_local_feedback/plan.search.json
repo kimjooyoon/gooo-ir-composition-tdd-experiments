@@ -1,0 +1,40 @@
+{
+  "candidates": [
+    {
+      "expression": "input + 2",
+      "id": "option_a"
+    },
+    {
+      "expression": "input + 1",
+      "id": "option_b"
+    },
+    {
+      "expression": "input + 3",
+      "id": "option_c"
+    }
+  ],
+  "hole_id": "choice",
+  "intent": "Multiply the saved successor by the input plus two, then subtract the original input.",
+  "max_attempts": 3,
+  "prompt_profile": "compact",
+  "provider_model": "multilingual",
+  "schema": "gooo/body-codegen-ir-search-plan/v1",
+  "test_cases": [
+    {
+      "expected": 5,
+      "input": -3
+    },
+    {
+      "expected": 2,
+      "input": 0
+    },
+    {
+      "expected": 10,
+      "input": 2
+    },
+    {
+      "expected": 37,
+      "input": 5
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "candidates": [
+    {
+      "expression": "adjusted",
+      "id": "option_a"
+    },
+    {
+      "expression": "input",
+      "id": "option_b"
+    },
+    {
+      "expression": "adjusted + 1",
+      "id": "option_c"
+    }
+  ],
+  "hole_id": "choice",
+  "intent": "Replace negative input with zero; otherwise increment it once, then return the updated local.",
+  "max_attempts": 1,
+  "prompt_profile": "compact",
+  "provider_model": "multilingual",
+  "schema": "gooo/body-codegen-ir-search-plan/v1",
+  "test_cases": [
+    {
+      "expected": 0,
+      "input": -1
+    },
+    {
+      "expected": 1,
+      "input": 0
+    },
+    {
+      "expected": 2,
+      "input": 1
+    },
+    {
+      "expected": 6,
+      "input": 5
+    }
+  ]
+}
