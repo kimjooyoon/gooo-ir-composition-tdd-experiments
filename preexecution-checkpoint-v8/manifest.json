@@ -1,0 +1,53 @@
+{
+  "actual_laya_calls": 0,
+  "compiler_binary_sha256": "ecbae47a877f57117e4f493ab85adc0279956c437a68e9fa374bee1b3772db1f",
+  "compiler_source_revision": "f3e576ad55796c0d42b2af8b86f874b49baa61d8",
+  "created_at_utc": "2026-09-30T10:30:22.853025+00:00",
+  "derived_from_checkpoint": "preexecution-checkpoint/manifest.json",
+  "design_path": "study-design-v8/study-design.json",
+  "design_sha256": "ab691ac00f73abc1cef9648da58c20a1816d7ab16cda7e59536054bea9a66b52",
+  "files": [
+    {
+      "bytes": 68732,
+      "path": "study-code/scripts/prepare_study.py",
+      "sha256": "f59e1132481bfcc81d84dfceb8e4e74601a31b265b252c18923014dac2df254b",
+      "source_path": "/Users/alice/meta-go/research/metaprogramming/gooo-ir-composition-tdd-experiments/scripts/prepare_study.py"
+    },
+    {
+      "bytes": 99531,
+      "path": "study-code/scripts/run_study_v8.py",
+      "sha256": "0aabee1c485c9b0333c43dc3f7ce79c137e2e5b3651ca77483b2d2923a97cfee",
+      "source_path": "/Users/alice/meta-go/research/metaprogramming/gooo-ir-composition-tdd-experiments/scripts/run_study_v8.py"
+    },
+    {
+      "bytes": 110236,
+      "path": "study-code/dependencies/run_pinned_context_study.py",
+      "sha256": "58b414b6dfa5070666514eae4bc044474c8ca19162a825fd2afc749023075dea",
+      "source_path": "/Users/alice/meta-go/research/metaprogramming/gooo-ci-context-codegen-experiments/scripts/run_pinned_context_study.py"
+    },
+    {
+      "bytes": 9195,
+      "path": "study-code/dependencies/selection_support.py",
+      "sha256": "0c6ba54ded4c4cce5086945e74e25567aad23e492c7b3e45d05a7262e27771d6",
+      "source_path": "/Users/alice/meta-go/research/metaprogramming/gooo-ci-context-codegen-experiments/scripts/selection_support.py"
+    }
+  ],
+  "note": "Exact v8 source copies before a new live capture. Frozen v7 checkpoint and one-call partial capture remain immutable; no rerun of the protocol preflight.",
+  "prior_separate_v7_actual_laya_calls": 1,
+  "schema": "gooo/ir-composition-tdd-public-preexecution-checkpoint/v1",
+  "status": "before_laya_start",
+  "supplemental_derivation_files": [
+    {
+      "bytes": 13168,
+      "path": "derivation-code/scripts/derive_study_v8.py",
+      "sha256": "8fa04492e6bcc47ffa67ef6d1049280a0c91f8bbb5573bde805dccac9cf05940",
+      "source_path": "/Users/alice/meta-go/research/metaprogramming/gooo-ir-composition-tdd-experiments/scripts/derive_study_v8.py"
+    },
+    {
+      "bytes": 3493,
+      "path": "derivation-code/scripts/test_run_study_v8_paths.py",
+      "sha256": "b357af9235328d369b576f1704a2f92061eef71e92853a80f977b02a2b60a678",
+      "source_path": "/Users/alice/meta-go/research/metaprogramming/gooo-ir-composition-tdd-experiments/scripts/test_run_study_v8_paths.py"
+    }
+  ]
+}

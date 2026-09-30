@@ -1,0 +1,70 @@
+[
+  {
+    "generated_source_sha256": "f2f043446ef1d8b8bfd44fd986007c5d492c7fcff4b4359ab805418da561e1b4",
+    "go_exit_code": 0,
+    "go_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "go_stdout_sha256": "b48bbaadc0141e4b7102c8a895fa14a6abb615cefca1ae766cbbf65a96a93899",
+    "holdout": {
+      "cases": [
+        {
+          "actual": 0,
+          "expected": 0,
+          "input": -5,
+          "split": "holdout"
+        },
+        {
+          "actual": 59,
+          "expected": 60,
+          "input": 50,
+          "split": "holdout"
+        },
+        {
+          "actual": 101,
+          "expected": 101,
+          "input": 111,
+          "split": "holdout"
+        }
+      ],
+      "passed": 2,
+      "total": 3
+    },
+    "invocation_id": "01-ni06_surcharge_discount-compact_multilingual_single",
+    "status": "compiled_and_scored",
+    "training": {
+      "cases": [
+        {
+          "actual": 0,
+          "expected": 0,
+          "input": -1,
+          "split": "training"
+        },
+        {
+          "actual": 9,
+          "expected": 10,
+          "input": 0,
+          "split": "training"
+        },
+        {
+          "actual": 10,
+          "expected": 11,
+          "input": 1,
+          "split": "training"
+        },
+        {
+          "actual": 109,
+          "expected": 110,
+          "input": 100,
+          "split": "training"
+        },
+        {
+          "actual": 91,
+          "expected": 91,
+          "input": 101,
+          "split": "training"
+        }
+      ],
+      "passed": 2,
+      "total": 5
+    }
+  }
+]

@@ -1,0 +1,933 @@
+{
+  "schema": "gooo/ir-composition-revision2-candidate-discrimination/v1",
+  "training_only": true,
+  "source_unit_completeness": "measured separately by pinned Gooo receipts; not part of this Go evaluation",
+  "designs": [
+    {
+      "id": "cc01_inclusive_band",
+      "intended_candidate_id": "option_a",
+      "original_candidate_compile_status": {
+        "option_a": "compiled_and_executed",
+        "option_b": "compiled_and_executed",
+        "option_c": "compiled_and_executed"
+      },
+      "training_pass_counts": {
+        "option_a": 5,
+        "option_b": 4,
+        "option_c": 4
+      },
+      "gold_vs_distractor_training_inputs": {
+        "option_b": [
+          3
+        ],
+        "option_c": [
+          8
+        ]
+      },
+      "both_distractors_separated": true,
+      "all_candidates_compiled_and_executed": true,
+      "feedback_ready": true,
+      "gold_passes_all_training": true
+    },
+    {
+      "id": "cc02_nonzero_disjunction",
+      "intended_candidate_id": "option_c",
+      "original_candidate_compile_status": {
+        "option_a": "compiled_and_executed",
+        "option_b": "compiled_and_executed",
+        "option_c": "compiled_and_executed"
+      },
+      "training_pass_counts": {
+        "option_a": 1,
+        "option_b": 1,
+        "option_c": 3
+      },
+      "gold_vs_distractor_training_inputs": {
+        "option_a": [
+          -1,
+          1
+        ],
+        "option_b": [
+          -1,
+          0
+        ]
+      },
+      "both_distractors_separated": true,
+      "all_candidates_compiled_and_executed": true,
+      "feedback_ready": true,
+      "gold_passes_all_training": true
+    },
+    {
+      "id": "cc03_two_islands",
+      "intended_candidate_id": "option_b",
+      "original_candidate_compile_status": {
+        "option_a": "compiled_and_executed",
+        "option_b": "compiled_and_executed",
+        "option_c": "compiled_and_executed"
+      },
+      "training_pass_counts": {
+        "option_a": 1,
+        "option_b": 5,
+        "option_c": 4
+      },
+      "gold_vs_distractor_training_inputs": {
+        "option_a": [
+          -5,
+          -4,
+          4,
+          5
+        ],
+        "option_c": [
+          0
+        ]
+      },
+      "both_distractors_separated": true,
+      "all_candidates_compiled_and_executed": true,
+      "feedback_ready": true,
+      "gold_passes_all_training": true
+    },
+    {
+      "id": "cc04_outer_cutoffs",
+      "intended_candidate_id": "option_a",
+      "original_candidate_compile_status": {
+        "option_a": "compiled_and_executed",
+        "option_b": "compiled_and_executed",
+        "option_c": "compiled_and_executed"
+      },
+      "training_pass_counts": {
+        "option_a": 6,
+        "option_b": 3,
+        "option_c": 2
+      },
+      "gold_vs_distractor_training_inputs": {
+        "option_b": [
+          -7,
+          -6,
+          7
+        ],
+        "option_c": [
+          -7,
+          -6,
+          8,
+          9
+        ]
+      },
+      "both_distractors_separated": true,
+      "all_candidates_compiled_and_executed": true,
+      "feedback_ready": true,
+      "gold_passes_all_training": true
+    },
+    {
+      "id": "ni05_negative_then_double",
+      "intended_candidate_id": "option_c",
+      "original_candidate_compile_status": {
+        "option_a": "compiled_and_executed",
+        "option_b": "compiled_and_executed",
+        "option_c": "compiled_and_executed"
+      },
+      "training_pass_counts": {
+        "option_a": 2,
+        "option_b": 3,
+        "option_c": 5
+      },
+      "gold_vs_distractor_training_inputs": {
+        "option_a": [
+          0,
+          1,
+          9
+        ],
+        "option_b": [
+          1,
+          9
+        ]
+      },
+      "both_distractors_separated": true,
+      "all_candidates_compiled_and_executed": true,
+      "feedback_ready": true,
+      "gold_passes_all_training": true
+    },
+    {
+      "id": "ni06_surcharge_discount",
+      "intended_candidate_id": "option_b",
+      "original_candidate_compile_status": {
+        "option_a": "compiled_and_executed",
+        "option_b": "compiled_and_executed",
+        "option_c": "compiled_and_executed"
+      },
+      "training_pass_counts": {
+        "option_a": 2,
+        "option_b": 5,
+        "option_c": 2
+      },
+      "gold_vs_distractor_training_inputs": {
+        "option_a": [
+          0,
+          1,
+          100
+        ],
+        "option_c": [
+          0,
+          1,
+          100
+        ]
+      },
+      "both_distractors_separated": true,
+      "all_candidates_compiled_and_executed": true,
+      "feedback_ready": true,
+      "gold_passes_all_training": true
+    },
+    {
+      "id": "ni07_zero_special_negative_offset",
+      "intended_candidate_id": "option_a",
+      "original_candidate_compile_status": {
+        "option_a": "compiled_and_executed",
+        "option_b": "compiled_and_executed",
+        "option_c": "compiled_and_executed"
+      },
+      "training_pass_counts": {
+        "option_a": 4,
+        "option_b": 2,
+        "option_c": 2
+      },
+      "gold_vs_distractor_training_inputs": {
+        "option_b": [
+          -2,
+          -1
+        ],
+        "option_c": [
+          -2,
+          -1
+        ]
+      },
+      "both_distractors_separated": true,
+      "all_candidates_compiled_and_executed": true,
+      "feedback_ready": true,
+      "gold_passes_all_training": true
+    },
+    {
+      "id": "ni08_upper_grade_excess",
+      "intended_candidate_id": "option_c",
+      "original_candidate_compile_status": {
+        "option_a": "compiled_and_executed",
+        "option_b": "compiled_and_executed",
+        "option_c": "compiled_and_executed"
+      },
+      "training_pass_counts": {
+        "option_a": 3,
+        "option_b": 3,
+        "option_c": 5
+      },
+      "gold_vs_distractor_training_inputs": {
+        "option_a": [
+          80,
+          81
+        ],
+        "option_b": [
+          80,
+          81
+        ]
+      },
+      "both_distractors_separated": true,
+      "all_candidates_compiled_and_executed": true,
+      "feedback_ready": true,
+      "gold_passes_all_training": true
+    },
+    {
+      "id": "lr09_compound_total",
+      "intended_candidate_id": "option_b",
+      "original_candidate_compile_status": {
+        "option_a": "compiled_and_executed",
+        "option_b": "compiled_and_executed",
+        "option_c": "compiled_and_executed"
+      },
+      "training_pass_counts": {
+        "option_a": 1,
+        "option_b": 4,
+        "option_c": 0
+      },
+      "gold_vs_distractor_training_inputs": {
+        "option_a": [
+          -5,
+          1,
+          4
+        ],
+        "option_c": [
+          -5,
+          0,
+          1,
+          4
+        ]
+      },
+      "both_distractors_separated": true,
+      "all_candidates_compiled_and_executed": true,
+      "feedback_ready": true,
+      "gold_passes_all_training": true
+    },
+    {
+      "id": "lr10_floor_then_increment",
+      "intended_candidate_id": "option_a",
+      "original_candidate_compile_status": {
+        "option_a": "compiled_and_executed",
+        "option_b": "compiled_and_executed",
+        "option_c": "compiled_and_executed"
+      },
+      "training_pass_counts": {
+        "option_a": 4,
+        "option_b": 0,
+        "option_c": 0
+      },
+      "gold_vs_distractor_training_inputs": {
+        "option_b": [
+          -1,
+          0,
+          1,
+          5
+        ],
+        "option_c": [
+          -1,
+          0,
+          1,
+          5
+        ]
+      },
+      "both_distractors_separated": true,
+      "all_candidates_compiled_and_executed": true,
+      "feedback_ready": true,
+      "gold_passes_all_training": true
+    },
+    {
+      "id": "lr11_nonnegative_doubled_score",
+      "intended_candidate_id": "option_c",
+      "original_candidate_compile_status": {
+        "option_a": "compiled_and_executed",
+        "option_b": "compiled_and_executed",
+        "option_c": "compiled_and_executed"
+      },
+      "training_pass_counts": {
+        "option_a": 2,
+        "option_b": 0,
+        "option_c": 4
+      },
+      "gold_vs_distractor_training_inputs": {
+        "option_a": [
+          -2,
+          -1
+        ],
+        "option_b": [
+          -2,
+          -1,
+          0,
+          2
+        ]
+      },
+      "both_distractors_separated": true,
+      "all_candidates_compiled_and_executed": true,
+      "feedback_ready": true,
+      "gold_passes_all_training": true
+    },
+    {
+      "id": "lr12_cap_after_adjustment",
+      "intended_candidate_id": "option_b",
+      "original_candidate_compile_status": {
+        "option_a": "compiled_and_executed",
+        "option_b": "compiled_and_executed",
+        "option_c": "compiled_and_executed"
+      },
+      "training_pass_counts": {
+        "option_a": 0,
+        "option_b": 4,
+        "option_c": 3
+      },
+      "gold_vs_distractor_training_inputs": {
+        "option_a": [
+          -5,
+          0,
+          7,
+          8
+        ],
+        "option_c": [
+          8
+        ]
+      },
+      "both_distractors_separated": true,
+      "all_candidates_compiled_and_executed": true,
+      "feedback_ready": true,
+      "gold_passes_all_training": true
+    },
+    {
+      "id": "pr13_subtract_tripled_sum",
+      "intended_candidate_id": "option_a",
+      "original_candidate_compile_status": {
+        "option_a": "compiled_and_executed",
+        "option_b": "compiled_and_executed",
+        "option_c": "compiled_and_executed"
+      },
+      "training_pass_counts": {
+        "option_a": 4,
+        "option_b": 0,
+        "option_c": 0
+      },
+      "gold_vs_distractor_training_inputs": {
+        "option_b": [
+          -2,
+          0,
+          3,
+          5
+        ],
+        "option_c": [
+          -2,
+          0,
+          3,
+          5
+        ]
+      },
+      "both_distractors_separated": true,
+      "all_candidates_compiled_and_executed": true,
+      "feedback_ready": true,
+      "gold_passes_all_training": true
+    },
+    {
+      "id": "pr14_product_neighbor_factors",
+      "intended_candidate_id": "option_c",
+      "original_candidate_compile_status": {
+        "option_a": "compiled_and_executed",
+        "option_b": "compiled_and_executed",
+        "option_c": "compiled_and_executed"
+      },
+      "training_pass_counts": {
+        "option_a": 1,
+        "option_b": 1,
+        "option_c": 4
+      },
+      "gold_vs_distractor_training_inputs": {
+        "option_a": [
+          -3,
+          0,
+          5
+        ],
+        "option_b": [
+          -3,
+          0,
+          5
+        ]
+      },
+      "both_distractors_separated": true,
+      "all_candidates_compiled_and_executed": true,
+      "feedback_ready": true,
+      "gold_passes_all_training": true
+    },
+    {
+      "id": "pr15_square_minus_successor_sum",
+      "intended_candidate_id": "option_b",
+      "original_candidate_compile_status": {
+        "option_a": "compiled_and_executed",
+        "option_b": "compiled_and_executed",
+        "option_c": "compiled_and_executed"
+      },
+      "training_pass_counts": {
+        "option_a": 0,
+        "option_b": 4,
+        "option_c": 0
+      },
+      "gold_vs_distractor_training_inputs": {
+        "option_a": [
+          -2,
+          0,
+          3,
+          6
+        ],
+        "option_c": [
+          -2,
+          0,
+          3,
+          6
+        ]
+      },
+      "both_distractors_separated": true,
+      "all_candidates_compiled_and_executed": true,
+      "feedback_ready": true,
+      "gold_passes_all_training": true
+    },
+    {
+      "id": "pr16_composed_neighbor_product",
+      "intended_candidate_id": "option_a",
+      "original_candidate_compile_status": {
+        "option_a": "compiled_and_executed",
+        "option_b": "compiled_and_executed",
+        "option_c": "compiled_and_executed"
+      },
+      "training_pass_counts": {
+        "option_a": 4,
+        "option_b": 0,
+        "option_c": 0
+      },
+      "gold_vs_distractor_training_inputs": {
+        "option_b": [
+          -3,
+          0,
+          2,
+          5
+        ],
+        "option_c": [
+          -3,
+          0,
+          2,
+          5
+        ]
+      },
+      "both_distractors_separated": true,
+      "all_candidates_compiled_and_executed": true,
+      "feedback_ready": true,
+      "gold_passes_all_training": true
+    },
+    {
+      "id": "cp17_nonpositive_inclusive",
+      "intended_candidate_id": "option_c",
+      "original_candidate_compile_status": {
+        "option_a": "compiled_and_executed",
+        "option_b": "compiled_and_executed",
+        "option_c": "compiled_and_executed"
+      },
+      "training_pass_counts": {
+        "option_a": 2,
+        "option_b": 2,
+        "option_c": 3
+      },
+      "gold_vs_distractor_training_inputs": {
+        "option_a": [
+          0
+        ],
+        "option_b": [
+          -1
+        ]
+      },
+      "both_distractors_separated": true,
+      "all_candidates_compiled_and_executed": true,
+      "feedback_ready": true,
+      "gold_passes_all_training": true
+    },
+    {
+      "id": "cp18_exact_release_code",
+      "intended_candidate_id": "option_b",
+      "original_candidate_compile_status": {
+        "option_a": "compiled_and_executed",
+        "option_b": "compiled_and_executed",
+        "option_c": "compiled_and_executed"
+      },
+      "training_pass_counts": {
+        "option_a": 1,
+        "option_b": 3,
+        "option_c": 2
+      },
+      "gold_vs_distractor_training_inputs": {
+        "option_a": [
+          7,
+          8
+        ],
+        "option_c": [
+          8
+        ]
+      },
+      "both_distractors_separated": true,
+      "all_candidates_compiled_and_executed": true,
+      "feedback_ready": true,
+      "gold_passes_all_training": true
+    },
+    {
+      "id": "cp19_range_without_origin",
+      "intended_candidate_id": "option_a",
+      "original_candidate_compile_status": {
+        "option_a": "compiled_and_executed",
+        "option_b": "compiled_and_executed",
+        "option_c": "compiled_and_executed"
+      },
+      "training_pass_counts": {
+        "option_a": 5,
+        "option_b": 4,
+        "option_c": 1
+      },
+      "gold_vs_distractor_training_inputs": {
+        "option_b": [
+          0
+        ],
+        "option_c": [
+          -4,
+          -3,
+          3,
+          4
+        ]
+      },
+      "both_distractors_separated": true,
+      "all_candidates_compiled_and_executed": true,
+      "feedback_ready": true,
+      "gold_passes_all_training": true
+    },
+    {
+      "id": "cp20_strict_symmetric_window",
+      "intended_candidate_id": "option_c",
+      "original_candidate_compile_status": {
+        "option_a": "compiled_and_executed",
+        "option_b": "compiled_and_executed",
+        "option_c": "compiled_and_executed"
+      },
+      "training_pass_counts": {
+        "option_a": 4,
+        "option_b": 5,
+        "option_c": 6
+      },
+      "gold_vs_distractor_training_inputs": {
+        "option_a": [
+          -5,
+          5
+        ],
+        "option_b": [
+          5
+        ]
+      },
+      "both_distractors_separated": true,
+      "all_candidates_compiled_and_executed": true,
+      "feedback_ready": true,
+      "gold_passes_all_training": true
+    },
+    {
+      "id": "bl21_saved_range_predicates",
+      "intended_candidate_id": "option_b",
+      "original_candidate_compile_status": {
+        "option_a": "compiled_and_executed",
+        "option_b": "compiled_and_executed",
+        "option_c": "compiled_and_executed"
+      },
+      "training_pass_counts": {
+        "option_a": 4,
+        "option_b": 5,
+        "option_c": 4
+      },
+      "gold_vs_distractor_training_inputs": {
+        "option_a": [
+          0
+        ],
+        "option_c": [
+          -2
+        ]
+      },
+      "both_distractors_separated": true,
+      "all_candidates_compiled_and_executed": true,
+      "feedback_ready": true,
+      "gold_passes_all_training": true
+    },
+    {
+      "id": "bl22_reassigned_valid_flag",
+      "intended_candidate_id": "option_a",
+      "original_candidate_compile_status": {
+        "option_a": "compiled_and_executed",
+        "option_b": "compiled_and_executed",
+        "option_c": "compiled_and_executed"
+      },
+      "training_pass_counts": {
+        "option_a": 5,
+        "option_b": 4,
+        "option_c": 4
+      },
+      "gold_vs_distractor_training_inputs": {
+        "option_b": [
+          10
+        ],
+        "option_c": [
+          -1
+        ]
+      },
+      "both_distractors_separated": true,
+      "all_candidates_compiled_and_executed": true,
+      "feedback_ready": true,
+      "gold_passes_all_training": true
+    },
+    {
+      "id": "bl23_nonzero_bounded_flag",
+      "intended_candidate_id": "option_c",
+      "original_candidate_compile_status": {
+        "option_a": "compiled_and_executed",
+        "option_b": "compiled_and_executed",
+        "option_c": "compiled_and_executed"
+      },
+      "training_pass_counts": {
+        "option_a": 5,
+        "option_b": 4,
+        "option_c": 6
+      },
+      "gold_vs_distractor_training_inputs": {
+        "option_a": [
+          -1
+        ],
+        "option_b": [
+          -4,
+          -1
+        ]
+      },
+      "both_distractors_separated": true,
+      "all_candidates_compiled_and_executed": true,
+      "feedback_ready": true,
+      "gold_passes_all_training": true
+    },
+    {
+      "id": "bl24_selected_nonnegative_codes",
+      "intended_candidate_id": "option_b",
+      "original_candidate_compile_status": {
+        "option_a": "compiled_and_executed",
+        "option_b": "compiled_and_executed",
+        "option_c": "compiled_and_executed"
+      },
+      "training_pass_counts": {
+        "option_a": 4,
+        "option_b": 5,
+        "option_c": 4
+      },
+      "gold_vs_distractor_training_inputs": {
+        "option_a": [
+          4
+        ],
+        "option_c": [
+          4
+        ]
+      },
+      "both_distractors_separated": true,
+      "all_candidates_compiled_and_executed": true,
+      "feedback_ready": true,
+      "gold_passes_all_training": true
+    },
+    {
+      "id": "tx25_sign_label",
+      "intended_candidate_id": "option_a",
+      "original_candidate_compile_status": {
+        "option_a": "compiled_and_executed",
+        "option_b": "compiled_and_executed",
+        "option_c": "compiled_and_executed"
+      },
+      "training_pass_counts": {
+        "option_a": 3,
+        "option_b": 0,
+        "option_c": 2
+      },
+      "gold_vs_distractor_training_inputs": {
+        "option_b": [
+          -1,
+          0,
+          1
+        ],
+        "option_c": [
+          -1
+        ]
+      },
+      "both_distractors_separated": true,
+      "all_candidates_compiled_and_executed": true,
+      "feedback_ready": true,
+      "gold_passes_all_training": true
+    },
+    {
+      "id": "tx26_state_label",
+      "intended_candidate_id": "option_c",
+      "original_candidate_compile_status": {
+        "option_a": "compiled_and_executed",
+        "option_b": "compiled_and_executed",
+        "option_c": "compiled_and_executed"
+      },
+      "training_pass_counts": {
+        "option_a": 1,
+        "option_b": 1,
+        "option_c": 3
+      },
+      "gold_vs_distractor_training_inputs": {
+        "option_a": [
+          0,
+          1
+        ],
+        "option_b": [
+          -1,
+          1
+        ]
+      },
+      "both_distractors_separated": true,
+      "all_candidates_compiled_and_executed": true,
+      "feedback_ready": true,
+      "gold_passes_all_training": true
+    },
+    {
+      "id": "tx27_lexical_cutoff",
+      "intended_candidate_id": "option_b",
+      "original_candidate_compile_status": {
+        "option_a": "compiled_and_executed",
+        "option_b": "compiled_and_executed",
+        "option_c": "compiled_and_executed"
+      },
+      "training_pass_counts": {
+        "option_a": 1,
+        "option_b": 3,
+        "option_c": 2
+      },
+      "gold_vs_distractor_training_inputs": {
+        "option_a": [
+          0,
+          1
+        ],
+        "option_c": [
+          -1
+        ]
+      },
+      "both_distractors_separated": true,
+      "all_candidates_compiled_and_executed": true,
+      "feedback_ready": true,
+      "gold_passes_all_training": true
+    },
+    {
+      "id": "tx28_reassigned_text_state",
+      "intended_candidate_id": "option_a",
+      "original_candidate_compile_status": {
+        "option_a": "compiled_and_executed",
+        "option_b": "compiled_and_executed",
+        "option_c": "compiled_and_executed"
+      },
+      "training_pass_counts": {
+        "option_a": 3,
+        "option_b": 0,
+        "option_c": 2
+      },
+      "gold_vs_distractor_training_inputs": {
+        "option_b": [
+          -1,
+          0,
+          1
+        ],
+        "option_c": [
+          1
+        ]
+      },
+      "both_distractors_separated": true,
+      "all_candidates_compiled_and_executed": true,
+      "feedback_ready": true,
+      "gold_passes_all_training": true
+    },
+    {
+      "id": "ob29_saturating_increment",
+      "intended_candidate_id": "option_c",
+      "original_candidate_compile_status": {
+        "option_a": "compiled_and_executed",
+        "option_b": "compiled_and_executed",
+        "option_c": "compiled_and_executed"
+      },
+      "training_pass_counts": {
+        "option_a": 0,
+        "option_b": 0,
+        "option_c": 4
+      },
+      "gold_vs_distractor_training_inputs": {
+        "option_a": [
+          0,
+          1,
+          9223372036854775805,
+          9223372036854775806
+        ],
+        "option_b": [
+          0,
+          1,
+          9223372036854775805,
+          9223372036854775806
+        ]
+      },
+      "both_distractors_separated": true,
+      "all_candidates_compiled_and_executed": true,
+      "feedback_ready": true,
+      "gold_passes_all_training": true
+    },
+    {
+      "id": "ob30_saturating_decrement",
+      "intended_candidate_id": "option_b",
+      "original_candidate_compile_status": {
+        "option_a": "compiled_and_executed",
+        "option_b": "compiled_and_executed",
+        "option_c": "compiled_and_executed"
+      },
+      "training_pass_counts": {
+        "option_a": 0,
+        "option_b": 4,
+        "option_c": 0
+      },
+      "gold_vs_distractor_training_inputs": {
+        "option_a": [
+          -9223372036854775806,
+          -9223372036854775807,
+          0,
+          1
+        ],
+        "option_c": [
+          -9223372036854775806,
+          -9223372036854775807,
+          0,
+          1
+        ]
+      },
+      "both_distractors_separated": true,
+      "all_candidates_compiled_and_executed": true,
+      "feedback_ready": true,
+      "gold_passes_all_training": true
+    },
+    {
+      "id": "ob31_saturating_double",
+      "intended_candidate_id": "option_a",
+      "original_candidate_compile_status": {
+        "option_a": "compiled_and_executed",
+        "option_b": "compiled_and_executed",
+        "option_c": "compiled_and_executed"
+      },
+      "training_pass_counts": {
+        "option_a": 5,
+        "option_b": 1,
+        "option_c": 1
+      },
+      "gold_vs_distractor_training_inputs": {
+        "option_b": [
+          -2,
+          -1,
+          1,
+          2
+        ],
+        "option_c": [
+          -2,
+          -1,
+          0,
+          1
+        ]
+      },
+      "both_distractors_separated": true,
+      "all_candidates_compiled_and_executed": true,
+      "feedback_ready": true,
+      "gold_passes_all_training": true
+    },
+    {
+      "id": "ob32_clamped_absolute",
+      "intended_candidate_id": "option_c",
+      "original_candidate_compile_status": {
+        "option_a": "compiled_and_executed",
+        "option_b": "compiled_and_executed",
+        "option_c": "compiled_and_executed"
+      },
+      "training_pass_counts": {
+        "option_a": 3,
+        "option_b": 1,
+        "option_c": 4
+      },
+      "gold_vs_distractor_training_inputs": {
+        "option_a": [
+          -3
+        ],
+        "option_b": [
+          -3,
+          5,
+          7
+        ]
+      },
+      "both_distractors_separated": true,
+      "all_candidates_compiled_and_executed": true,
+      "feedback_ready": true,
+      "gold_passes_all_training": true
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "arm": "compact_multilingual_single",
+  "intent_id": "cc03_two_islands",
+  "not_started": true,
+  "schema": "gooo/ir-composition-tdd-invocation/v2",
+  "sequence": 36,
+  "status": "not_started_after_prior_failure"
+}

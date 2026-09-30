@@ -1,0 +1,4 @@
+package bodycodegen
+namespace bodycodegen
+entity Integer id "bodycodegen://entity/integer"
+activity C22(Integer) -> Integer computes "let valid = input >= 0; valid = valid && input <= 5; if __GOOO_BODY_HOLE_choice__ { return 5 } else { return -5 }"

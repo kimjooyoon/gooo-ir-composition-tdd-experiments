@@ -1,0 +1,8 @@
+{
+  "arm": "compact_multilingual_single",
+  "intent_id": "cp18_exact_release_code",
+  "not_started": true,
+  "schema": "gooo/ir-composition-tdd-invocation/v2",
+  "sequence": 38,
+  "status": "not_started_after_prior_failure"
+}

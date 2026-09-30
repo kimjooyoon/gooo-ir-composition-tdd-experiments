@@ -1,0 +1,162 @@
+{
+  "authorization_receipt": {
+    "path": "preexecution-checkpoint/capture-authorization-receipt.json",
+    "sha256": "33f994fbb222af3a1220737abd9ba2c706ae1d957c4dd51d6f7463c7bc42e476"
+  },
+  "capture_outcome": {
+    "actual_laya_provider_posts": 1,
+    "cells_not_started": 63,
+    "completed_cli_cells": 1,
+    "report_path": "results/ir-composition-tdd-v7-20260930T101537Z-f1832bd67ec9/report.json",
+    "report_sha256": "7261c2235baa415b200e468041d1f67b8dc3e8e2fb9085a85aa1b0311f578e68",
+    "retry_policy": "none; no retry or resume was performed",
+    "scheduled_cells": 64,
+    "status": "PARTIAL_CAPTURE",
+    "stop_reason": {
+      "invocation_id": "01-ni06_surcharge_discount-compact_multilingual_single",
+      "issues": [
+        "health exchange 2 raw evidence could not be read: [Errno 2] No such file or directory: '/Users/alice/meta-go/research/metaprogramming/gooo-ir-composition-tdd-experiments/results/ir-composition-tdd-v7-20260930T101537Z-f1832bd67ec9/proxy/proxy/requests/0002.request.raw'",
+        "POST 1 raw exchange validation failed: [Errno 2] No such file or directory: '/Users/alice/meta-go/research/metaprogramming/gooo-ir-composition-tdd-experiments/results/ir-composition-tdd-v7-20260930T101537Z-f1832bd67ec9/proxy/proxy/requests/0001.request.raw'"
+      ],
+      "pending": {
+        "pending_sequences": [],
+        "settled": true,
+        "timeout_seconds": 14
+      },
+      "timed_out": false
+    },
+    "warmup_calls": 0
+  },
+  "public_checkpoint": {
+    "commit": "f1832bd67ec9f2db98a9b849f4292301ac669e26",
+    "remote": "main"
+  },
+  "raw_exchange": {
+    "event_index_path": "results/ir-composition-tdd-v7-20260930T101537Z-f1832bd67ec9/proxy/events.json",
+    "event_index_sha256": "7edf7621cdc9c0898a063670cf412401df34cc27a016844463a48f9e48e556ba",
+    "native_receipt_choice": "option_c",
+    "provider_post_event_sequence": 1,
+    "request_file": "proxy/requests/0001.request.raw",
+    "request_sha256": "a7eada39c27c42c8f8d52bcd3bce59907d76327664a15bcddc4e7a1b8189a579",
+    "response_choice": "option_c",
+    "response_file": "proxy/responses/0001.response.raw",
+    "response_routing_model": "multilingual",
+    "response_sha256": "aa27390d5a364a39ac93015384eb0776b112a338ec597419e6115452a11b98be",
+    "typed_request_sha256": "sha256:db2ad61668fc3e5fbe547b8324ad1a947b7b6390ddaaa7ec5333e11fcdccfa2f"
+  },
+  "run_id": "ir-composition-tdd-v7-20260930T101537Z-f1832bd67ec9",
+  "runtime_preexecution": {
+    "compiler_sha256": "ecbae47a877f57117e4f493ab85adc0279956c437a68e9fa374bee1b3772db1f",
+    "design_sha256": "ecce451059062b11f6fa8c8198bcfa53318d0533dddd5e1c5d119e22066bcd0b",
+    "metadata_preexecution_sha256_matches": true,
+    "metadata_sha256": "a9b32bfa6b948d88cdcb2b0a9a0ec424ca11ef3358174bf39f5789b7e24811c1",
+    "path": "results/ir-composition-tdd-v7-20260930T101537Z-f1832bd67ec9/preexecution.json",
+    "sha256": "444b2c5ca17d1c78a2858dc3893dfead38742e60a4ecdb80240ed6ec132ae08e",
+    "study_code_archive": [
+      {
+        "bytes": 98301,
+        "path": "study-code/scripts/run_study.py",
+        "sha256": "47ad354947e0ff999ecce284fd12884dbd939b4096e7f934ec342b6bf9e55a3e"
+      },
+      {
+        "bytes": 68732,
+        "path": "study-code/scripts/prepare_study.py",
+        "sha256": "f59e1132481bfcc81d84dfceb8e4e74601a31b265b252c18923014dac2df254b"
+      },
+      {
+        "bytes": 110236,
+        "path": "study-code/dependencies/run_pinned_context_study.py",
+        "sha256": "58b414b6dfa5070666514eae4bc044474c8ca19162a825fd2afc749023075dea"
+      },
+      {
+        "bytes": 9195,
+        "path": "study-code/dependencies/selection_support.py",
+        "sha256": "0c6ba54ded4c4cce5086945e74e25567aad23e492c7b3e45d05a7262e27771d6"
+      }
+    ]
+  },
+  "schema": "gooo/ir-composition-tdd-capture-authorization-binding/v1",
+  "status": "BOUND_PARTIAL_CAPTURE_NO_RETRY",
+  "stop_and_scoring": {
+    "independent_go_scoring_status": "ran_after_service_shutdown_and_forward_settlement",
+    "owned_laya_service_stopped": true,
+    "provider_forward_settled": true,
+    "replay": [
+      {
+        "generated_source_sha256": "f2f043446ef1d8b8bfd44fd986007c5d492c7fcff4b4359ab805418da561e1b4",
+        "go_exit_code": 0,
+        "go_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "go_stdout_sha256": "b48bbaadc0141e4b7102c8a895fa14a6abb615cefca1ae766cbbf65a96a93899",
+        "holdout": {
+          "cases": [
+            {
+              "actual": 0,
+              "expected": 0,
+              "input": -5,
+              "split": "holdout"
+            },
+            {
+              "actual": 59,
+              "expected": 60,
+              "input": 50,
+              "split": "holdout"
+            },
+            {
+              "actual": 101,
+              "expected": 101,
+              "input": 111,
+              "split": "holdout"
+            }
+          ],
+          "passed": 2,
+          "total": 3
+        },
+        "invocation_id": "01-ni06_surcharge_discount-compact_multilingual_single",
+        "status": "compiled_and_scored",
+        "training": {
+          "cases": [
+            {
+              "actual": 0,
+              "expected": 0,
+              "input": -1,
+              "split": "training"
+            },
+            {
+              "actual": 9,
+              "expected": 10,
+              "input": 0,
+              "split": "training"
+            },
+            {
+              "actual": 10,
+              "expected": 11,
+              "input": 1,
+              "split": "training"
+            },
+            {
+              "actual": 109,
+              "expected": 110,
+              "input": 100,
+              "split": "training"
+            },
+            {
+              "actual": 91,
+              "expected": 91,
+              "input": 101,
+              "split": "training"
+            }
+          ],
+          "passed": 2,
+          "total": 5
+        }
+      }
+    ],
+    "replay_results_sha256": "840548e0c81d7d0041e249d4711392064af4689d6a92df638c5573b828f3d987"
+  },
+  "validation_diagnosis": {
+    "capture_validation_passed": false,
+    "cause": "runner joined the event path, which is already relative to run root, beneath run_dir/proxy a second time; raw files are present at run_dir/proxy/requests and run_dir/proxy/responses",
+    "no_source_or_raw_capture_files_modified": true,
+    "offline_raw_hash_crosscheck_passed": true
+  }
+}

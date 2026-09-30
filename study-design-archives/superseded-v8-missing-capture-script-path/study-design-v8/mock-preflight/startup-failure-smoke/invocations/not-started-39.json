@@ -1,0 +1,8 @@
+{
+  "arm": "compact_multilingual_local_feedback",
+  "intent_id": "ni06_surcharge_discount",
+  "not_started": true,
+  "schema": "gooo/ir-composition-tdd-invocation/v2",
+  "sequence": 39,
+  "status": "not_started_after_prior_failure"
+}

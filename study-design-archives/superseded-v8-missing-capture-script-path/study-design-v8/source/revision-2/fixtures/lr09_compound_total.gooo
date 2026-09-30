@@ -1,0 +1,4 @@
+package bodycodegen
+namespace bodycodegen
+entity Integer id "bodycodegen://entity/integer"
+activity C09(Integer) -> Integer computes "let total = input + 5; total = total * 2; return __GOOO_BODY_HOLE_choice__"

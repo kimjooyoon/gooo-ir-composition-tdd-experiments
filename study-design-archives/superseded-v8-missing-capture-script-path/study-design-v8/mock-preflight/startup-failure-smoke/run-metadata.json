@@ -1,0 +1,12 @@
+{
+  "actual_provider_posts": 0,
+  "capture_lifecycle_error": "synthetic startup failure; zero Laya/provider calls",
+  "completed_cells": 0,
+  "resource_summary_path": null,
+  "schema": "gooo/ir-composition-tdd-run-metadata/v1",
+  "status": "PARTIAL_CAPTURE",
+  "stop_reason": {
+    "error": "MOCK; no service launched",
+    "phase": "synthetic_startup_failure"
+  }
+}

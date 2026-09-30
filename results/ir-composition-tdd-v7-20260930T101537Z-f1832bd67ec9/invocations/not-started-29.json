@@ -1,0 +1,8 @@
+{
+  "arm": "compact_multilingual_local_feedback",
+  "intent_id": "cc04_outer_cutoffs",
+  "not_started": true,
+  "schema": "gooo/ir-composition-tdd-invocation/v2",
+  "sequence": 29,
+  "status": "not_started_after_prior_failure"
+}

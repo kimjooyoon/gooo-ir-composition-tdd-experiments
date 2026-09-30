@@ -1,0 +1,313 @@
+{
+  "arms": {
+    "compact_multilingual_local_feedback": {
+      "capture_not_validated_cells": 32,
+      "capture_validated_cells": 0,
+      "captured_cli_successes": 0,
+      "deterministic_fallback_receipt_count": 0,
+      "emitted_training_score_independent_go": {
+        "observed_cases": 0,
+        "passed_sum": 0,
+        "planned_cases": 137
+      },
+      "emitted_training_score_native": {
+        "observed_cells": 0,
+        "passed_sum": 0,
+        "planned_cells": 32
+      },
+      "first_proposal_matches_intended_candidate": {
+        "observed": 0,
+        "passed": 0,
+        "planned": 32
+      },
+      "first_proposal_training_score": {
+        "observed_cells": 0,
+        "passed_sum": 0,
+        "planned_cells": 32
+      },
+      "first_provider_proposal_choice_distribution_validated_cells_only": {},
+      "holdout_score_independent_go": {
+        "observed_cases": 0,
+        "passed_sum": 0,
+        "planned_cases": 95
+      },
+      "local_score_adjustment": {
+        "declined_cells": 0,
+        "improved_cells": 0,
+        "observed_cells": 0,
+        "observed_delta_sum": 0,
+        "planned_cells": 32,
+        "unchanged_cells": 0
+      },
+      "native_attempt_count_including_sole_remaining": 0,
+      "native_provider_operations": 0,
+      "planned_cells": 32,
+      "provider_choice_distribution_all_attempts_valid_or_invalid_cell": {},
+      "provider_routed_cells_without_cli_success": 0,
+      "provider_routed_receipt_count": 0,
+      "raw_posts_minus_provider_routed_receipts": 0,
+      "raw_provider_posts": 0,
+      "sole_remaining_candidate_choice_distribution": {},
+      "sole_remaining_candidate_deterministic_selections": 0,
+      "source_completeness_receipts": {
+        "decision_distribution": {},
+        "dimension_status_counts": {},
+        "interpretation": "native Gooo compiler receipt only; kept separate from finite-suite scores and independent Go replay",
+        "observed_cells": 0,
+        "planned_cells": 32,
+        "profile_distribution": {}
+      },
+      "timing_and_process_resources": {
+        "cli_active_wall_ms": {
+          "max": null,
+          "median": null,
+          "min": null,
+          "observed": 0,
+          "planned_cells": 32
+        },
+        "cli_process_cpu_seconds_delta_coarse": {
+          "max": null,
+          "median": null,
+          "min": null,
+          "observed": 0,
+          "planned_cells": 32
+        },
+        "cli_process_rss_peak_kb_sampled": {
+          "max": null,
+          "median": null,
+          "min": null,
+          "observed": 0,
+          "planned_cells": 32
+        },
+        "harness_wall_ms": {
+          "max": null,
+          "median": null,
+          "min": null,
+          "observed": 0,
+          "planned_cells": 32
+        },
+        "laya_server_cpu_seconds_delta_coarse": {
+          "max": null,
+          "median": null,
+          "min": null,
+          "observed": 0,
+          "planned_cells": 32
+        },
+        "laya_server_rss_peak_kb_sampled": {
+          "max": null,
+          "median": null,
+          "min": null,
+          "observed": 0,
+          "planned_cells": 32
+        },
+        "proxy_drain_wall_ms": {
+          "max": null,
+          "median": null,
+          "min": null,
+          "observed": 0,
+          "planned_cells": 32
+        }
+      },
+      "unresolved_or_failed_cells": 32
+    },
+    "compact_multilingual_single": {
+      "capture_not_validated_cells": 32,
+      "capture_validated_cells": 0,
+      "captured_cli_successes": 1,
+      "deterministic_fallback_receipt_count": 0,
+      "emitted_training_score_independent_go": {
+        "observed_cases": 5,
+        "passed_sum": 2,
+        "planned_cases": 137
+      },
+      "emitted_training_score_native": {
+        "observed_cells": 0,
+        "passed_sum": 0,
+        "planned_cells": 32
+      },
+      "first_proposal_matches_intended_candidate": {
+        "observed": 0,
+        "passed": 0,
+        "planned": 32
+      },
+      "first_proposal_training_score": {
+        "observed_cells": 0,
+        "passed_sum": 0,
+        "planned_cells": 32
+      },
+      "first_provider_proposal_choice_distribution_validated_cells_only": {},
+      "holdout_score_independent_go": {
+        "observed_cases": 3,
+        "passed_sum": 2,
+        "planned_cases": 95
+      },
+      "local_score_adjustment": {
+        "declined_cells": 0,
+        "improved_cells": 0,
+        "observed_cells": 0,
+        "observed_delta_sum": 0,
+        "planned_cells": 32,
+        "unchanged_cells": 0
+      },
+      "native_attempt_count_including_sole_remaining": 1,
+      "native_provider_operations": 1,
+      "planned_cells": 32,
+      "provider_choice_distribution_all_attempts_valid_or_invalid_cell": {
+        "option_c": 1
+      },
+      "provider_routed_cells_without_cli_success": 0,
+      "provider_routed_receipt_count": 1,
+      "raw_posts_minus_provider_routed_receipts": 0,
+      "raw_provider_posts": 1,
+      "sole_remaining_candidate_choice_distribution": {},
+      "sole_remaining_candidate_deterministic_selections": 0,
+      "source_completeness_receipts": {
+        "decision_distribution": {
+          "PROGRESS_WITHIN_DECLARED_FIXTURE_SCOPE": 1
+        },
+        "dimension_status_counts": {
+          "declaration_coverage": {
+            "PASS": 1
+          },
+          "execution_boundary": {
+            "UNKNOWN": 1
+          },
+          "external_network_boundary": {
+            "UNKNOWN": 1
+          },
+          "full_domain_semantics": {
+            "UNKNOWN": 1
+          },
+          "generation_coverage": {
+            "PASS": 1
+          },
+          "internal_replay_coverage": {
+            "PASS": 1
+          },
+          "laya_decision_observation": {
+            "PASS": 1
+          },
+          "permission_boundary": {
+            "UNKNOWN": 1
+          },
+          "provenance_integrity": {
+            "PASS": 1
+          },
+          "repository_write_boundary": {
+            "PASS": 1
+          },
+          "resource_baseline_comparison": {
+            "UNKNOWN": 1
+          },
+          "resource_observation": {
+            "UNKNOWN": 1
+          },
+          "reverse_observation_coverage": {
+            "UNKNOWN": 1
+          },
+          "route_choice_protocol": {
+            "PASS": 1
+          },
+          "route_quality": {
+            "UNKNOWN": 1
+          },
+          "route_semantic_equivalence": {
+            "PASS": 1
+          },
+          "search_candidate_observation": {
+            "PROGRESS": 1
+          },
+          "search_candidate_scoring": {
+            "PROGRESS": 1
+          },
+          "search_holdout_accuracy": {
+            "UNKNOWN": 1
+          },
+          "search_training_accuracy": {
+            "PROGRESS": 1
+          },
+          "semantic_profile_delta": {
+            "UNKNOWN": 1
+          },
+          "source_ast_coverage": {
+            "PASS": 1
+          },
+          "typecheck_coverage": {
+            "PASS": 1
+          },
+          "use_case_coverage": {
+            "UNKNOWN": 1
+          }
+        },
+        "interpretation": "native Gooo compiler receipt only; kept separate from finite-suite scores and independent Go replay",
+        "observed_cells": 1,
+        "planned_cells": 32,
+        "profile_distribution": {
+          "gooo/body-codegen-pure-v1": 1
+        }
+      },
+      "timing_and_process_resources": {
+        "cli_active_wall_ms": {
+          "max": 212.50554200000062,
+          "median": 212.50554200000062,
+          "min": 212.50554200000062,
+          "observed": 1,
+          "planned_cells": 32
+        },
+        "cli_process_cpu_seconds_delta_coarse": {
+          "max": null,
+          "median": null,
+          "min": null,
+          "observed": 0,
+          "planned_cells": 32
+        },
+        "cli_process_rss_peak_kb_sampled": {
+          "max": 1776,
+          "median": 1776,
+          "min": 1776,
+          "observed": 1,
+          "planned_cells": 32
+        },
+        "harness_wall_ms": {
+          "max": 225.1785420000001,
+          "median": 225.1785420000001,
+          "min": 225.1785420000001,
+          "observed": 1,
+          "planned_cells": 32
+        },
+        "laya_server_cpu_seconds_delta_coarse": {
+          "max": 0.2400000000000002,
+          "median": 0.2400000000000002,
+          "min": 0.2400000000000002,
+          "observed": 1,
+          "planned_cells": 32
+        },
+        "laya_server_rss_peak_kb_sampled": {
+          "max": 1403280,
+          "median": 1403280,
+          "min": 1403280,
+          "observed": 1,
+          "planned_cells": 32
+        },
+        "proxy_drain_wall_ms": {
+          "max": 0.015582999999708136,
+          "median": 0.015582999999708136,
+          "min": 0.015582999999708136,
+          "observed": 1,
+          "planned_cells": 32
+        }
+      },
+      "unresolved_or_failed_cells": 31
+    }
+  },
+  "latency_note": "CLI active wall, proxy drain wall, and harness wall are separate fields; provider response time is derived from the matching raw proxy POST event timestamps.",
+  "measured_provider_post_cap": 96,
+  "metric_note": "Raw POSTs, Laya decision receipts, deterministic fallback receipts, native attempts, and sole-candidate selections are counted separately. Provider proposal and local-adjustment metrics include only fully validated captures. CLI and independent Go denominators are separate; unresolved and failed cells remain in each arm's planned denominator.",
+  "provider_post_caps_by_arm": {
+    "compact_multilingual_local_feedback": 64,
+    "compact_multilingual_single": 32
+  },
+  "resource_measurement_note": "Per-process ps observations are sampled. Cumulative cputime has one-second resolution; zero/short-window deltas are unknown. RSS and rolling pcpu peaks are sampled values; pcpu is not host CPU increase.",
+  "schema": "gooo/ir-composition-tdd-summary/v1",
+  "warmup_calls": 0
+}

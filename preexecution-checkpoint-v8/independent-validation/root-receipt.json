@@ -1,0 +1,19 @@
+{
+  "design_sha256": "ab691ac00f73abc1cef9648da58c20a1816d7ab16cda7e59536054bea9a66b52",
+  "new_actual_model_calls": 0,
+  "note": "Gate is still closed pending public checkpoint. Parent partial raw evidence and source copies remain immutable.",
+  "observed_at_utc": "2026-09-30T10:34:11.406377+00:00",
+  "path_regression_tests": {
+    "go_invocations": 0,
+    "model_calls": 0,
+    "observed": 4,
+    "passed": 4
+  },
+  "prior_v7_actual_posts": 1,
+  "report_path": "root-report.json",
+  "report_sha256": "bf0d47207f496a5264054714cc5c4cfffede8ab6263e68934a5f0059f7a12768",
+  "schema": "gooo/ir-composition-tdd-root-preexecution-review/v1",
+  "status": "PASS",
+  "validator_sha256": "2679cfc7fc29bc866b2a1b1f64c45d087a4ff25edb4c08ae47975053b37052b1",
+  "workflow_sha256": "fe650676ae708aaee7632f548f4bef4d8b4652d13ca047b0ec7ea8e43c81ce0f"
+}

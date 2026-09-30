@@ -1,4 +1,4 @@
-# Preparation checkpoint
+# Capture status and frozen preparation
 
 This public experiment compares the same 32 corrected Gooo intentions under two settings: one pinned Laya choice, or up to three native attempts with local training-test feedback. There are 64 scheduled intent/setting cells. These repeated settings do not add 64 independent intentions.
 
@@ -8,6 +8,12 @@ The initial 64-cell mock traversal recorded 85 local mock POSTs and zero Laya in
 
 The final design SHA-256 is `ecce451059062b11f6fa8c8198bcfa53318d0533dddd5e1c5d119e22066bcd0b`. Exact preparation, capture, proxy and transitive helper source bytes are copied into `preexecution-checkpoint/` before inference. Each actual run also creates its own source archive before starting Laya.
 
-Actual Laya capture has not started. Independent validation and the public preparation checkpoint precede inference. Model proposals, local corrections, sole-candidate deterministic decisions and postselection evaluation use separate counts. CLI active time, proxy-drain time, harness time, raw provider latency and process CPU/RSS observations are recorded separately. Model weights and environments are shared locally and are not copied into this repository.
+The first live run, `ir-composition-tdd-v7-20260930T101537Z-f1832bd67ec9`, is **PARTIAL**: 1 of 64 CLI cells ran and made exactly 1 actual multilingual Laya POST; the other 63 cells were not started. There were zero warmups and no retries. The provider reply selected `option_c`, and the generated source independently scored 2/5 training and 2/3 holdout cases after the owned service shut down and all forwards settled.
+
+The frozen collector incorrectly added a second `proxy/` prefix when reading raw event files. Its original summary therefore records zero validated cells. An independent raw-evidence audit binds the one request/reply to the native receipt and keeps that derived observation separate from the immutable original report. This is a capture failure, not a completed 64-cell study.
+
+For that single observation, provider POST wall time was 190.02 ms, CLI active time 212.51 ms, and harness time 225.18 ms. Sampled Laya RSS peaked at 1,403,280 KB (about 1.34 GiB); coarse sampled process CPU delta was 0.24 seconds. Rolling process CPU percent peaked at 39.2%; this does not measure host CPU increase. One observation cannot establish a latency distribution or general accuracy.
+
+The separate `study-design-v8/` freeze repairs collector path resolution and pins its own source path. It reuses all v7 plan, fixture, mock and tokenizer bytes unchanged. `preexecution-checkpoint-v8/` preserves its exact runner and dependencies before any v8 model call. The v7 checkpoint, raw capture and superseded local v8 draft remain retained. The new capture remains gated until independent review and publication. Model proposals, local corrections, sole-candidate deterministic decisions and postselection evaluation use separate counts. CLI active time, proxy-drain time, harness time, raw provider latency and process CPU/RSS observations are recorded separately. Model weights and environments are shared locally and are not copied into this repository.
 
 Historical retention gaps remain explicit: the original v2 scripts were unavailable when that draft was archived; archive-time substitutes have different hashes. One failed temporary v7 preparation attempt was removed by the preparation program before freeze, so its raw staging bytes are unavailable. Both were model-free preparation failures and are not model-performance observations.

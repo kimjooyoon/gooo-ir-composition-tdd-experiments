@@ -1,0 +1,8 @@
+{
+  "arm": "compact_multilingual_local_feedback",
+  "intent_id": "bl22_reassigned_valid_flag",
+  "not_started": true,
+  "schema": "gooo/ir-composition-tdd-invocation/v2",
+  "sequence": 59,
+  "status": "not_started_after_prior_failure"
+}

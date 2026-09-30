@@ -1,0 +1,13 @@
+{
+  "design_sha256": "ab691ac00f73abc1cef9648da58c20a1816d7ab16cda7e59536054bea9a66b52",
+  "new_actual_model_calls": 0,
+  "note": "Stable final validator preserved under validation-code. Earlier root report/receipt retained; draft validator 2679cfc7 exact source bytes unavailable, no reconstructed substitute. Gate pending public checkpoint.",
+  "observed_at_utc": "2026-09-30T10:39:51.934031+00:00",
+  "prior_v7_actual_posts": 1,
+  "report_path": "root-final-report.json",
+  "report_sha256": "bf0d47207f496a5264054714cc5c4cfffede8ab6263e68934a5f0059f7a12768",
+  "schema": "gooo/ir-composition-tdd-root-preexecution-review/v1",
+  "status": "PASS",
+  "validator_sha256": "741292ac12ea8862ac81bde84315edb271d66bf1f84a7985077782476ed5220b",
+  "workflow_sha256": "fe650676ae708aaee7632f548f4bef4d8b4652d13ca047b0ec7ea8e43c81ce0f"
+}

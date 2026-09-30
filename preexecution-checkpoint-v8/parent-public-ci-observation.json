@@ -1,0 +1,13 @@
+{
+  "note": "This CI validates the public v7 preparation; v8 independent review and its new public checkpoint are separate.",
+  "observed_at_utc": "2026-09-30T10:32:59.788927+00:00",
+  "runs": [
+    {
+      "conclusion": "success",
+      "databaseId": 36701046022,
+      "headSha": "f1832bd67ec9f2db98a9b849f4292301ac669e26",
+      "status": "completed",
+      "workflowName": "Frozen TDD study validation"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "attempt_caps": {
+    "compact_multilingual_local_feedback": 3,
+    "compact_multilingual_single": 1
+  },
+  "capture_proxy_import_closure": [
+    {
+      "bytes": 9195,
+      "module": "selection_support",
+      "path_at_freeze": "/Users/alice/meta-go/research/metaprogramming/gooo-ci-context-codegen-experiments/scripts/selection_support.py",
+      "sha256": "0c6ba54ded4c4cce5086945e74e25567aad23e492c7b3e45d05a7262e27771d6"
+    }
+  ],
+  "capture_proxy_source_sha256": "58b414b6dfa5070666514eae4bc044474c8ca19162a825fd2afc749023075dea",
+  "compiler": {
+    "build_metadata_sha256": "7a5ddd40745db83a691f8e40b0273147411dcc39f05c94fa1cffd52621a77af4",
+    "go_version": "go1.27.0",
+    "path": "/private/tmp/gooo-composition-tdd-f3e576ad-20260930",
+    "sha256": "ecbae47a877f57117e4f493ab85adc0279956c437a68e9fa374bee1b3772db1f",
+    "source_revision": "f3e576ad55796c0d42b2af8b86f874b49baa61d8"
+  },
+  "design_sha256": "ecce451059062b11f6fa8c8198bcfa53318d0533dddd5e1c5d119e22066bcd0b",
+  "holdout_values_loaded": false,
+  "live_capture_started": false,
+  "measured_provider_post_cap": 96,
+  "planned_cells": 64,
+  "planned_new_intentions": 0,
+  "provider_post_caps_by_arm": {
+    "compact_multilingual_local_feedback": 64,
+    "compact_multilingual_single": 32
+  },
+  "resource_sampling": {
+    "helper_symbols": [
+      "sample_pid",
+      "process_summary"
+    ],
+    "model_ready_idle_baseline_seconds": 2.5,
+    "sample_interval_seconds": 1.0,
+    "source_sha256": "58b414b6dfa5070666514eae4bc044474c8ca19162a825fd2afc749023075dea"
+  },
+  "schema": "gooo/ir-composition-tdd-preexecution/v1",
+  "status": "frozen_inputs_verified_before_laya_start",
+  "study_code_archive": [
+    {
+      "bytes": 98301,
+      "path": "study-code/scripts/run_study.py",
+      "sha256": "47ad354947e0ff999ecce284fd12884dbd939b4096e7f934ec342b6bf9e55a3e",
+      "source_path": "/Users/alice/meta-go/research/metaprogramming/gooo-ir-composition-tdd-experiments/scripts/run_study.py"
+    },
+    {
+      "bytes": 68732,
+      "path": "study-code/scripts/prepare_study.py",
+      "sha256": "f59e1132481bfcc81d84dfceb8e4e74601a31b265b252c18923014dac2df254b",
+      "source_path": "/Users/alice/meta-go/research/metaprogramming/gooo-ir-composition-tdd-experiments/scripts/prepare_study.py"
+    },
+    {
+      "bytes": 110236,
+      "path": "study-code/dependencies/run_pinned_context_study.py",
+      "sha256": "58b414b6dfa5070666514eae4bc044474c8ca19162a825fd2afc749023075dea",
+      "source_path": "/Users/alice/meta-go/research/metaprogramming/gooo-ci-context-codegen-experiments/scripts/run_pinned_context_study.py"
+    },
+    {
+      "bytes": 9195,
+      "path": "study-code/dependencies/selection_support.py",
+      "sha256": "0c6ba54ded4c4cce5086945e74e25567aad23e492c7b3e45d05a7262e27771d6",
+      "source_path": "/Users/alice/meta-go/research/metaprogramming/gooo-ci-context-codegen-experiments/scripts/selection_support.py"
+    }
+  ],
+  "warmup_calls": 0
+}

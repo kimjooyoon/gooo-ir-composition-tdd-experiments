@@ -1,0 +1,36 @@
+{
+  "candidates": [
+    {
+      "expression": "input < 0",
+      "id": "option_a"
+    },
+    {
+      "expression": "input == 0",
+      "id": "option_b"
+    },
+    {
+      "expression": "input <= 0",
+      "id": "option_c"
+    }
+  ],
+  "hole_id": "choice",
+  "intent": "Return 1 for every input at or below zero, including zero, and 0 for positive inputs.",
+  "max_attempts": 3,
+  "prompt_profile": "compact",
+  "provider_model": "multilingual",
+  "schema": "gooo/body-codegen-ir-search-plan/v1",
+  "test_cases": [
+    {
+      "expected": 1,
+      "input": -1
+    },
+    {
+      "expected": 1,
+      "input": 0
+    },
+    {
+      "expected": 0,
+      "input": 1
+    }
+  ]
+}

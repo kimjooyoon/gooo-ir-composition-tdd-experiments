@@ -1,0 +1,85 @@
+{
+  "schema": "gooo/body-codegen-ir-search-plan/v1",
+  "intent": "Map zero to 5, positive inputs to 3, and negative inputs to the input plus 2.",
+  "hole_id": "choice",
+  "candidates": [
+    {
+      "id": "option_a",
+      "expression": "input + 2"
+    },
+    {
+      "id": "option_b",
+      "expression": "input - 2"
+    },
+    {
+      "id": "option_c",
+      "expression": "input + 1"
+    }
+  ],
+  "test_cases": [
+    {
+      "input": -2,
+      "expected": 0
+    },
+    {
+      "input": -1,
+      "expected": 1
+    },
+    {
+      "input": 0,
+      "expected": 5
+    },
+    {
+      "input": 1,
+      "expected": 3
+    }
+  ],
+  "holdout_test_cases": [
+    {
+      "input": -9,
+      "expected": -7
+    },
+    {
+      "input": 2,
+      "expected": 3
+    },
+    {
+      "input": 50,
+      "expected": 3
+    }
+  ],
+  "max_attempts": 3,
+  "provider_model": "english",
+  "prompt_profile": "compact",
+  "external_training_feedback": {
+    "source_digest": "sha256:1e8411cc79dd21a35809eaed2aab716c7e89957c14ebdd59b92b1191e88530d6",
+    "training_suite_sha256": "sha256:e74b9bcb53fd86bddd1c36ec5c2304431d53fcc50a3a5c27443e41e5ead66e35",
+    "candidate_id": "option_b",
+    "observations": [
+      {
+        "input": -2,
+        "expected": 0,
+        "actual": -4,
+        "passed": false
+      },
+      {
+        "input": -1,
+        "expected": 1,
+        "actual": -3,
+        "passed": false
+      },
+      {
+        "input": 0,
+        "expected": 5,
+        "actual": 5,
+        "passed": true
+      },
+      {
+        "input": 1,
+        "expected": 3,
+        "actual": 3,
+        "passed": true
+      }
+    ]
+  }
+}

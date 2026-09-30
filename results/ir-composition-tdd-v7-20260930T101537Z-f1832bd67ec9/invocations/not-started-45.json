@@ -1,0 +1,8 @@
+{
+  "arm": "compact_multilingual_local_feedback",
+  "intent_id": "cp19_range_without_origin",
+  "not_started": true,
+  "schema": "gooo/ir-composition-tdd-invocation/v2",
+  "sequence": 45,
+  "status": "not_started_after_prior_failure"
+}

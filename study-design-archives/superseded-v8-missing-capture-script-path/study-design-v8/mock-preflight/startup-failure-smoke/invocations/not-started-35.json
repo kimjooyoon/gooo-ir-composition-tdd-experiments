@@ -1,0 +1,8 @@
+{
+  "arm": "compact_multilingual_single",
+  "intent_id": "pr13_subtract_tripled_sum",
+  "not_started": true,
+  "schema": "gooo/ir-composition-tdd-invocation/v2",
+  "sequence": 35,
+  "status": "not_started_after_prior_failure"
+}

@@ -1,0 +1,54 @@
+{
+  "actual_provider_posts": 1,
+  "capture_proxy_source_sha256": "58b414b6dfa5070666514eae4bc044474c8ca19162a825fd2afc749023075dea",
+  "capture_proxy_url": "http://127.0.0.1:49501/v1/systemone",
+  "completed_cells": 1,
+  "credentials_unset": true,
+  "design_sha256": "ecce451059062b11f6fa8c8198bcfa53318d0533dddd5e1c5d119e22066bcd0b",
+  "downloads_disabled": true,
+  "health_before_sha256": "acaa85929f79c33d9f1cf25dd55c70f46fa7ebf0b235159d548298b7c6d5a0fa",
+  "independent_go_scoring": "ran_after_service_shutdown_and_forward_settlement",
+  "laya_port": 49487,
+  "laya_version": "0.3.21",
+  "loopback_only": true,
+  "measured_provider_post_cap": 96,
+  "model_revision": "55cf4c4ebb4ebe31b2550e8bdf3bd21b99753851",
+  "model_snapshot_path": "/Users/alice/.cache/huggingface/hub/models--convaiinnovations--laya/snapshots/55cf4c4ebb4ebe31b2550e8bdf3bd21b99753851",
+  "new_intentions": 0,
+  "planned_cells": 64,
+  "planned_intentions": 32,
+  "preexecution_sha256": "444b2c5ca17d1c78a2858dc3893dfead38742e60a4ecdb80240ed6ec132ae08e",
+  "provider_forward_drain": {
+    "post_shutdown": {
+      "pending_sequences": [],
+      "settled": true
+    },
+    "pre_shutdown": {
+      "pending_sequences": [],
+      "settled": true
+    }
+  },
+  "provider_model": "multilingual",
+  "provider_post_caps_by_arm": {
+    "compact_multilingual_local_feedback": 64,
+    "compact_multilingual_single": 32
+  },
+  "resource_summary_path": "resources/capture-summary.json",
+  "run_id": "ir-composition-tdd-v7-20260930T101537Z-f1832bd67ec9",
+  "schema": "gooo/ir-composition-tdd-run-metadata/v1",
+  "status": "PARTIAL_CAPTURE",
+  "stop_reason": {
+    "invocation_id": "01-ni06_surcharge_discount-compact_multilingual_single",
+    "issues": [
+      "health exchange 2 raw evidence could not be read: [Errno 2] No such file or directory: '/Users/alice/meta-go/research/metaprogramming/gooo-ir-composition-tdd-experiments/results/ir-composition-tdd-v7-20260930T101537Z-f1832bd67ec9/proxy/proxy/requests/0002.request.raw'",
+      "POST 1 raw exchange validation failed: [Errno 2] No such file or directory: '/Users/alice/meta-go/research/metaprogramming/gooo-ir-composition-tdd-experiments/results/ir-composition-tdd-v7-20260930T101537Z-f1832bd67ec9/proxy/proxy/requests/0001.request.raw'"
+    ],
+    "pending": {
+      "pending_sequences": [],
+      "settled": true,
+      "timeout_seconds": 14
+    },
+    "timed_out": false
+  },
+  "warmup_calls": 0
+}

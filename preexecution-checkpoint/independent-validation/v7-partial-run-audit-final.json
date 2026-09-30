@@ -1,0 +1,749 @@
+{
+  "capture_proxy_dependency": {
+    "bytes": 110236,
+    "local_source_verified": true,
+    "sha256": "58b414b6dfa5070666514eae4bc044474c8ca19162a825fd2afc749023075dea",
+    "transitive_import_closure": [
+      {
+        "bytes": 9195,
+        "local_source_verified": true,
+        "module": "selection_support",
+        "sha256": "0c6ba54ded4c4cce5086945e74e25567aad23e492c7b3e45d05a7262e27771d6"
+      }
+    ]
+  },
+  "capture_run_audit": {
+    "arm_denominators": {
+      "compact_multilingual_local_feedback": {
+        "completed_cli_cells": 0,
+        "not_started_or_unknown_cells": 32,
+        "planned_cells": 32,
+        "provider_proposal_observed_cells": 0,
+        "provider_proposal_unknown_cells": 32,
+        "raw_first_proposal_matches_intended": 0,
+        "raw_request_receipt_choice_audited_cells": 0,
+        "raw_request_receipt_choice_unknown_cells": 32
+      },
+      "compact_multilingual_single": {
+        "completed_cli_cells": 1,
+        "not_started_or_unknown_cells": 31,
+        "planned_cells": 32,
+        "provider_proposal_observed_cells": 1,
+        "provider_proposal_unknown_cells": 31,
+        "raw_first_proposal_matches_intended": 0,
+        "raw_request_receipt_choice_audited_cells": 1,
+        "raw_request_receipt_choice_unknown_cells": 31
+      }
+    },
+    "capture_authorization_binding": {
+      "capture_outcome_matches_report": true,
+      "present": true,
+      "status": "BOUND_PARTIAL_CAPTURE_NO_RETRY"
+    },
+    "capture_status_from_original_report": "PARTIAL_CAPTURE",
+    "completed_cli_cells_raw_observed": 1,
+    "design_sha256": "ecce451059062b11f6fa8c8198bcfa53318d0533dddd5e1c5d119e22066bcd0b",
+    "incomplete_invocation_records": 0,
+    "independently_audited_cells_raw_request_receipt_choice": 1,
+    "legacy_capture_validation_mismatches_separately_reported": [
+      "01-ni06_surcharge_discount-compact_multilingual_single: independent raw audit=True, legacy capture_validation_passed=False"
+    ],
+    "native_first_proposal_matches_intended": 0,
+    "no_model_or_go_processes_started_by_this_audit": true,
+    "not_started_cells": 63,
+    "original_capture_validation_false_but_raw_audit_passed": [
+      "01-ni06_surcharge_discount-compact_multilingual_single"
+    ],
+    "original_summary_discrepancies_preserved_and_reported": [
+      {
+        "arm": "compact_multilingual_single",
+        "field": "capture_validated_cells",
+        "original_value": 0,
+        "raw_recomputed_value": 1
+      }
+    ],
+    "per_cell": [
+      {
+        "arm": "compact_multilingual_single",
+        "capture_observed": true,
+        "cli_returned": true,
+        "exit_code": 0,
+        "first_proposal_candidate_id": "option_c",
+        "first_proposal_matches_intended": false,
+        "invocation_id": "01-ni06_surcharge_discount-compact_multilingual_single",
+        "legacy_capture_validation_passed": false,
+        "native_attempts": 1,
+        "native_laya_receipts": 1,
+        "raw_provider_posts": 1,
+        "raw_request_receipt_choice_binding_passed": true,
+        "sequence": 1,
+        "sole_candidate_deterministic_attempts": 0,
+        "source_completeness_receipt_decision": "PROGRESS_WITHIN_DECLARED_FIXTURE_SCOPE",
+        "status": "captured_cli_completed"
+      },
+      {
+        "arm": "compact_multilingual_local_feedback",
+        "capture_observed": false,
+        "capture_validated_independently": false,
+        "invocation_id": "02-bl24_selected_nonnegative_codes-compact_multilingual_local_feedback",
+        "sequence": 2,
+        "status": "not_started"
+      },
+      {
+        "arm": "compact_multilingual_local_feedback",
+        "capture_observed": false,
+        "capture_validated_independently": false,
+        "invocation_id": "03-ni08_upper_grade_excess-compact_multilingual_local_feedback",
+        "sequence": 3,
+        "status": "not_started"
+      },
+      {
+        "arm": "compact_multilingual_single",
+        "capture_observed": false,
+        "capture_validated_independently": false,
+        "invocation_id": "04-lr10_floor_then_increment-compact_multilingual_single",
+        "sequence": 4,
+        "status": "not_started"
+      },
+      {
+        "arm": "compact_multilingual_single",
+        "capture_observed": false,
+        "capture_validated_independently": false,
+        "invocation_id": "05-pr16_composed_neighbor_product-compact_multilingual_single",
+        "sequence": 5,
+        "status": "not_started"
+      },
+      {
+        "arm": "compact_multilingual_local_feedback",
+        "capture_observed": false,
+        "capture_validated_independently": false,
+        "invocation_id": "06-lr11_nonnegative_doubled_score-compact_multilingual_local_feedback",
+        "sequence": 6,
+        "status": "not_started"
+      },
+      {
+        "arm": "compact_multilingual_single",
+        "capture_observed": false,
+        "capture_validated_independently": false,
+        "invocation_id": "07-bl23_nonzero_bounded_flag-compact_multilingual_single",
+        "sequence": 7,
+        "status": "not_started"
+      },
+      {
+        "arm": "compact_multilingual_single",
+        "capture_observed": false,
+        "capture_validated_independently": false,
+        "invocation_id": "08-ob30_saturating_decrement-compact_multilingual_single",
+        "sequence": 8,
+        "status": "not_started"
+      },
+      {
+        "arm": "compact_multilingual_local_feedback",
+        "capture_observed": false,
+        "capture_validated_independently": false,
+        "invocation_id": "09-ni05_negative_then_double-compact_multilingual_local_feedback",
+        "sequence": 9,
+        "status": "not_started"
+      },
+      {
+        "arm": "compact_multilingual_single",
+        "capture_observed": false,
+        "capture_validated_independently": false,
+        "invocation_id": "10-tx27_lexical_cutoff-compact_multilingual_single",
+        "sequence": 10,
+        "status": "not_started"
+      },
+      {
+        "arm": "compact_multilingual_local_feedback",
+        "capture_observed": false,
+        "capture_validated_independently": false,
+        "invocation_id": "11-tx28_reassigned_text_state-compact_multilingual_local_feedback",
+        "sequence": 11,
+        "status": "not_started"
+      },
+      {
+        "arm": "compact_multilingual_local_feedback",
+        "capture_observed": false,
+        "capture_validated_independently": false,
+        "invocation_id": "12-ni07_zero_special_negative_offset-compact_multilingual_local_feedback",
+        "sequence": 12,
+        "status": "not_started"
+      },
+      {
+        "arm": "compact_multilingual_local_feedback",
+        "capture_observed": false,
+        "capture_validated_independently": false,
+        "invocation_id": "13-cp17_nonpositive_inclusive-compact_multilingual_local_feedback",
+        "sequence": 13,
+        "status": "not_started"
+      },
+      {
+        "arm": "compact_multilingual_local_feedback",
+        "capture_observed": false,
+        "capture_validated_independently": false,
+        "invocation_id": "14-lr12_cap_after_adjustment-compact_multilingual_local_feedback",
+        "sequence": 14,
+        "status": "not_started"
+      },
+      {
+        "arm": "compact_multilingual_single",
+        "capture_observed": false,
+        "capture_validated_independently": false,
+        "invocation_id": "15-ni07_zero_special_negative_offset-compact_multilingual_single",
+        "sequence": 15,
+        "status": "not_started"
+      },
+      {
+        "arm": "compact_multilingual_single",
+        "capture_observed": false,
+        "capture_validated_independently": false,
+        "invocation_id": "16-cp20_strict_symmetric_window-compact_multilingual_single",
+        "sequence": 16,
+        "status": "not_started"
+      },
+      {
+        "arm": "compact_multilingual_single",
+        "capture_observed": false,
+        "capture_validated_independently": false,
+        "invocation_id": "17-ob29_saturating_increment-compact_multilingual_single",
+        "sequence": 17,
+        "status": "not_started"
+      },
+      {
+        "arm": "compact_multilingual_local_feedback",
+        "capture_observed": false,
+        "capture_validated_independently": false,
+        "invocation_id": "18-cp20_strict_symmetric_window-compact_multilingual_local_feedback",
+        "sequence": 18,
+        "status": "not_started"
+      },
+      {
+        "arm": "compact_multilingual_single",
+        "capture_observed": false,
+        "capture_validated_independently": false,
+        "invocation_id": "19-tx25_sign_label-compact_multilingual_single",
+        "sequence": 19,
+        "status": "not_started"
+      },
+      {
+        "arm": "compact_multilingual_local_feedback",
+        "capture_observed": false,
+        "capture_validated_independently": false,
+        "invocation_id": "20-ob29_saturating_increment-compact_multilingual_local_feedback",
+        "sequence": 20,
+        "status": "not_started"
+      },
+      {
+        "arm": "compact_multilingual_single",
+        "capture_observed": false,
+        "capture_validated_independently": false,
+        "invocation_id": "21-cc04_outer_cutoffs-compact_multilingual_single",
+        "sequence": 21,
+        "status": "not_started"
+      },
+      {
+        "arm": "compact_multilingual_local_feedback",
+        "capture_observed": false,
+        "capture_validated_independently": false,
+        "invocation_id": "22-tx25_sign_label-compact_multilingual_local_feedback",
+        "sequence": 22,
+        "status": "not_started"
+      },
+      {
+        "arm": "compact_multilingual_local_feedback",
+        "capture_observed": false,
+        "capture_validated_independently": false,
+        "invocation_id": "23-tx27_lexical_cutoff-compact_multilingual_local_feedback",
+        "sequence": 23,
+        "status": "not_started"
+      },
+      {
+        "arm": "compact_multilingual_local_feedback",
+        "capture_observed": false,
+        "capture_validated_independently": false,
+        "invocation_id": "24-tx26_state_label-compact_multilingual_local_feedback",
+        "sequence": 24,
+        "status": "not_started"
+      },
+      {
+        "arm": "compact_multilingual_local_feedback",
+        "capture_observed": false,
+        "capture_validated_independently": false,
+        "invocation_id": "25-ob32_clamped_absolute-compact_multilingual_local_feedback",
+        "sequence": 25,
+        "status": "not_started"
+      },
+      {
+        "arm": "compact_multilingual_single",
+        "capture_observed": false,
+        "capture_validated_independently": false,
+        "invocation_id": "26-ni05_negative_then_double-compact_multilingual_single",
+        "sequence": 26,
+        "status": "not_started"
+      },
+      {
+        "arm": "compact_multilingual_single",
+        "capture_observed": false,
+        "capture_validated_independently": false,
+        "invocation_id": "27-lr09_compound_total-compact_multilingual_single",
+        "sequence": 27,
+        "status": "not_started"
+      },
+      {
+        "arm": "compact_multilingual_single",
+        "capture_observed": false,
+        "capture_validated_independently": false,
+        "invocation_id": "28-cc01_inclusive_band-compact_multilingual_single",
+        "sequence": 28,
+        "status": "not_started"
+      },
+      {
+        "arm": "compact_multilingual_local_feedback",
+        "capture_observed": false,
+        "capture_validated_independently": false,
+        "invocation_id": "29-cc04_outer_cutoffs-compact_multilingual_local_feedback",
+        "sequence": 29,
+        "status": "not_started"
+      },
+      {
+        "arm": "compact_multilingual_single",
+        "capture_observed": false,
+        "capture_validated_independently": false,
+        "invocation_id": "30-bl22_reassigned_valid_flag-compact_multilingual_single",
+        "sequence": 30,
+        "status": "not_started"
+      },
+      {
+        "arm": "compact_multilingual_single",
+        "capture_observed": false,
+        "capture_validated_independently": false,
+        "invocation_id": "31-pr15_square_minus_successor_sum-compact_multilingual_single",
+        "sequence": 31,
+        "status": "not_started"
+      },
+      {
+        "arm": "compact_multilingual_single",
+        "capture_observed": false,
+        "capture_validated_independently": false,
+        "invocation_id": "32-ob32_clamped_absolute-compact_multilingual_single",
+        "sequence": 32,
+        "status": "not_started"
+      },
+      {
+        "arm": "compact_multilingual_local_feedback",
+        "capture_observed": false,
+        "capture_validated_independently": false,
+        "invocation_id": "33-cp18_exact_release_code-compact_multilingual_local_feedback",
+        "sequence": 33,
+        "status": "not_started"
+      },
+      {
+        "arm": "compact_multilingual_single",
+        "capture_observed": false,
+        "capture_validated_independently": false,
+        "invocation_id": "34-lr11_nonnegative_doubled_score-compact_multilingual_single",
+        "sequence": 34,
+        "status": "not_started"
+      },
+      {
+        "arm": "compact_multilingual_single",
+        "capture_observed": false,
+        "capture_validated_independently": false,
+        "invocation_id": "35-pr13_subtract_tripled_sum-compact_multilingual_single",
+        "sequence": 35,
+        "status": "not_started"
+      },
+      {
+        "arm": "compact_multilingual_single",
+        "capture_observed": false,
+        "capture_validated_independently": false,
+        "invocation_id": "36-cc03_two_islands-compact_multilingual_single",
+        "sequence": 36,
+        "status": "not_started"
+      },
+      {
+        "arm": "compact_multilingual_single",
+        "capture_observed": false,
+        "capture_validated_independently": false,
+        "invocation_id": "37-lr12_cap_after_adjustment-compact_multilingual_single",
+        "sequence": 37,
+        "status": "not_started"
+      },
+      {
+        "arm": "compact_multilingual_single",
+        "capture_observed": false,
+        "capture_validated_independently": false,
+        "invocation_id": "38-cp18_exact_release_code-compact_multilingual_single",
+        "sequence": 38,
+        "status": "not_started"
+      },
+      {
+        "arm": "compact_multilingual_local_feedback",
+        "capture_observed": false,
+        "capture_validated_independently": false,
+        "invocation_id": "39-ni06_surcharge_discount-compact_multilingual_local_feedback",
+        "sequence": 39,
+        "status": "not_started"
+      },
+      {
+        "arm": "compact_multilingual_local_feedback",
+        "capture_observed": false,
+        "capture_validated_independently": false,
+        "invocation_id": "40-cc03_two_islands-compact_multilingual_local_feedback",
+        "sequence": 40,
+        "status": "not_started"
+      },
+      {
+        "arm": "compact_multilingual_local_feedback",
+        "capture_observed": false,
+        "capture_validated_independently": false,
+        "invocation_id": "41-pr16_composed_neighbor_product-compact_multilingual_local_feedback",
+        "sequence": 41,
+        "status": "not_started"
+      },
+      {
+        "arm": "compact_multilingual_single",
+        "capture_observed": false,
+        "capture_validated_independently": false,
+        "invocation_id": "42-cc02_nonzero_disjunction-compact_multilingual_single",
+        "sequence": 42,
+        "status": "not_started"
+      },
+      {
+        "arm": "compact_multilingual_single",
+        "capture_observed": false,
+        "capture_validated_independently": false,
+        "invocation_id": "43-tx26_state_label-compact_multilingual_single",
+        "sequence": 43,
+        "status": "not_started"
+      },
+      {
+        "arm": "compact_multilingual_local_feedback",
+        "capture_observed": false,
+        "capture_validated_independently": false,
+        "invocation_id": "44-pr14_product_neighbor_factors-compact_multilingual_local_feedback",
+        "sequence": 44,
+        "status": "not_started"
+      },
+      {
+        "arm": "compact_multilingual_local_feedback",
+        "capture_observed": false,
+        "capture_validated_independently": false,
+        "invocation_id": "45-cp19_range_without_origin-compact_multilingual_local_feedback",
+        "sequence": 45,
+        "status": "not_started"
+      },
+      {
+        "arm": "compact_multilingual_local_feedback",
+        "capture_observed": false,
+        "capture_validated_independently": false,
+        "invocation_id": "46-pr15_square_minus_successor_sum-compact_multilingual_local_feedback",
+        "sequence": 46,
+        "status": "not_started"
+      },
+      {
+        "arm": "compact_multilingual_local_feedback",
+        "capture_observed": false,
+        "capture_validated_independently": false,
+        "invocation_id": "47-lr09_compound_total-compact_multilingual_local_feedback",
+        "sequence": 47,
+        "status": "not_started"
+      },
+      {
+        "arm": "compact_multilingual_single",
+        "capture_observed": false,
+        "capture_validated_independently": false,
+        "invocation_id": "48-tx28_reassigned_text_state-compact_multilingual_single",
+        "sequence": 48,
+        "status": "not_started"
+      },
+      {
+        "arm": "compact_multilingual_single",
+        "capture_observed": false,
+        "capture_validated_independently": false,
+        "invocation_id": "49-cp19_range_without_origin-compact_multilingual_single",
+        "sequence": 49,
+        "status": "not_started"
+      },
+      {
+        "arm": "compact_multilingual_local_feedback",
+        "capture_observed": false,
+        "capture_validated_independently": false,
+        "invocation_id": "50-cc02_nonzero_disjunction-compact_multilingual_local_feedback",
+        "sequence": 50,
+        "status": "not_started"
+      },
+      {
+        "arm": "compact_multilingual_local_feedback",
+        "capture_observed": false,
+        "capture_validated_independently": false,
+        "invocation_id": "51-cc01_inclusive_band-compact_multilingual_local_feedback",
+        "sequence": 51,
+        "status": "not_started"
+      },
+      {
+        "arm": "compact_multilingual_single",
+        "capture_observed": false,
+        "capture_validated_independently": false,
+        "invocation_id": "52-pr14_product_neighbor_factors-compact_multilingual_single",
+        "sequence": 52,
+        "status": "not_started"
+      },
+      {
+        "arm": "compact_multilingual_local_feedback",
+        "capture_observed": false,
+        "capture_validated_independently": false,
+        "invocation_id": "53-bl21_saved_range_predicates-compact_multilingual_local_feedback",
+        "sequence": 53,
+        "status": "not_started"
+      },
+      {
+        "arm": "compact_multilingual_single",
+        "capture_observed": false,
+        "capture_validated_independently": false,
+        "invocation_id": "54-ob31_saturating_double-compact_multilingual_single",
+        "sequence": 54,
+        "status": "not_started"
+      },
+      {
+        "arm": "compact_multilingual_local_feedback",
+        "capture_observed": false,
+        "capture_validated_independently": false,
+        "invocation_id": "55-bl23_nonzero_bounded_flag-compact_multilingual_local_feedback",
+        "sequence": 55,
+        "status": "not_started"
+      },
+      {
+        "arm": "compact_multilingual_single",
+        "capture_observed": false,
+        "capture_validated_independently": false,
+        "invocation_id": "56-cp17_nonpositive_inclusive-compact_multilingual_single",
+        "sequence": 56,
+        "status": "not_started"
+      },
+      {
+        "arm": "compact_multilingual_local_feedback",
+        "capture_observed": false,
+        "capture_validated_independently": false,
+        "invocation_id": "57-ob31_saturating_double-compact_multilingual_local_feedback",
+        "sequence": 57,
+        "status": "not_started"
+      },
+      {
+        "arm": "compact_multilingual_local_feedback",
+        "capture_observed": false,
+        "capture_validated_independently": false,
+        "invocation_id": "58-lr10_floor_then_increment-compact_multilingual_local_feedback",
+        "sequence": 58,
+        "status": "not_started"
+      },
+      {
+        "arm": "compact_multilingual_local_feedback",
+        "capture_observed": false,
+        "capture_validated_independently": false,
+        "invocation_id": "59-bl22_reassigned_valid_flag-compact_multilingual_local_feedback",
+        "sequence": 59,
+        "status": "not_started"
+      },
+      {
+        "arm": "compact_multilingual_single",
+        "capture_observed": false,
+        "capture_validated_independently": false,
+        "invocation_id": "60-ni08_upper_grade_excess-compact_multilingual_single",
+        "sequence": 60,
+        "status": "not_started"
+      },
+      {
+        "arm": "compact_multilingual_single",
+        "capture_observed": false,
+        "capture_validated_independently": false,
+        "invocation_id": "61-bl24_selected_nonnegative_codes-compact_multilingual_single",
+        "sequence": 61,
+        "status": "not_started"
+      },
+      {
+        "arm": "compact_multilingual_single",
+        "capture_observed": false,
+        "capture_validated_independently": false,
+        "invocation_id": "62-bl21_saved_range_predicates-compact_multilingual_single",
+        "sequence": 62,
+        "status": "not_started"
+      },
+      {
+        "arm": "compact_multilingual_local_feedback",
+        "capture_observed": false,
+        "capture_validated_independently": false,
+        "invocation_id": "63-pr13_subtract_tripled_sum-compact_multilingual_local_feedback",
+        "sequence": 63,
+        "status": "not_started"
+      },
+      {
+        "arm": "compact_multilingual_local_feedback",
+        "capture_observed": false,
+        "capture_validated_independently": false,
+        "invocation_id": "64-ob30_saturating_decrement-compact_multilingual_local_feedback",
+        "sequence": 64,
+        "status": "not_started"
+      }
+    ],
+    "planned_cells": 64,
+    "process_resource_audit": {
+      "idle_baseline_present": true,
+      "per_invocation_resource_files": 1,
+      "server_samples": 7,
+      "status": "PASS_RAW_PROCESS_SAMPLES"
+    },
+    "provider_events": {
+      "exchanges": [
+        {
+          "invocation_id": "01-ni06_surcharge_discount-compact_multilingual_single",
+          "kind": "laya_choice",
+          "proposal": "option_c",
+          "provider_model": "multilingual",
+          "request_sha256": "a7eada39c27c42c8f8d52bcd3bce59907d76327664a15bcddc4e7a1b8189a579",
+          "response_sha256": "aa27390d5a364a39ac93015384eb0776b112a338ec597419e6115452a11b98be",
+          "routing_model": "multilingual",
+          "seq": 1,
+          "typed_request_sha256": "sha256:db2ad61668fc3e5fbe547b8324ad1a947b7b6390ddaaa7ec5333e11fcdccfa2f"
+        },
+        {
+          "kind": "health_check",
+          "request_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "response_sha256": "acaa85929f79c33d9f1cf25dd55c70f46fa7ebf0b235159d548298b7c6d5a0fa",
+          "revision_matches": true,
+          "seq": 2
+        }
+      ],
+      "health_checks": 1,
+      "provider_posts": 1,
+      "raw_events": 2
+    },
+    "raw_first_proposal_matches_intended": 0,
+    "run_directory": "/Users/alice/meta-go/research/metaprogramming/gooo-ir-composition-tdd-experiments/results/ir-composition-tdd-v7-20260930T101537Z-f1832bd67ec9",
+    "run_id": "ir-composition-tdd-v7-20260930T101537Z-f1832bd67ec9",
+    "schema": "gooo/ir-composition-tdd-independent-capture-audit/v1",
+    "service_shutdown_and_forward_settlement": {
+      "independent_go_result_rows": 1,
+      "owned_service_shutdown": {
+        "confirmed": true,
+        "pid": 44911,
+        "return_code": -15
+      },
+      "post_capture_scoring_gate": "ran_after_service_shutdown_and_forward_settlement",
+      "provider_forward_drain": {
+        "post_shutdown": {
+          "pending_sequences": [],
+          "settled": true
+        },
+        "pre_shutdown": {
+          "pending_sequences": [],
+          "settled": true
+        }
+      }
+    },
+    "source_archive_verified": [
+      {
+        "bytes": 98301,
+        "path": "study-code/scripts/run_study.py",
+        "sha256": "47ad354947e0ff999ecce284fd12884dbd939b4096e7f934ec342b6bf9e55a3e"
+      },
+      {
+        "bytes": 68732,
+        "path": "study-code/scripts/prepare_study.py",
+        "sha256": "f59e1132481bfcc81d84dfceb8e4e74601a31b265b252c18923014dac2df254b"
+      },
+      {
+        "bytes": 110236,
+        "path": "study-code/dependencies/run_pinned_context_study.py",
+        "sha256": "58b414b6dfa5070666514eae4bc044474c8ca19162a825fd2afc749023075dea"
+      },
+      {
+        "bytes": 9195,
+        "path": "study-code/dependencies/selection_support.py",
+        "sha256": "0c6ba54ded4c4cce5086945e74e25567aad23e492c7b3e45d05a7262e27771d6"
+      }
+    ],
+    "status": "PASS_RAW_AUDIT_PARTIAL_CAPTURE",
+    "summary_sha256": "194dd0f78c8a4a1a2f00c87a9f264c4f2428613896eca4c66e6082c4ae6c317e",
+    "validation_issues": []
+  },
+  "design_path": "study-design-v7",
+  "design_sha256": "ecce451059062b11f6fa8c8198bcfa53318d0533dddd5e1c5d119e22066bcd0b",
+  "go_toolchain_calls": 0,
+  "historical_archive_note": {
+    "v2_archive_time_capture_sha256": "c9f32329af0367765ccc769629d2aaf64bcbc5ea7c1d753bd7fcc9caa294ca16",
+    "v2_archive_time_prepare_sha256": "ffbb4ec7c62215686eab826c8d4f7722eb77168e7a06f122195e91ea12771895",
+    "v2_original_script_bytes": "unavailable_and_not_reconstructed",
+    "v2_pinned_capture_sha256": "d813a09234a539461584e293db3bc87725fa84a6a1b3ed1e43827546b10dc8d6",
+    "v2_pinned_prepare_sha256": "4ee8fdea8c04a1ccaee5cc611c2ce4c1997fe5374757971b1ebd5ee855c3d786"
+  },
+  "mock_preflight": {
+    "actual_laya_calls": 0,
+    "intents": 32,
+    "invalid_route_smoke": {
+      "clean_raw_matches": 11,
+      "fallback_excluded_match_count": 11,
+      "intent_id": "ni06_surcharge_discount",
+      "planned": 32,
+      "proposal_observed": 31,
+      "provider_receipts": 31,
+      "raw_posts": 32
+    },
+    "mock_health_gets": 213,
+    "mock_posts": 214,
+    "planned_cells": 64,
+    "raw_derived_first_proposal_matches": {
+      "compact_multilingual_local_feedback": 11,
+      "compact_multilingual_single": 11
+    },
+    "raw_mock_cli_invocations_verified": 129,
+    "reachable_role_contexts": 128,
+    "tokenizer_cache_bytes_verified_locally": true,
+    "tokenizer_cache_file_count": 3,
+    "tokenizer_input_rows": 128,
+    "unique_template_request_digests": 96
+  },
+  "plans": {
+    "holdouts_checked": 64,
+    "paired_intents": 32,
+    "plans_checked": 64
+  },
+  "preparation_revision": 6,
+  "provider_calls": 0,
+  "public_preexecution_checkpoint": {
+    "actual_laya_calls": 0,
+    "archived_files": [
+      {
+        "bytes": 68732,
+        "path": "study-code/scripts/prepare_study.py",
+        "sha256": "f59e1132481bfcc81d84dfceb8e4e74601a31b265b252c18923014dac2df254b"
+      },
+      {
+        "bytes": 98301,
+        "path": "study-code/scripts/run_study.py",
+        "sha256": "47ad354947e0ff999ecce284fd12884dbd939b4096e7f934ec342b6bf9e55a3e"
+      },
+      {
+        "bytes": 110236,
+        "path": "study-code/dependencies/run_pinned_context_study.py",
+        "sha256": "58b414b6dfa5070666514eae4bc044474c8ca19162a825fd2afc749023075dea"
+      },
+      {
+        "bytes": 9195,
+        "path": "study-code/dependencies/selection_support.py",
+        "sha256": "0c6ba54ded4c4cce5086945e74e25567aad23e492c7b3e45d05a7262e27771d6"
+      }
+    ],
+    "design_sha256": "ecce451059062b11f6fa8c8198bcfa53318d0533dddd5e1c5d119e22066bcd0b",
+    "status": "PASS_BEFORE_LAYA_START",
+    "supplemental_derivation_files": []
+  },
+  "schema": "gooo/ir-composition-tdd-independent-freeze-validation/v1",
+  "source": {
+    "copied_file_count": 798,
+    "intent_count": 32,
+    "new_intentions": 0
+  },
+  "source_derivation": null,
+  "status": "PASS"
+}

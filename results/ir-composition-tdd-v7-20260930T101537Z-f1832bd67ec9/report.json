@@ -1,0 +1,43 @@
+{
+  "completed_cli_cells": 1,
+  "independent_go_scoring": "ran_after_service_shutdown_and_forward_settlement",
+  "measured_provider_post_cap": 96,
+  "new_intentions": 0,
+  "original_plan_failures_remain_in_denominator": true,
+  "owned_service_shutdown": {
+    "confirmed": true,
+    "pid": 44911,
+    "return_code": -15
+  },
+  "provider_forward_drain": {
+    "post_shutdown": {
+      "pending_sequences": [],
+      "settled": true
+    },
+    "pre_shutdown": {
+      "pending_sequences": [],
+      "settled": true
+    }
+  },
+  "raw_provider_posts": 1,
+  "resource_summary_path": "resources/capture-summary.json",
+  "same_revision2_intents": 32,
+  "scheduled_cells": 64,
+  "schema": "gooo/ir-composition-tdd-capture-report/v1",
+  "status": "PARTIAL_CAPTURE",
+  "stop_reason": {
+    "invocation_id": "01-ni06_surcharge_discount-compact_multilingual_single",
+    "issues": [
+      "health exchange 2 raw evidence could not be read: [Errno 2] No such file or directory: '/Users/alice/meta-go/research/metaprogramming/gooo-ir-composition-tdd-experiments/results/ir-composition-tdd-v7-20260930T101537Z-f1832bd67ec9/proxy/proxy/requests/0002.request.raw'",
+      "POST 1 raw exchange validation failed: [Errno 2] No such file or directory: '/Users/alice/meta-go/research/metaprogramming/gooo-ir-composition-tdd-experiments/results/ir-composition-tdd-v7-20260930T101537Z-f1832bd67ec9/proxy/proxy/requests/0001.request.raw'"
+    ],
+    "pending": {
+      "pending_sequences": [],
+      "settled": true,
+      "timeout_seconds": 14
+    },
+    "timed_out": false
+  },
+  "summary_path": "summary.json",
+  "warmup_calls": 0
+}

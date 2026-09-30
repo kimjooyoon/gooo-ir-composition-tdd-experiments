@@ -1,0 +1,14 @@
+{
+  "device": "cpu",
+  "executable": "/private/tmp/meta-ontology-go-laya-venv-20260930/bin/laya-serve",
+  "host": "127.0.0.1",
+  "loaded_models": [
+    "multilingual"
+  ],
+  "owned_by_runner": true,
+  "pid": 44911,
+  "port": 49487,
+  "process_group_id": 44911,
+  "return_code": -15,
+  "stopped": true
+}

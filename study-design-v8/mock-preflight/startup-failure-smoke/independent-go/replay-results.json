@@ -1,0 +1,770 @@
+[
+  {
+    "holdout": {
+      "passed": null,
+      "total": 3
+    },
+    "invocation_id": "01-ni06_surcharge_discount-compact_multilingual_single",
+    "status": "not_scored_capture_lifecycle_failed",
+    "training": {
+      "passed": null,
+      "total": 5
+    }
+  },
+  {
+    "holdout": {
+      "passed": null,
+      "total": 3
+    },
+    "invocation_id": "02-bl24_selected_nonnegative_codes-compact_multilingual_local_feedback",
+    "status": "not_scored_capture_lifecycle_failed",
+    "training": {
+      "passed": null,
+      "total": 5
+    }
+  },
+  {
+    "holdout": {
+      "passed": null,
+      "total": 3
+    },
+    "invocation_id": "03-ni08_upper_grade_excess-compact_multilingual_local_feedback",
+    "status": "not_scored_capture_lifecycle_failed",
+    "training": {
+      "passed": null,
+      "total": 5
+    }
+  },
+  {
+    "holdout": {
+      "passed": null,
+      "total": 3
+    },
+    "invocation_id": "04-lr10_floor_then_increment-compact_multilingual_single",
+    "status": "not_scored_capture_lifecycle_failed",
+    "training": {
+      "passed": null,
+      "total": 4
+    }
+  },
+  {
+    "holdout": {
+      "passed": null,
+      "total": 3
+    },
+    "invocation_id": "05-pr16_composed_neighbor_product-compact_multilingual_single",
+    "status": "not_scored_capture_lifecycle_failed",
+    "training": {
+      "passed": null,
+      "total": 4
+    }
+  },
+  {
+    "holdout": {
+      "passed": null,
+      "total": 3
+    },
+    "invocation_id": "06-lr11_nonnegative_doubled_score-compact_multilingual_local_feedback",
+    "status": "not_scored_capture_lifecycle_failed",
+    "training": {
+      "passed": null,
+      "total": 4
+    }
+  },
+  {
+    "holdout": {
+      "passed": null,
+      "total": 4
+    },
+    "invocation_id": "07-bl23_nonzero_bounded_flag-compact_multilingual_single",
+    "status": "not_scored_capture_lifecycle_failed",
+    "training": {
+      "passed": null,
+      "total": 6
+    }
+  },
+  {
+    "holdout": {
+      "passed": null,
+      "total": 3
+    },
+    "invocation_id": "08-ob30_saturating_decrement-compact_multilingual_single",
+    "status": "not_scored_capture_lifecycle_failed",
+    "training": {
+      "passed": null,
+      "total": 4
+    }
+  },
+  {
+    "holdout": {
+      "passed": null,
+      "total": 3
+    },
+    "invocation_id": "09-ni05_negative_then_double-compact_multilingual_local_feedback",
+    "status": "not_scored_capture_lifecycle_failed",
+    "training": {
+      "passed": null,
+      "total": 5
+    }
+  },
+  {
+    "holdout": {
+      "passed": null,
+      "total": 2
+    },
+    "invocation_id": "10-tx27_lexical_cutoff-compact_multilingual_single",
+    "status": "not_scored_capture_lifecycle_failed",
+    "training": {
+      "passed": null,
+      "total": 3
+    }
+  },
+  {
+    "holdout": {
+      "passed": null,
+      "total": 2
+    },
+    "invocation_id": "11-tx28_reassigned_text_state-compact_multilingual_local_feedback",
+    "status": "not_scored_capture_lifecycle_failed",
+    "training": {
+      "passed": null,
+      "total": 3
+    }
+  },
+  {
+    "holdout": {
+      "passed": null,
+      "total": 3
+    },
+    "invocation_id": "12-ni07_zero_special_negative_offset-compact_multilingual_local_feedback",
+    "status": "not_scored_capture_lifecycle_failed",
+    "training": {
+      "passed": null,
+      "total": 4
+    }
+  },
+  {
+    "holdout": {
+      "passed": null,
+      "total": 3
+    },
+    "invocation_id": "13-cp17_nonpositive_inclusive-compact_multilingual_local_feedback",
+    "status": "not_scored_capture_lifecycle_failed",
+    "training": {
+      "passed": null,
+      "total": 3
+    }
+  },
+  {
+    "holdout": {
+      "passed": null,
+      "total": 3
+    },
+    "invocation_id": "14-lr12_cap_after_adjustment-compact_multilingual_local_feedback",
+    "status": "not_scored_capture_lifecycle_failed",
+    "training": {
+      "passed": null,
+      "total": 4
+    }
+  },
+  {
+    "holdout": {
+      "passed": null,
+      "total": 3
+    },
+    "invocation_id": "15-ni07_zero_special_negative_offset-compact_multilingual_single",
+    "status": "not_scored_capture_lifecycle_failed",
+    "training": {
+      "passed": null,
+      "total": 4
+    }
+  },
+  {
+    "holdout": {
+      "passed": null,
+      "total": 3
+    },
+    "invocation_id": "16-cp20_strict_symmetric_window-compact_multilingual_single",
+    "status": "not_scored_capture_lifecycle_failed",
+    "training": {
+      "passed": null,
+      "total": 6
+    }
+  },
+  {
+    "holdout": {
+      "passed": null,
+      "total": 3
+    },
+    "invocation_id": "17-ob29_saturating_increment-compact_multilingual_single",
+    "status": "not_scored_capture_lifecycle_failed",
+    "training": {
+      "passed": null,
+      "total": 4
+    }
+  },
+  {
+    "holdout": {
+      "passed": null,
+      "total": 3
+    },
+    "invocation_id": "18-cp20_strict_symmetric_window-compact_multilingual_local_feedback",
+    "status": "not_scored_capture_lifecycle_failed",
+    "training": {
+      "passed": null,
+      "total": 6
+    }
+  },
+  {
+    "holdout": {
+      "passed": null,
+      "total": 2
+    },
+    "invocation_id": "19-tx25_sign_label-compact_multilingual_single",
+    "status": "not_scored_capture_lifecycle_failed",
+    "training": {
+      "passed": null,
+      "total": 3
+    }
+  },
+  {
+    "holdout": {
+      "passed": null,
+      "total": 3
+    },
+    "invocation_id": "20-ob29_saturating_increment-compact_multilingual_local_feedback",
+    "status": "not_scored_capture_lifecycle_failed",
+    "training": {
+      "passed": null,
+      "total": 4
+    }
+  },
+  {
+    "holdout": {
+      "passed": null,
+      "total": 3
+    },
+    "invocation_id": "21-cc04_outer_cutoffs-compact_multilingual_single",
+    "status": "not_scored_capture_lifecycle_failed",
+    "training": {
+      "passed": null,
+      "total": 6
+    }
+  },
+  {
+    "holdout": {
+      "passed": null,
+      "total": 2
+    },
+    "invocation_id": "22-tx25_sign_label-compact_multilingual_local_feedback",
+    "status": "not_scored_capture_lifecycle_failed",
+    "training": {
+      "passed": null,
+      "total": 3
+    }
+  },
+  {
+    "holdout": {
+      "passed": null,
+      "total": 2
+    },
+    "invocation_id": "23-tx27_lexical_cutoff-compact_multilingual_local_feedback",
+    "status": "not_scored_capture_lifecycle_failed",
+    "training": {
+      "passed": null,
+      "total": 3
+    }
+  },
+  {
+    "holdout": {
+      "passed": null,
+      "total": 2
+    },
+    "invocation_id": "24-tx26_state_label-compact_multilingual_local_feedback",
+    "status": "not_scored_capture_lifecycle_failed",
+    "training": {
+      "passed": null,
+      "total": 3
+    }
+  },
+  {
+    "holdout": {
+      "passed": null,
+      "total": 3
+    },
+    "invocation_id": "25-ob32_clamped_absolute-compact_multilingual_local_feedback",
+    "status": "not_scored_capture_lifecycle_failed",
+    "training": {
+      "passed": null,
+      "total": 4
+    }
+  },
+  {
+    "holdout": {
+      "passed": null,
+      "total": 3
+    },
+    "invocation_id": "26-ni05_negative_then_double-compact_multilingual_single",
+    "status": "not_scored_capture_lifecycle_failed",
+    "training": {
+      "passed": null,
+      "total": 5
+    }
+  },
+  {
+    "holdout": {
+      "passed": null,
+      "total": 3
+    },
+    "invocation_id": "27-lr09_compound_total-compact_multilingual_single",
+    "status": "not_scored_capture_lifecycle_failed",
+    "training": {
+      "passed": null,
+      "total": 4
+    }
+  },
+  {
+    "holdout": {
+      "passed": null,
+      "total": 3
+    },
+    "invocation_id": "28-cc01_inclusive_band-compact_multilingual_single",
+    "status": "not_scored_capture_lifecycle_failed",
+    "training": {
+      "passed": null,
+      "total": 5
+    }
+  },
+  {
+    "holdout": {
+      "passed": null,
+      "total": 3
+    },
+    "invocation_id": "29-cc04_outer_cutoffs-compact_multilingual_local_feedback",
+    "status": "not_scored_capture_lifecycle_failed",
+    "training": {
+      "passed": null,
+      "total": 6
+    }
+  },
+  {
+    "holdout": {
+      "passed": null,
+      "total": 3
+    },
+    "invocation_id": "30-bl22_reassigned_valid_flag-compact_multilingual_single",
+    "status": "not_scored_capture_lifecycle_failed",
+    "training": {
+      "passed": null,
+      "total": 5
+    }
+  },
+  {
+    "holdout": {
+      "passed": null,
+      "total": 3
+    },
+    "invocation_id": "31-pr15_square_minus_successor_sum-compact_multilingual_single",
+    "status": "not_scored_capture_lifecycle_failed",
+    "training": {
+      "passed": null,
+      "total": 4
+    }
+  },
+  {
+    "holdout": {
+      "passed": null,
+      "total": 3
+    },
+    "invocation_id": "32-ob32_clamped_absolute-compact_multilingual_single",
+    "status": "not_scored_capture_lifecycle_failed",
+    "training": {
+      "passed": null,
+      "total": 4
+    }
+  },
+  {
+    "holdout": {
+      "passed": null,
+      "total": 3
+    },
+    "invocation_id": "33-cp18_exact_release_code-compact_multilingual_local_feedback",
+    "status": "not_scored_capture_lifecycle_failed",
+    "training": {
+      "passed": null,
+      "total": 3
+    }
+  },
+  {
+    "holdout": {
+      "passed": null,
+      "total": 3
+    },
+    "invocation_id": "34-lr11_nonnegative_doubled_score-compact_multilingual_single",
+    "status": "not_scored_capture_lifecycle_failed",
+    "training": {
+      "passed": null,
+      "total": 4
+    }
+  },
+  {
+    "holdout": {
+      "passed": null,
+      "total": 3
+    },
+    "invocation_id": "35-pr13_subtract_tripled_sum-compact_multilingual_single",
+    "status": "not_scored_capture_lifecycle_failed",
+    "training": {
+      "passed": null,
+      "total": 4
+    }
+  },
+  {
+    "holdout": {
+      "passed": null,
+      "total": 2
+    },
+    "invocation_id": "36-cc03_two_islands-compact_multilingual_single",
+    "status": "not_scored_capture_lifecycle_failed",
+    "training": {
+      "passed": null,
+      "total": 5
+    }
+  },
+  {
+    "holdout": {
+      "passed": null,
+      "total": 3
+    },
+    "invocation_id": "37-lr12_cap_after_adjustment-compact_multilingual_single",
+    "status": "not_scored_capture_lifecycle_failed",
+    "training": {
+      "passed": null,
+      "total": 4
+    }
+  },
+  {
+    "holdout": {
+      "passed": null,
+      "total": 3
+    },
+    "invocation_id": "38-cp18_exact_release_code-compact_multilingual_single",
+    "status": "not_scored_capture_lifecycle_failed",
+    "training": {
+      "passed": null,
+      "total": 3
+    }
+  },
+  {
+    "holdout": {
+      "passed": null,
+      "total": 3
+    },
+    "invocation_id": "39-ni06_surcharge_discount-compact_multilingual_local_feedback",
+    "status": "not_scored_capture_lifecycle_failed",
+    "training": {
+      "passed": null,
+      "total": 5
+    }
+  },
+  {
+    "holdout": {
+      "passed": null,
+      "total": 2
+    },
+    "invocation_id": "40-cc03_two_islands-compact_multilingual_local_feedback",
+    "status": "not_scored_capture_lifecycle_failed",
+    "training": {
+      "passed": null,
+      "total": 5
+    }
+  },
+  {
+    "holdout": {
+      "passed": null,
+      "total": 3
+    },
+    "invocation_id": "41-pr16_composed_neighbor_product-compact_multilingual_local_feedback",
+    "status": "not_scored_capture_lifecycle_failed",
+    "training": {
+      "passed": null,
+      "total": 4
+    }
+  },
+  {
+    "holdout": {
+      "passed": null,
+      "total": 2
+    },
+    "invocation_id": "42-cc02_nonzero_disjunction-compact_multilingual_single",
+    "status": "not_scored_capture_lifecycle_failed",
+    "training": {
+      "passed": null,
+      "total": 3
+    }
+  },
+  {
+    "holdout": {
+      "passed": null,
+      "total": 2
+    },
+    "invocation_id": "43-tx26_state_label-compact_multilingual_single",
+    "status": "not_scored_capture_lifecycle_failed",
+    "training": {
+      "passed": null,
+      "total": 3
+    }
+  },
+  {
+    "holdout": {
+      "passed": null,
+      "total": 3
+    },
+    "invocation_id": "44-pr14_product_neighbor_factors-compact_multilingual_local_feedback",
+    "status": "not_scored_capture_lifecycle_failed",
+    "training": {
+      "passed": null,
+      "total": 4
+    }
+  },
+  {
+    "holdout": {
+      "passed": null,
+      "total": 3
+    },
+    "invocation_id": "45-cp19_range_without_origin-compact_multilingual_local_feedback",
+    "status": "not_scored_capture_lifecycle_failed",
+    "training": {
+      "passed": null,
+      "total": 5
+    }
+  },
+  {
+    "holdout": {
+      "passed": null,
+      "total": 3
+    },
+    "invocation_id": "46-pr15_square_minus_successor_sum-compact_multilingual_local_feedback",
+    "status": "not_scored_capture_lifecycle_failed",
+    "training": {
+      "passed": null,
+      "total": 4
+    }
+  },
+  {
+    "holdout": {
+      "passed": null,
+      "total": 3
+    },
+    "invocation_id": "47-lr09_compound_total-compact_multilingual_local_feedback",
+    "status": "not_scored_capture_lifecycle_failed",
+    "training": {
+      "passed": null,
+      "total": 4
+    }
+  },
+  {
+    "holdout": {
+      "passed": null,
+      "total": 2
+    },
+    "invocation_id": "48-tx28_reassigned_text_state-compact_multilingual_single",
+    "status": "not_scored_capture_lifecycle_failed",
+    "training": {
+      "passed": null,
+      "total": 3
+    }
+  },
+  {
+    "holdout": {
+      "passed": null,
+      "total": 3
+    },
+    "invocation_id": "49-cp19_range_without_origin-compact_multilingual_single",
+    "status": "not_scored_capture_lifecycle_failed",
+    "training": {
+      "passed": null,
+      "total": 5
+    }
+  },
+  {
+    "holdout": {
+      "passed": null,
+      "total": 2
+    },
+    "invocation_id": "50-cc02_nonzero_disjunction-compact_multilingual_local_feedback",
+    "status": "not_scored_capture_lifecycle_failed",
+    "training": {
+      "passed": null,
+      "total": 3
+    }
+  },
+  {
+    "holdout": {
+      "passed": null,
+      "total": 3
+    },
+    "invocation_id": "51-cc01_inclusive_band-compact_multilingual_local_feedback",
+    "status": "not_scored_capture_lifecycle_failed",
+    "training": {
+      "passed": null,
+      "total": 5
+    }
+  },
+  {
+    "holdout": {
+      "passed": null,
+      "total": 3
+    },
+    "invocation_id": "52-pr14_product_neighbor_factors-compact_multilingual_single",
+    "status": "not_scored_capture_lifecycle_failed",
+    "training": {
+      "passed": null,
+      "total": 4
+    }
+  },
+  {
+    "holdout": {
+      "passed": null,
+      "total": 4
+    },
+    "invocation_id": "53-bl21_saved_range_predicates-compact_multilingual_local_feedback",
+    "status": "not_scored_capture_lifecycle_failed",
+    "training": {
+      "passed": null,
+      "total": 5
+    }
+  },
+  {
+    "holdout": {
+      "passed": null,
+      "total": 6
+    },
+    "invocation_id": "54-ob31_saturating_double-compact_multilingual_single",
+    "status": "not_scored_capture_lifecycle_failed",
+    "training": {
+      "passed": null,
+      "total": 5
+    }
+  },
+  {
+    "holdout": {
+      "passed": null,
+      "total": 4
+    },
+    "invocation_id": "55-bl23_nonzero_bounded_flag-compact_multilingual_local_feedback",
+    "status": "not_scored_capture_lifecycle_failed",
+    "training": {
+      "passed": null,
+      "total": 6
+    }
+  },
+  {
+    "holdout": {
+      "passed": null,
+      "total": 3
+    },
+    "invocation_id": "56-cp17_nonpositive_inclusive-compact_multilingual_single",
+    "status": "not_scored_capture_lifecycle_failed",
+    "training": {
+      "passed": null,
+      "total": 3
+    }
+  },
+  {
+    "holdout": {
+      "passed": null,
+      "total": 6
+    },
+    "invocation_id": "57-ob31_saturating_double-compact_multilingual_local_feedback",
+    "status": "not_scored_capture_lifecycle_failed",
+    "training": {
+      "passed": null,
+      "total": 5
+    }
+  },
+  {
+    "holdout": {
+      "passed": null,
+      "total": 3
+    },
+    "invocation_id": "58-lr10_floor_then_increment-compact_multilingual_local_feedback",
+    "status": "not_scored_capture_lifecycle_failed",
+    "training": {
+      "passed": null,
+      "total": 4
+    }
+  },
+  {
+    "holdout": {
+      "passed": null,
+      "total": 3
+    },
+    "invocation_id": "59-bl22_reassigned_valid_flag-compact_multilingual_local_feedback",
+    "status": "not_scored_capture_lifecycle_failed",
+    "training": {
+      "passed": null,
+      "total": 5
+    }
+  },
+  {
+    "holdout": {
+      "passed": null,
+      "total": 3
+    },
+    "invocation_id": "60-ni08_upper_grade_excess-compact_multilingual_single",
+    "status": "not_scored_capture_lifecycle_failed",
+    "training": {
+      "passed": null,
+      "total": 5
+    }
+  },
+  {
+    "holdout": {
+      "passed": null,
+      "total": 3
+    },
+    "invocation_id": "61-bl24_selected_nonnegative_codes-compact_multilingual_single",
+    "status": "not_scored_capture_lifecycle_failed",
+    "training": {
+      "passed": null,
+      "total": 5
+    }
+  },
+  {
+    "holdout": {
+      "passed": null,
+      "total": 4
+    },
+    "invocation_id": "62-bl21_saved_range_predicates-compact_multilingual_single",
+    "status": "not_scored_capture_lifecycle_failed",
+    "training": {
+      "passed": null,
+      "total": 5
+    }
+  },
+  {
+    "holdout": {
+      "passed": null,
+      "total": 3
+    },
+    "invocation_id": "63-pr13_subtract_tripled_sum-compact_multilingual_local_feedback",
+    "status": "not_scored_capture_lifecycle_failed",
+    "training": {
+      "passed": null,
+      "total": 4
+    }
+  },
+  {
+    "holdout": {
+      "passed": null,
+      "total": 3
+    },
+    "invocation_id": "64-ob30_saturating_decrement-compact_multilingual_local_feedback",
+    "status": "not_scored_capture_lifecycle_failed",
+    "training": {
+      "passed": null,
+      "total": 4
+    }
+  }
+]

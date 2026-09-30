@@ -113,3 +113,20 @@ and mock preflight make zero Laya inference calls.
 The source revision-2 freeze predates the compiler under study. The study
 manifest binds both source freezes independently: the revision-2 cohort bytes
 and the clean native compiler binary/build metadata.
+
+
+## Live capture status
+
+The v7 run is a preserved one-call partial capture: 1/64 completed cells and
+63 unstarted. A doubled proxy-directory prefix stopped collection despite a
+normal provider response. The original report is immutable; its independent
+raw-evidence audit is separate. See [STATUS.md](STATUS.md) for measured timing,
+resource observations and the finite test scores.
+
+The v8 derived freeze repairs only collector path resolution and capture source
+identity. All protocol inputs remain byte-identical to v7; no additional mock
+preflight or inference is attributed to derivation. The exact new sources are
+archived in [preexecution-checkpoint-v8](preexecution-checkpoint-v8). The prior
+local v8 draft missing an explicit capture path is retained in the superseded
+archive. New measured runs use separate IDs and keep v7's one call in its own
+partial cohort.

@@ -1,0 +1,45 @@
+{
+  "schema": "gooo/body-codegen-ir-fill-plan/v1",
+  "intent": "Return 9 only when a saved nonzero predicate and a saved inclusive -4 through 4 range predicate are both true.",
+  "hole_id": "choice",
+  "candidates": [
+    {
+      "id": "option_a",
+      "expression": "input != -1"
+    },
+    {
+      "id": "option_b",
+      "expression": "input > 0"
+    },
+    {
+      "id": "option_c",
+      "expression": "true"
+    }
+  ],
+  "test_cases": [
+    {
+      "input": -5,
+      "expected": 0
+    },
+    {
+      "input": -4,
+      "expected": 9
+    },
+    {
+      "input": -1,
+      "expected": 9
+    },
+    {
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "input": 4,
+      "expected": 9
+    },
+    {
+      "input": 5,
+      "expected": 0
+    }
+  ]
+}

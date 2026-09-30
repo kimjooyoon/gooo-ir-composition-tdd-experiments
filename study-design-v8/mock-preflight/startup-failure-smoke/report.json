@@ -1,0 +1,34 @@
+{
+  "capture_lifecycle_error": "synthetic startup failure; zero Laya/provider calls",
+  "completed_cli_cells": 0,
+  "independent_go_scoring": "skipped_capture_lifecycle_failed",
+  "measured_provider_post_cap": 96,
+  "new_intentions": 0,
+  "original_plan_failures_remain_in_denominator": true,
+  "owned_service_shutdown": {
+    "confirmed": false,
+    "return_code": null
+  },
+  "provider_forward_drain": {
+    "post_shutdown": {
+      "pending_sequences": [],
+      "settled": true
+    },
+    "pre_shutdown": {
+      "pending_sequences": [],
+      "settled": true
+    }
+  },
+  "raw_provider_posts": 0,
+  "resource_summary_path": null,
+  "same_revision2_intents": 32,
+  "scheduled_cells": 64,
+  "schema": "gooo/ir-composition-tdd-capture-report/v1",
+  "status": "PARTIAL_CAPTURE",
+  "stop_reason": {
+    "error": "MOCK; no service launched",
+    "phase": "synthetic_startup_failure"
+  },
+  "summary_path": "summary.json",
+  "warmup_calls": 0
+}
