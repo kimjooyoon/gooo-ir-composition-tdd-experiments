@@ -8,11 +8,16 @@ on:
       - "scripts/run_study_v8.py"
       - "scripts/derive_study_v8.py"
       - "scripts/validate_frozen_study.py"
+      - "scripts/compare_v8_live_offline.py"
+      - "scripts/validate_v8_publication.py"
       - "study-design-v*/**"
       - "study-design-archives/**"
       - "preexecution-checkpoint/**"
       - "preexecution-checkpoint-v8/**"
       - "results/ir-composition-tdd-v7-20260930T101537Z-f1832bd67ec9/**"
+      - "results/ir-composition-tdd-v8-20260930T104054Z-d868d3ee7f71/**"
+      - "results/zero-model-v8-20260930T1055Z/**"
+      - "results/paired-live-offline-v8-20260930T1058Z/**"
       - ".github/workflows/frozen-study-validation.yml"
   push:
     paths:
@@ -21,11 +26,16 @@ on:
       - "scripts/run_study_v8.py"
       - "scripts/derive_study_v8.py"
       - "scripts/validate_frozen_study.py"
+      - "scripts/compare_v8_live_offline.py"
+      - "scripts/validate_v8_publication.py"
       - "study-design-v*/**"
       - "study-design-archives/**"
       - "preexecution-checkpoint/**"
       - "preexecution-checkpoint-v8/**"
       - "results/ir-composition-tdd-v7-20260930T101537Z-f1832bd67ec9/**"
+      - "results/ir-composition-tdd-v8-20260930T104054Z-d868d3ee7f71/**"
+      - "results/zero-model-v8-20260930T1055Z/**"
+      - "results/paired-live-offline-v8-20260930T1058Z/**"
       - ".github/workflows/frozen-study-validation.yml"
   workflow_dispatch:
 
@@ -57,3 +67,7 @@ jobs:
           --design-dir study-design-v8
           --checkpoint-dir preexecution-checkpoint-v8
           --output "$RUNNER_TEMP/frozen-study-v8.json"
+      - name: Audit v8 raw capture and matched offline replay
+        run: >-
+          python3 scripts/validate_v8_publication.py
+          --output "$RUNNER_TEMP/v8-publication-audit.json"
