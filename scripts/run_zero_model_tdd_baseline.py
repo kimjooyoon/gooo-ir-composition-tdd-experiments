@@ -20,7 +20,7 @@ DESIGN_DIR = ROOT / "study-design-v8"
 DESIGN_SHA = "ab691ac00f73abc1cef9648da58c20a1816d7ab16cda7e59536054bea9a66b52"
 GOOO_PIN = Path("/private/tmp/gooo-composition-tdd-f3e576ad-20260930")
 GOOO_SHA = "ecbae47a877f57117e4f493ab85adc0279956c437a68e9fa374bee1b3772db1f"
-GO_PIN = Path("/Users/alice/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.27.0.darwin-arm64/bin/go")
+GO_PIN = Path("/Users/alice/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.27.1.darwin-arm64/bin/go")
 GO_SHA = "a19a71df81715c12d9a7e81bab036c12696fec1ddbd4258b48a2131a9080b267"
 ARMS = ("compact_multilingual_single", "compact_multilingual_local_feedback")
 
@@ -85,8 +85,8 @@ def main() -> int:
     if not go_bin.is_file() or sha(go_bin.read_bytes()) != GO_SHA:
         raise SystemExit("Go toolchain bytes do not match the pinned Go 1.27 executable")
     go_version = subprocess.run([str(go_bin), "version"], capture_output=True, check=False, timeout=15)
-    if go_version.returncode != 0 or b"go1.27.0" not in go_version.stdout:
-        raise SystemExit("pinned Go toolchain does not report go1.27.0")
+    if go_version.returncode != 0 or b"go1.27.1" not in go_version.stdout:
+        raise SystemExit("pinned Go toolchain does not report go1.27.1")
 
     phase_source = design_dir / design["phase_plan_path"]
     phase_raw, phase = read_json(phase_source)

@@ -22,12 +22,12 @@ from typing import Any
 
 
 ROOT = Path(__file__).resolve().parents[1]
-GO_PIN = Path("/Users/alice/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.27.0.darwin-arm64/bin/go")
+GO_PIN = Path("/Users/alice/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.27.1.darwin-arm64/bin/go")
 DESIGN_SHA = "ab691ac00f73abc1cef9648da58c20a1816d7ab16cda7e59536054bea9a66b52"
 GO_SHA = "a19a71df81715c12d9a7e81bab036c12696fec1ddbd4258b48a2131a9080b267"
 LIVE_RUN_ID = "ir-composition-tdd-v8-20260930T104054Z-d868d3ee7f71"
 LIVE_CAPTURE_AUDIT = ROOT / "preexecution-checkpoint-v8/independent-validation/v8-capture-audit.json"
-GO_MOD = b"module example.invalid/ir-composition-study\n\ngo 1.27\n"
+GO_MOD = b"module example.invalid/ir-composition-study\n\ngo 1.27.1\n"
 ARMS = ("compact_multilingual_single", "compact_multilingual_local_feedback")
 
 
@@ -185,8 +185,8 @@ def main() -> int:
     if not go_bin.is_file() or sha(go_bin.read_bytes()) != GO_SHA:
         raise SystemExit("Go toolchain executable does not match the pinned Go 1.27 bytes")
     go_version = subprocess.run([str(go_bin), "version"], capture_output=True, check=False, timeout=15)
-    if go_version.returncode != 0 or b"go1.27.0" not in go_version.stdout:
-        raise SystemExit("pinned Go binary does not report go1.27.0")
+    if go_version.returncode != 0 or b"go1.27.1" not in go_version.stdout:
+        raise SystemExit("pinned Go binary does not report go1.27.1")
 
     phase_raw, phase = read_json(source_run / "phase-plans.json")
     frozen_phase_raw, frozen_phase = read_json(design_dir / design["phase_plan_path"])

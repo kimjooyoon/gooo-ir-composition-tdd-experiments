@@ -28,7 +28,7 @@ DESIGN_DIR = ROOT / "study-design-v8"
 COMPILER_BINARY_SHA256 = "ecbae47a877f57117e4f493ab85adc0279956c437a68e9fa374bee1b3772db1f"
 COMPILER_REVISION = "f3e576ad55796c0d42b2af8b86f874b49baa61d8"
 MODEL_REVISION = "55cf4c4ebb4ebe31b2550e8bdf3bd21b99753851"
-GO_VERSION = "go1.27.0"
+GO_VERSION = "go1.27.1"
 LAYA_VERSION = "0.3.21"
 WALL_TIMEOUT_SECONDS = 180
 EXCHANGE_DRAIN_SECONDS = 14
@@ -900,7 +900,7 @@ func TestIndependentFiniteReplay(t *testing.T) {{
         test_dir.mkdir(parents=True, exist_ok=False)
         write_bytes(test_dir / "generated.go", source.encode("utf-8"))
         write_bytes(test_dir / "generated_test.go", test_source.encode("utf-8"))
-        write_bytes(test_dir / "go.mod", b"module example.invalid/ir-composition-study\n\ngo 1.27\n")
+        write_bytes(test_dir / "go.mod", b"module example.invalid/ir-composition-study\n\ngo 1.27.1\n")
         result = subprocess.run([str(binary_go), "test", "-count=1", "./..."], cwd=test_dir, env=env,
                                 capture_output=True, check=False, timeout=timeout)
         write_bytes(test_dir / "go-stdout.raw", result.stdout)
