@@ -1,0 +1,13 @@
+{
+  "activity": "C23",
+  "frozen_design_sha256": "ab691ac00f73abc1cef9648da58c20a1816d7ab16cda7e59536054bea9a66b52",
+  "frozen_fixture_sha256": "10de6bb3ce6b06c6734d4f2af73f8693f561032f8c9744ea83a47d1ada9b8994",
+  "frozen_holdout_sha256": "5e84e0e1e1e5318257b5801f574a7913906ce44bbe36f0fa5fb27305fbbb3529",
+  "frozen_plan_sha256": "593099c33dedf15a1dbc28dc85568ba4a915267f8c8870d5c04f39138a1eed78",
+  "generated_source_sha256": "5af7879c6f42ca6ee2aa0fcaab1883416604b66afad4206b3e676c299509e8b5",
+  "generated_test_source_sha256": "f497944b711654ddab7ff0fadf01e5acdb4b38267e60f689fb70cdb813fdeee9",
+  "go_mod_sha256": "0e6f935fb61192d92d2c562aa4344e5e5ec54ad82d62b4d4cbd4a579168da2d3",
+  "invocation_id": "07-bl23_nonzero_bounded_flag-compact_multilingual_single",
+  "source_cli_invocation_record_sha256": "c46b827637f360904d8b265cac1af306d063783ed7276fc0946dec5731b8d7dd",
+  "source_cli_stdout_sha256": "034700744eb4951e99936b08dcb0da9da02d64fe411e77bf8477b1c381f08ab0"
+}

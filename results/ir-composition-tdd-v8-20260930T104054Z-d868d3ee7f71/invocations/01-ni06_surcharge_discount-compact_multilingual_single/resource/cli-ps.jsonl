@@ -1,0 +1,2 @@
+{"cli_process": {"alive": true, "cpu_seconds": 0.0, "pcpu_percent_sample": 0.0, "pid": 48262, "ps_raw": "0:00.00   0.0     32 48262", "rss_kb": 32}, "invocation_id": null, "monotonic_ns": 8479487625, "sample_index": 1, "sampled_unix_ns": 1790764918788037000, "sampled_utc": "2026-09-30T10:41:58.788006+00:00", "stage": "unspecified"}
+{"cli_process": {"alive": false, "pid": 48262, "ps_raw": ""}, "invocation_id": null, "monotonic_ns": 8696179791, "sample_index": 2, "sampled_unix_ns": 1790764919004729000, "sampled_utc": "2026-09-30T10:41:59.004706+00:00", "stage": "unspecified"}

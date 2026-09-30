@@ -1,0 +1,13 @@
+{
+  "activity": "C18",
+  "frozen_design_sha256": "ab691ac00f73abc1cef9648da58c20a1816d7ab16cda7e59536054bea9a66b52",
+  "frozen_fixture_sha256": "9f63084c701a1e34f2e5cbfdc862442235d1f0dd48e295e6a59afe4f4ac68641",
+  "frozen_holdout_sha256": "4403e07cde4c19a360a9c3ce695fad8032b4919c3a1b0c79d8beaddf38f86e4a",
+  "frozen_plan_sha256": "0db685cf9a27271a5ec6dd98420f69c96e53e010f00a2d9b0c9def1b21e33fbc",
+  "generated_source_sha256": "0a09bfd244e35a1267f0a3afb26619c86de19a9340a06c8d269b3e5be6414d82",
+  "generated_test_source_sha256": "255f90ce6fd1227ac432497476dc5a5ebc1e91436dff561dacc4fa2baa780681",
+  "go_mod_sha256": "0e6f935fb61192d92d2c562aa4344e5e5ec54ad82d62b4d4cbd4a579168da2d3",
+  "invocation_id": "38-cp18_exact_release_code-compact_multilingual_single",
+  "source_cli_invocation_record_sha256": "bea843337815fdfa6373c8e9992f12edec57ba910fe94816b5d275f8d23694fa",
+  "source_cli_stdout_sha256": "2b7197a40daf32900351305026d8cb3e1706b9c1abbf98e90d488763a0b8aa13"
+}

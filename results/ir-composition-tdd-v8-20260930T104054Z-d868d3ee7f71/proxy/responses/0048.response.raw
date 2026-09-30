@@ -1,0 +1,1 @@
+{"status":"ok","loaded":["multilingual"],"revisions":{"multilingual":"55cf4c4ebb4ebe31b2550e8bdf3bd21b99753851"},"device":"cpu","device_is_preference":false,"checkpoint_devices":{"multilingual":"cpu"},"cpu_fallbacks":{"multilingual":{"count":0,"last_reason":null}}}

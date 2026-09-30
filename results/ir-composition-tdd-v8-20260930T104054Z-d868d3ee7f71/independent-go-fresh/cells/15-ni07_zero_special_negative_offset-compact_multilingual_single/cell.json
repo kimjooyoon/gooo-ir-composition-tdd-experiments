@@ -1,0 +1,32 @@
+{
+  "invocation": {
+    "arm": "compact_multilingual_single",
+    "error": "FileNotFoundError: [Errno 2] No such file or directory: '/Users/alice/meta-go/research/metaprogramming/gooo-ir-composition-tdd-experiments/study-design-v8/fixtures/ni07_zero_special_negative_offset.gooo'",
+    "intent_id": "ni07_zero_special_negative_offset",
+    "invocation_id": "15-ni07_zero_special_negative_offset-compact_multilingual_single",
+    "planned_holdout_cases": 3,
+    "planned_training_cases": 4,
+    "sequence": 15,
+    "source_invocation_record_sha256": "0ee007d0966cc7775e5b97080f853acc8dd65345eaee3fc0d3530c53ba874774",
+    "source_stderr_bytes": 0,
+    "source_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "source_stdout_bytes": 19109,
+    "source_stdout_sha256": "433b8e863987ea17aad4b5a4ee43d45e1e732df3a119679efd3986973fb659f6",
+    "status": "input_validation_failed"
+  },
+  "score": {
+    "holdout": {
+      "cases": [],
+      "observed_cases": 0,
+      "passed": null,
+      "planned_cases": 3
+    },
+    "status": "input_validation_failed",
+    "training": {
+      "cases": [],
+      "observed_cases": 0,
+      "passed": null,
+      "planned_cases": 4
+    }
+  }
+}

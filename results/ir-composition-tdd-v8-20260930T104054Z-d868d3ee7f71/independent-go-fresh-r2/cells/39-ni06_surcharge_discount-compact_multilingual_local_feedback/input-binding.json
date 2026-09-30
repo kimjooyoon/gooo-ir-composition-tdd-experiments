@@ -1,0 +1,13 @@
+{
+  "activity": "C06",
+  "frozen_design_sha256": "ab691ac00f73abc1cef9648da58c20a1816d7ab16cda7e59536054bea9a66b52",
+  "frozen_fixture_sha256": "5b92ebb63da75bead14b67ed53ee0c0146c677636e832a629ad602e8baab6774",
+  "frozen_holdout_sha256": "df5829180d74d7dad03f9bc15583dad16de5b43d3309e389335c6dd0718e183d",
+  "frozen_plan_sha256": "eaa5fbc33664a2e4fb8218c3895d5a348bcd0f142575af6c8ee0df0421b0a5a5",
+  "generated_source_sha256": "2af52ee47196575af18cf5b96c8bdaf08a41fc04529c91037680fa8453d63d46",
+  "generated_test_source_sha256": "c93040684af8cd46a8f4716f0c95a51f6875f919ee872ef657b0592c2b20a861",
+  "go_mod_sha256": "0e6f935fb61192d92d2c562aa4344e5e5ec54ad82d62b4d4cbd4a579168da2d3",
+  "invocation_id": "39-ni06_surcharge_discount-compact_multilingual_local_feedback",
+  "source_cli_invocation_record_sha256": "f8bdae17e36f8ebdc1d1396de0760d1af965ab9b65c8eb57fc4bfec75a5d9d85",
+  "source_cli_stdout_sha256": "8196f94646cabba31ef0470da829daffe75a5adc29058e05bb704a742f97e66b"
+}

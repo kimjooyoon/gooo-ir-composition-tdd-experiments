@@ -1,0 +1,31 @@
+{
+  "completed_cli_cells": 64,
+  "independent_go_scoring": "ran_after_service_shutdown_and_forward_settlement",
+  "measured_provider_post_cap": 96,
+  "new_intentions": 0,
+  "original_plan_failures_remain_in_denominator": true,
+  "owned_service_shutdown": {
+    "confirmed": true,
+    "pid": 48232,
+    "return_code": -15
+  },
+  "provider_forward_drain": {
+    "post_shutdown": {
+      "pending_sequences": [],
+      "settled": true
+    },
+    "pre_shutdown": {
+      "pending_sequences": [],
+      "settled": true
+    }
+  },
+  "raw_provider_posts": 86,
+  "resource_summary_path": "resources/capture-summary.json",
+  "same_revision2_intents": 32,
+  "scheduled_cells": 64,
+  "schema": "gooo/ir-composition-tdd-capture-report/v1",
+  "status": "CAPTURED",
+  "stop_reason": null,
+  "summary_path": "summary.json",
+  "warmup_calls": 0
+}

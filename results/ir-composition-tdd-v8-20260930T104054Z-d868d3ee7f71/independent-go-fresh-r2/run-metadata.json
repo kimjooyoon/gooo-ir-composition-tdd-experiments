@@ -1,0 +1,10 @@
+{
+  "compiled_and_scored_cells": 64,
+  "planned_cells": 64,
+  "preexecution_sha256": "966528c17ceea695009d7057f6a3b87e939538237971e9f9452a6c47b499bed1",
+  "report_sha256": "8b7480f73c825ba81ced3c5c38e45343b0c2dd955eebe485b4caf95101dffbee",
+  "runner_script_sha256": "fbd1f35059ea77739fe4a1effcc5a2c82e35852d4e3cab08d9781e9ae48db849",
+  "schema": "gooo/ir-composition-tdd-independent-go-replay-metadata/v1",
+  "status": "COMPLETE",
+  "unknown_cells": 0
+}

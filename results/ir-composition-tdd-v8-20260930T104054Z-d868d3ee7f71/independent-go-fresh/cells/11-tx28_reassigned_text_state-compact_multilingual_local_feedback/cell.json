@@ -1,0 +1,32 @@
+{
+  "invocation": {
+    "arm": "compact_multilingual_local_feedback",
+    "error": "FileNotFoundError: [Errno 2] No such file or directory: '/Users/alice/meta-go/research/metaprogramming/gooo-ir-composition-tdd-experiments/study-design-v8/fixtures/tx28_reassigned_text_state.gooo'",
+    "intent_id": "tx28_reassigned_text_state",
+    "invocation_id": "11-tx28_reassigned_text_state-compact_multilingual_local_feedback",
+    "planned_holdout_cases": 2,
+    "planned_training_cases": 3,
+    "sequence": 11,
+    "source_invocation_record_sha256": "daefef4fd54b44a12e4339ab79a8ad87dd7eb3dfd43540cfc91310b26bddbb10",
+    "source_stderr_bytes": 0,
+    "source_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "source_stdout_bytes": 19726,
+    "source_stdout_sha256": "dd27811286c53dfd6170b2091ccc488deb895d4dbe3471514424e7ac0c9fb609",
+    "status": "input_validation_failed"
+  },
+  "score": {
+    "holdout": {
+      "cases": [],
+      "observed_cases": 0,
+      "passed": null,
+      "planned_cases": 2
+    },
+    "status": "input_validation_failed",
+    "training": {
+      "cases": [],
+      "observed_cases": 0,
+      "passed": null,
+      "planned_cases": 3
+    }
+  }
+}

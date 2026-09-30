@@ -1,0 +1,32 @@
+{
+  "invocation": {
+    "arm": "compact_multilingual_single",
+    "error": "FileNotFoundError: [Errno 2] No such file or directory: '/Users/alice/meta-go/research/metaprogramming/gooo-ir-composition-tdd-experiments/study-design-v8/fixtures/pr13_subtract_tripled_sum.gooo'",
+    "intent_id": "pr13_subtract_tripled_sum",
+    "invocation_id": "35-pr13_subtract_tripled_sum-compact_multilingual_single",
+    "planned_holdout_cases": 3,
+    "planned_training_cases": 4,
+    "sequence": 35,
+    "source_invocation_record_sha256": "02c00a2180f542f3b35681bb92a982d7967a4b2b0cb34d136244fffaeef38a84",
+    "source_stderr_bytes": 0,
+    "source_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "source_stdout_bytes": 19016,
+    "source_stdout_sha256": "3d7a2d54b7e0bb89bedefb137898ee8a05175ee8654bbdb26ec0fa6108e00d11",
+    "status": "input_validation_failed"
+  },
+  "score": {
+    "holdout": {
+      "cases": [],
+      "observed_cases": 0,
+      "passed": null,
+      "planned_cases": 3
+    },
+    "status": "input_validation_failed",
+    "training": {
+      "cases": [],
+      "observed_cases": 0,
+      "passed": null,
+      "planned_cases": 4
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "invocation": {
+    "arm": "compact_multilingual_single",
+    "error": "FileNotFoundError: [Errno 2] No such file or directory: '/Users/alice/meta-go/research/metaprogramming/gooo-ir-composition-tdd-experiments/study-design-v8/fixtures/tx27_lexical_cutoff.gooo'",
+    "intent_id": "tx27_lexical_cutoff",
+    "invocation_id": "10-tx27_lexical_cutoff-compact_multilingual_single",
+    "planned_holdout_cases": 2,
+    "planned_training_cases": 3,
+    "sequence": 10,
+    "source_invocation_record_sha256": "0339d8a500b69107d2ef98aa48c18737c98b3ba75dcec6144cba2f8fc2123d9c",
+    "source_stderr_bytes": 0,
+    "source_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "source_stdout_bytes": 19086,
+    "source_stdout_sha256": "8d6695fd1277a88f3407da6b1527746ce5691e3ed50b32c5746c71594743e094",
+    "status": "input_validation_failed"
+  },
+  "score": {
+    "holdout": {
+      "cases": [],
+      "observed_cases": 0,
+      "passed": null,
+      "planned_cases": 2
+    },
+    "status": "input_validation_failed",
+    "training": {
+      "cases": [],
+      "observed_cases": 0,
+      "passed": null,
+      "planned_cases": 3
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "candidates": [
+    {
+      "expression": "amount + 1",
+      "id": "option_a"
+    },
+    {
+      "expression": "amount",
+      "id": "option_b"
+    },
+    {
+      "expression": "input + 2",
+      "id": "option_c"
+    }
+  ],
+  "hole_id": "choice",
+  "intent": "Add three, cap the adjusted amount at ten, subtract one from that capped local, and return it.",
+  "max_attempts": 1,
+  "prompt_profile": "compact",
+  "provider_model": "multilingual",
+  "schema": "gooo/body-codegen-ir-search-plan/v1",
+  "test_cases": [
+    {
+      "expected": -3,
+      "input": -5
+    },
+    {
+      "expected": 2,
+      "input": 0
+    },
+    {
+      "expected": 9,
+      "input": 7
+    },
+    {
+      "expected": 9,
+      "input": 8
+    }
+  ]
+}

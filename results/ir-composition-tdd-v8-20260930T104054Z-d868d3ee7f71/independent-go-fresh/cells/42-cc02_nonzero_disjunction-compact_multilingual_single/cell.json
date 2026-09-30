@@ -1,0 +1,32 @@
+{
+  "invocation": {
+    "arm": "compact_multilingual_single",
+    "error": "FileNotFoundError: [Errno 2] No such file or directory: '/Users/alice/meta-go/research/metaprogramming/gooo-ir-composition-tdd-experiments/study-design-v8/fixtures/cc02_nonzero_disjunction.gooo'",
+    "intent_id": "cc02_nonzero_disjunction",
+    "invocation_id": "42-cc02_nonzero_disjunction-compact_multilingual_single",
+    "planned_holdout_cases": 2,
+    "planned_training_cases": 3,
+    "sequence": 42,
+    "source_invocation_record_sha256": "04506123ac8e39f0fccedf0412405895c83049471c6089eef9ebbf349a525ad3",
+    "source_stderr_bytes": 0,
+    "source_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "source_stdout_bytes": 18791,
+    "source_stdout_sha256": "8ef9a4abdbf0ae337c0ea11c5ea73c14b4d0ccc9e45085dc60a849e8d872101c",
+    "status": "input_validation_failed"
+  },
+  "score": {
+    "holdout": {
+      "cases": [],
+      "observed_cases": 0,
+      "passed": null,
+      "planned_cases": 2
+    },
+    "status": "input_validation_failed",
+    "training": {
+      "cases": [],
+      "observed_cases": 0,
+      "passed": null,
+      "planned_cases": 3
+    }
+  }
+}

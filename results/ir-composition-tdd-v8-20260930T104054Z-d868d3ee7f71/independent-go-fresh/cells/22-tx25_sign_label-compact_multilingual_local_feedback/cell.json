@@ -1,0 +1,32 @@
+{
+  "invocation": {
+    "arm": "compact_multilingual_local_feedback",
+    "error": "FileNotFoundError: [Errno 2] No such file or directory: '/Users/alice/meta-go/research/metaprogramming/gooo-ir-composition-tdd-experiments/study-design-v8/fixtures/tx25_sign_label.gooo'",
+    "intent_id": "tx25_sign_label",
+    "invocation_id": "22-tx25_sign_label-compact_multilingual_local_feedback",
+    "planned_holdout_cases": 2,
+    "planned_training_cases": 3,
+    "sequence": 22,
+    "source_invocation_record_sha256": "f294685bcf0285a1fa012d91a1cf807a78554a2bbe954cfeb8ef1188f0e296eb",
+    "source_stderr_bytes": 0,
+    "source_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "source_stdout_bytes": 19723,
+    "source_stdout_sha256": "540664d52c3d4799c934016eec9605fa71f122497a12756f71bf032ce081020d",
+    "status": "input_validation_failed"
+  },
+  "score": {
+    "holdout": {
+      "cases": [],
+      "observed_cases": 0,
+      "passed": null,
+      "planned_cases": 2
+    },
+    "status": "input_validation_failed",
+    "training": {
+      "cases": [],
+      "observed_cases": 0,
+      "passed": null,
+      "planned_cases": 3
+    }
+  }
+}

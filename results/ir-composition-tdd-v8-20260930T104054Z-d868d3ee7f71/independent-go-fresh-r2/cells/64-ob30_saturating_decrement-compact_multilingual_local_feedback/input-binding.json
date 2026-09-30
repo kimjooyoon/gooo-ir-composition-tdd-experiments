@@ -1,0 +1,13 @@
+{
+  "activity": "C30",
+  "frozen_design_sha256": "ab691ac00f73abc1cef9648da58c20a1816d7ab16cda7e59536054bea9a66b52",
+  "frozen_fixture_sha256": "923ce738356e902a5b77a908bcf77e89a66fc895adabc6556bd19457675bcca7",
+  "frozen_holdout_sha256": "14efe480ca4f6bcf34f68bf5e24832d053327ca3a6f069dcc6e1811c11991743",
+  "frozen_plan_sha256": "baf398f71637a39cf743f1ceaca35dba37757d46bb0294686f94c53e6df3399f",
+  "generated_source_sha256": "3daaaf50187357787241b99381736c528d66a84ed0d25e521b3a9bd30d247b3a",
+  "generated_test_source_sha256": "b2d43bd4204f06df62bb2c731e64f9ed3469fb9de6ea062bd0179905cc8750d2",
+  "go_mod_sha256": "0e6f935fb61192d92d2c562aa4344e5e5ec54ad82d62b4d4cbd4a579168da2d3",
+  "invocation_id": "64-ob30_saturating_decrement-compact_multilingual_local_feedback",
+  "source_cli_invocation_record_sha256": "c86c6574f560454bbd9033ba11cd2eb33e349f5237b6bad80224b87b82c062e7",
+  "source_cli_stdout_sha256": "2f2359d8371c31a639735f5900ab6cd1b1e8859bc2d9c3550b7c46adfbea9cde"
+}

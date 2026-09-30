@@ -1,0 +1,13 @@
+{
+  "activity": "C27",
+  "frozen_design_sha256": "ab691ac00f73abc1cef9648da58c20a1816d7ab16cda7e59536054bea9a66b52",
+  "frozen_fixture_sha256": "b8da9519f04a52e9772aaeed4c0e4edfb7f6977847d282f75b6b653eed61ff79",
+  "frozen_holdout_sha256": "921b998858464a124a3b4d307e2f303319046009db8e106a6aab87ac8e0a11de",
+  "frozen_plan_sha256": "83fdbb641dcdf0b17b287b2cfc86d151647281c911c53598f6c74008dd573e30",
+  "generated_source_sha256": "d643d01eea690160d8f08b16932d38f274d600f8a0eb461f688fa5b8a14c2977",
+  "generated_test_source_sha256": "b0f337f3f678f87f98aa4a3988733513189402e3e282098710ae7d7009cc567d",
+  "go_mod_sha256": "0e6f935fb61192d92d2c562aa4344e5e5ec54ad82d62b4d4cbd4a579168da2d3",
+  "invocation_id": "23-tx27_lexical_cutoff-compact_multilingual_local_feedback",
+  "source_cli_invocation_record_sha256": "032e3f7c3b0c586a74d778134f698a74b93cab4da5bc4712e544b6fb02ec7f23",
+  "source_cli_stdout_sha256": "03a6c202d4b9db3e0d40351cc24b6053d33c3b2f920b7b0df3a955da42b22dda"
+}

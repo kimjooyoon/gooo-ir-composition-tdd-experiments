@@ -1,0 +1,13 @@
+{
+  "activity": "C13",
+  "frozen_design_sha256": "ab691ac00f73abc1cef9648da58c20a1816d7ab16cda7e59536054bea9a66b52",
+  "frozen_fixture_sha256": "5b928f522d938b1d33b7938fe69d2a794f810180cc714f7d18bc52840da90650",
+  "frozen_holdout_sha256": "53a538d1ea221c67acc256fe3a1e09bd4ed6e1960132da47e6c03d5f5ae55e4d",
+  "frozen_plan_sha256": "279cc44ae08fae60c6bac9e9a1a6f25e5473a89a06988a635557dec8e7491f62",
+  "generated_source_sha256": "68af04cbcd851f505a068df36a5e2f67cf35463006b39c78ebc4dc4b9ea5420f",
+  "generated_test_source_sha256": "8e9839173f7b1382e7fd7391d53e01d9e4cd8c2996c1ab178edfcdb03a18bca5",
+  "go_mod_sha256": "0e6f935fb61192d92d2c562aa4344e5e5ec54ad82d62b4d4cbd4a579168da2d3",
+  "invocation_id": "35-pr13_subtract_tripled_sum-compact_multilingual_single",
+  "source_cli_invocation_record_sha256": "02c00a2180f542f3b35681bb92a982d7967a4b2b0cb34d136244fffaeef38a84",
+  "source_cli_stdout_sha256": "3d7a2d54b7e0bb89bedefb137898ee8a05175ee8654bbdb26ec0fa6108e00d11"
+}

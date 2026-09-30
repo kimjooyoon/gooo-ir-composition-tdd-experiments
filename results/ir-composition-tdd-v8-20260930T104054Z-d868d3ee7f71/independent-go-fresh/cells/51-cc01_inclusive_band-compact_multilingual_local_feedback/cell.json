@@ -1,0 +1,32 @@
+{
+  "invocation": {
+    "arm": "compact_multilingual_local_feedback",
+    "error": "FileNotFoundError: [Errno 2] No such file or directory: '/Users/alice/meta-go/research/metaprogramming/gooo-ir-composition-tdd-experiments/study-design-v8/fixtures/cc01_inclusive_band.gooo'",
+    "intent_id": "cc01_inclusive_band",
+    "invocation_id": "51-cc01_inclusive_band-compact_multilingual_local_feedback",
+    "planned_holdout_cases": 3,
+    "planned_training_cases": 5,
+    "sequence": 51,
+    "source_invocation_record_sha256": "0e4f8c845c64020e1b8718677467c108b7154fba9a7c37cc3bc5c9b9563005cf",
+    "source_stderr_bytes": 0,
+    "source_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "source_stdout_bytes": 20144,
+    "source_stdout_sha256": "5f60ba13f4140870a5250c5b7ab07fa981aa08e4d5069f656fb4672616253580",
+    "status": "input_validation_failed"
+  },
+  "score": {
+    "holdout": {
+      "cases": [],
+      "observed_cases": 0,
+      "passed": null,
+      "planned_cases": 3
+    },
+    "status": "input_validation_failed",
+    "training": {
+      "cases": [],
+      "observed_cases": 0,
+      "passed": null,
+      "planned_cases": 5
+    }
+  }
+}

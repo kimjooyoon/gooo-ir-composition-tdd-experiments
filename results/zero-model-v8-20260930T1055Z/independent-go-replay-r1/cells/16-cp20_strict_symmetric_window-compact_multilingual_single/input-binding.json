@@ -1,0 +1,13 @@
+{
+  "activity": "C20",
+  "frozen_design_sha256": "ab691ac00f73abc1cef9648da58c20a1816d7ab16cda7e59536054bea9a66b52",
+  "frozen_fixture_sha256": "a99ac35a84dcd79e2f44e8a6e666ac5836a743e1490710c6fec670d07fe9d4c6",
+  "frozen_holdout_sha256": "682c32b6e0e66988a764b1f491384b9ea6c44de4feff5117fdfadc19bf7053c1",
+  "frozen_plan_sha256": "79233676e6ef7616296d591fe55c451cf3e37a95ec25a47d51c496f4524199e1",
+  "generated_source_sha256": "4c25cf0fa148660be915c1ad61e782319f7efc70469ef56bb8f349a255cea8f6",
+  "generated_test_source_sha256": "1c3d10dd3c1eb7ad41c6e33008180d05898f45542d57a5574c86184f777014a3",
+  "go_mod_sha256": "0e6f935fb61192d92d2c562aa4344e5e5ec54ad82d62b4d4cbd4a579168da2d3",
+  "invocation_id": "16-cp20_strict_symmetric_window-compact_multilingual_single",
+  "source_cli_invocation_record_sha256": "62d843b14cb0712e5ce4fc0cfe94ad3f2d63153a50b97f016cc79c8dad97f445",
+  "source_cli_stdout_sha256": "48ed5c5ba1dc97cb71097453afce173e71e2f712c501d628eaad29cf06dfaf3f"
+}

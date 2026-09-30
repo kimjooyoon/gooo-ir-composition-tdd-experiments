@@ -1,0 +1,32 @@
+{
+  "invocation": {
+    "arm": "compact_multilingual_local_feedback",
+    "error": "FileNotFoundError: [Errno 2] No such file or directory: '/Users/alice/meta-go/research/metaprogramming/gooo-ir-composition-tdd-experiments/study-design-v8/fixtures/bl23_nonzero_bounded_flag.gooo'",
+    "intent_id": "bl23_nonzero_bounded_flag",
+    "invocation_id": "55-bl23_nonzero_bounded_flag-compact_multilingual_local_feedback",
+    "planned_holdout_cases": 4,
+    "planned_training_cases": 6,
+    "sequence": 55,
+    "source_invocation_record_sha256": "d7286f4b027c1b2795275b5aa654d051e47e8641d27611520cdd7909bcdaea1b",
+    "source_stderr_bytes": 0,
+    "source_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "source_stdout_bytes": 19055,
+    "source_stdout_sha256": "f8838c2e758c04cc5b01435b8265c8264ef7aae8a4ffcdad5c9de83f02dd2606",
+    "status": "input_validation_failed"
+  },
+  "score": {
+    "holdout": {
+      "cases": [],
+      "observed_cases": 0,
+      "passed": null,
+      "planned_cases": 4
+    },
+    "status": "input_validation_failed",
+    "training": {
+      "cases": [],
+      "observed_cases": 0,
+      "passed": null,
+      "planned_cases": 6
+    }
+  }
+}

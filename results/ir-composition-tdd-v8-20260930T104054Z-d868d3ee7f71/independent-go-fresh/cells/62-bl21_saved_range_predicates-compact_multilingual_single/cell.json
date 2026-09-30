@@ -1,0 +1,32 @@
+{
+  "invocation": {
+    "arm": "compact_multilingual_single",
+    "error": "FileNotFoundError: [Errno 2] No such file or directory: '/Users/alice/meta-go/research/metaprogramming/gooo-ir-composition-tdd-experiments/study-design-v8/fixtures/bl21_saved_range_predicates.gooo'",
+    "intent_id": "bl21_saved_range_predicates",
+    "invocation_id": "62-bl21_saved_range_predicates-compact_multilingual_single",
+    "planned_holdout_cases": 4,
+    "planned_training_cases": 5,
+    "sequence": 62,
+    "source_invocation_record_sha256": "5566ff645b1d9c0387ee00c22f7bf585b8a6f5d5c3ca45004f8b82e797dd9491",
+    "source_stderr_bytes": 0,
+    "source_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "source_stdout_bytes": 18928,
+    "source_stdout_sha256": "40adcea81a742c92e134dffce44d7ebebf84a99a23042335ca798d37d2a94315",
+    "status": "input_validation_failed"
+  },
+  "score": {
+    "holdout": {
+      "cases": [],
+      "observed_cases": 0,
+      "passed": null,
+      "planned_cases": 4
+    },
+    "status": "input_validation_failed",
+    "training": {
+      "cases": [],
+      "observed_cases": 0,
+      "passed": null,
+      "planned_cases": 5
+    }
+  }
+}

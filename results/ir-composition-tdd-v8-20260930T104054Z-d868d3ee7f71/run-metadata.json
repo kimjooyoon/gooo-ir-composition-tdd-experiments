@@ -1,0 +1,42 @@
+{
+  "actual_provider_posts": 86,
+  "capture_proxy_source_sha256": "58b414b6dfa5070666514eae4bc044474c8ca19162a825fd2afc749023075dea",
+  "capture_proxy_url": "http://127.0.0.1:50091/v1/systemone",
+  "completed_cells": 64,
+  "credentials_unset": true,
+  "design_sha256": "ab691ac00f73abc1cef9648da58c20a1816d7ab16cda7e59536054bea9a66b52",
+  "downloads_disabled": true,
+  "health_before_sha256": "acaa85929f79c33d9f1cf25dd55c70f46fa7ebf0b235159d548298b7c6d5a0fa",
+  "independent_go_scoring": "ran_after_service_shutdown_and_forward_settlement",
+  "laya_port": 50076,
+  "laya_version": "0.3.21",
+  "loopback_only": true,
+  "measured_provider_post_cap": 96,
+  "model_revision": "55cf4c4ebb4ebe31b2550e8bdf3bd21b99753851",
+  "model_snapshot_path": "/Users/alice/.cache/huggingface/hub/models--convaiinnovations--laya/snapshots/55cf4c4ebb4ebe31b2550e8bdf3bd21b99753851",
+  "new_intentions": 0,
+  "planned_cells": 64,
+  "planned_intentions": 32,
+  "preexecution_sha256": "9b7a6c57bc0a7920259512019c8ebbcb1ffc38bc892d734306b7696c02d72c68",
+  "provider_forward_drain": {
+    "post_shutdown": {
+      "pending_sequences": [],
+      "settled": true
+    },
+    "pre_shutdown": {
+      "pending_sequences": [],
+      "settled": true
+    }
+  },
+  "provider_model": "multilingual",
+  "provider_post_caps_by_arm": {
+    "compact_multilingual_local_feedback": 64,
+    "compact_multilingual_single": 32
+  },
+  "resource_summary_path": "resources/capture-summary.json",
+  "run_id": "ir-composition-tdd-v8-20260930T104054Z-d868d3ee7f71",
+  "schema": "gooo/ir-composition-tdd-run-metadata/v1",
+  "status": "CAPTURED",
+  "stop_reason": null,
+  "warmup_calls": 0
+}

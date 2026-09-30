@@ -1,0 +1,32 @@
+{
+  "invocation": {
+    "arm": "compact_multilingual_single",
+    "error": "FileNotFoundError: [Errno 2] No such file or directory: '/Users/alice/meta-go/research/metaprogramming/gooo-ir-composition-tdd-experiments/study-design-v8/fixtures/lr10_floor_then_increment.gooo'",
+    "intent_id": "lr10_floor_then_increment",
+    "invocation_id": "04-lr10_floor_then_increment-compact_multilingual_single",
+    "planned_holdout_cases": 3,
+    "planned_training_cases": 4,
+    "sequence": 4,
+    "source_invocation_record_sha256": "d1620dd4c6a7f9435e1d4bc00239fef7bb7489bc400f76f6e7935175f507bcd3",
+    "source_stderr_bytes": 0,
+    "source_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "source_stdout_bytes": 19108,
+    "source_stdout_sha256": "088fe6253c28d1a150aa03a2078c07bf9bb1b57d3037e2f6f9ac43e5761db92e",
+    "status": "input_validation_failed"
+  },
+  "score": {
+    "holdout": {
+      "cases": [],
+      "observed_cases": 0,
+      "passed": null,
+      "planned_cases": 3
+    },
+    "status": "input_validation_failed",
+    "training": {
+      "cases": [],
+      "observed_cases": 0,
+      "passed": null,
+      "planned_cases": 4
+    }
+  }
+}

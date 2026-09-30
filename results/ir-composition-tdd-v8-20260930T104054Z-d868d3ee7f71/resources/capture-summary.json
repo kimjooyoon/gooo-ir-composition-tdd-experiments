@@ -1,0 +1,183 @@
+{
+  "capture_window": {
+    "completed_unix_ns": 1790764928623483000,
+    "process_summary": {
+      "cpu_delta_status": "coarse_observed_at_ps_second_resolution",
+      "cpu_seconds_delta_coarse": 16.54,
+      "measurement_note": "Process-level ps samples; CPU is cumulative and second-granularity; RSS and CPU-percent peaks are sampled.",
+      "pcpu_interpretation": "sampled rolling process CPU percent; not host CPU increase",
+      "pcpu_percent_max_sampled": 194.5,
+      "rss_peak_kb_sampled": 1362464,
+      "sample_count": 140
+    },
+    "sample_count_including_baseline_endpoint": 140,
+    "started_unix_ns": 1790764918761376000,
+    "wall_ms": 9862.131541
+  },
+  "measurement_notes": [
+    "ps cputime is cumulative with one-second granularity; zero or too-few sample deltas are unknown",
+    "RSS and pcpu peaks are sampled process observations, not continuous maxima",
+    "pcpu is rolling per-process CPU percent and does not measure host CPU increase",
+    "idle baseline is separate from measured cells and makes no provider POST"
+  ],
+  "model_ready_through_capture_total": {
+    "process_summary": {
+      "cpu_delta_status": "coarse_observed_at_ps_second_resolution",
+      "cpu_seconds_delta_coarse": 16.54,
+      "measurement_note": "Process-level ps samples; CPU is cumulative and second-granularity; RSS and CPU-percent peaks are sampled.",
+      "pcpu_interpretation": "sampled rolling process CPU percent; not host CPU increase",
+      "pcpu_percent_max_sampled": 194.5,
+      "rss_peak_kb_sampled": 1362464,
+      "sample_count": 143
+    },
+    "sample_count": 143
+  },
+  "per_invocation_resource_files": [
+    "invocations/01-ni06_surcharge_discount-compact_multilingual_single/resource/process-samples.json",
+    "invocations/02-bl24_selected_nonnegative_codes-compact_multilingual_local_feedback/resource/process-samples.json",
+    "invocations/03-ni08_upper_grade_excess-compact_multilingual_local_feedback/resource/process-samples.json",
+    "invocations/04-lr10_floor_then_increment-compact_multilingual_single/resource/process-samples.json",
+    "invocations/05-pr16_composed_neighbor_product-compact_multilingual_single/resource/process-samples.json",
+    "invocations/06-lr11_nonnegative_doubled_score-compact_multilingual_local_feedback/resource/process-samples.json",
+    "invocations/07-bl23_nonzero_bounded_flag-compact_multilingual_single/resource/process-samples.json",
+    "invocations/08-ob30_saturating_decrement-compact_multilingual_single/resource/process-samples.json",
+    "invocations/09-ni05_negative_then_double-compact_multilingual_local_feedback/resource/process-samples.json",
+    "invocations/10-tx27_lexical_cutoff-compact_multilingual_single/resource/process-samples.json",
+    "invocations/11-tx28_reassigned_text_state-compact_multilingual_local_feedback/resource/process-samples.json",
+    "invocations/12-ni07_zero_special_negative_offset-compact_multilingual_local_feedback/resource/process-samples.json",
+    "invocations/13-cp17_nonpositive_inclusive-compact_multilingual_local_feedback/resource/process-samples.json",
+    "invocations/14-lr12_cap_after_adjustment-compact_multilingual_local_feedback/resource/process-samples.json",
+    "invocations/15-ni07_zero_special_negative_offset-compact_multilingual_single/resource/process-samples.json",
+    "invocations/16-cp20_strict_symmetric_window-compact_multilingual_single/resource/process-samples.json",
+    "invocations/17-ob29_saturating_increment-compact_multilingual_single/resource/process-samples.json",
+    "invocations/18-cp20_strict_symmetric_window-compact_multilingual_local_feedback/resource/process-samples.json",
+    "invocations/19-tx25_sign_label-compact_multilingual_single/resource/process-samples.json",
+    "invocations/20-ob29_saturating_increment-compact_multilingual_local_feedback/resource/process-samples.json",
+    "invocations/21-cc04_outer_cutoffs-compact_multilingual_single/resource/process-samples.json",
+    "invocations/22-tx25_sign_label-compact_multilingual_local_feedback/resource/process-samples.json",
+    "invocations/23-tx27_lexical_cutoff-compact_multilingual_local_feedback/resource/process-samples.json",
+    "invocations/24-tx26_state_label-compact_multilingual_local_feedback/resource/process-samples.json",
+    "invocations/25-ob32_clamped_absolute-compact_multilingual_local_feedback/resource/process-samples.json",
+    "invocations/26-ni05_negative_then_double-compact_multilingual_single/resource/process-samples.json",
+    "invocations/27-lr09_compound_total-compact_multilingual_single/resource/process-samples.json",
+    "invocations/28-cc01_inclusive_band-compact_multilingual_single/resource/process-samples.json",
+    "invocations/29-cc04_outer_cutoffs-compact_multilingual_local_feedback/resource/process-samples.json",
+    "invocations/30-bl22_reassigned_valid_flag-compact_multilingual_single/resource/process-samples.json",
+    "invocations/31-pr15_square_minus_successor_sum-compact_multilingual_single/resource/process-samples.json",
+    "invocations/32-ob32_clamped_absolute-compact_multilingual_single/resource/process-samples.json",
+    "invocations/33-cp18_exact_release_code-compact_multilingual_local_feedback/resource/process-samples.json",
+    "invocations/34-lr11_nonnegative_doubled_score-compact_multilingual_single/resource/process-samples.json",
+    "invocations/35-pr13_subtract_tripled_sum-compact_multilingual_single/resource/process-samples.json",
+    "invocations/36-cc03_two_islands-compact_multilingual_single/resource/process-samples.json",
+    "invocations/37-lr12_cap_after_adjustment-compact_multilingual_single/resource/process-samples.json",
+    "invocations/38-cp18_exact_release_code-compact_multilingual_single/resource/process-samples.json",
+    "invocations/39-ni06_surcharge_discount-compact_multilingual_local_feedback/resource/process-samples.json",
+    "invocations/40-cc03_two_islands-compact_multilingual_local_feedback/resource/process-samples.json",
+    "invocations/41-pr16_composed_neighbor_product-compact_multilingual_local_feedback/resource/process-samples.json",
+    "invocations/42-cc02_nonzero_disjunction-compact_multilingual_single/resource/process-samples.json",
+    "invocations/43-tx26_state_label-compact_multilingual_single/resource/process-samples.json",
+    "invocations/44-pr14_product_neighbor_factors-compact_multilingual_local_feedback/resource/process-samples.json",
+    "invocations/45-cp19_range_without_origin-compact_multilingual_local_feedback/resource/process-samples.json",
+    "invocations/46-pr15_square_minus_successor_sum-compact_multilingual_local_feedback/resource/process-samples.json",
+    "invocations/47-lr09_compound_total-compact_multilingual_local_feedback/resource/process-samples.json",
+    "invocations/48-tx28_reassigned_text_state-compact_multilingual_single/resource/process-samples.json",
+    "invocations/49-cp19_range_without_origin-compact_multilingual_single/resource/process-samples.json",
+    "invocations/50-cc02_nonzero_disjunction-compact_multilingual_local_feedback/resource/process-samples.json",
+    "invocations/51-cc01_inclusive_band-compact_multilingual_local_feedback/resource/process-samples.json",
+    "invocations/52-pr14_product_neighbor_factors-compact_multilingual_single/resource/process-samples.json",
+    "invocations/53-bl21_saved_range_predicates-compact_multilingual_local_feedback/resource/process-samples.json",
+    "invocations/54-ob31_saturating_double-compact_multilingual_single/resource/process-samples.json",
+    "invocations/55-bl23_nonzero_bounded_flag-compact_multilingual_local_feedback/resource/process-samples.json",
+    "invocations/56-cp17_nonpositive_inclusive-compact_multilingual_single/resource/process-samples.json",
+    "invocations/57-ob31_saturating_double-compact_multilingual_local_feedback/resource/process-samples.json",
+    "invocations/58-lr10_floor_then_increment-compact_multilingual_local_feedback/resource/process-samples.json",
+    "invocations/59-bl22_reassigned_valid_flag-compact_multilingual_local_feedback/resource/process-samples.json",
+    "invocations/60-ni08_upper_grade_excess-compact_multilingual_single/resource/process-samples.json",
+    "invocations/61-bl24_selected_nonnegative_codes-compact_multilingual_single/resource/process-samples.json",
+    "invocations/62-bl21_saved_range_predicates-compact_multilingual_single/resource/process-samples.json",
+    "invocations/63-pr13_subtract_tripled_sum-compact_multilingual_local_feedback/resource/process-samples.json",
+    "invocations/64-ob30_saturating_decrement-compact_multilingual_local_feedback/resource/process-samples.json"
+  ],
+  "raw_samples_path": "resources/laya-server-ps.jsonl",
+  "schema": "gooo/ir-composition-tdd-resource-summary/v1",
+  "server_only_idle_baseline": {
+    "duration_ms": 2518.487874999999,
+    "interpretation": "model-ready server-only idle baseline after pinned health; no CLI or provider requests",
+    "process_summary": {
+      "cpu_delta_status": "unknown_below_ps_cputime_resolution_or_zero",
+      "cpu_seconds_delta_coarse": null,
+      "measurement_note": "Process-level ps samples; CPU is cumulative and second-granularity; RSS and CPU-percent peaks are sampled.",
+      "pcpu_interpretation": "sampled rolling process CPU percent; not host CPU increase",
+      "pcpu_percent_max_sampled": 24.2,
+      "rss_peak_kb_sampled": 1318080,
+      "sample_count": 4
+    },
+    "sample_count": 4,
+    "samples": [
+      {
+        "invocation_id": null,
+        "laya_server": {
+          "alive": true,
+          "cpu_seconds": 3.43,
+          "pcpu_percent_sample": 24.2,
+          "pid": 48232,
+          "ps_raw": "0:03.43  24.2 1318080 48232",
+          "rss_kb": 1318080
+        },
+        "monotonic_ns": 5933102791,
+        "sample_index": 1,
+        "sampled_unix_ns": 1790764916241658000,
+        "sampled_utc": "2026-09-30T10:41:56.241591+00:00",
+        "stage": "model_ready_idle_baseline"
+      },
+      {
+        "invocation_id": null,
+        "laya_server": {
+          "alive": true,
+          "cpu_seconds": 3.43,
+          "pcpu_percent_sample": 0.6,
+          "pid": 48232,
+          "ps_raw": "0:03.43   0.6 1318080 48232",
+          "rss_kb": 1318080
+        },
+        "monotonic_ns": 6952196666,
+        "sample_index": 2,
+        "sampled_unix_ns": 1790764917260748000,
+        "sampled_utc": "2026-09-30T10:41:57.260639+00:00",
+        "stage": "model_ready_idle_baseline"
+      },
+      {
+        "invocation_id": null,
+        "laya_server": {
+          "alive": true,
+          "cpu_seconds": 3.43,
+          "pcpu_percent_sample": 0.1,
+          "pid": 48232,
+          "ps_raw": "0:03.43   0.1 1318080 48232",
+          "rss_kb": 1318080
+        },
+        "monotonic_ns": 7962244041,
+        "sample_index": 3,
+        "sampled_unix_ns": 1790764918270794000,
+        "sampled_utc": "2026-09-30T10:41:58.270724+00:00",
+        "stage": "model_ready_idle_baseline"
+      },
+      {
+        "invocation_id": null,
+        "laya_server": {
+          "alive": true,
+          "cpu_seconds": 3.43,
+          "pcpu_percent_sample": 0.1,
+          "pid": 48232,
+          "ps_raw": "0:03.43   0.1 1318080 48232",
+          "rss_kb": 1318080
+        },
+        "monotonic_ns": 8451159833,
+        "sample_index": 4,
+        "sampled_unix_ns": 1790764918759708000,
+        "sampled_utc": "2026-09-30T10:41:58.759625+00:00",
+        "stage": "model_ready_idle_baseline"
+      }
+    ]
+  }
+}

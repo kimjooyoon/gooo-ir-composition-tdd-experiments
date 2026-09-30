@@ -1,0 +1,32 @@
+{
+  "invocation": {
+    "arm": "compact_multilingual_local_feedback",
+    "error": "FileNotFoundError: [Errno 2] No such file or directory: '/Users/alice/meta-go/research/metaprogramming/gooo-ir-composition-tdd-experiments/study-design-v8/fixtures/cp18_exact_release_code.gooo'",
+    "intent_id": "cp18_exact_release_code",
+    "invocation_id": "33-cp18_exact_release_code-compact_multilingual_local_feedback",
+    "planned_holdout_cases": 3,
+    "planned_training_cases": 3,
+    "sequence": 33,
+    "source_invocation_record_sha256": "9aa2122f8355f0ce6a0b008b5bc7151b0d1b6c3f2364c73651ce1fb17919622e",
+    "source_stderr_bytes": 0,
+    "source_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "source_stdout_bytes": 18747,
+    "source_stdout_sha256": "2ced7815568d0e26a1419dafe593e31d28eae13a8fdd22d5b4aa25a8fdb9fb93",
+    "status": "input_validation_failed"
+  },
+  "score": {
+    "holdout": {
+      "cases": [],
+      "observed_cases": 0,
+      "passed": null,
+      "planned_cases": 3
+    },
+    "status": "input_validation_failed",
+    "training": {
+      "cases": [],
+      "observed_cases": 0,
+      "passed": null,
+      "planned_cases": 3
+    }
+  }
+}

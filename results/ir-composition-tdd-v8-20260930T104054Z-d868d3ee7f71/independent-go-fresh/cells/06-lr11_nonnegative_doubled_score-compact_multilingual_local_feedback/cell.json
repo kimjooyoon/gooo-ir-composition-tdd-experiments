@@ -1,0 +1,32 @@
+{
+  "invocation": {
+    "arm": "compact_multilingual_local_feedback",
+    "error": "FileNotFoundError: [Errno 2] No such file or directory: '/Users/alice/meta-go/research/metaprogramming/gooo-ir-composition-tdd-experiments/study-design-v8/fixtures/lr11_nonnegative_doubled_score.gooo'",
+    "intent_id": "lr11_nonnegative_doubled_score",
+    "invocation_id": "06-lr11_nonnegative_doubled_score-compact_multilingual_local_feedback",
+    "planned_holdout_cases": 3,
+    "planned_training_cases": 4,
+    "sequence": 6,
+    "source_invocation_record_sha256": "6e958ca19d7d95fb5c6a23680113abcfe7b95ed7f4e6da3361ed3a43fa3c1b8b",
+    "source_stderr_bytes": 0,
+    "source_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "source_stdout_bytes": 18830,
+    "source_stdout_sha256": "af1b33d39645582128397a644a6698930ea0149636016f040f1041b40ef2260d",
+    "status": "input_validation_failed"
+  },
+  "score": {
+    "holdout": {
+      "cases": [],
+      "observed_cases": 0,
+      "passed": null,
+      "planned_cases": 3
+    },
+    "status": "input_validation_failed",
+    "training": {
+      "cases": [],
+      "observed_cases": 0,
+      "passed": null,
+      "planned_cases": 4
+    }
+  }
+}

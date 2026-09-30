@@ -1,0 +1,86 @@
+{
+  "invocation": {
+    "arm": "compact_multilingual_single",
+    "captured_first_proposal_candidate_id": "option_a",
+    "captured_native_training_passed": 2,
+    "captured_native_training_total": 3,
+    "captured_selected_candidate_id": "option_a",
+    "captured_source_completeness_decision": "PROGRESS_WITHIN_DECLARED_FIXTURE_SCOPE",
+    "generated_source_sha256": "7f54aae6e7e86c9781810bfaf2b0a30c5a8e32dcf49023195a7da1a6f62cd1e8",
+    "go_exit_code": 0,
+    "go_result_path": "cells/56-cp17_nonpositive_inclusive-compact_multilingual_single/go/independent-results.json",
+    "go_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "go_stdout_sha256": "c0154333013fd6ce40b33980fe5e53e4bef7486cf2f8d404dda059d559487309",
+    "intent_id": "cp17_nonpositive_inclusive",
+    "invocation_id": "56-cp17_nonpositive_inclusive-compact_multilingual_single",
+    "planned_holdout_cases": 3,
+    "planned_training_cases": 3,
+    "report_generated_digest": "sha256:7f54aae6e7e86c9781810bfaf2b0a30c5a8e32dcf49023195a7da1a6f62cd1e8",
+    "sequence": 56,
+    "source_invocation_record_sha256": "60e812e0c6cbded3545ca8e58b6813d2cc488bab593068d16037dbc1c16fe8d6",
+    "source_stderr_bytes": 0,
+    "source_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "source_stdout_bytes": 19072,
+    "source_stdout_sha256": "07346321091a3c139d02fb894e4311054c0dbc6effd4d1eb1b81db3e762a849c",
+    "status": "compiled_and_scored"
+  },
+  "score": {
+    "generated_source_sha256": "7f54aae6e7e86c9781810bfaf2b0a30c5a8e32dcf49023195a7da1a6f62cd1e8",
+    "go_exit_code": 0,
+    "go_stderr_bytes": 0,
+    "go_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "go_stdout_bytes": 49,
+    "go_stdout_sha256": "c0154333013fd6ce40b33980fe5e53e4bef7486cf2f8d404dda059d559487309",
+    "holdout": {
+      "cases": [
+        {
+          "actual": 1,
+          "expected": 1,
+          "input": -9,
+          "split": "holdout"
+        },
+        {
+          "actual": 0,
+          "expected": 0,
+          "input": 5,
+          "split": "holdout"
+        },
+        {
+          "actual": 0,
+          "expected": 0,
+          "input": 10,
+          "split": "holdout"
+        }
+      ],
+      "observed_cases": 3,
+      "passed": 3,
+      "planned_cases": 3
+    },
+    "status": "compiled_and_scored",
+    "training": {
+      "cases": [
+        {
+          "actual": 1,
+          "expected": 1,
+          "input": -1,
+          "split": "training"
+        },
+        {
+          "actual": 0,
+          "expected": 1,
+          "input": 0,
+          "split": "training"
+        },
+        {
+          "actual": 0,
+          "expected": 0,
+          "input": 1,
+          "split": "training"
+        }
+      ],
+      "observed_cases": 3,
+      "passed": 2,
+      "planned_cases": 3
+    }
+  }
+}

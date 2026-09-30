@@ -1,0 +1,13 @@
+{
+  "activity": "C17",
+  "frozen_design_sha256": "ab691ac00f73abc1cef9648da58c20a1816d7ab16cda7e59536054bea9a66b52",
+  "frozen_fixture_sha256": "33a902cfd0202bd368fc9e380868946a7f209102e1480d17d93aa86e2e8d5b4f",
+  "frozen_holdout_sha256": "b2c3026bccfb402801f18c070a04d7892debe0807472d8b65aa00a7190dcb904",
+  "frozen_plan_sha256": "8237da27ed7375e1be760e927012f5dc53177503386e173dad81782979ea0e84",
+  "generated_source_sha256": "8ebe783dccbabbcb53770a12c5aaf0fb71fa5476310a4a500c8bf46baba6e006",
+  "generated_test_source_sha256": "bb68d3acfef92f3ab5340ac6e638168b638bf1a85f6a8cae09ce477a860008c9",
+  "go_mod_sha256": "0e6f935fb61192d92d2c562aa4344e5e5ec54ad82d62b4d4cbd4a579168da2d3",
+  "invocation_id": "13-cp17_nonpositive_inclusive-compact_multilingual_local_feedback",
+  "source_cli_invocation_record_sha256": "0f4fd1cbff63daabc80dcc2b758c0579d44ac0bac19c697a463e111f5f36d5fc",
+  "source_cli_stdout_sha256": "b7cc77f4796207d12535eee35b05dbbe78e6af16fe912166955f79d4aa7fe58e"
+}

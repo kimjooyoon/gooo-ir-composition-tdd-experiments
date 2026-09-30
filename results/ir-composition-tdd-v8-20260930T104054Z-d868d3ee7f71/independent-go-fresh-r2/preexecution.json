@@ -1,0 +1,27 @@
+{
+  "created_utc": "2026-09-30T10:54:23.065064+00:00",
+  "design_sha256": "ab691ac00f73abc1cef9648da58c20a1816d7ab16cda7e59536054bea9a66b52",
+  "go_binary": "/Users/alice/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.27.0.darwin-arm64/bin/go",
+  "go_binary_sha256": "a19a71df81715c12d9a7e81bab036c12696fec1ddbd4258b48a2131a9080b267",
+  "go_environment": {
+    "GOPROXY": "off",
+    "GOSUMDB": "off",
+    "GOTOOLCHAIN": "local",
+    "GOWORK": "off"
+  },
+  "go_version_stderr": "",
+  "go_version_stdout": "go version go1.27.0 darwin/arm64",
+  "holdout_access": "post-capture scoring only; every captured CLI raw output is validated before holdout vectors are opened",
+  "holdout_vector_file_sha256": "aa08eb50bea927a1219f81fd0d9608818e725ffd9e664e89abf0a314d1303b9e",
+  "mode": "live",
+  "phase_plans_sha256": "e3ceeaa24d187e1a14c52e4c946b99751e305607491f4164f96e8b822e5b023e",
+  "pinned_raw_capture_audit_sha256": "e55184615eccd840d5981e52f056a11737acec4e013c24c943537f3b36edd4dc",
+  "planned_cells": 64,
+  "provider_environment_removed": true,
+  "runner_script_archive": "code-archive/scripts/replay_tdd_generated_go.py",
+  "runner_script_sha256": "fbd1f35059ea77739fe4a1effcc5a2c82e35852d4e3cab08d9781e9ae48db849",
+  "schema": "gooo/ir-composition-tdd-independent-go-replay-preexecution/v1",
+  "source_run_id": "ir-composition-tdd-v8-20260930T104054Z-d868d3ee7f71",
+  "source_run_metadata_sha256": "e6f7b980b30964c08a39fd283608845f53de55e25f949bd3693181b12c199f05",
+  "status": "ARCHIVED_BEFORE_GO_REPLAY"
+}

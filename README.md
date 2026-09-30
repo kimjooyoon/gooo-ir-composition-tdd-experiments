@@ -130,3 +130,10 @@ archived in [preexecution-checkpoint-v8](preexecution-checkpoint-v8). The prior
 local v8 draft missing an explicit capture path is retained in the superseded
 archive. New measured runs use separate IDs and keep v7's one call in its own
 partial cohort.
+
+
+The v8 live capture and matched offline baseline are now complete. See
+[STATUS.md](STATUS.md) and [paired results](results/paired-live-offline-v8-20260930T1058Z/report.md).
+The bounded search reached the same finite score with and without Laya.
+A new [Go-runtime neural decision repository](https://github.com/kimjooyoon/gooo-neural-decision-experiments)
+explores domain-specific small models and ternary training separately.

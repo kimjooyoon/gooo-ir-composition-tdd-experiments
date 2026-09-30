@@ -1,0 +1,32 @@
+{
+  "invocation": {
+    "arm": "compact_multilingual_local_feedback",
+    "error": "FileNotFoundError: [Errno 2] No such file or directory: '/Users/alice/meta-go/research/metaprogramming/gooo-ir-composition-tdd-experiments/study-design-v8/fixtures/ni06_surcharge_discount.gooo'",
+    "intent_id": "ni06_surcharge_discount",
+    "invocation_id": "39-ni06_surcharge_discount-compact_multilingual_local_feedback",
+    "planned_holdout_cases": 3,
+    "planned_training_cases": 5,
+    "sequence": 39,
+    "source_invocation_record_sha256": "f8bdae17e36f8ebdc1d1396de0760d1af965ab9b65c8eb57fc4bfec75a5d9d85",
+    "source_stderr_bytes": 0,
+    "source_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "source_stdout_bytes": 20078,
+    "source_stdout_sha256": "8196f94646cabba31ef0470da829daffe75a5adc29058e05bb704a742f97e66b",
+    "status": "input_validation_failed"
+  },
+  "score": {
+    "holdout": {
+      "cases": [],
+      "observed_cases": 0,
+      "passed": null,
+      "planned_cases": 3
+    },
+    "status": "input_validation_failed",
+    "training": {
+      "cases": [],
+      "observed_cases": 0,
+      "passed": null,
+      "planned_cases": 5
+    }
+  }
+}

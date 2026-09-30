@@ -1,0 +1,50 @@
+{
+  "arms": {
+    "compact_multilingual_local_feedback": {
+      "go_compiled_and_executed_cells": 32,
+      "holdout": {
+        "observed_cases": 95,
+        "passed_cases": 95,
+        "planned_cases": 95
+      },
+      "planned_cells": 32,
+      "source_observed_cells": 32,
+      "training": {
+        "observed_cases": 137,
+        "passed_cases": 137,
+        "planned_cases": 137
+      },
+      "unknown_cells": 0
+    },
+    "compact_multilingual_single": {
+      "go_compiled_and_executed_cells": 32,
+      "holdout": {
+        "observed_cases": 95,
+        "passed_cases": 68,
+        "planned_cases": 95
+      },
+      "planned_cells": 32,
+      "source_observed_cells": 32,
+      "training": {
+        "observed_cases": 137,
+        "passed_cases": 91,
+        "planned_cases": 137
+      },
+      "unknown_cells": 0
+    }
+  },
+  "compiled_and_scored_cells": 64,
+  "created_utc": "2026-09-30T10:54:58.079153+00:00",
+  "design_sha256": "ab691ac00f73abc1cef9648da58c20a1816d7ab16cda7e59536054bea9a66b52",
+  "errors": [],
+  "mode": "live",
+  "planned_cells": 64,
+  "proposal_metrics_source": "captured receipt/first raw proposal separately; this report scores only selected emitted Go",
+  "schema": "gooo/ir-composition-tdd-independent-go-replay/v1",
+  "source_rows_observed": 64,
+  "source_run_id": "ir-composition-tdd-v8-20260930T104054Z-d868d3ee7f71",
+  "source_unit_completeness_source": "native Gooo receipt, copied per row; never aggregated into finite vector scores",
+  "status": "COMPLETE",
+  "training_holdout_separation": "training comes from the exact submitted search plan; holdout loaded after raw capture/audit and checked against independent vectors",
+  "unknown_cells": 0
+}

@@ -1,0 +1,90 @@
+{
+  "authorization_source": "root task message explicitly opened the actual capture gate after public remote main checkpoint and independent freeze PASS",
+  "authorized_at_utc": "2026-09-30T10:40:54.585818+00:00",
+  "compiler": {
+    "path": "/tmp/gooo-composition-tdd-f3e576ad-20260930",
+    "sha256": "ecbae47a877f57117e4f493ab85adc0279956c437a68e9fa374bee1b3772db1f",
+    "source_revision": "f3e576ad55796c0d42b2af8b86f874b49baa61d8"
+  },
+  "environment": {
+    "credentials_unset_by_runner": true,
+    "downloads_disabled": true,
+    "laya_venv": "/tmp/meta-ontology-go-laya-venv-20260930",
+    "loopback_only": true
+  },
+  "frozen_design": {
+    "path": "study-design-v8/study-design.json",
+    "preparation_revision": 6,
+    "schema": "gooo/ir-composition-tdd-study-design/v6",
+    "sha256": "ab691ac00f73abc1cef9648da58c20a1816d7ab16cda7e59536054bea9a66b52"
+  },
+  "independent_freeze_validation": {
+    "design_sha256": "ab691ac00f73abc1cef9648da58c20a1816d7ab16cda7e59536054bea9a66b52",
+    "root_report_sha256": "bf0d47207f496a5264054714cc5c4cfffede8ab6263e68934a5f0059f7a12768",
+    "status": "PASS",
+    "validator_sha256": "741292ac12ea8862ac81bde84315edb271d66bf1f84a7985077782476ed5220b"
+  },
+  "model": {
+    "model": "multilingual",
+    "offline_cache_only": true,
+    "provider": "local cached Laya",
+    "revision": "55cf4c4ebb4ebe31b2550e8bdf3bd21b99753851",
+    "threads": 4
+  },
+  "planned_capture": {
+    "arm_post_caps": {
+      "compact_multilingual_local_feedback": 64,
+      "compact_multilingual_single": 32
+    },
+    "cells": 64,
+    "existing_intentions": 32,
+    "provider_post_cap": 96,
+    "retry_policy": "none",
+    "warmup_calls": 0
+  },
+  "pre_capture_checks": {
+    "actual_model_calls_before_capture": 0,
+    "compiler_binary_present": true,
+    "laya_executable_present": true,
+    "laya_version": "0.3.21",
+    "pinned_model_tokenizer_present": true
+  },
+  "public_checkpoint": {
+    "commit": "d868d3ee7f7196eba2bf89b452d8f9b69849d9f0",
+    "remote": "main"
+  },
+  "run_id": "ir-composition-tdd-v8-20260930T104054Z-d868d3ee7f71",
+  "runtime_preexecution_expected_path": "results/ir-composition-tdd-v8-20260930T104054Z-d868d3ee7f71/preexecution.json",
+  "runtime_preexecution_sha256": "will be bound by separate post-capture authorization-binding receipt; this authorization record is immutable and predates the run",
+  "schema": "gooo/ir-composition-tdd-capture-authorization/v1",
+  "separate_parent_partial_run": {
+    "actual_provider_posts": 1,
+    "cells_completed": 1,
+    "cells_unstarted": 63,
+    "excluded_from_v8_metrics": true,
+    "run_id": "ir-composition-tdd-v7-20260930T101537Z-f1832bd67ec9"
+  },
+  "source_pins": {
+    "capture_proxy": {
+      "bytes": 110236,
+      "path": "/Users/alice/meta-go/research/metaprogramming/gooo-ci-context-codegen-experiments/scripts/run_pinned_context_study.py",
+      "sha256": "58b414b6dfa5070666514eae4bc044474c8ca19162a825fd2afc749023075dea"
+    },
+    "capture_runner": {
+      "bytes": 99531,
+      "path": "scripts/run_study_v8.py",
+      "sha256": "0aabee1c485c9b0333c43dc3f7ce79c137e2e5b3651ca77483b2d2923a97cfee"
+    },
+    "preparation_script": {
+      "bytes": 68732,
+      "path": "scripts/prepare_study.py",
+      "sha256": "f59e1132481bfcc81d84dfceb8e4e74601a31b265b252c18923014dac2df254b"
+    },
+    "selection_support": {
+      "bytes": 9195,
+      "path": "/Users/alice/meta-go/research/metaprogramming/gooo-ci-context-codegen-experiments/scripts/selection_support.py",
+      "sha256": "0c6ba54ded4c4cce5086945e74e25567aad23e492c7b3e45d05a7262e27771d6"
+    }
+  },
+  "status": "AUTHORIZED_BEFORE_LIVE_CAPTURE"
+}

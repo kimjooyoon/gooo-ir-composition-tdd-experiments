@@ -1,0 +1,32 @@
+{
+  "invocation": {
+    "arm": "compact_multilingual_single",
+    "error": "FileNotFoundError: [Errno 2] No such file or directory: '/Users/alice/meta-go/research/metaprogramming/gooo-ir-composition-tdd-experiments/study-design-v8/fixtures/cp19_range_without_origin.gooo'",
+    "intent_id": "cp19_range_without_origin",
+    "invocation_id": "49-cp19_range_without_origin-compact_multilingual_single",
+    "planned_holdout_cases": 3,
+    "planned_training_cases": 5,
+    "sequence": 49,
+    "source_invocation_record_sha256": "168a79115e6fda8b495807a64f402ddfb70a2525442809fcfb1d423987268ffa",
+    "source_stderr_bytes": 0,
+    "source_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "source_stdout_bytes": 19283,
+    "source_stdout_sha256": "cef4d57d3d76926bd84d8c4d16a76bedafd799cc91e53813623aa1a0a6b5eb51",
+    "status": "input_validation_failed"
+  },
+  "score": {
+    "holdout": {
+      "cases": [],
+      "observed_cases": 0,
+      "passed": null,
+      "planned_cases": 3
+    },
+    "status": "input_validation_failed",
+    "training": {
+      "cases": [],
+      "observed_cases": 0,
+      "passed": null,
+      "planned_cases": 5
+    }
+  }
+}

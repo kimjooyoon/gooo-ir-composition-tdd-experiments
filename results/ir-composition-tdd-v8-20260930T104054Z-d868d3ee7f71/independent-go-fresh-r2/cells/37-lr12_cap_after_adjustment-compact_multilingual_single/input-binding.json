@@ -1,0 +1,13 @@
+{
+  "activity": "C12",
+  "frozen_design_sha256": "ab691ac00f73abc1cef9648da58c20a1816d7ab16cda7e59536054bea9a66b52",
+  "frozen_fixture_sha256": "3067882d6a4bea607f6f52b665fe0d0137b02fa6b997ac13c81d767a713aef08",
+  "frozen_holdout_sha256": "b32397ba09fe84a94fb76bce34a6515cad0a356f18a3a73d1542fd5fea39ce11",
+  "frozen_plan_sha256": "5925a51ec859309f22b2b28a377e3929edc0e3e01db1c329da8785d1abcb4000",
+  "generated_source_sha256": "febbca901c784129b8c8860c380088a8b86fd4dab1a10a6e0e0ebeba47ad5059",
+  "generated_test_source_sha256": "e20105d076bb520ac09d3abb98dad6df486f2c2c84d5115d34970cca93aebb50",
+  "go_mod_sha256": "0e6f935fb61192d92d2c562aa4344e5e5ec54ad82d62b4d4cbd4a579168da2d3",
+  "invocation_id": "37-lr12_cap_after_adjustment-compact_multilingual_single",
+  "source_cli_invocation_record_sha256": "76131953c31cf3395e8ce06aefebc41a744fdac232692fdf554619212ddd8432",
+  "source_cli_stdout_sha256": "20f006da89b98da2492e052c3e116b9bfef8f32435ea55cd4f1e865c967c0280"
+}

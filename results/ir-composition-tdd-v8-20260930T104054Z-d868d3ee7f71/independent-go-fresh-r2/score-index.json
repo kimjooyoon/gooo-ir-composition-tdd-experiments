@@ -1,0 +1,4325 @@
+{
+  "planned_cells": 64,
+  "rows": [
+    {
+      "generated_source_sha256": "f2f043446ef1d8b8bfd44fd986007c5d492c7fcff4b4359ab805418da561e1b4",
+      "go_exit_code": 0,
+      "go_stderr_bytes": 0,
+      "go_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "go_stdout_bytes": 49,
+      "go_stdout_sha256": "d361f1dd77ce14f37c1caf6d8cbd3d50053cfbde76410bce68d3fdfaac2bde2e",
+      "holdout": {
+        "cases": [
+          {
+            "actual": 0,
+            "expected": 0,
+            "input": -5,
+            "split": "holdout"
+          },
+          {
+            "actual": 59,
+            "expected": 60,
+            "input": 50,
+            "split": "holdout"
+          },
+          {
+            "actual": 101,
+            "expected": 101,
+            "input": 111,
+            "split": "holdout"
+          }
+        ],
+        "observed_cases": 3,
+        "passed": 2,
+        "planned_cases": 3
+      },
+      "invocation_id": "01-ni06_surcharge_discount-compact_multilingual_single",
+      "status": "compiled_and_scored",
+      "training": {
+        "cases": [
+          {
+            "actual": 0,
+            "expected": 0,
+            "input": -1,
+            "split": "training"
+          },
+          {
+            "actual": 9,
+            "expected": 10,
+            "input": 0,
+            "split": "training"
+          },
+          {
+            "actual": 10,
+            "expected": 11,
+            "input": 1,
+            "split": "training"
+          },
+          {
+            "actual": 109,
+            "expected": 110,
+            "input": 100,
+            "split": "training"
+          },
+          {
+            "actual": 91,
+            "expected": 91,
+            "input": 101,
+            "split": "training"
+          }
+        ],
+        "observed_cases": 5,
+        "passed": 2,
+        "planned_cases": 5
+      }
+    },
+    {
+      "generated_source_sha256": "d7fb991ed311c894c58c264c3b697aa82f32d979e94360d79b444969ece91641",
+      "go_exit_code": 0,
+      "go_stderr_bytes": 0,
+      "go_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "go_stdout_bytes": 49,
+      "go_stdout_sha256": "9a9f78b062f3c0eed5631719d57ca453dd91e116f4a678ca152c52531af9c8ed",
+      "holdout": {
+        "cases": [
+          {
+            "actual": 0,
+            "expected": 0,
+            "input": -100,
+            "split": "holdout"
+          },
+          {
+            "actual": 0,
+            "expected": 0,
+            "input": 1,
+            "split": "holdout"
+          },
+          {
+            "actual": 0,
+            "expected": 0,
+            "input": 10,
+            "split": "holdout"
+          }
+        ],
+        "observed_cases": 3,
+        "passed": 3,
+        "planned_cases": 3
+      },
+      "invocation_id": "02-bl24_selected_nonnegative_codes-compact_multilingual_local_feedback",
+      "status": "compiled_and_scored",
+      "training": {
+        "cases": [
+          {
+            "actual": 0,
+            "expected": 0,
+            "input": -1,
+            "split": "training"
+          },
+          {
+            "actual": 0,
+            "expected": 0,
+            "input": 0,
+            "split": "training"
+          },
+          {
+            "actual": 6,
+            "expected": 6,
+            "input": 2,
+            "split": "training"
+          },
+          {
+            "actual": 6,
+            "expected": 6,
+            "input": 4,
+            "split": "training"
+          },
+          {
+            "actual": 0,
+            "expected": 0,
+            "input": 5,
+            "split": "training"
+          }
+        ],
+        "observed_cases": 5,
+        "passed": 5,
+        "planned_cases": 5
+      }
+    },
+    {
+      "generated_source_sha256": "4eb5d99803ff82185012743f64a6a9e645bb05c6f12a8c7dadf0fad9044dfb03",
+      "go_exit_code": 0,
+      "go_stderr_bytes": 0,
+      "go_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "go_stdout_bytes": 49,
+      "go_stdout_sha256": "9a9f78b062f3c0eed5631719d57ca453dd91e116f4a678ca152c52531af9c8ed",
+      "holdout": {
+        "cases": [
+          {
+            "actual": -1,
+            "expected": -1,
+            "input": -1,
+            "split": "holdout"
+          },
+          {
+            "actual": 0,
+            "expected": 0,
+            "input": 70,
+            "split": "holdout"
+          },
+          {
+            "actual": 20,
+            "expected": 20,
+            "input": 100,
+            "split": "holdout"
+          }
+        ],
+        "observed_cases": 3,
+        "passed": 3,
+        "planned_cases": 3
+      },
+      "invocation_id": "03-ni08_upper_grade_excess-compact_multilingual_local_feedback",
+      "status": "compiled_and_scored",
+      "training": {
+        "cases": [
+          {
+            "actual": -1,
+            "expected": -1,
+            "input": 59,
+            "split": "training"
+          },
+          {
+            "actual": 0,
+            "expected": 0,
+            "input": 60,
+            "split": "training"
+          },
+          {
+            "actual": 0,
+            "expected": 0,
+            "input": 79,
+            "split": "training"
+          },
+          {
+            "actual": 0,
+            "expected": 0,
+            "input": 80,
+            "split": "training"
+          },
+          {
+            "actual": 1,
+            "expected": 1,
+            "input": 81,
+            "split": "training"
+          }
+        ],
+        "observed_cases": 5,
+        "passed": 5,
+        "planned_cases": 5
+      }
+    },
+    {
+      "generated_source_sha256": "78fbaac2ee1cd4b7de77b6a4c8931ca38c07d9b6739f9463897ea19cb790f792",
+      "go_exit_code": 0,
+      "go_stderr_bytes": 0,
+      "go_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "go_stdout_bytes": 49,
+      "go_stdout_sha256": "bc14d0508da299f4de9748f0aeea88d73c74fbdb9c5d084fad92c2ee6a4e3b86",
+      "holdout": {
+        "cases": [
+          {
+            "actual": 1,
+            "expected": 0,
+            "input": -10,
+            "split": "holdout"
+          },
+          {
+            "actual": 6,
+            "expected": 5,
+            "input": 4,
+            "split": "holdout"
+          },
+          {
+            "actual": 22,
+            "expected": 21,
+            "input": 20,
+            "split": "holdout"
+          }
+        ],
+        "observed_cases": 3,
+        "passed": 0,
+        "planned_cases": 3
+      },
+      "invocation_id": "04-lr10_floor_then_increment-compact_multilingual_single",
+      "status": "compiled_and_scored",
+      "training": {
+        "cases": [
+          {
+            "actual": 1,
+            "expected": 0,
+            "input": -1,
+            "split": "training"
+          },
+          {
+            "actual": 2,
+            "expected": 1,
+            "input": 0,
+            "split": "training"
+          },
+          {
+            "actual": 3,
+            "expected": 2,
+            "input": 1,
+            "split": "training"
+          },
+          {
+            "actual": 7,
+            "expected": 6,
+            "input": 5,
+            "split": "training"
+          }
+        ],
+        "observed_cases": 4,
+        "passed": 0,
+        "planned_cases": 4
+      }
+    },
+    {
+      "generated_source_sha256": "1569660855761ce5d1f9a47abd67c6a941809093069b88c863c7afee49a15174",
+      "go_exit_code": 0,
+      "go_stderr_bytes": 0,
+      "go_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "go_stdout_bytes": 49,
+      "go_stdout_sha256": "0cb8a41ac22e2daa035946df533a64ce5dbbb9575da54e0c65984b74bc9ac1b4",
+      "holdout": {
+        "cases": [
+          {
+            "actual": 82,
+            "expected": 82,
+            "input": -10,
+            "split": "holdout"
+          },
+          {
+            "actual": 26,
+            "expected": 26,
+            "input": 4,
+            "split": "holdout"
+          },
+          {
+            "actual": 170,
+            "expected": 170,
+            "input": 12,
+            "split": "holdout"
+          }
+        ],
+        "observed_cases": 3,
+        "passed": 3,
+        "planned_cases": 3
+      },
+      "invocation_id": "05-pr16_composed_neighbor_product-compact_multilingual_single",
+      "status": "compiled_and_scored",
+      "training": {
+        "cases": [
+          {
+            "actual": 5,
+            "expected": 5,
+            "input": -3,
+            "split": "training"
+          },
+          {
+            "actual": 2,
+            "expected": 2,
+            "input": 0,
+            "split": "training"
+          },
+          {
+            "actual": 10,
+            "expected": 10,
+            "input": 2,
+            "split": "training"
+          },
+          {
+            "actual": 37,
+            "expected": 37,
+            "input": 5,
+            "split": "training"
+          }
+        ],
+        "observed_cases": 4,
+        "passed": 4,
+        "planned_cases": 4
+      }
+    },
+    {
+      "generated_source_sha256": "47e91bc1feef855df4fd2d4c92525cc30e1df5f727a6202cedac5378930e6f3b",
+      "go_exit_code": 0,
+      "go_stderr_bytes": 0,
+      "go_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "go_stdout_bytes": 49,
+      "go_stdout_sha256": "038ad9d5b39a822904aa8a61efde24fbe8ec65a5fc94509902615a2fb4deff2c",
+      "holdout": {
+        "cases": [
+          {
+            "actual": 0,
+            "expected": 0,
+            "input": -10,
+            "split": "holdout"
+          },
+          {
+            "actual": 7,
+            "expected": 7,
+            "input": 3,
+            "split": "holdout"
+          },
+          {
+            "actual": 21,
+            "expected": 21,
+            "input": 10,
+            "split": "holdout"
+          }
+        ],
+        "observed_cases": 3,
+        "passed": 3,
+        "planned_cases": 3
+      },
+      "invocation_id": "06-lr11_nonnegative_doubled_score-compact_multilingual_local_feedback",
+      "status": "compiled_and_scored",
+      "training": {
+        "cases": [
+          {
+            "actual": 0,
+            "expected": 0,
+            "input": -2,
+            "split": "training"
+          },
+          {
+            "actual": 0,
+            "expected": 0,
+            "input": -1,
+            "split": "training"
+          },
+          {
+            "actual": 1,
+            "expected": 1,
+            "input": 0,
+            "split": "training"
+          },
+          {
+            "actual": 5,
+            "expected": 5,
+            "input": 2,
+            "split": "training"
+          }
+        ],
+        "observed_cases": 4,
+        "passed": 4,
+        "planned_cases": 4
+      }
+    },
+    {
+      "generated_source_sha256": "5af7879c6f42ca6ee2aa0fcaab1883416604b66afad4206b3e676c299509e8b5",
+      "go_exit_code": 0,
+      "go_stderr_bytes": 0,
+      "go_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "go_stdout_bytes": 49,
+      "go_stdout_sha256": "37dd40c027fae875b7d8f2b2333cab8886c3ccf2c1860b06a2653e28ef119962",
+      "holdout": {
+        "cases": [
+          {
+            "actual": 0,
+            "expected": 0,
+            "input": -100,
+            "split": "holdout"
+          },
+          {
+            "actual": 9,
+            "expected": 9,
+            "input": -2,
+            "split": "holdout"
+          },
+          {
+            "actual": 9,
+            "expected": 9,
+            "input": 1,
+            "split": "holdout"
+          },
+          {
+            "actual": 0,
+            "expected": 0,
+            "input": 100,
+            "split": "holdout"
+          }
+        ],
+        "observed_cases": 4,
+        "passed": 4,
+        "planned_cases": 4
+      },
+      "invocation_id": "07-bl23_nonzero_bounded_flag-compact_multilingual_single",
+      "status": "compiled_and_scored",
+      "training": {
+        "cases": [
+          {
+            "actual": 0,
+            "expected": 0,
+            "input": -5,
+            "split": "training"
+          },
+          {
+            "actual": 9,
+            "expected": 9,
+            "input": -4,
+            "split": "training"
+          },
+          {
+            "actual": 9,
+            "expected": 9,
+            "input": -1,
+            "split": "training"
+          },
+          {
+            "actual": 0,
+            "expected": 0,
+            "input": 0,
+            "split": "training"
+          },
+          {
+            "actual": 9,
+            "expected": 9,
+            "input": 4,
+            "split": "training"
+          },
+          {
+            "actual": 0,
+            "expected": 0,
+            "input": 5,
+            "split": "training"
+          }
+        ],
+        "observed_cases": 6,
+        "passed": 6,
+        "planned_cases": 6
+      }
+    },
+    {
+      "generated_source_sha256": "b1c7c98ca09f7fcbd73708cd21b1259863702f72c07e7a96b96fe3a41c9a4488",
+      "go_exit_code": 0,
+      "go_stderr_bytes": 0,
+      "go_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "go_stdout_bytes": 49,
+      "go_stdout_sha256": "ab9a69f2322ab71550e406cda849bd728ca565e12be25b40ef1b89990835fddf",
+      "holdout": {
+        "cases": [
+          {
+            "actual": -9223372036854775808,
+            "expected": -9223372036854775808,
+            "input": -9223372036854775808,
+            "split": "holdout"
+          },
+          {
+            "actual": -9223372036854775804,
+            "expected": -9223372036854775806,
+            "input": -9223372036854775805,
+            "split": "holdout"
+          },
+          {
+            "actual": 11,
+            "expected": 9,
+            "input": 10,
+            "split": "holdout"
+          }
+        ],
+        "observed_cases": 3,
+        "passed": 1,
+        "planned_cases": 3
+      },
+      "invocation_id": "08-ob30_saturating_decrement-compact_multilingual_single",
+      "status": "compiled_and_scored",
+      "training": {
+        "cases": [
+          {
+            "actual": -9223372036854775805,
+            "expected": -9223372036854775807,
+            "input": -9223372036854775806,
+            "split": "training"
+          },
+          {
+            "actual": -9223372036854775806,
+            "expected": -9223372036854775808,
+            "input": -9223372036854775807,
+            "split": "training"
+          },
+          {
+            "actual": 1,
+            "expected": -1,
+            "input": 0,
+            "split": "training"
+          },
+          {
+            "actual": 2,
+            "expected": 0,
+            "input": 1,
+            "split": "training"
+          }
+        ],
+        "observed_cases": 4,
+        "passed": 0,
+        "planned_cases": 4
+      }
+    },
+    {
+      "generated_source_sha256": "e5c64f516fd70e8c45c22ff524ed8e36a0f1a944c94011e20a42d482351d1907",
+      "go_exit_code": 0,
+      "go_stderr_bytes": 0,
+      "go_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "go_stdout_bytes": 49,
+      "go_stdout_sha256": "286ed20fc5f0126af91d034ee44eff5b5c924a5f2222df173d8de118d845189b",
+      "holdout": {
+        "cases": [
+          {
+            "actual": -1,
+            "expected": -1,
+            "input": -5,
+            "split": "holdout"
+          },
+          {
+            "actual": 10,
+            "expected": 10,
+            "input": 5,
+            "split": "holdout"
+          },
+          {
+            "actual": 20,
+            "expected": 20,
+            "input": 11,
+            "split": "holdout"
+          }
+        ],
+        "observed_cases": 3,
+        "passed": 3,
+        "planned_cases": 3
+      },
+      "invocation_id": "09-ni05_negative_then_double-compact_multilingual_local_feedback",
+      "status": "compiled_and_scored",
+      "training": {
+        "cases": [
+          {
+            "actual": -1,
+            "expected": -1,
+            "input": -1,
+            "split": "training"
+          },
+          {
+            "actual": 0,
+            "expected": 0,
+            "input": 0,
+            "split": "training"
+          },
+          {
+            "actual": 2,
+            "expected": 2,
+            "input": 1,
+            "split": "training"
+          },
+          {
+            "actual": 18,
+            "expected": 18,
+            "input": 9,
+            "split": "training"
+          },
+          {
+            "actual": 20,
+            "expected": 20,
+            "input": 10,
+            "split": "training"
+          }
+        ],
+        "observed_cases": 5,
+        "passed": 5,
+        "planned_cases": 5
+      }
+    },
+    {
+      "generated_source_sha256": "bce47841668c9ccea380a4653381152b51adeea42d0990e297a3685fb18835cf",
+      "go_exit_code": 0,
+      "go_stderr_bytes": 0,
+      "go_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "go_stdout_bytes": 49,
+      "go_stdout_sha256": "96af3bc347f392ac2431ef8a10f7b0e2c0997068f05dfd4ff2eadf6411547591",
+      "holdout": {
+        "cases": [
+          {
+            "actual": 0,
+            "expected": 1,
+            "input": -2,
+            "split": "holdout"
+          },
+          {
+            "actual": 0,
+            "expected": 0,
+            "input": 2,
+            "split": "holdout"
+          }
+        ],
+        "observed_cases": 2,
+        "passed": 1,
+        "planned_cases": 2
+      },
+      "invocation_id": "10-tx27_lexical_cutoff-compact_multilingual_single",
+      "status": "compiled_and_scored",
+      "training": {
+        "cases": [
+          {
+            "actual": 0,
+            "expected": 1,
+            "input": -1,
+            "split": "training"
+          },
+          {
+            "actual": 0,
+            "expected": 0,
+            "input": 0,
+            "split": "training"
+          },
+          {
+            "actual": 0,
+            "expected": 0,
+            "input": 1,
+            "split": "training"
+          }
+        ],
+        "observed_cases": 3,
+        "passed": 2,
+        "planned_cases": 3
+      }
+    },
+    {
+      "generated_source_sha256": "66d9587af424d37a03090c9fab4f5824cb797cd88950367eea62689851d3b2f8",
+      "go_exit_code": 0,
+      "go_stderr_bytes": 0,
+      "go_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "go_stdout_bytes": 49,
+      "go_stdout_sha256": "37dd40c027fae875b7d8f2b2333cab8886c3ccf2c1860b06a2653e28ef119962",
+      "holdout": {
+        "cases": [
+          {
+            "actual": -2,
+            "expected": -2,
+            "input": -10,
+            "split": "holdout"
+          },
+          {
+            "actual": 2,
+            "expected": 2,
+            "input": 100,
+            "split": "holdout"
+          }
+        ],
+        "observed_cases": 2,
+        "passed": 2,
+        "planned_cases": 2
+      },
+      "invocation_id": "11-tx28_reassigned_text_state-compact_multilingual_local_feedback",
+      "status": "compiled_and_scored",
+      "training": {
+        "cases": [
+          {
+            "actual": -2,
+            "expected": -2,
+            "input": -1,
+            "split": "training"
+          },
+          {
+            "actual": -2,
+            "expected": -2,
+            "input": 0,
+            "split": "training"
+          },
+          {
+            "actual": 2,
+            "expected": 2,
+            "input": 1,
+            "split": "training"
+          }
+        ],
+        "observed_cases": 3,
+        "passed": 3,
+        "planned_cases": 3
+      }
+    },
+    {
+      "generated_source_sha256": "fd0a2644f5acb00fbfa0925a9e0e2eff9b0117901459d652c5d34f813bef4797",
+      "go_exit_code": 0,
+      "go_stderr_bytes": 0,
+      "go_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "go_stdout_bytes": 49,
+      "go_stdout_sha256": "bc14d0508da299f4de9748f0aeea88d73c74fbdb9c5d084fad92c2ee6a4e3b86",
+      "holdout": {
+        "cases": [
+          {
+            "actual": -7,
+            "expected": -7,
+            "input": -9,
+            "split": "holdout"
+          },
+          {
+            "actual": 3,
+            "expected": 3,
+            "input": 2,
+            "split": "holdout"
+          },
+          {
+            "actual": 3,
+            "expected": 3,
+            "input": 50,
+            "split": "holdout"
+          }
+        ],
+        "observed_cases": 3,
+        "passed": 3,
+        "planned_cases": 3
+      },
+      "invocation_id": "12-ni07_zero_special_negative_offset-compact_multilingual_local_feedback",
+      "status": "compiled_and_scored",
+      "training": {
+        "cases": [
+          {
+            "actual": 0,
+            "expected": 0,
+            "input": -2,
+            "split": "training"
+          },
+          {
+            "actual": 1,
+            "expected": 1,
+            "input": -1,
+            "split": "training"
+          },
+          {
+            "actual": 5,
+            "expected": 5,
+            "input": 0,
+            "split": "training"
+          },
+          {
+            "actual": 3,
+            "expected": 3,
+            "input": 1,
+            "split": "training"
+          }
+        ],
+        "observed_cases": 4,
+        "passed": 4,
+        "planned_cases": 4
+      }
+    },
+    {
+      "generated_source_sha256": "8ebe783dccbabbcb53770a12c5aaf0fb71fa5476310a4a500c8bf46baba6e006",
+      "go_exit_code": 0,
+      "go_stderr_bytes": 0,
+      "go_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "go_stdout_bytes": 49,
+      "go_stdout_sha256": "c0154333013fd6ce40b33980fe5e53e4bef7486cf2f8d404dda059d559487309",
+      "holdout": {
+        "cases": [
+          {
+            "actual": 1,
+            "expected": 1,
+            "input": -9,
+            "split": "holdout"
+          },
+          {
+            "actual": 0,
+            "expected": 0,
+            "input": 5,
+            "split": "holdout"
+          },
+          {
+            "actual": 0,
+            "expected": 0,
+            "input": 10,
+            "split": "holdout"
+          }
+        ],
+        "observed_cases": 3,
+        "passed": 3,
+        "planned_cases": 3
+      },
+      "invocation_id": "13-cp17_nonpositive_inclusive-compact_multilingual_local_feedback",
+      "status": "compiled_and_scored",
+      "training": {
+        "cases": [
+          {
+            "actual": 1,
+            "expected": 1,
+            "input": -1,
+            "split": "training"
+          },
+          {
+            "actual": 1,
+            "expected": 1,
+            "input": 0,
+            "split": "training"
+          },
+          {
+            "actual": 0,
+            "expected": 0,
+            "input": 1,
+            "split": "training"
+          }
+        ],
+        "observed_cases": 3,
+        "passed": 3,
+        "planned_cases": 3
+      }
+    },
+    {
+      "generated_source_sha256": "34630e7fdcb5ad43bb31988f0fb02e3ce7bbcd0db3b8589a927bee03dcc2421e",
+      "go_exit_code": 0,
+      "go_stderr_bytes": 0,
+      "go_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "go_stdout_bytes": 49,
+      "go_stdout_sha256": "c0154333013fd6ce40b33980fe5e53e4bef7486cf2f8d404dda059d559487309",
+      "holdout": {
+        "cases": [
+          {
+            "actual": -18,
+            "expected": -18,
+            "input": -20,
+            "split": "holdout"
+          },
+          {
+            "actual": 9,
+            "expected": 9,
+            "input": 10,
+            "split": "holdout"
+          },
+          {
+            "actual": 9,
+            "expected": 9,
+            "input": 100,
+            "split": "holdout"
+          }
+        ],
+        "observed_cases": 3,
+        "passed": 3,
+        "planned_cases": 3
+      },
+      "invocation_id": "14-lr12_cap_after_adjustment-compact_multilingual_local_feedback",
+      "status": "compiled_and_scored",
+      "training": {
+        "cases": [
+          {
+            "actual": -3,
+            "expected": -3,
+            "input": -5,
+            "split": "training"
+          },
+          {
+            "actual": 2,
+            "expected": 2,
+            "input": 0,
+            "split": "training"
+          },
+          {
+            "actual": 9,
+            "expected": 9,
+            "input": 7,
+            "split": "training"
+          },
+          {
+            "actual": 9,
+            "expected": 9,
+            "input": 8,
+            "split": "training"
+          }
+        ],
+        "observed_cases": 4,
+        "passed": 4,
+        "planned_cases": 4
+      }
+    },
+    {
+      "generated_source_sha256": "2204da8e0adb92149abc64cba2cf80f9de1fa10ef4f05d458b2e1caa506e1664",
+      "go_exit_code": 0,
+      "go_stderr_bytes": 0,
+      "go_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "go_stdout_bytes": 49,
+      "go_stdout_sha256": "2d4bcfeb18ff4eca598e846e1b7473ebf8f1a501b5b22bf456d91625b72ae3d1",
+      "holdout": {
+        "cases": [
+          {
+            "actual": -11,
+            "expected": -7,
+            "input": -9,
+            "split": "holdout"
+          },
+          {
+            "actual": 3,
+            "expected": 3,
+            "input": 2,
+            "split": "holdout"
+          },
+          {
+            "actual": 3,
+            "expected": 3,
+            "input": 50,
+            "split": "holdout"
+          }
+        ],
+        "observed_cases": 3,
+        "passed": 2,
+        "planned_cases": 3
+      },
+      "invocation_id": "15-ni07_zero_special_negative_offset-compact_multilingual_single",
+      "status": "compiled_and_scored",
+      "training": {
+        "cases": [
+          {
+            "actual": -4,
+            "expected": 0,
+            "input": -2,
+            "split": "training"
+          },
+          {
+            "actual": -3,
+            "expected": 1,
+            "input": -1,
+            "split": "training"
+          },
+          {
+            "actual": 5,
+            "expected": 5,
+            "input": 0,
+            "split": "training"
+          },
+          {
+            "actual": 3,
+            "expected": 3,
+            "input": 1,
+            "split": "training"
+          }
+        ],
+        "observed_cases": 4,
+        "passed": 2,
+        "planned_cases": 4
+      }
+    },
+    {
+      "generated_source_sha256": "f898f9ccdf203f451f769b00718781448c632bf7f7d09fd867e9f5d942879f4e",
+      "go_exit_code": 0,
+      "go_stderr_bytes": 0,
+      "go_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "go_stdout_bytes": 49,
+      "go_stdout_sha256": "9a9f78b062f3c0eed5631719d57ca453dd91e116f4a678ca152c52531af9c8ed",
+      "holdout": {
+        "cases": [
+          {
+            "actual": -4,
+            "expected": -4,
+            "input": -100,
+            "split": "holdout"
+          },
+          {
+            "actual": 4,
+            "expected": 4,
+            "input": 0,
+            "split": "holdout"
+          },
+          {
+            "actual": -4,
+            "expected": -4,
+            "input": 100,
+            "split": "holdout"
+          }
+        ],
+        "observed_cases": 3,
+        "passed": 3,
+        "planned_cases": 3
+      },
+      "invocation_id": "16-cp20_strict_symmetric_window-compact_multilingual_single",
+      "status": "compiled_and_scored",
+      "training": {
+        "cases": [
+          {
+            "actual": -4,
+            "expected": -4,
+            "input": -6,
+            "split": "training"
+          },
+          {
+            "actual": -4,
+            "expected": -4,
+            "input": -5,
+            "split": "training"
+          },
+          {
+            "actual": 4,
+            "expected": 4,
+            "input": -4,
+            "split": "training"
+          },
+          {
+            "actual": 4,
+            "expected": 4,
+            "input": 4,
+            "split": "training"
+          },
+          {
+            "actual": 4,
+            "expected": -4,
+            "input": 5,
+            "split": "training"
+          },
+          {
+            "actual": -4,
+            "expected": -4,
+            "input": 6,
+            "split": "training"
+          }
+        ],
+        "observed_cases": 6,
+        "passed": 5,
+        "planned_cases": 6
+      }
+    },
+    {
+      "generated_source_sha256": "953f699044545fae9394bb71f471d3cc60b31df0c0f47899b63fed9e2f233875",
+      "go_exit_code": 0,
+      "go_stderr_bytes": 0,
+      "go_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "go_stdout_bytes": 49,
+      "go_stdout_sha256": "cd07f358a2d2a49ef92bd37410c392a1a1daf9bfb2c4b28cfbddf7bd4755e453",
+      "holdout": {
+        "cases": [
+          {
+            "actual": 9223372036854775807,
+            "expected": 9223372036854775807,
+            "input": 9223372036854775807,
+            "split": "holdout"
+          },
+          {
+            "actual": 9223372036854775805,
+            "expected": 9223372036854775805,
+            "input": 9223372036854775804,
+            "split": "holdout"
+          },
+          {
+            "actual": 0,
+            "expected": 0,
+            "input": -1,
+            "split": "holdout"
+          }
+        ],
+        "observed_cases": 3,
+        "passed": 3,
+        "planned_cases": 3
+      },
+      "invocation_id": "17-ob29_saturating_increment-compact_multilingual_single",
+      "status": "compiled_and_scored",
+      "training": {
+        "cases": [
+          {
+            "actual": 1,
+            "expected": 1,
+            "input": 0,
+            "split": "training"
+          },
+          {
+            "actual": 2,
+            "expected": 2,
+            "input": 1,
+            "split": "training"
+          },
+          {
+            "actual": 9223372036854775806,
+            "expected": 9223372036854775806,
+            "input": 9223372036854775805,
+            "split": "training"
+          },
+          {
+            "actual": 9223372036854775807,
+            "expected": 9223372036854775807,
+            "input": 9223372036854775806,
+            "split": "training"
+          }
+        ],
+        "observed_cases": 4,
+        "passed": 4,
+        "planned_cases": 4
+      }
+    },
+    {
+      "generated_source_sha256": "70d56cdbe1bb705112cb96392205afb67e8e4c6cf5e9e0460fa7b72ade733d3b",
+      "go_exit_code": 0,
+      "go_stderr_bytes": 0,
+      "go_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "go_stdout_bytes": 49,
+      "go_stdout_sha256": "d94664287bd0adb3f37469cb59b499c6f1547dd091705e49ad14d930b9cb2cf0",
+      "holdout": {
+        "cases": [
+          {
+            "actual": -4,
+            "expected": -4,
+            "input": -100,
+            "split": "holdout"
+          },
+          {
+            "actual": 4,
+            "expected": 4,
+            "input": 0,
+            "split": "holdout"
+          },
+          {
+            "actual": -4,
+            "expected": -4,
+            "input": 100,
+            "split": "holdout"
+          }
+        ],
+        "observed_cases": 3,
+        "passed": 3,
+        "planned_cases": 3
+      },
+      "invocation_id": "18-cp20_strict_symmetric_window-compact_multilingual_local_feedback",
+      "status": "compiled_and_scored",
+      "training": {
+        "cases": [
+          {
+            "actual": -4,
+            "expected": -4,
+            "input": -6,
+            "split": "training"
+          },
+          {
+            "actual": -4,
+            "expected": -4,
+            "input": -5,
+            "split": "training"
+          },
+          {
+            "actual": 4,
+            "expected": 4,
+            "input": -4,
+            "split": "training"
+          },
+          {
+            "actual": 4,
+            "expected": 4,
+            "input": 4,
+            "split": "training"
+          },
+          {
+            "actual": -4,
+            "expected": -4,
+            "input": 5,
+            "split": "training"
+          },
+          {
+            "actual": -4,
+            "expected": -4,
+            "input": 6,
+            "split": "training"
+          }
+        ],
+        "observed_cases": 6,
+        "passed": 6,
+        "planned_cases": 6
+      }
+    },
+    {
+      "generated_source_sha256": "0be5cf715383239b5f6b19a63f24e9dcbfdda315a144c0487429b1f2388fc840",
+      "go_exit_code": 0,
+      "go_stderr_bytes": 0,
+      "go_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "go_stdout_bytes": 49,
+      "go_stdout_sha256": "bc14d0508da299f4de9748f0aeea88d73c74fbdb9c5d084fad92c2ee6a4e3b86",
+      "holdout": {
+        "cases": [
+          {
+            "actual": 1,
+            "expected": -1,
+            "input": -20,
+            "split": "holdout"
+          },
+          {
+            "actual": 1,
+            "expected": 1,
+            "input": 20,
+            "split": "holdout"
+          }
+        ],
+        "observed_cases": 2,
+        "passed": 1,
+        "planned_cases": 2
+      },
+      "invocation_id": "19-tx25_sign_label-compact_multilingual_single",
+      "status": "compiled_and_scored",
+      "training": {
+        "cases": [
+          {
+            "actual": 1,
+            "expected": -1,
+            "input": -1,
+            "split": "training"
+          },
+          {
+            "actual": 1,
+            "expected": 1,
+            "input": 0,
+            "split": "training"
+          },
+          {
+            "actual": 1,
+            "expected": 1,
+            "input": 1,
+            "split": "training"
+          }
+        ],
+        "observed_cases": 3,
+        "passed": 2,
+        "planned_cases": 3
+      }
+    },
+    {
+      "generated_source_sha256": "953f699044545fae9394bb71f471d3cc60b31df0c0f47899b63fed9e2f233875",
+      "go_exit_code": 0,
+      "go_stderr_bytes": 0,
+      "go_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "go_stdout_bytes": 49,
+      "go_stdout_sha256": "c0154333013fd6ce40b33980fe5e53e4bef7486cf2f8d404dda059d559487309",
+      "holdout": {
+        "cases": [
+          {
+            "actual": 9223372036854775807,
+            "expected": 9223372036854775807,
+            "input": 9223372036854775807,
+            "split": "holdout"
+          },
+          {
+            "actual": 9223372036854775805,
+            "expected": 9223372036854775805,
+            "input": 9223372036854775804,
+            "split": "holdout"
+          },
+          {
+            "actual": 0,
+            "expected": 0,
+            "input": -1,
+            "split": "holdout"
+          }
+        ],
+        "observed_cases": 3,
+        "passed": 3,
+        "planned_cases": 3
+      },
+      "invocation_id": "20-ob29_saturating_increment-compact_multilingual_local_feedback",
+      "status": "compiled_and_scored",
+      "training": {
+        "cases": [
+          {
+            "actual": 1,
+            "expected": 1,
+            "input": 0,
+            "split": "training"
+          },
+          {
+            "actual": 2,
+            "expected": 2,
+            "input": 1,
+            "split": "training"
+          },
+          {
+            "actual": 9223372036854775806,
+            "expected": 9223372036854775806,
+            "input": 9223372036854775805,
+            "split": "training"
+          },
+          {
+            "actual": 9223372036854775807,
+            "expected": 9223372036854775807,
+            "input": 9223372036854775806,
+            "split": "training"
+          }
+        ],
+        "observed_cases": 4,
+        "passed": 4,
+        "planned_cases": 4
+      }
+    },
+    {
+      "generated_source_sha256": "af3e4a7ef1a16309eba92de23ca853eddcfb47f6ae3ceac8a7cba38bfc951f63",
+      "go_exit_code": 0,
+      "go_stderr_bytes": 0,
+      "go_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "go_stdout_bytes": 49,
+      "go_stdout_sha256": "96af3bc347f392ac2431ef8a10f7b0e2c0997068f05dfd4ff2eadf6411547591",
+      "holdout": {
+        "cases": [
+          {
+            "actual": 0,
+            "expected": 9,
+            "input": -100,
+            "split": "holdout"
+          },
+          {
+            "actual": 0,
+            "expected": 0,
+            "input": 0,
+            "split": "holdout"
+          },
+          {
+            "actual": 0,
+            "expected": 9,
+            "input": 100,
+            "split": "holdout"
+          }
+        ],
+        "observed_cases": 3,
+        "passed": 1,
+        "planned_cases": 3
+      },
+      "invocation_id": "21-cc04_outer_cutoffs-compact_multilingual_single",
+      "status": "compiled_and_scored",
+      "training": {
+        "cases": [
+          {
+            "actual": 0,
+            "expected": 9,
+            "input": -7,
+            "split": "training"
+          },
+          {
+            "actual": 0,
+            "expected": 9,
+            "input": -6,
+            "split": "training"
+          },
+          {
+            "actual": 0,
+            "expected": 0,
+            "input": -5,
+            "split": "training"
+          },
+          {
+            "actual": 0,
+            "expected": 0,
+            "input": 7,
+            "split": "training"
+          },
+          {
+            "actual": 0,
+            "expected": 9,
+            "input": 8,
+            "split": "training"
+          },
+          {
+            "actual": 0,
+            "expected": 9,
+            "input": 9,
+            "split": "training"
+          }
+        ],
+        "observed_cases": 6,
+        "passed": 2,
+        "planned_cases": 6
+      }
+    },
+    {
+      "generated_source_sha256": "28f68fa00288a8e8b8525b1404e49a2584b6446db47a5dabcc067e45b9adb1da",
+      "go_exit_code": 0,
+      "go_stderr_bytes": 0,
+      "go_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "go_stdout_bytes": 49,
+      "go_stdout_sha256": "bc14d0508da299f4de9748f0aeea88d73c74fbdb9c5d084fad92c2ee6a4e3b86",
+      "holdout": {
+        "cases": [
+          {
+            "actual": -1,
+            "expected": -1,
+            "input": -20,
+            "split": "holdout"
+          },
+          {
+            "actual": 1,
+            "expected": 1,
+            "input": 20,
+            "split": "holdout"
+          }
+        ],
+        "observed_cases": 2,
+        "passed": 2,
+        "planned_cases": 2
+      },
+      "invocation_id": "22-tx25_sign_label-compact_multilingual_local_feedback",
+      "status": "compiled_and_scored",
+      "training": {
+        "cases": [
+          {
+            "actual": -1,
+            "expected": -1,
+            "input": -1,
+            "split": "training"
+          },
+          {
+            "actual": 1,
+            "expected": 1,
+            "input": 0,
+            "split": "training"
+          },
+          {
+            "actual": 1,
+            "expected": 1,
+            "input": 1,
+            "split": "training"
+          }
+        ],
+        "observed_cases": 3,
+        "passed": 3,
+        "planned_cases": 3
+      }
+    },
+    {
+      "generated_source_sha256": "d643d01eea690160d8f08b16932d38f274d600f8a0eb461f688fa5b8a14c2977",
+      "go_exit_code": 0,
+      "go_stderr_bytes": 0,
+      "go_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "go_stdout_bytes": 49,
+      "go_stdout_sha256": "96af3bc347f392ac2431ef8a10f7b0e2c0997068f05dfd4ff2eadf6411547591",
+      "holdout": {
+        "cases": [
+          {
+            "actual": 1,
+            "expected": 1,
+            "input": -2,
+            "split": "holdout"
+          },
+          {
+            "actual": 0,
+            "expected": 0,
+            "input": 2,
+            "split": "holdout"
+          }
+        ],
+        "observed_cases": 2,
+        "passed": 2,
+        "planned_cases": 2
+      },
+      "invocation_id": "23-tx27_lexical_cutoff-compact_multilingual_local_feedback",
+      "status": "compiled_and_scored",
+      "training": {
+        "cases": [
+          {
+            "actual": 1,
+            "expected": 1,
+            "input": -1,
+            "split": "training"
+          },
+          {
+            "actual": 0,
+            "expected": 0,
+            "input": 0,
+            "split": "training"
+          },
+          {
+            "actual": 0,
+            "expected": 0,
+            "input": 1,
+            "split": "training"
+          }
+        ],
+        "observed_cases": 3,
+        "passed": 3,
+        "planned_cases": 3
+      }
+    },
+    {
+      "generated_source_sha256": "f4b32991c1bf884a5b53fb3a1af0c7a8d2bca9f63648a61315e07e569cdc857f",
+      "go_exit_code": 0,
+      "go_stderr_bytes": 0,
+      "go_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "go_stdout_bytes": 49,
+      "go_stdout_sha256": "9a9f78b062f3c0eed5631719d57ca453dd91e116f4a678ca152c52531af9c8ed",
+      "holdout": {
+        "cases": [
+          {
+            "actual": 0,
+            "expected": 0,
+            "input": -20,
+            "split": "holdout"
+          },
+          {
+            "actual": 1,
+            "expected": 1,
+            "input": 7,
+            "split": "holdout"
+          }
+        ],
+        "observed_cases": 2,
+        "passed": 2,
+        "planned_cases": 2
+      },
+      "invocation_id": "24-tx26_state_label-compact_multilingual_local_feedback",
+      "status": "compiled_and_scored",
+      "training": {
+        "cases": [
+          {
+            "actual": 0,
+            "expected": 0,
+            "input": -1,
+            "split": "training"
+          },
+          {
+            "actual": 0,
+            "expected": 0,
+            "input": 0,
+            "split": "training"
+          },
+          {
+            "actual": 1,
+            "expected": 1,
+            "input": 1,
+            "split": "training"
+          }
+        ],
+        "observed_cases": 3,
+        "passed": 3,
+        "planned_cases": 3
+      }
+    },
+    {
+      "generated_source_sha256": "f5b597f31d8162baa9501524852f7488dc88e799e03527ca9a427313cc447052",
+      "go_exit_code": 0,
+      "go_stderr_bytes": 0,
+      "go_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "go_stdout_bytes": 49,
+      "go_stdout_sha256": "53e370e96041848d1d5f19d91f20ca628e67d191c6a4f3dba0703a0c254d2c2a",
+      "holdout": {
+        "cases": [
+          {
+            "actual": 9223372036854775807,
+            "expected": 9223372036854775807,
+            "input": -9223372036854775808,
+            "split": "holdout"
+          },
+          {
+            "actual": 9223372036854775807,
+            "expected": 9223372036854775807,
+            "input": -9223372036854775807,
+            "split": "holdout"
+          },
+          {
+            "actual": 9223372036854775807,
+            "expected": 9223372036854775807,
+            "input": 9223372036854775807,
+            "split": "holdout"
+          }
+        ],
+        "observed_cases": 3,
+        "passed": 3,
+        "planned_cases": 3
+      },
+      "invocation_id": "25-ob32_clamped_absolute-compact_multilingual_local_feedback",
+      "status": "compiled_and_scored",
+      "training": {
+        "cases": [
+          {
+            "actual": 3,
+            "expected": 3,
+            "input": -3,
+            "split": "training"
+          },
+          {
+            "actual": 0,
+            "expected": 0,
+            "input": 0,
+            "split": "training"
+          },
+          {
+            "actual": 5,
+            "expected": 5,
+            "input": 5,
+            "split": "training"
+          },
+          {
+            "actual": 7,
+            "expected": 7,
+            "input": 7,
+            "split": "training"
+          }
+        ],
+        "observed_cases": 4,
+        "passed": 4,
+        "planned_cases": 4
+      }
+    },
+    {
+      "generated_source_sha256": "e5c64f516fd70e8c45c22ff524ed8e36a0f1a944c94011e20a42d482351d1907",
+      "go_exit_code": 0,
+      "go_stderr_bytes": 0,
+      "go_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "go_stdout_bytes": 49,
+      "go_stdout_sha256": "cfd233123e24731fca23b351ed0f3b1f971ab6df62f8ec8f35fd709286e53b96",
+      "holdout": {
+        "cases": [
+          {
+            "actual": -1,
+            "expected": -1,
+            "input": -5,
+            "split": "holdout"
+          },
+          {
+            "actual": 10,
+            "expected": 10,
+            "input": 5,
+            "split": "holdout"
+          },
+          {
+            "actual": 20,
+            "expected": 20,
+            "input": 11,
+            "split": "holdout"
+          }
+        ],
+        "observed_cases": 3,
+        "passed": 3,
+        "planned_cases": 3
+      },
+      "invocation_id": "26-ni05_negative_then_double-compact_multilingual_single",
+      "status": "compiled_and_scored",
+      "training": {
+        "cases": [
+          {
+            "actual": -1,
+            "expected": -1,
+            "input": -1,
+            "split": "training"
+          },
+          {
+            "actual": 0,
+            "expected": 0,
+            "input": 0,
+            "split": "training"
+          },
+          {
+            "actual": 2,
+            "expected": 2,
+            "input": 1,
+            "split": "training"
+          },
+          {
+            "actual": 18,
+            "expected": 18,
+            "input": 9,
+            "split": "training"
+          },
+          {
+            "actual": 20,
+            "expected": 20,
+            "input": 10,
+            "split": "training"
+          }
+        ],
+        "observed_cases": 5,
+        "passed": 5,
+        "planned_cases": 5
+      }
+    },
+    {
+      "generated_source_sha256": "51f7a2c3c6d6505e1ed5a8ef7267c116c62c0c2346c9ecf17141270dd6587bf1",
+      "go_exit_code": 0,
+      "go_stderr_bytes": 0,
+      "go_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "go_stdout_bytes": 49,
+      "go_stdout_sha256": "37dd40c027fae875b7d8f2b2333cab8886c3ccf2c1860b06a2653e28ef119962",
+      "holdout": {
+        "cases": [
+          {
+            "actual": -10,
+            "expected": -10,
+            "input": -10,
+            "split": "holdout"
+          },
+          {
+            "actual": 26,
+            "expected": 26,
+            "input": 8,
+            "split": "holdout"
+          },
+          {
+            "actual": 30,
+            "expected": 30,
+            "input": 10,
+            "split": "holdout"
+          }
+        ],
+        "observed_cases": 3,
+        "passed": 3,
+        "planned_cases": 3
+      },
+      "invocation_id": "27-lr09_compound_total-compact_multilingual_single",
+      "status": "compiled_and_scored",
+      "training": {
+        "cases": [
+          {
+            "actual": 0,
+            "expected": 0,
+            "input": -5,
+            "split": "training"
+          },
+          {
+            "actual": 10,
+            "expected": 10,
+            "input": 0,
+            "split": "training"
+          },
+          {
+            "actual": 12,
+            "expected": 12,
+            "input": 1,
+            "split": "training"
+          },
+          {
+            "actual": 18,
+            "expected": 18,
+            "input": 4,
+            "split": "training"
+          }
+        ],
+        "observed_cases": 4,
+        "passed": 4,
+        "planned_cases": 4
+      }
+    },
+    {
+      "generated_source_sha256": "8220b5a866112bf3aca77d152aa347fcb71ed964288f5cc64202d0e2ba046b76",
+      "go_exit_code": 0,
+      "go_stderr_bytes": 0,
+      "go_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "go_stdout_bytes": 49,
+      "go_stdout_sha256": "ab9a69f2322ab71550e406cda849bd728ca565e12be25b40ef1b89990835fddf",
+      "holdout": {
+        "cases": [
+          {
+            "actual": -1,
+            "expected": -1,
+            "input": -10,
+            "split": "holdout"
+          },
+          {
+            "actual": 2,
+            "expected": 2,
+            "input": 4,
+            "split": "holdout"
+          },
+          {
+            "actual": -1,
+            "expected": -1,
+            "input": 12,
+            "split": "holdout"
+          }
+        ],
+        "observed_cases": 3,
+        "passed": 3,
+        "planned_cases": 3
+      },
+      "invocation_id": "28-cc01_inclusive_band-compact_multilingual_single",
+      "status": "compiled_and_scored",
+      "training": {
+        "cases": [
+          {
+            "actual": -1,
+            "expected": -1,
+            "input": -1,
+            "split": "training"
+          },
+          {
+            "actual": -1,
+            "expected": -1,
+            "input": 2,
+            "split": "training"
+          },
+          {
+            "actual": -1,
+            "expected": 2,
+            "input": 3,
+            "split": "training"
+          },
+          {
+            "actual": 2,
+            "expected": 2,
+            "input": 8,
+            "split": "training"
+          },
+          {
+            "actual": -1,
+            "expected": -1,
+            "input": 9,
+            "split": "training"
+          }
+        ],
+        "observed_cases": 5,
+        "passed": 4,
+        "planned_cases": 5
+      }
+    },
+    {
+      "generated_source_sha256": "7d482a82b50e1171977e77d28f1cb3523bde0054bb052a433b83522e73513b2a",
+      "go_exit_code": 0,
+      "go_stderr_bytes": 0,
+      "go_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "go_stdout_bytes": 49,
+      "go_stdout_sha256": "9a9f78b062f3c0eed5631719d57ca453dd91e116f4a678ca152c52531af9c8ed",
+      "holdout": {
+        "cases": [
+          {
+            "actual": 9,
+            "expected": 9,
+            "input": -100,
+            "split": "holdout"
+          },
+          {
+            "actual": 0,
+            "expected": 0,
+            "input": 0,
+            "split": "holdout"
+          },
+          {
+            "actual": 9,
+            "expected": 9,
+            "input": 100,
+            "split": "holdout"
+          }
+        ],
+        "observed_cases": 3,
+        "passed": 3,
+        "planned_cases": 3
+      },
+      "invocation_id": "29-cc04_outer_cutoffs-compact_multilingual_local_feedback",
+      "status": "compiled_and_scored",
+      "training": {
+        "cases": [
+          {
+            "actual": 9,
+            "expected": 9,
+            "input": -7,
+            "split": "training"
+          },
+          {
+            "actual": 9,
+            "expected": 9,
+            "input": -6,
+            "split": "training"
+          },
+          {
+            "actual": 0,
+            "expected": 0,
+            "input": -5,
+            "split": "training"
+          },
+          {
+            "actual": 0,
+            "expected": 0,
+            "input": 7,
+            "split": "training"
+          },
+          {
+            "actual": 9,
+            "expected": 9,
+            "input": 8,
+            "split": "training"
+          },
+          {
+            "actual": 9,
+            "expected": 9,
+            "input": 9,
+            "split": "training"
+          }
+        ],
+        "observed_cases": 6,
+        "passed": 6,
+        "planned_cases": 6
+      }
+    },
+    {
+      "generated_source_sha256": "336d8311f260cb7e9913ba3ba3d71a6d96022b164762c9238262613183b3be72",
+      "go_exit_code": 0,
+      "go_stderr_bytes": 0,
+      "go_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "go_stdout_bytes": 49,
+      "go_stdout_sha256": "bc14d0508da299f4de9748f0aeea88d73c74fbdb9c5d084fad92c2ee6a4e3b86",
+      "holdout": {
+        "cases": [
+          {
+            "actual": -5,
+            "expected": -5,
+            "input": -10,
+            "split": "holdout"
+          },
+          {
+            "actual": 5,
+            "expected": 5,
+            "input": 2,
+            "split": "holdout"
+          },
+          {
+            "actual": -5,
+            "expected": -5,
+            "input": 100,
+            "split": "holdout"
+          }
+        ],
+        "observed_cases": 3,
+        "passed": 3,
+        "planned_cases": 3
+      },
+      "invocation_id": "30-bl22_reassigned_valid_flag-compact_multilingual_single",
+      "status": "compiled_and_scored",
+      "training": {
+        "cases": [
+          {
+            "actual": -5,
+            "expected": -5,
+            "input": -1,
+            "split": "training"
+          },
+          {
+            "actual": 5,
+            "expected": 5,
+            "input": 0,
+            "split": "training"
+          },
+          {
+            "actual": 5,
+            "expected": 5,
+            "input": 5,
+            "split": "training"
+          },
+          {
+            "actual": -5,
+            "expected": -5,
+            "input": 6,
+            "split": "training"
+          },
+          {
+            "actual": 5,
+            "expected": -5,
+            "input": 10,
+            "split": "training"
+          }
+        ],
+        "observed_cases": 5,
+        "passed": 4,
+        "planned_cases": 5
+      }
+    },
+    {
+      "generated_source_sha256": "1ca61dda250b0475bb9a914de118dcf69549c42d1ee5e4ff2199028d086c25c0",
+      "go_exit_code": 0,
+      "go_stderr_bytes": 0,
+      "go_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "go_stdout_bytes": 49,
+      "go_stdout_sha256": "f8dc68fbe33bb023ee4d8bdef5a1a65a50e95528fb41ea871d9a57acd6b382ef",
+      "holdout": {
+        "cases": [
+          {
+            "actual": 106,
+            "expected": 106,
+            "input": -10,
+            "split": "holdout"
+          },
+          {
+            "actual": 16,
+            "expected": 16,
+            "input": 5,
+            "split": "holdout"
+          },
+          {
+            "actual": 376,
+            "expected": 376,
+            "input": 20,
+            "split": "holdout"
+          }
+        ],
+        "observed_cases": 3,
+        "passed": 3,
+        "planned_cases": 3
+      },
+      "invocation_id": "31-pr15_square_minus_successor_sum-compact_multilingual_single",
+      "status": "compiled_and_scored",
+      "training": {
+        "cases": [
+          {
+            "actual": 2,
+            "expected": 2,
+            "input": -2,
+            "split": "training"
+          },
+          {
+            "actual": -4,
+            "expected": -4,
+            "input": 0,
+            "split": "training"
+          },
+          {
+            "actual": 2,
+            "expected": 2,
+            "input": 3,
+            "split": "training"
+          },
+          {
+            "actual": 26,
+            "expected": 26,
+            "input": 6,
+            "split": "training"
+          }
+        ],
+        "observed_cases": 4,
+        "passed": 4,
+        "planned_cases": 4
+      }
+    },
+    {
+      "generated_source_sha256": "af68a67d5f61641937da84f600f383f264a2db4d48327e74b3c615d898dca7f1",
+      "go_exit_code": 0,
+      "go_stderr_bytes": 0,
+      "go_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "go_stdout_bytes": 49,
+      "go_stdout_sha256": "c0154333013fd6ce40b33980fe5e53e4bef7486cf2f8d404dda059d559487309",
+      "holdout": {
+        "cases": [
+          {
+            "actual": 9223372036854775807,
+            "expected": 9223372036854775807,
+            "input": -9223372036854775808,
+            "split": "holdout"
+          },
+          {
+            "actual": -9223372036854775807,
+            "expected": 9223372036854775807,
+            "input": -9223372036854775807,
+            "split": "holdout"
+          },
+          {
+            "actual": -9223372036854775807,
+            "expected": 9223372036854775807,
+            "input": 9223372036854775807,
+            "split": "holdout"
+          }
+        ],
+        "observed_cases": 3,
+        "passed": 1,
+        "planned_cases": 3
+      },
+      "invocation_id": "32-ob32_clamped_absolute-compact_multilingual_single",
+      "status": "compiled_and_scored",
+      "training": {
+        "cases": [
+          {
+            "actual": -3,
+            "expected": 3,
+            "input": -3,
+            "split": "training"
+          },
+          {
+            "actual": 0,
+            "expected": 0,
+            "input": 0,
+            "split": "training"
+          },
+          {
+            "actual": -5,
+            "expected": 5,
+            "input": 5,
+            "split": "training"
+          },
+          {
+            "actual": -7,
+            "expected": 7,
+            "input": 7,
+            "split": "training"
+          }
+        ],
+        "observed_cases": 4,
+        "passed": 1,
+        "planned_cases": 4
+      }
+    },
+    {
+      "generated_source_sha256": "0d5f0f83727af39bffc3681b93ff35a0d59dbcaf6baaf0d321de1521c1ce6c5f",
+      "go_exit_code": 0,
+      "go_stderr_bytes": 0,
+      "go_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "go_stdout_bytes": 49,
+      "go_stdout_sha256": "37dd40c027fae875b7d8f2b2333cab8886c3ccf2c1860b06a2653e28ef119962",
+      "holdout": {
+        "cases": [
+          {
+            "actual": 0,
+            "expected": 0,
+            "input": 0,
+            "split": "holdout"
+          },
+          {
+            "actual": 0,
+            "expected": 0,
+            "input": 9,
+            "split": "holdout"
+          },
+          {
+            "actual": 0,
+            "expected": 0,
+            "input": 100,
+            "split": "holdout"
+          }
+        ],
+        "observed_cases": 3,
+        "passed": 3,
+        "planned_cases": 3
+      },
+      "invocation_id": "33-cp18_exact_release_code-compact_multilingual_local_feedback",
+      "status": "compiled_and_scored",
+      "training": {
+        "cases": [
+          {
+            "actual": 0,
+            "expected": 0,
+            "input": 6,
+            "split": "training"
+          },
+          {
+            "actual": 1,
+            "expected": 1,
+            "input": 7,
+            "split": "training"
+          },
+          {
+            "actual": 0,
+            "expected": 0,
+            "input": 8,
+            "split": "training"
+          }
+        ],
+        "observed_cases": 3,
+        "passed": 3,
+        "planned_cases": 3
+      }
+    },
+    {
+      "generated_source_sha256": "47e91bc1feef855df4fd2d4c92525cc30e1df5f727a6202cedac5378930e6f3b",
+      "go_exit_code": 0,
+      "go_stderr_bytes": 0,
+      "go_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "go_stdout_bytes": 49,
+      "go_stdout_sha256": "ab9a69f2322ab71550e406cda849bd728ca565e12be25b40ef1b89990835fddf",
+      "holdout": {
+        "cases": [
+          {
+            "actual": 0,
+            "expected": 0,
+            "input": -10,
+            "split": "holdout"
+          },
+          {
+            "actual": 7,
+            "expected": 7,
+            "input": 3,
+            "split": "holdout"
+          },
+          {
+            "actual": 21,
+            "expected": 21,
+            "input": 10,
+            "split": "holdout"
+          }
+        ],
+        "observed_cases": 3,
+        "passed": 3,
+        "planned_cases": 3
+      },
+      "invocation_id": "34-lr11_nonnegative_doubled_score-compact_multilingual_single",
+      "status": "compiled_and_scored",
+      "training": {
+        "cases": [
+          {
+            "actual": 0,
+            "expected": 0,
+            "input": -2,
+            "split": "training"
+          },
+          {
+            "actual": 0,
+            "expected": 0,
+            "input": -1,
+            "split": "training"
+          },
+          {
+            "actual": 1,
+            "expected": 1,
+            "input": 0,
+            "split": "training"
+          },
+          {
+            "actual": 5,
+            "expected": 5,
+            "input": 2,
+            "split": "training"
+          }
+        ],
+        "observed_cases": 4,
+        "passed": 4,
+        "planned_cases": 4
+      }
+    },
+    {
+      "generated_source_sha256": "68af04cbcd851f505a068df36a5e2f67cf35463006b39c78ebc4dc4b9ea5420f",
+      "go_exit_code": 0,
+      "go_stderr_bytes": 0,
+      "go_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "go_stdout_bytes": 49,
+      "go_stdout_sha256": "286ed20fc5f0126af91d034ee44eff5b5c924a5f2222df173d8de118d845189b",
+      "holdout": {
+        "cases": [
+          {
+            "actual": 136,
+            "expected": 124,
+            "input": -10,
+            "split": "holdout"
+          },
+          {
+            "actual": 85,
+            "expected": 73,
+            "input": 7,
+            "split": "holdout"
+          },
+          {
+            "actual": 46,
+            "expected": 34,
+            "input": 20,
+            "split": "holdout"
+          }
+        ],
+        "observed_cases": 3,
+        "passed": 0,
+        "planned_cases": 3
+      },
+      "invocation_id": "35-pr13_subtract_tripled_sum-compact_multilingual_single",
+      "status": "compiled_and_scored",
+      "training": {
+        "cases": [
+          {
+            "actual": 112,
+            "expected": 100,
+            "input": -2,
+            "split": "training"
+          },
+          {
+            "actual": 106,
+            "expected": 94,
+            "input": 0,
+            "split": "training"
+          },
+          {
+            "actual": 97,
+            "expected": 85,
+            "input": 3,
+            "split": "training"
+          },
+          {
+            "actual": 91,
+            "expected": 79,
+            "input": 5,
+            "split": "training"
+          }
+        ],
+        "observed_cases": 4,
+        "passed": 0,
+        "planned_cases": 4
+      }
+    },
+    {
+      "generated_source_sha256": "23a64ac169d472add7e9bc0ddcfd2284f0028c5fe26c0ae6551741ee633b610a",
+      "go_exit_code": 0,
+      "go_stderr_bytes": 0,
+      "go_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "go_stdout_bytes": 49,
+      "go_stdout_sha256": "9a9f78b062f3c0eed5631719d57ca453dd91e116f4a678ca152c52531af9c8ed",
+      "holdout": {
+        "cases": [
+          {
+            "actual": 0,
+            "expected": 0,
+            "input": -100,
+            "split": "holdout"
+          },
+          {
+            "actual": 7,
+            "expected": 0,
+            "input": 2,
+            "split": "holdout"
+          }
+        ],
+        "observed_cases": 2,
+        "passed": 1,
+        "planned_cases": 2
+      },
+      "invocation_id": "36-cc03_two_islands-compact_multilingual_single",
+      "status": "compiled_and_scored",
+      "training": {
+        "cases": [
+          {
+            "actual": 0,
+            "expected": 0,
+            "input": -5,
+            "split": "training"
+          },
+          {
+            "actual": 7,
+            "expected": 7,
+            "input": -4,
+            "split": "training"
+          },
+          {
+            "actual": 7,
+            "expected": 0,
+            "input": 0,
+            "split": "training"
+          },
+          {
+            "actual": 7,
+            "expected": 7,
+            "input": 4,
+            "split": "training"
+          },
+          {
+            "actual": 0,
+            "expected": 0,
+            "input": 5,
+            "split": "training"
+          }
+        ],
+        "observed_cases": 5,
+        "passed": 4,
+        "planned_cases": 5
+      }
+    },
+    {
+      "generated_source_sha256": "febbca901c784129b8c8860c380088a8b86fd4dab1a10a6e0e0ebeba47ad5059",
+      "go_exit_code": 0,
+      "go_stderr_bytes": 0,
+      "go_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "go_stdout_bytes": 49,
+      "go_stdout_sha256": "d94664287bd0adb3f37469cb59b499c6f1547dd091705e49ad14d930b9cb2cf0",
+      "holdout": {
+        "cases": [
+          {
+            "actual": -18,
+            "expected": -18,
+            "input": -20,
+            "split": "holdout"
+          },
+          {
+            "actual": 12,
+            "expected": 9,
+            "input": 10,
+            "split": "holdout"
+          },
+          {
+            "actual": 102,
+            "expected": 9,
+            "input": 100,
+            "split": "holdout"
+          }
+        ],
+        "observed_cases": 3,
+        "passed": 1,
+        "planned_cases": 3
+      },
+      "invocation_id": "37-lr12_cap_after_adjustment-compact_multilingual_single",
+      "status": "compiled_and_scored",
+      "training": {
+        "cases": [
+          {
+            "actual": -3,
+            "expected": -3,
+            "input": -5,
+            "split": "training"
+          },
+          {
+            "actual": 2,
+            "expected": 2,
+            "input": 0,
+            "split": "training"
+          },
+          {
+            "actual": 9,
+            "expected": 9,
+            "input": 7,
+            "split": "training"
+          },
+          {
+            "actual": 10,
+            "expected": 9,
+            "input": 8,
+            "split": "training"
+          }
+        ],
+        "observed_cases": 4,
+        "passed": 3,
+        "planned_cases": 4
+      }
+    },
+    {
+      "generated_source_sha256": "0d5f0f83727af39bffc3681b93ff35a0d59dbcaf6baaf0d321de1521c1ce6c5f",
+      "go_exit_code": 0,
+      "go_stderr_bytes": 0,
+      "go_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "go_stdout_bytes": 49,
+      "go_stdout_sha256": "ab9a69f2322ab71550e406cda849bd728ca565e12be25b40ef1b89990835fddf",
+      "holdout": {
+        "cases": [
+          {
+            "actual": 0,
+            "expected": 0,
+            "input": 0,
+            "split": "holdout"
+          },
+          {
+            "actual": 0,
+            "expected": 0,
+            "input": 9,
+            "split": "holdout"
+          },
+          {
+            "actual": 0,
+            "expected": 0,
+            "input": 100,
+            "split": "holdout"
+          }
+        ],
+        "observed_cases": 3,
+        "passed": 3,
+        "planned_cases": 3
+      },
+      "invocation_id": "38-cp18_exact_release_code-compact_multilingual_single",
+      "status": "compiled_and_scored",
+      "training": {
+        "cases": [
+          {
+            "actual": 0,
+            "expected": 0,
+            "input": 6,
+            "split": "training"
+          },
+          {
+            "actual": 1,
+            "expected": 1,
+            "input": 7,
+            "split": "training"
+          },
+          {
+            "actual": 0,
+            "expected": 0,
+            "input": 8,
+            "split": "training"
+          }
+        ],
+        "observed_cases": 3,
+        "passed": 3,
+        "planned_cases": 3
+      }
+    },
+    {
+      "generated_source_sha256": "2af52ee47196575af18cf5b96c8bdaf08a41fc04529c91037680fa8453d63d46",
+      "go_exit_code": 0,
+      "go_stderr_bytes": 0,
+      "go_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "go_stdout_bytes": 49,
+      "go_stdout_sha256": "96af3bc347f392ac2431ef8a10f7b0e2c0997068f05dfd4ff2eadf6411547591",
+      "holdout": {
+        "cases": [
+          {
+            "actual": 0,
+            "expected": 0,
+            "input": -5,
+            "split": "holdout"
+          },
+          {
+            "actual": 60,
+            "expected": 60,
+            "input": 50,
+            "split": "holdout"
+          },
+          {
+            "actual": 101,
+            "expected": 101,
+            "input": 111,
+            "split": "holdout"
+          }
+        ],
+        "observed_cases": 3,
+        "passed": 3,
+        "planned_cases": 3
+      },
+      "invocation_id": "39-ni06_surcharge_discount-compact_multilingual_local_feedback",
+      "status": "compiled_and_scored",
+      "training": {
+        "cases": [
+          {
+            "actual": 0,
+            "expected": 0,
+            "input": -1,
+            "split": "training"
+          },
+          {
+            "actual": 10,
+            "expected": 10,
+            "input": 0,
+            "split": "training"
+          },
+          {
+            "actual": 11,
+            "expected": 11,
+            "input": 1,
+            "split": "training"
+          },
+          {
+            "actual": 110,
+            "expected": 110,
+            "input": 100,
+            "split": "training"
+          },
+          {
+            "actual": 91,
+            "expected": 91,
+            "input": 101,
+            "split": "training"
+          }
+        ],
+        "observed_cases": 5,
+        "passed": 5,
+        "planned_cases": 5
+      }
+    },
+    {
+      "generated_source_sha256": "90328636055e179f09575f95e26a0f01c69a0c6cb6a22bf7a6d12680bbd4eecc",
+      "go_exit_code": 0,
+      "go_stderr_bytes": 0,
+      "go_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "go_stdout_bytes": 49,
+      "go_stdout_sha256": "286ed20fc5f0126af91d034ee44eff5b5c924a5f2222df173d8de118d845189b",
+      "holdout": {
+        "cases": [
+          {
+            "actual": 0,
+            "expected": 0,
+            "input": -100,
+            "split": "holdout"
+          },
+          {
+            "actual": 0,
+            "expected": 0,
+            "input": 2,
+            "split": "holdout"
+          }
+        ],
+        "observed_cases": 2,
+        "passed": 2,
+        "planned_cases": 2
+      },
+      "invocation_id": "40-cc03_two_islands-compact_multilingual_local_feedback",
+      "status": "compiled_and_scored",
+      "training": {
+        "cases": [
+          {
+            "actual": 0,
+            "expected": 0,
+            "input": -5,
+            "split": "training"
+          },
+          {
+            "actual": 7,
+            "expected": 7,
+            "input": -4,
+            "split": "training"
+          },
+          {
+            "actual": 0,
+            "expected": 0,
+            "input": 0,
+            "split": "training"
+          },
+          {
+            "actual": 7,
+            "expected": 7,
+            "input": 4,
+            "split": "training"
+          },
+          {
+            "actual": 0,
+            "expected": 0,
+            "input": 5,
+            "split": "training"
+          }
+        ],
+        "observed_cases": 5,
+        "passed": 5,
+        "planned_cases": 5
+      }
+    },
+    {
+      "generated_source_sha256": "1569660855761ce5d1f9a47abd67c6a941809093069b88c863c7afee49a15174",
+      "go_exit_code": 0,
+      "go_stderr_bytes": 0,
+      "go_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "go_stdout_bytes": 49,
+      "go_stdout_sha256": "53e370e96041848d1d5f19d91f20ca628e67d191c6a4f3dba0703a0c254d2c2a",
+      "holdout": {
+        "cases": [
+          {
+            "actual": 82,
+            "expected": 82,
+            "input": -10,
+            "split": "holdout"
+          },
+          {
+            "actual": 26,
+            "expected": 26,
+            "input": 4,
+            "split": "holdout"
+          },
+          {
+            "actual": 170,
+            "expected": 170,
+            "input": 12,
+            "split": "holdout"
+          }
+        ],
+        "observed_cases": 3,
+        "passed": 3,
+        "planned_cases": 3
+      },
+      "invocation_id": "41-pr16_composed_neighbor_product-compact_multilingual_local_feedback",
+      "status": "compiled_and_scored",
+      "training": {
+        "cases": [
+          {
+            "actual": 5,
+            "expected": 5,
+            "input": -3,
+            "split": "training"
+          },
+          {
+            "actual": 2,
+            "expected": 2,
+            "input": 0,
+            "split": "training"
+          },
+          {
+            "actual": 10,
+            "expected": 10,
+            "input": 2,
+            "split": "training"
+          },
+          {
+            "actual": 37,
+            "expected": 37,
+            "input": 5,
+            "split": "training"
+          }
+        ],
+        "observed_cases": 4,
+        "passed": 4,
+        "planned_cases": 4
+      }
+    },
+    {
+      "generated_source_sha256": "9a3819e57c7f088d0d7494b4b39a8a60a5dc985a2becd31b1cf18411366bf76d",
+      "go_exit_code": 0,
+      "go_stderr_bytes": 0,
+      "go_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "go_stdout_bytes": 49,
+      "go_stdout_sha256": "ab9a69f2322ab71550e406cda849bd728ca565e12be25b40ef1b89990835fddf",
+      "holdout": {
+        "cases": [
+          {
+            "actual": 1,
+            "expected": 1,
+            "input": -7,
+            "split": "holdout"
+          },
+          {
+            "actual": 1,
+            "expected": 1,
+            "input": 12,
+            "split": "holdout"
+          }
+        ],
+        "observed_cases": 2,
+        "passed": 2,
+        "planned_cases": 2
+      },
+      "invocation_id": "42-cc02_nonzero_disjunction-compact_multilingual_single",
+      "status": "compiled_and_scored",
+      "training": {
+        "cases": [
+          {
+            "actual": 1,
+            "expected": 1,
+            "input": -1,
+            "split": "training"
+          },
+          {
+            "actual": 0,
+            "expected": 0,
+            "input": 0,
+            "split": "training"
+          },
+          {
+            "actual": 1,
+            "expected": 1,
+            "input": 1,
+            "split": "training"
+          }
+        ],
+        "observed_cases": 3,
+        "passed": 3,
+        "planned_cases": 3
+      }
+    },
+    {
+      "generated_source_sha256": "1f6a0f976b29a94de6e3670473195e07e5965df4aed41b331a5980e9160ee5ce",
+      "go_exit_code": 0,
+      "go_stderr_bytes": 0,
+      "go_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "go_stdout_bytes": 49,
+      "go_stdout_sha256": "038ad9d5b39a822904aa8a61efde24fbe8ec65a5fc94509902615a2fb4deff2c",
+      "holdout": {
+        "cases": [
+          {
+            "actual": 0,
+            "expected": 0,
+            "input": -20,
+            "split": "holdout"
+          },
+          {
+            "actual": 0,
+            "expected": 1,
+            "input": 7,
+            "split": "holdout"
+          }
+        ],
+        "observed_cases": 2,
+        "passed": 1,
+        "planned_cases": 2
+      },
+      "invocation_id": "43-tx26_state_label-compact_multilingual_single",
+      "status": "compiled_and_scored",
+      "training": {
+        "cases": [
+          {
+            "actual": 0,
+            "expected": 0,
+            "input": -1,
+            "split": "training"
+          },
+          {
+            "actual": 1,
+            "expected": 0,
+            "input": 0,
+            "split": "training"
+          },
+          {
+            "actual": 0,
+            "expected": 1,
+            "input": 1,
+            "split": "training"
+          }
+        ],
+        "observed_cases": 3,
+        "passed": 1,
+        "planned_cases": 3
+      }
+    },
+    {
+      "generated_source_sha256": "5ad4dbf616801756a940306915ad9f3d4c8755d81b8084e7401b20409a6770c4",
+      "go_exit_code": 0,
+      "go_stderr_bytes": 0,
+      "go_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "go_stdout_bytes": 49,
+      "go_stdout_sha256": "f281dfe100a51e1e7017e0370abeeda7eda72d2b8dc06c10f3a1e520c25fae01",
+      "holdout": {
+        "cases": [
+          {
+            "actual": 228,
+            "expected": 228,
+            "input": -10,
+            "split": "holdout"
+          },
+          {
+            "actual": 18,
+            "expected": 18,
+            "input": 4,
+            "split": "holdout"
+          },
+          {
+            "actual": 168,
+            "expected": 168,
+            "input": 10,
+            "split": "holdout"
+          }
+        ],
+        "observed_cases": 3,
+        "passed": 3,
+        "planned_cases": 3
+      },
+      "invocation_id": "44-pr14_product_neighbor_factors-compact_multilingual_local_feedback",
+      "status": "compiled_and_scored",
+      "training": {
+        "cases": [
+          {
+            "actual": 25,
+            "expected": 25,
+            "input": -3,
+            "split": "training"
+          },
+          {
+            "actual": -2,
+            "expected": -2,
+            "input": 0,
+            "split": "training"
+          },
+          {
+            "actual": 0,
+            "expected": 0,
+            "input": 2,
+            "split": "training"
+          },
+          {
+            "actual": 33,
+            "expected": 33,
+            "input": 5,
+            "split": "training"
+          }
+        ],
+        "observed_cases": 4,
+        "passed": 4,
+        "planned_cases": 4
+      }
+    },
+    {
+      "generated_source_sha256": "eb7141337e4d49437037c80e7bd0d57a9beec5280ec71e9ecdd2eccfc16a75b7",
+      "go_exit_code": 0,
+      "go_stderr_bytes": 0,
+      "go_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "go_stdout_bytes": 49,
+      "go_stdout_sha256": "50a7ea96e7d9539ed0c7decb8c1c15f1bfa0905be79ea8775e017609e53ee7d6",
+      "holdout": {
+        "cases": [
+          {
+            "actual": 0,
+            "expected": 0,
+            "input": -100,
+            "split": "holdout"
+          },
+          {
+            "actual": 1,
+            "expected": 1,
+            "input": 2,
+            "split": "holdout"
+          },
+          {
+            "actual": 0,
+            "expected": 0,
+            "input": 100,
+            "split": "holdout"
+          }
+        ],
+        "observed_cases": 3,
+        "passed": 3,
+        "planned_cases": 3
+      },
+      "invocation_id": "45-cp19_range_without_origin-compact_multilingual_local_feedback",
+      "status": "compiled_and_scored",
+      "training": {
+        "cases": [
+          {
+            "actual": 0,
+            "expected": 0,
+            "input": -4,
+            "split": "training"
+          },
+          {
+            "actual": 1,
+            "expected": 1,
+            "input": -3,
+            "split": "training"
+          },
+          {
+            "actual": 0,
+            "expected": 0,
+            "input": 0,
+            "split": "training"
+          },
+          {
+            "actual": 1,
+            "expected": 1,
+            "input": 3,
+            "split": "training"
+          },
+          {
+            "actual": 0,
+            "expected": 0,
+            "input": 4,
+            "split": "training"
+          }
+        ],
+        "observed_cases": 5,
+        "passed": 5,
+        "planned_cases": 5
+      }
+    },
+    {
+      "generated_source_sha256": "1ca61dda250b0475bb9a914de118dcf69549c42d1ee5e4ff2199028d086c25c0",
+      "go_exit_code": 0,
+      "go_stderr_bytes": 0,
+      "go_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "go_stdout_bytes": 49,
+      "go_stdout_sha256": "9a9f78b062f3c0eed5631719d57ca453dd91e116f4a678ca152c52531af9c8ed",
+      "holdout": {
+        "cases": [
+          {
+            "actual": 106,
+            "expected": 106,
+            "input": -10,
+            "split": "holdout"
+          },
+          {
+            "actual": 16,
+            "expected": 16,
+            "input": 5,
+            "split": "holdout"
+          },
+          {
+            "actual": 376,
+            "expected": 376,
+            "input": 20,
+            "split": "holdout"
+          }
+        ],
+        "observed_cases": 3,
+        "passed": 3,
+        "planned_cases": 3
+      },
+      "invocation_id": "46-pr15_square_minus_successor_sum-compact_multilingual_local_feedback",
+      "status": "compiled_and_scored",
+      "training": {
+        "cases": [
+          {
+            "actual": 2,
+            "expected": 2,
+            "input": -2,
+            "split": "training"
+          },
+          {
+            "actual": -4,
+            "expected": -4,
+            "input": 0,
+            "split": "training"
+          },
+          {
+            "actual": 2,
+            "expected": 2,
+            "input": 3,
+            "split": "training"
+          },
+          {
+            "actual": 26,
+            "expected": 26,
+            "input": 6,
+            "split": "training"
+          }
+        ],
+        "observed_cases": 4,
+        "passed": 4,
+        "planned_cases": 4
+      }
+    },
+    {
+      "generated_source_sha256": "51f7a2c3c6d6505e1ed5a8ef7267c116c62c0c2346c9ecf17141270dd6587bf1",
+      "go_exit_code": 0,
+      "go_stderr_bytes": 0,
+      "go_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "go_stdout_bytes": 49,
+      "go_stdout_sha256": "96af3bc347f392ac2431ef8a10f7b0e2c0997068f05dfd4ff2eadf6411547591",
+      "holdout": {
+        "cases": [
+          {
+            "actual": -10,
+            "expected": -10,
+            "input": -10,
+            "split": "holdout"
+          },
+          {
+            "actual": 26,
+            "expected": 26,
+            "input": 8,
+            "split": "holdout"
+          },
+          {
+            "actual": 30,
+            "expected": 30,
+            "input": 10,
+            "split": "holdout"
+          }
+        ],
+        "observed_cases": 3,
+        "passed": 3,
+        "planned_cases": 3
+      },
+      "invocation_id": "47-lr09_compound_total-compact_multilingual_local_feedback",
+      "status": "compiled_and_scored",
+      "training": {
+        "cases": [
+          {
+            "actual": 0,
+            "expected": 0,
+            "input": -5,
+            "split": "training"
+          },
+          {
+            "actual": 10,
+            "expected": 10,
+            "input": 0,
+            "split": "training"
+          },
+          {
+            "actual": 12,
+            "expected": 12,
+            "input": 1,
+            "split": "training"
+          },
+          {
+            "actual": 18,
+            "expected": 18,
+            "input": 4,
+            "split": "training"
+          }
+        ],
+        "observed_cases": 4,
+        "passed": 4,
+        "planned_cases": 4
+      }
+    },
+    {
+      "generated_source_sha256": "a1fcfa445818baf480e0274b7be4e8b16c5134e4d4d88a3e3fe45bb930f26cda",
+      "go_exit_code": 0,
+      "go_stderr_bytes": 0,
+      "go_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "go_stdout_bytes": 49,
+      "go_stdout_sha256": "f1d77afa0eeac3a0741819398eb26b053238c0fab3736f1e289bd9b7adf7516d",
+      "holdout": {
+        "cases": [
+          {
+            "actual": -2,
+            "expected": -2,
+            "input": -10,
+            "split": "holdout"
+          },
+          {
+            "actual": -2,
+            "expected": 2,
+            "input": 100,
+            "split": "holdout"
+          }
+        ],
+        "observed_cases": 2,
+        "passed": 1,
+        "planned_cases": 2
+      },
+      "invocation_id": "48-tx28_reassigned_text_state-compact_multilingual_single",
+      "status": "compiled_and_scored",
+      "training": {
+        "cases": [
+          {
+            "actual": -2,
+            "expected": -2,
+            "input": -1,
+            "split": "training"
+          },
+          {
+            "actual": -2,
+            "expected": -2,
+            "input": 0,
+            "split": "training"
+          },
+          {
+            "actual": -2,
+            "expected": 2,
+            "input": 1,
+            "split": "training"
+          }
+        ],
+        "observed_cases": 3,
+        "passed": 2,
+        "planned_cases": 3
+      }
+    },
+    {
+      "generated_source_sha256": "e0de9da67be9cf94be3bc11ddc72454a2801bf5873a6dcbce63b51ef3c132f95",
+      "go_exit_code": 0,
+      "go_stderr_bytes": 0,
+      "go_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "go_stdout_bytes": 49,
+      "go_stdout_sha256": "5f599a8fe9da2a1ec151ecd04b98c212306155b4e07fbe242e55b5aa63273726",
+      "holdout": {
+        "cases": [
+          {
+            "actual": 0,
+            "expected": 0,
+            "input": -100,
+            "split": "holdout"
+          },
+          {
+            "actual": 1,
+            "expected": 1,
+            "input": 2,
+            "split": "holdout"
+          },
+          {
+            "actual": 0,
+            "expected": 0,
+            "input": 100,
+            "split": "holdout"
+          }
+        ],
+        "observed_cases": 3,
+        "passed": 3,
+        "planned_cases": 3
+      },
+      "invocation_id": "49-cp19_range_without_origin-compact_multilingual_single",
+      "status": "compiled_and_scored",
+      "training": {
+        "cases": [
+          {
+            "actual": 0,
+            "expected": 0,
+            "input": -4,
+            "split": "training"
+          },
+          {
+            "actual": 1,
+            "expected": 1,
+            "input": -3,
+            "split": "training"
+          },
+          {
+            "actual": 1,
+            "expected": 0,
+            "input": 0,
+            "split": "training"
+          },
+          {
+            "actual": 1,
+            "expected": 1,
+            "input": 3,
+            "split": "training"
+          },
+          {
+            "actual": 0,
+            "expected": 0,
+            "input": 4,
+            "split": "training"
+          }
+        ],
+        "observed_cases": 5,
+        "passed": 4,
+        "planned_cases": 5
+      }
+    },
+    {
+      "generated_source_sha256": "9a3819e57c7f088d0d7494b4b39a8a60a5dc985a2becd31b1cf18411366bf76d",
+      "go_exit_code": 0,
+      "go_stderr_bytes": 0,
+      "go_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "go_stdout_bytes": 49,
+      "go_stdout_sha256": "c0154333013fd6ce40b33980fe5e53e4bef7486cf2f8d404dda059d559487309",
+      "holdout": {
+        "cases": [
+          {
+            "actual": 1,
+            "expected": 1,
+            "input": -7,
+            "split": "holdout"
+          },
+          {
+            "actual": 1,
+            "expected": 1,
+            "input": 12,
+            "split": "holdout"
+          }
+        ],
+        "observed_cases": 2,
+        "passed": 2,
+        "planned_cases": 2
+      },
+      "invocation_id": "50-cc02_nonzero_disjunction-compact_multilingual_local_feedback",
+      "status": "compiled_and_scored",
+      "training": {
+        "cases": [
+          {
+            "actual": 1,
+            "expected": 1,
+            "input": -1,
+            "split": "training"
+          },
+          {
+            "actual": 0,
+            "expected": 0,
+            "input": 0,
+            "split": "training"
+          },
+          {
+            "actual": 1,
+            "expected": 1,
+            "input": 1,
+            "split": "training"
+          }
+        ],
+        "observed_cases": 3,
+        "passed": 3,
+        "planned_cases": 3
+      }
+    },
+    {
+      "generated_source_sha256": "b73d7028d5a656fe971e77fd530962aeeab1360bada512fd88063ea0e7a3f299",
+      "go_exit_code": 0,
+      "go_stderr_bytes": 0,
+      "go_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "go_stdout_bytes": 49,
+      "go_stdout_sha256": "286ed20fc5f0126af91d034ee44eff5b5c924a5f2222df173d8de118d845189b",
+      "holdout": {
+        "cases": [
+          {
+            "actual": -1,
+            "expected": -1,
+            "input": -10,
+            "split": "holdout"
+          },
+          {
+            "actual": 2,
+            "expected": 2,
+            "input": 4,
+            "split": "holdout"
+          },
+          {
+            "actual": -1,
+            "expected": -1,
+            "input": 12,
+            "split": "holdout"
+          }
+        ],
+        "observed_cases": 3,
+        "passed": 3,
+        "planned_cases": 3
+      },
+      "invocation_id": "51-cc01_inclusive_band-compact_multilingual_local_feedback",
+      "status": "compiled_and_scored",
+      "training": {
+        "cases": [
+          {
+            "actual": -1,
+            "expected": -1,
+            "input": -1,
+            "split": "training"
+          },
+          {
+            "actual": -1,
+            "expected": -1,
+            "input": 2,
+            "split": "training"
+          },
+          {
+            "actual": 2,
+            "expected": 2,
+            "input": 3,
+            "split": "training"
+          },
+          {
+            "actual": 2,
+            "expected": 2,
+            "input": 8,
+            "split": "training"
+          },
+          {
+            "actual": -1,
+            "expected": -1,
+            "input": 9,
+            "split": "training"
+          }
+        ],
+        "observed_cases": 5,
+        "passed": 5,
+        "planned_cases": 5
+      }
+    },
+    {
+      "generated_source_sha256": "07f561c857dcb481c20fe2b569562bd9f44fa1eb602712b0b7593482af03432e",
+      "go_exit_code": 0,
+      "go_stderr_bytes": 0,
+      "go_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "go_stdout_bytes": 49,
+      "go_stdout_sha256": "96af3bc347f392ac2431ef8a10f7b0e2c0997068f05dfd4ff2eadf6411547591",
+      "holdout": {
+        "cases": [
+          {
+            "actual": 252,
+            "expected": 228,
+            "input": -10,
+            "split": "holdout"
+          },
+          {
+            "actual": 14,
+            "expected": 18,
+            "input": 4,
+            "split": "holdout"
+          },
+          {
+            "actual": 152,
+            "expected": 168,
+            "input": 10,
+            "split": "holdout"
+          }
+        ],
+        "observed_cases": 3,
+        "passed": 0,
+        "planned_cases": 3
+      },
+      "invocation_id": "52-pr14_product_neighbor_factors-compact_multilingual_single",
+      "status": "compiled_and_scored",
+      "training": {
+        "cases": [
+          {
+            "actual": 35,
+            "expected": 25,
+            "input": -3,
+            "split": "training"
+          },
+          {
+            "actual": 2,
+            "expected": -2,
+            "input": 0,
+            "split": "training"
+          },
+          {
+            "actual": 0,
+            "expected": 0,
+            "input": 2,
+            "split": "training"
+          },
+          {
+            "actual": 27,
+            "expected": 33,
+            "input": 5,
+            "split": "training"
+          }
+        ],
+        "observed_cases": 4,
+        "passed": 1,
+        "planned_cases": 4
+      }
+    },
+    {
+      "generated_source_sha256": "50d98f0913f5bd62c99cc61a4bad2badf0390615af5938aefe06884bc7c4ed27",
+      "go_exit_code": 0,
+      "go_stderr_bytes": 0,
+      "go_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "go_stdout_bytes": 49,
+      "go_stdout_sha256": "c0154333013fd6ce40b33980fe5e53e4bef7486cf2f8d404dda059d559487309",
+      "holdout": {
+        "cases": [
+          {
+            "actual": 0,
+            "expected": 0,
+            "input": -100,
+            "split": "holdout"
+          },
+          {
+            "actual": 1,
+            "expected": 1,
+            "input": -1,
+            "split": "holdout"
+          },
+          {
+            "actual": 1,
+            "expected": 1,
+            "input": 1,
+            "split": "holdout"
+          },
+          {
+            "actual": 0,
+            "expected": 0,
+            "input": 100,
+            "split": "holdout"
+          }
+        ],
+        "observed_cases": 4,
+        "passed": 4,
+        "planned_cases": 4
+      },
+      "invocation_id": "53-bl21_saved_range_predicates-compact_multilingual_local_feedback",
+      "status": "compiled_and_scored",
+      "training": {
+        "cases": [
+          {
+            "actual": 0,
+            "expected": 0,
+            "input": -3,
+            "split": "training"
+          },
+          {
+            "actual": 1,
+            "expected": 1,
+            "input": -2,
+            "split": "training"
+          },
+          {
+            "actual": 1,
+            "expected": 1,
+            "input": 0,
+            "split": "training"
+          },
+          {
+            "actual": 1,
+            "expected": 1,
+            "input": 2,
+            "split": "training"
+          },
+          {
+            "actual": 0,
+            "expected": 0,
+            "input": 3,
+            "split": "training"
+          }
+        ],
+        "observed_cases": 5,
+        "passed": 5,
+        "planned_cases": 5
+      }
+    },
+    {
+      "generated_source_sha256": "d6ee2c0c286424c5ec81431beff48876c41ea6247e68e52c5431a696d3d1d6e9",
+      "go_exit_code": 0,
+      "go_stderr_bytes": 0,
+      "go_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "go_stdout_bytes": 49,
+      "go_stdout_sha256": "cd07f358a2d2a49ef92bd37410c392a1a1daf9bfb2c4b28cfbddf7bd4755e453",
+      "holdout": {
+        "cases": [
+          {
+            "actual": 9223372036854775807,
+            "expected": 9223372036854775807,
+            "input": 9223372036854775807,
+            "split": "holdout"
+          },
+          {
+            "actual": 4611686018427387905,
+            "expected": 9223372036854775806,
+            "input": 4611686018427387903,
+            "split": "holdout"
+          },
+          {
+            "actual": 9223372036854775807,
+            "expected": 9223372036854775807,
+            "input": 4611686018427387904,
+            "split": "holdout"
+          },
+          {
+            "actual": -9223372036854775808,
+            "expected": -9223372036854775808,
+            "input": -9223372036854775808,
+            "split": "holdout"
+          },
+          {
+            "actual": -4611686018427387902,
+            "expected": -9223372036854775808,
+            "input": -4611686018427387904,
+            "split": "holdout"
+          },
+          {
+            "actual": -9223372036854775808,
+            "expected": -9223372036854775808,
+            "input": -4611686018427387905,
+            "split": "holdout"
+          }
+        ],
+        "observed_cases": 6,
+        "passed": 4,
+        "planned_cases": 6
+      },
+      "invocation_id": "54-ob31_saturating_double-compact_multilingual_single",
+      "status": "compiled_and_scored",
+      "training": {
+        "cases": [
+          {
+            "actual": 0,
+            "expected": -4,
+            "input": -2,
+            "split": "training"
+          },
+          {
+            "actual": 1,
+            "expected": -2,
+            "input": -1,
+            "split": "training"
+          },
+          {
+            "actual": 2,
+            "expected": 0,
+            "input": 0,
+            "split": "training"
+          },
+          {
+            "actual": 3,
+            "expected": 2,
+            "input": 1,
+            "split": "training"
+          },
+          {
+            "actual": 4,
+            "expected": 4,
+            "input": 2,
+            "split": "training"
+          }
+        ],
+        "observed_cases": 5,
+        "passed": 1,
+        "planned_cases": 5
+      }
+    },
+    {
+      "generated_source_sha256": "5af7879c6f42ca6ee2aa0fcaab1883416604b66afad4206b3e676c299509e8b5",
+      "go_exit_code": 0,
+      "go_stderr_bytes": 0,
+      "go_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "go_stdout_bytes": 49,
+      "go_stdout_sha256": "37dd40c027fae875b7d8f2b2333cab8886c3ccf2c1860b06a2653e28ef119962",
+      "holdout": {
+        "cases": [
+          {
+            "actual": 0,
+            "expected": 0,
+            "input": -100,
+            "split": "holdout"
+          },
+          {
+            "actual": 9,
+            "expected": 9,
+            "input": -2,
+            "split": "holdout"
+          },
+          {
+            "actual": 9,
+            "expected": 9,
+            "input": 1,
+            "split": "holdout"
+          },
+          {
+            "actual": 0,
+            "expected": 0,
+            "input": 100,
+            "split": "holdout"
+          }
+        ],
+        "observed_cases": 4,
+        "passed": 4,
+        "planned_cases": 4
+      },
+      "invocation_id": "55-bl23_nonzero_bounded_flag-compact_multilingual_local_feedback",
+      "status": "compiled_and_scored",
+      "training": {
+        "cases": [
+          {
+            "actual": 0,
+            "expected": 0,
+            "input": -5,
+            "split": "training"
+          },
+          {
+            "actual": 9,
+            "expected": 9,
+            "input": -4,
+            "split": "training"
+          },
+          {
+            "actual": 9,
+            "expected": 9,
+            "input": -1,
+            "split": "training"
+          },
+          {
+            "actual": 0,
+            "expected": 0,
+            "input": 0,
+            "split": "training"
+          },
+          {
+            "actual": 9,
+            "expected": 9,
+            "input": 4,
+            "split": "training"
+          },
+          {
+            "actual": 0,
+            "expected": 0,
+            "input": 5,
+            "split": "training"
+          }
+        ],
+        "observed_cases": 6,
+        "passed": 6,
+        "planned_cases": 6
+      }
+    },
+    {
+      "generated_source_sha256": "7f54aae6e7e86c9781810bfaf2b0a30c5a8e32dcf49023195a7da1a6f62cd1e8",
+      "go_exit_code": 0,
+      "go_stderr_bytes": 0,
+      "go_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "go_stdout_bytes": 49,
+      "go_stdout_sha256": "c0154333013fd6ce40b33980fe5e53e4bef7486cf2f8d404dda059d559487309",
+      "holdout": {
+        "cases": [
+          {
+            "actual": 1,
+            "expected": 1,
+            "input": -9,
+            "split": "holdout"
+          },
+          {
+            "actual": 0,
+            "expected": 0,
+            "input": 5,
+            "split": "holdout"
+          },
+          {
+            "actual": 0,
+            "expected": 0,
+            "input": 10,
+            "split": "holdout"
+          }
+        ],
+        "observed_cases": 3,
+        "passed": 3,
+        "planned_cases": 3
+      },
+      "invocation_id": "56-cp17_nonpositive_inclusive-compact_multilingual_single",
+      "status": "compiled_and_scored",
+      "training": {
+        "cases": [
+          {
+            "actual": 1,
+            "expected": 1,
+            "input": -1,
+            "split": "training"
+          },
+          {
+            "actual": 0,
+            "expected": 1,
+            "input": 0,
+            "split": "training"
+          },
+          {
+            "actual": 0,
+            "expected": 0,
+            "input": 1,
+            "split": "training"
+          }
+        ],
+        "observed_cases": 3,
+        "passed": 2,
+        "planned_cases": 3
+      }
+    },
+    {
+      "generated_source_sha256": "6bf13c8bd2465eb5056f8047e3796b5609fb0ab0de03a86fd03a8d6fd60d3126",
+      "go_exit_code": 0,
+      "go_stderr_bytes": 0,
+      "go_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "go_stdout_bytes": 49,
+      "go_stdout_sha256": "c0154333013fd6ce40b33980fe5e53e4bef7486cf2f8d404dda059d559487309",
+      "holdout": {
+        "cases": [
+          {
+            "actual": 9223372036854775807,
+            "expected": 9223372036854775807,
+            "input": 9223372036854775807,
+            "split": "holdout"
+          },
+          {
+            "actual": 9223372036854775806,
+            "expected": 9223372036854775806,
+            "input": 4611686018427387903,
+            "split": "holdout"
+          },
+          {
+            "actual": 9223372036854775807,
+            "expected": 9223372036854775807,
+            "input": 4611686018427387904,
+            "split": "holdout"
+          },
+          {
+            "actual": -9223372036854775808,
+            "expected": -9223372036854775808,
+            "input": -9223372036854775808,
+            "split": "holdout"
+          },
+          {
+            "actual": -9223372036854775808,
+            "expected": -9223372036854775808,
+            "input": -4611686018427387904,
+            "split": "holdout"
+          },
+          {
+            "actual": -9223372036854775808,
+            "expected": -9223372036854775808,
+            "input": -4611686018427387905,
+            "split": "holdout"
+          }
+        ],
+        "observed_cases": 6,
+        "passed": 6,
+        "planned_cases": 6
+      },
+      "invocation_id": "57-ob31_saturating_double-compact_multilingual_local_feedback",
+      "status": "compiled_and_scored",
+      "training": {
+        "cases": [
+          {
+            "actual": -4,
+            "expected": -4,
+            "input": -2,
+            "split": "training"
+          },
+          {
+            "actual": -2,
+            "expected": -2,
+            "input": -1,
+            "split": "training"
+          },
+          {
+            "actual": 0,
+            "expected": 0,
+            "input": 0,
+            "split": "training"
+          },
+          {
+            "actual": 2,
+            "expected": 2,
+            "input": 1,
+            "split": "training"
+          },
+          {
+            "actual": 4,
+            "expected": 4,
+            "input": 2,
+            "split": "training"
+          }
+        ],
+        "observed_cases": 5,
+        "passed": 5,
+        "planned_cases": 5
+      }
+    },
+    {
+      "generated_source_sha256": "ff2d3a93ff99677b9ea0bbc12f12454994ed6a195b945830057b3842ef554866",
+      "go_exit_code": 0,
+      "go_stderr_bytes": 0,
+      "go_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "go_stdout_bytes": 49,
+      "go_stdout_sha256": "bc14d0508da299f4de9748f0aeea88d73c74fbdb9c5d084fad92c2ee6a4e3b86",
+      "holdout": {
+        "cases": [
+          {
+            "actual": 0,
+            "expected": 0,
+            "input": -10,
+            "split": "holdout"
+          },
+          {
+            "actual": 5,
+            "expected": 5,
+            "input": 4,
+            "split": "holdout"
+          },
+          {
+            "actual": 21,
+            "expected": 21,
+            "input": 20,
+            "split": "holdout"
+          }
+        ],
+        "observed_cases": 3,
+        "passed": 3,
+        "planned_cases": 3
+      },
+      "invocation_id": "58-lr10_floor_then_increment-compact_multilingual_local_feedback",
+      "status": "compiled_and_scored",
+      "training": {
+        "cases": [
+          {
+            "actual": 0,
+            "expected": 0,
+            "input": -1,
+            "split": "training"
+          },
+          {
+            "actual": 1,
+            "expected": 1,
+            "input": 0,
+            "split": "training"
+          },
+          {
+            "actual": 2,
+            "expected": 2,
+            "input": 1,
+            "split": "training"
+          },
+          {
+            "actual": 6,
+            "expected": 6,
+            "input": 5,
+            "split": "training"
+          }
+        ],
+        "observed_cases": 4,
+        "passed": 4,
+        "planned_cases": 4
+      }
+    },
+    {
+      "generated_source_sha256": "1003be744d279328f64b06b8dabc1a3c9fe8cebce0706649d45f1c92177cb2c9",
+      "go_exit_code": 0,
+      "go_stderr_bytes": 0,
+      "go_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "go_stdout_bytes": 49,
+      "go_stdout_sha256": "286ed20fc5f0126af91d034ee44eff5b5c924a5f2222df173d8de118d845189b",
+      "holdout": {
+        "cases": [
+          {
+            "actual": -5,
+            "expected": -5,
+            "input": -10,
+            "split": "holdout"
+          },
+          {
+            "actual": 5,
+            "expected": 5,
+            "input": 2,
+            "split": "holdout"
+          },
+          {
+            "actual": -5,
+            "expected": -5,
+            "input": 100,
+            "split": "holdout"
+          }
+        ],
+        "observed_cases": 3,
+        "passed": 3,
+        "planned_cases": 3
+      },
+      "invocation_id": "59-bl22_reassigned_valid_flag-compact_multilingual_local_feedback",
+      "status": "compiled_and_scored",
+      "training": {
+        "cases": [
+          {
+            "actual": -5,
+            "expected": -5,
+            "input": -1,
+            "split": "training"
+          },
+          {
+            "actual": 5,
+            "expected": 5,
+            "input": 0,
+            "split": "training"
+          },
+          {
+            "actual": 5,
+            "expected": 5,
+            "input": 5,
+            "split": "training"
+          },
+          {
+            "actual": -5,
+            "expected": -5,
+            "input": 6,
+            "split": "training"
+          },
+          {
+            "actual": -5,
+            "expected": -5,
+            "input": 10,
+            "split": "training"
+          }
+        ],
+        "observed_cases": 5,
+        "passed": 5,
+        "planned_cases": 5
+      }
+    },
+    {
+      "generated_source_sha256": "18cad4eb1dd308603e00ba2d9f83bf2769d89b13079eced2f3968b8905d1ad7f",
+      "go_exit_code": 0,
+      "go_stderr_bytes": 0,
+      "go_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "go_stdout_bytes": 49,
+      "go_stdout_sha256": "ab9a69f2322ab71550e406cda849bd728ca565e12be25b40ef1b89990835fddf",
+      "holdout": {
+        "cases": [
+          {
+            "actual": -1,
+            "expected": -1,
+            "input": -1,
+            "split": "holdout"
+          },
+          {
+            "actual": 0,
+            "expected": 0,
+            "input": 70,
+            "split": "holdout"
+          },
+          {
+            "actual": 19,
+            "expected": 20,
+            "input": 100,
+            "split": "holdout"
+          }
+        ],
+        "observed_cases": 3,
+        "passed": 2,
+        "planned_cases": 3
+      },
+      "invocation_id": "60-ni08_upper_grade_excess-compact_multilingual_single",
+      "status": "compiled_and_scored",
+      "training": {
+        "cases": [
+          {
+            "actual": -1,
+            "expected": -1,
+            "input": 59,
+            "split": "training"
+          },
+          {
+            "actual": 0,
+            "expected": 0,
+            "input": 60,
+            "split": "training"
+          },
+          {
+            "actual": 0,
+            "expected": 0,
+            "input": 79,
+            "split": "training"
+          },
+          {
+            "actual": -1,
+            "expected": 0,
+            "input": 80,
+            "split": "training"
+          },
+          {
+            "actual": 0,
+            "expected": 1,
+            "input": 81,
+            "split": "training"
+          }
+        ],
+        "observed_cases": 5,
+        "passed": 3,
+        "planned_cases": 5
+      }
+    },
+    {
+      "generated_source_sha256": "dca6c086f504b49bb4ffc2193a92976d6dd961118da816a505225740fb1864b2",
+      "go_exit_code": 0,
+      "go_stderr_bytes": 0,
+      "go_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "go_stdout_bytes": 49,
+      "go_stdout_sha256": "6936e1b54f303041d4d0810319840e1781e19939bafbb1afe70a044878bb48e4",
+      "holdout": {
+        "cases": [
+          {
+            "actual": 0,
+            "expected": 0,
+            "input": -100,
+            "split": "holdout"
+          },
+          {
+            "actual": 0,
+            "expected": 0,
+            "input": 1,
+            "split": "holdout"
+          },
+          {
+            "actual": 0,
+            "expected": 0,
+            "input": 10,
+            "split": "holdout"
+          }
+        ],
+        "observed_cases": 3,
+        "passed": 3,
+        "planned_cases": 3
+      },
+      "invocation_id": "61-bl24_selected_nonnegative_codes-compact_multilingual_single",
+      "status": "compiled_and_scored",
+      "training": {
+        "cases": [
+          {
+            "actual": 0,
+            "expected": 0,
+            "input": -1,
+            "split": "training"
+          },
+          {
+            "actual": 0,
+            "expected": 0,
+            "input": 0,
+            "split": "training"
+          },
+          {
+            "actual": 6,
+            "expected": 6,
+            "input": 2,
+            "split": "training"
+          },
+          {
+            "actual": 0,
+            "expected": 6,
+            "input": 4,
+            "split": "training"
+          },
+          {
+            "actual": 0,
+            "expected": 0,
+            "input": 5,
+            "split": "training"
+          }
+        ],
+        "observed_cases": 5,
+        "passed": 4,
+        "planned_cases": 5
+      }
+    },
+    {
+      "generated_source_sha256": "50d98f0913f5bd62c99cc61a4bad2badf0390615af5938aefe06884bc7c4ed27",
+      "go_exit_code": 0,
+      "go_stderr_bytes": 0,
+      "go_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "go_stdout_bytes": 49,
+      "go_stdout_sha256": "37dd40c027fae875b7d8f2b2333cab8886c3ccf2c1860b06a2653e28ef119962",
+      "holdout": {
+        "cases": [
+          {
+            "actual": 0,
+            "expected": 0,
+            "input": -100,
+            "split": "holdout"
+          },
+          {
+            "actual": 1,
+            "expected": 1,
+            "input": -1,
+            "split": "holdout"
+          },
+          {
+            "actual": 1,
+            "expected": 1,
+            "input": 1,
+            "split": "holdout"
+          },
+          {
+            "actual": 0,
+            "expected": 0,
+            "input": 100,
+            "split": "holdout"
+          }
+        ],
+        "observed_cases": 4,
+        "passed": 4,
+        "planned_cases": 4
+      },
+      "invocation_id": "62-bl21_saved_range_predicates-compact_multilingual_single",
+      "status": "compiled_and_scored",
+      "training": {
+        "cases": [
+          {
+            "actual": 0,
+            "expected": 0,
+            "input": -3,
+            "split": "training"
+          },
+          {
+            "actual": 1,
+            "expected": 1,
+            "input": -2,
+            "split": "training"
+          },
+          {
+            "actual": 1,
+            "expected": 1,
+            "input": 0,
+            "split": "training"
+          },
+          {
+            "actual": 1,
+            "expected": 1,
+            "input": 2,
+            "split": "training"
+          },
+          {
+            "actual": 0,
+            "expected": 0,
+            "input": 3,
+            "split": "training"
+          }
+        ],
+        "observed_cases": 5,
+        "passed": 5,
+        "planned_cases": 5
+      }
+    },
+    {
+      "generated_source_sha256": "d12ea972b017d8c4a72eb14bf333a48776ff347e2399a455def9ba21c0ba05b0",
+      "go_exit_code": 0,
+      "go_stderr_bytes": 0,
+      "go_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "go_stdout_bytes": 49,
+      "go_stdout_sha256": "bc14d0508da299f4de9748f0aeea88d73c74fbdb9c5d084fad92c2ee6a4e3b86",
+      "holdout": {
+        "cases": [
+          {
+            "actual": 124,
+            "expected": 124,
+            "input": -10,
+            "split": "holdout"
+          },
+          {
+            "actual": 73,
+            "expected": 73,
+            "input": 7,
+            "split": "holdout"
+          },
+          {
+            "actual": 34,
+            "expected": 34,
+            "input": 20,
+            "split": "holdout"
+          }
+        ],
+        "observed_cases": 3,
+        "passed": 3,
+        "planned_cases": 3
+      },
+      "invocation_id": "63-pr13_subtract_tripled_sum-compact_multilingual_local_feedback",
+      "status": "compiled_and_scored",
+      "training": {
+        "cases": [
+          {
+            "actual": 100,
+            "expected": 100,
+            "input": -2,
+            "split": "training"
+          },
+          {
+            "actual": 94,
+            "expected": 94,
+            "input": 0,
+            "split": "training"
+          },
+          {
+            "actual": 85,
+            "expected": 85,
+            "input": 3,
+            "split": "training"
+          },
+          {
+            "actual": 79,
+            "expected": 79,
+            "input": 5,
+            "split": "training"
+          }
+        ],
+        "observed_cases": 4,
+        "passed": 4,
+        "planned_cases": 4
+      }
+    },
+    {
+      "generated_source_sha256": "3daaaf50187357787241b99381736c528d66a84ed0d25e521b3a9bd30d247b3a",
+      "go_exit_code": 0,
+      "go_stderr_bytes": 0,
+      "go_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "go_stdout_bytes": 49,
+      "go_stdout_sha256": "d94664287bd0adb3f37469cb59b499c6f1547dd091705e49ad14d930b9cb2cf0",
+      "holdout": {
+        "cases": [
+          {
+            "actual": -9223372036854775808,
+            "expected": -9223372036854775808,
+            "input": -9223372036854775808,
+            "split": "holdout"
+          },
+          {
+            "actual": -9223372036854775806,
+            "expected": -9223372036854775806,
+            "input": -9223372036854775805,
+            "split": "holdout"
+          },
+          {
+            "actual": 9,
+            "expected": 9,
+            "input": 10,
+            "split": "holdout"
+          }
+        ],
+        "observed_cases": 3,
+        "passed": 3,
+        "planned_cases": 3
+      },
+      "invocation_id": "64-ob30_saturating_decrement-compact_multilingual_local_feedback",
+      "status": "compiled_and_scored",
+      "training": {
+        "cases": [
+          {
+            "actual": -9223372036854775807,
+            "expected": -9223372036854775807,
+            "input": -9223372036854775806,
+            "split": "training"
+          },
+          {
+            "actual": -9223372036854775808,
+            "expected": -9223372036854775808,
+            "input": -9223372036854775807,
+            "split": "training"
+          },
+          {
+            "actual": -1,
+            "expected": -1,
+            "input": 0,
+            "split": "training"
+          },
+          {
+            "actual": 0,
+            "expected": 0,
+            "input": 1,
+            "split": "training"
+          }
+        ],
+        "observed_cases": 4,
+        "passed": 4,
+        "planned_cases": 4
+      }
+    }
+  ]
+}

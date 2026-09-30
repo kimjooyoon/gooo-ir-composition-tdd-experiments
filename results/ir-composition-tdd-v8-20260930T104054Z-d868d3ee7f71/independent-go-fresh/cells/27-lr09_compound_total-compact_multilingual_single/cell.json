@@ -1,0 +1,32 @@
+{
+  "invocation": {
+    "arm": "compact_multilingual_single",
+    "error": "FileNotFoundError: [Errno 2] No such file or directory: '/Users/alice/meta-go/research/metaprogramming/gooo-ir-composition-tdd-experiments/study-design-v8/fixtures/lr09_compound_total.gooo'",
+    "intent_id": "lr09_compound_total",
+    "invocation_id": "27-lr09_compound_total-compact_multilingual_single",
+    "planned_holdout_cases": 3,
+    "planned_training_cases": 4,
+    "sequence": 27,
+    "source_invocation_record_sha256": "1f83ade8cfc01770c4e3916da21c924dba8dc3c9320f5f0c585cabbd3c9fcbd6",
+    "source_stderr_bytes": 0,
+    "source_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "source_stdout_bytes": 18751,
+    "source_stdout_sha256": "b5fb92efb4335b2ea0cf7142a897d871703126a125cabed2d35fe27a16f010d4",
+    "status": "input_validation_failed"
+  },
+  "score": {
+    "holdout": {
+      "cases": [],
+      "observed_cases": 0,
+      "passed": null,
+      "planned_cases": 3
+    },
+    "status": "input_validation_failed",
+    "training": {
+      "cases": [],
+      "observed_cases": 0,
+      "passed": null,
+      "planned_cases": 4
+    }
+  }
+}

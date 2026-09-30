@@ -1,0 +1,13 @@
+{
+  "activity": "C25",
+  "frozen_design_sha256": "ab691ac00f73abc1cef9648da58c20a1816d7ab16cda7e59536054bea9a66b52",
+  "frozen_fixture_sha256": "efa85435aff410ef43981757ac9e39dc535d1def1b12be5d659671dc9b981e21",
+  "frozen_holdout_sha256": "086d8af757ca542ccaa0ec14314d9fcbccb4649e82d3862c3cb3d899f2ee7313",
+  "frozen_plan_sha256": "3d576773c2ab36c2659f44e652eb113902c5032257ba0cbd47bd94fd2b8bdad4",
+  "generated_source_sha256": "28f68fa00288a8e8b8525b1404e49a2584b6446db47a5dabcc067e45b9adb1da",
+  "generated_test_source_sha256": "7a31d238ec88f3b57e3c12579596af836d0cce1c3047f67706ad7f953b95bffb",
+  "go_mod_sha256": "0e6f935fb61192d92d2c562aa4344e5e5ec54ad82d62b4d4cbd4a579168da2d3",
+  "invocation_id": "22-tx25_sign_label-compact_multilingual_local_feedback",
+  "source_cli_invocation_record_sha256": "f294685bcf0285a1fa012d91a1cf807a78554a2bbe954cfeb8ef1188f0e296eb",
+  "source_cli_stdout_sha256": "540664d52c3d4799c934016eec9605fa71f122497a12756f71bf032ce081020d"
+}

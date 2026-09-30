@@ -1,0 +1,13 @@
+{
+  "activity": "C09",
+  "frozen_design_sha256": "ab691ac00f73abc1cef9648da58c20a1816d7ab16cda7e59536054bea9a66b52",
+  "frozen_fixture_sha256": "a97d6784cf459fa0bc97233c9ebc8717f526bf7b2c66913c996aeea332e35e70",
+  "frozen_holdout_sha256": "862cef36b33fa6f4e92ede5208a085cc818f36c35948d7b4b8b45858dd9bcb57",
+  "frozen_plan_sha256": "4d80add006991f4f76479acb235d659f80acfd2b99f23d93051e3559cdd9a021",
+  "generated_source_sha256": "b03ca10b98e21f37a48ecbe4031c0d26505ec97d3ef8c4e41714aff4e014123e",
+  "generated_test_source_sha256": "f97abd12dcab070d71f1b1bb3e96c56ef961e14a123e183cbc04056c2b621932",
+  "go_mod_sha256": "0e6f935fb61192d92d2c562aa4344e5e5ec54ad82d62b4d4cbd4a579168da2d3",
+  "invocation_id": "27-lr09_compound_total-compact_multilingual_single",
+  "source_cli_invocation_record_sha256": "777c8a438b19e5e413bdc8402b4623c360ab51f4e36d38da57d2a777b3183c64",
+  "source_cli_stdout_sha256": "6abddf62f6cbc16770f85752f0f6f48a19ec839d033204ddec2262c8572bff7a"
+}

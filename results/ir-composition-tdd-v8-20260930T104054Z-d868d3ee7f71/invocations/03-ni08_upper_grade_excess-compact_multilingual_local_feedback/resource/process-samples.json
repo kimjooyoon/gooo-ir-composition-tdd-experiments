@@ -1,0 +1,107 @@
+{
+  "cli_process_samples": [
+    {
+      "cli_process": {
+        "alive": true,
+        "cpu_seconds": 0.0,
+        "pcpu_percent_sample": 0.0,
+        "pid": 48276,
+        "ps_raw": "0:00.00   0.0   2944 48276",
+        "rss_kb": 2944
+      },
+      "invocation_id": null,
+      "monotonic_ns": 8934657000,
+      "sample_index": 1,
+      "sampled_unix_ns": 1790764919243205000,
+      "sampled_utc": "2026-09-30T10:41:59.243190+00:00",
+      "stage": "unspecified"
+    },
+    {
+      "cli_process": {
+        "alive": false,
+        "pid": 48276,
+        "ps_raw": ""
+      },
+      "invocation_id": null,
+      "monotonic_ns": 9161431500,
+      "sample_index": 2,
+      "sampled_unix_ns": 1790764919469979000,
+      "sampled_utc": "2026-09-30T10:41:59.469965+00:00",
+      "stage": "unspecified"
+    }
+  ],
+  "cli_process_summary": {
+    "cpu_delta_status": "unknown_fewer_than_two_live_ps_samples",
+    "cpu_seconds_delta_coarse": null,
+    "measurement_note": "Process-level ps samples; CPU is cumulative and second-granularity; RSS and CPU-percent peaks are sampled.",
+    "pcpu_interpretation": "sampled rolling process CPU percent; not host CPU increase",
+    "pcpu_percent_max_sampled": 0.0,
+    "rss_peak_kb_sampled": 2944,
+    "sample_count": 1
+  },
+  "invocation_id": "03-ni08_upper_grade_excess-compact_multilingual_local_feedback",
+  "laya_server_samples": [
+    {
+      "invocation_id": "03-ni08_upper_grade_excess-compact_multilingual_local_feedback",
+      "laya_server": {
+        "alive": true,
+        "cpu_seconds": 4.08,
+        "pcpu_percent_sample": 126.6,
+        "pid": 48232,
+        "ps_raw": "0:04.08 126.6 1358512 48232",
+        "rss_kb": 1358512
+      },
+      "monotonic_ns": 8931187416,
+      "sample_index": 9,
+      "sampled_unix_ns": 1790764919239736000,
+      "sampled_utc": "2026-09-30T10:41:59.239725+00:00",
+      "stage": "capture_cell"
+    },
+    {
+      "invocation_id": "03-ni08_upper_grade_excess-compact_multilingual_local_feedback",
+      "laya_server": {
+        "alive": true,
+        "cpu_seconds": 4.14,
+        "pcpu_percent_sample": 126.6,
+        "pid": 48232,
+        "ps_raw": "0:04.14 126.6 1321440 48232",
+        "rss_kb": 1321440
+      },
+      "monotonic_ns": 8976477541,
+      "sample_index": 10,
+      "sampled_unix_ns": 1790764919285025000,
+      "sampled_utc": "2026-09-30T10:41:59.285002+00:00",
+      "stage": "capture_cell"
+    },
+    {
+      "invocation_id": "03-ni08_upper_grade_excess-compact_multilingual_local_feedback",
+      "laya_server": {
+        "alive": true,
+        "cpu_seconds": 4.51,
+        "pcpu_percent_sample": 164.9,
+        "pid": 48232,
+        "ps_raw": "0:04.51 164.9 1145248 48232",
+        "rss_kb": 1145248
+      },
+      "monotonic_ns": 9163743000,
+      "sample_index": 11,
+      "sampled_unix_ns": 1790764919472291000,
+      "sampled_utc": "2026-09-30T10:41:59.472278+00:00",
+      "stage": "capture_cell"
+    }
+  ],
+  "laya_server_summary": {
+    "cpu_delta_status": "coarse_observed_at_ps_second_resolution",
+    "cpu_seconds_delta_coarse": 0.4299999999999997,
+    "measurement_note": "Process-level ps samples; CPU is cumulative and second-granularity; RSS and CPU-percent peaks are sampled.",
+    "pcpu_interpretation": "sampled rolling process CPU percent; not host CPU increase",
+    "pcpu_percent_max_sampled": 164.9,
+    "rss_peak_kb_sampled": 1358512,
+    "sample_count": 3
+  },
+  "notes": [
+    "ps cputime has one-second resolution; missing/zero deltas below resolution are unknown",
+    "ps pcpu is sampled rolling process CPU percent, not host CPU increase"
+  ],
+  "schema": "gooo/ir-composition-tdd-cell-resource-samples/v1"
+}

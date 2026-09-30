@@ -1,0 +1,13 @@
+{
+  "activity": "C01",
+  "frozen_design_sha256": "ab691ac00f73abc1cef9648da58c20a1816d7ab16cda7e59536054bea9a66b52",
+  "frozen_fixture_sha256": "43b1b9f76f8cc1f7cd5333c5807b0103cd4e3c230487edf1df7fa3c825b9cc83",
+  "frozen_holdout_sha256": "d80c38a48edd280f83c2a3e3ae8581325927dea18274970f4a774ca18dff7dc4",
+  "frozen_plan_sha256": "dfa9214d205bc5e3a818f695bdd9c90f6852bf4c37d352a672381b23ba641a74",
+  "generated_source_sha256": "b73d7028d5a656fe971e77fd530962aeeab1360bada512fd88063ea0e7a3f299",
+  "generated_test_source_sha256": "531d68a010f9bb2776931f94009f470eb282b23d07524336eb2d7c247ff79860",
+  "go_mod_sha256": "0e6f935fb61192d92d2c562aa4344e5e5ec54ad82d62b4d4cbd4a579168da2d3",
+  "invocation_id": "51-cc01_inclusive_band-compact_multilingual_local_feedback",
+  "source_cli_invocation_record_sha256": "0e4f8c845c64020e1b8718677467c108b7154fba9a7c37cc3bc5c9b9563005cf",
+  "source_cli_stdout_sha256": "5f60ba13f4140870a5250c5b7ab07fa981aa08e4d5069f656fb4672616253580"
+}

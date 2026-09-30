@@ -1,0 +1,38 @@
+{
+  "baseline_label": "zero_model_deterministic_offline_baseline",
+  "cache_offline_environment": {
+    "HF_DATASETS_OFFLINE": "1",
+    "HF_HUB_DISABLE_TELEMETRY": "1",
+    "HF_HUB_OFFLINE": "1",
+    "TRANSFORMERS_OFFLINE": "1"
+  },
+  "cli_timeout_seconds": 30,
+  "compiler_path": "/private/tmp/gooo-composition-tdd-f3e576ad-20260930",
+  "compiler_sha256": "ecbae47a877f57117e4f493ab85adc0279956c437a68e9fa374bee1b3772db1f",
+  "compiler_source_revision": "f3e576ad55796c0d42b2af8b86f874b49baa61d8",
+  "created_utc": "2026-09-30T10:55:22.678736+00:00",
+  "design_sha256": "ab691ac00f73abc1cef9648da58c20a1816d7ab16cda7e59536054bea9a66b52",
+  "go_binary_path": "/Users/alice/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.27.0.darwin-arm64/bin/go",
+  "go_binary_sha256": "a19a71df81715c12d9a7e81bab036c12696fec1ddbd4258b48a2131a9080b267",
+  "go_offline_environment": {
+    "GOPROXY": "off",
+    "GOSUMDB": "off",
+    "GOTOOLCHAIN": "local",
+    "GOWORK": "off"
+  },
+  "go_version": "go version go1.27.0 darwin/arm64",
+  "holdout_policy": "holdout files are not copied into the CLI workspace and are not read by this runner",
+  "phase_plans_sha256": "e3ceeaa24d187e1a14c52e4c946b99751e305607491f4164f96e8b822e5b023e",
+  "plan_and_fixture_policy": "copied exact bytes from the frozen v8 design for each invocation",
+  "planned_cells": 64,
+  "planned_cells_per_arm": 32,
+  "provider_actual_calls_before_execution": 0,
+  "provider_credentials_configured": false,
+  "provider_endpoint_configured": false,
+  "provider_environment_removed_keys": [],
+  "relationship_to_live_study": "matched baseline over the same 32 frozen intents x 2 arms; no new intent count",
+  "runner_script_archive": "code-archive/scripts/run_zero_model_tdd_baseline.py",
+  "runner_script_sha256": "2727a782aee8d82a88886e4c2c1b85d36cab13ce9e0ce6a58546c7818a9fcf73",
+  "schema": "gooo/ir-composition-tdd-zero-model-preexecution/v1",
+  "status": "ARCHIVED_BEFORE_FIRST_CLI"
+}

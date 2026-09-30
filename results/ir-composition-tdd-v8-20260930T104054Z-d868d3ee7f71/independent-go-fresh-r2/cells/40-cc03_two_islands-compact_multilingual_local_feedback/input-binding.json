@@ -1,0 +1,13 @@
+{
+  "activity": "C03",
+  "frozen_design_sha256": "ab691ac00f73abc1cef9648da58c20a1816d7ab16cda7e59536054bea9a66b52",
+  "frozen_fixture_sha256": "23d2a251e11af1ced7653848770d2bf98f8a788d2cf729d2405389febd3a9b3b",
+  "frozen_holdout_sha256": "dbbb20a5d5c113bef2c11b68a0b333aa29d204beef34197038b2583680bf897d",
+  "frozen_plan_sha256": "ff53fd9f18927c75f3cae06a0245fb9747d0644875341ee9a950bd3a18627709",
+  "generated_source_sha256": "90328636055e179f09575f95e26a0f01c69a0c6cb6a22bf7a6d12680bbd4eecc",
+  "generated_test_source_sha256": "df03439084456686462f83a083f4f1abb8f079c19086e78c42b298b55984683f",
+  "go_mod_sha256": "0e6f935fb61192d92d2c562aa4344e5e5ec54ad82d62b4d4cbd4a579168da2d3",
+  "invocation_id": "40-cc03_two_islands-compact_multilingual_local_feedback",
+  "source_cli_invocation_record_sha256": "f9165dbcaeb4d7b9dc5721d09c780c082615371400ae7af18e56e39f14d4f6fb",
+  "source_cli_stdout_sha256": "24cd7596c3bfa0e1bbcb72dd2841bc595035f9198e43d00d0b8f14d45a287acb"
+}

@@ -1,0 +1,92 @@
+{
+  "invocation": {
+    "arm": "compact_multilingual_local_feedback",
+    "captured_first_proposal_candidate_id": null,
+    "captured_native_training_passed": null,
+    "captured_native_training_total": null,
+    "captured_selected_candidate_id": "option_b",
+    "captured_source_completeness_decision": null,
+    "generated_source_sha256": "3daaaf50187357787241b99381736c528d66a84ed0d25e521b3a9bd30d247b3a",
+    "go_exit_code": 0,
+    "go_result_path": "cells/64-ob30_saturating_decrement-compact_multilingual_local_feedback/go/independent-results.json",
+    "go_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "go_stdout_sha256": "50a7ea96e7d9539ed0c7decb8c1c15f1bfa0905be79ea8775e017609e53ee7d6",
+    "intent_id": "ob30_saturating_decrement",
+    "invocation_id": "64-ob30_saturating_decrement-compact_multilingual_local_feedback",
+    "planned_holdout_cases": 3,
+    "planned_training_cases": 4,
+    "report_generated_digest": "sha256:3daaaf50187357787241b99381736c528d66a84ed0d25e521b3a9bd30d247b3a",
+    "sequence": 64,
+    "source_invocation_record_sha256": "833017770bf013d5a45fb6faa65c1ed5ebc89f02803a4ddce5f75070e9ad6143",
+    "source_stderr_bytes": 0,
+    "source_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "source_stdout_bytes": 19722,
+    "source_stdout_sha256": "7df3a4793a0cc7e87cfc256d4a370cbaa958e7673913448f6305607f3aad6bea",
+    "status": "compiled_and_scored"
+  },
+  "score": {
+    "generated_source_sha256": "3daaaf50187357787241b99381736c528d66a84ed0d25e521b3a9bd30d247b3a",
+    "go_exit_code": 0,
+    "go_stderr_bytes": 0,
+    "go_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "go_stdout_bytes": 49,
+    "go_stdout_sha256": "50a7ea96e7d9539ed0c7decb8c1c15f1bfa0905be79ea8775e017609e53ee7d6",
+    "holdout": {
+      "cases": [
+        {
+          "actual": -9223372036854775808,
+          "expected": -9223372036854775808,
+          "input": -9223372036854775808,
+          "split": "holdout"
+        },
+        {
+          "actual": -9223372036854775806,
+          "expected": -9223372036854775806,
+          "input": -9223372036854775805,
+          "split": "holdout"
+        },
+        {
+          "actual": 9,
+          "expected": 9,
+          "input": 10,
+          "split": "holdout"
+        }
+      ],
+      "observed_cases": 3,
+      "passed": 3,
+      "planned_cases": 3
+    },
+    "status": "compiled_and_scored",
+    "training": {
+      "cases": [
+        {
+          "actual": -9223372036854775807,
+          "expected": -9223372036854775807,
+          "input": -9223372036854775806,
+          "split": "training"
+        },
+        {
+          "actual": -9223372036854775808,
+          "expected": -9223372036854775808,
+          "input": -9223372036854775807,
+          "split": "training"
+        },
+        {
+          "actual": -1,
+          "expected": -1,
+          "input": 0,
+          "split": "training"
+        },
+        {
+          "actual": 0,
+          "expected": 0,
+          "input": 1,
+          "split": "training"
+        }
+      ],
+      "observed_cases": 4,
+      "passed": 4,
+      "planned_cases": 4
+    }
+  }
+}

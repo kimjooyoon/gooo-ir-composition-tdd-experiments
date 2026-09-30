@@ -1,0 +1,111 @@
+{
+  "analysis_files": {
+    "json": {
+      "path": "results/ir-composition-tdd-v8-20260930T104054Z-d868d3ee7f71/analysis/capture-analysis.json",
+      "sha256": "ea88a4616ebcab6eaf5f7d534939d7b896b7cf4c54e0a20829ff72b3d597c8e5"
+    },
+    "markdown": {
+      "path": "results/ir-composition-tdd-v8-20260930T104054Z-d868d3ee7f71/analysis/capture-analysis.md",
+      "sha256": "ebe502a7c0fa41c82cd85864ecdd73555b8a56bff87fee6e607f242519c57dc7"
+    }
+  },
+  "authorization": {
+    "path": "preexecution-checkpoint-v8/capture-authorization-receipt.json",
+    "sha256": "d15cfaa8ca680687c57337f582c7d448b63371ee46f31eb262f8284dcd20fa59"
+  },
+  "bound_at_utc": "2026-09-30T10:59:43.777690+00:00",
+  "capture_outcome": {
+    "completed_cells": 64,
+    "drain_settled_post_shutdown": true,
+    "drain_settled_pre_shutdown": true,
+    "existing_intents": 32,
+    "fallbacks": 0,
+    "health_checks": 86,
+    "independent_go_after_shutdown": {
+      "compiled_and_scored": 64,
+      "planned": 64
+    },
+    "new_intents": 0,
+    "owned_service_pid": 48232,
+    "owned_service_return_code": -15,
+    "owned_service_stopped": true,
+    "planned_cells": 64,
+    "post_cap": 96,
+    "provider_posts": 86,
+    "retries": 0,
+    "status": "CAPTURED",
+    "validated_cells": 64,
+    "warmups": 0
+  },
+  "frozen_inputs": {
+    "capture_runner_sha256": "0aabee1c485c9b0333c43dc3f7ce79c137e2e5b3651ca77483b2d2923a97cfee",
+    "compiler": {
+      "build_metadata_sha256": "7a5ddd40745db83a691f8e40b0273147411dcc39f05c94fa1cffd52621a77af4",
+      "go_version": "go1.27.0",
+      "path": "/private/tmp/gooo-composition-tdd-f3e576ad-20260930",
+      "sha256": "ecbae47a877f57117e4f493ab85adc0279956c437a68e9fa374bee1b3772db1f",
+      "source_revision": "f3e576ad55796c0d42b2af8b86f874b49baa61d8"
+    },
+    "design_path": "study-design-v8/study-design.json",
+    "design_sha256": "ab691ac00f73abc1cef9648da58c20a1816d7ab16cda7e59536054bea9a66b52",
+    "model": "multilingual",
+    "model_revision": "55cf4c4ebb4ebe31b2550e8bdf3bd21b99753851",
+    "phase_plans_sha256": "e3ceeaa24d187e1a14c52e4c946b99751e305607491f4164f96e8b822e5b023e",
+    "preexecution_sha256": "9b7a6c57bc0a7920259512019c8ebbcb1ffc38bc892d734306b7696c02d72c68"
+  },
+  "immutability_note": "Added after capture; binds the immutable preexecution, raw proxy event index and bodies, summary, and independent Go replay without rewriting them.",
+  "public_checkpoint": {
+    "commit": "d868d3ee7f7196eba2bf89b452d8f9b69849d9f0",
+    "remote": "main"
+  },
+  "run_id": "ir-composition-tdd-v8-20260930T104054Z-d868d3ee7f71",
+  "runtime_evidence": {
+    "independent-go/replay-results.json": {
+      "bytes": 97278,
+      "sha256": "da89fc15d519dead3584c301dbf21ae21f9ad25d3f530a8b8ead597c312a99be"
+    },
+    "preexecution.json": {
+      "bytes": 2957,
+      "sha256": "9b7a6c57bc0a7920259512019c8ebbcb1ffc38bc892d734306b7696c02d72c68"
+    },
+    "proxy/events.json": {
+      "bytes": 139579,
+      "sha256": "d27a08d6a9d17f1703b5132eff98bcd8d9e0ce845057c218fcd6035f1906495f"
+    },
+    "proxy/events.jsonl": {
+      "bytes": 121071,
+      "sha256": "4140a0833478a2f0a3919d5ec4d8be4c3acbc383084bef9fa750c31f5e621a7c"
+    },
+    "report.json": {
+      "bytes": 831,
+      "sha256": "bdd47db8a63af2d5e6914fb80d0afe980fe8268e7248963abebf50bc617b0402"
+    },
+    "resources/capture-summary.json": {
+      "bytes": 11436,
+      "sha256": "65208098c285c1208201d9ea6d63bd213290ce2b974dbdbfb6adc299bd55c130"
+    },
+    "resources/model-ready-idle-baseline.json": {
+      "bytes": 2502,
+      "sha256": "9ff576c387340cdc5b98869527deea7d16f79d6d4ca2c182f9595647444e345c"
+    },
+    "run-metadata.json": {
+      "bytes": 1641,
+      "sha256": "e6f7b980b30964c08a39fd283608845f53de55e25f949bd3693181b12c199f05"
+    },
+    "summary.json": {
+      "bytes": 12524,
+      "sha256": "353fd644f8fb12b9ddc34a43f5fa3f01aafd5e55e45a6432f97ce6b1be91a294"
+    }
+  },
+  "schema": "gooo/ir-composition-tdd-capture-authorization-binding/v1",
+  "separate_v7_partial_run": {
+    "authorization_binding_sha256": "86425d01fe655c52b15ab09f328ae9448467962a02a548272b3c0c9664784849",
+    "completed_cells": 1,
+    "included_in_v8_metrics": false,
+    "posts": 1,
+    "report_path": "results/ir-composition-tdd-v7-20260930T101537Z-f1832bd67ec9/report.json",
+    "report_sha256": "7261c2235baa415b200e468041d1f67b8dc3e8e2fb9085a85aa1b0311f578e68",
+    "run_id": "ir-composition-tdd-v7-20260930T101537Z-f1832bd67ec9",
+    "unstarted_cells": 63
+  }
+}

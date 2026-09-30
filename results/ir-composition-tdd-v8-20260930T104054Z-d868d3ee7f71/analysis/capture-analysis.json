@@ -1,0 +1,732 @@
+{
+  "capture_scope": {
+    "capture_validated_cells": 64,
+    "completed_cells": 64,
+    "fallback_receipts": 0,
+    "health_checks": 86,
+    "model_revision": "55cf4c4ebb4ebe31b2550e8bdf3bd21b99753851",
+    "new_intents": 0,
+    "planned_cells": 64,
+    "provider_model": "multilingual",
+    "provider_posts": 86,
+    "retries": 0,
+    "same_existing_intents": 32,
+    "threads": 4,
+    "v7_partial_run_separately_excluded": {
+      "binding_sha256": "86425d01fe655c52b15ab09f328ae9448467962a02a548272b3c0c9664784849",
+      "completed_cells": 1,
+      "posts": 1,
+      "run_id": "ir-composition-tdd-v7-20260930T101537Z-f1832bd67ec9",
+      "unstarted_cells": 63
+    },
+    "warmups": 0
+  },
+  "created_utc": "2026-09-30T10:59:43.775137+00:00",
+  "integrity": {
+    "all_raw_request_response_hashes_match": true,
+    "compiled_and_scored": 64,
+    "drain_settled_before_and_after_shutdown": true,
+    "evidence_hashes": {
+      "independent-go/replay-results.json": {
+        "bytes": 97278,
+        "sha256": "da89fc15d519dead3584c301dbf21ae21f9ad25d3f530a8b8ead597c312a99be"
+      },
+      "phase-plans.json": {
+        "bytes": 58809,
+        "sha256": "e3ceeaa24d187e1a14c52e4c946b99751e305607491f4164f96e8b822e5b023e"
+      },
+      "preexecution.json": {
+        "bytes": 2957,
+        "sha256": "9b7a6c57bc0a7920259512019c8ebbcb1ffc38bc892d734306b7696c02d72c68"
+      },
+      "proxy/events.json": {
+        "bytes": 139579,
+        "sha256": "d27a08d6a9d17f1703b5132eff98bcd8d9e0ce845057c218fcd6035f1906495f"
+      },
+      "proxy/events.jsonl": {
+        "bytes": 121071,
+        "sha256": "4140a0833478a2f0a3919d5ec4d8be4c3acbc383084bef9fa750c31f5e621a7c"
+      },
+      "report.json": {
+        "bytes": 831,
+        "sha256": "bdd47db8a63af2d5e6914fb80d0afe980fe8268e7248963abebf50bc617b0402"
+      },
+      "resources/capture-summary.json": {
+        "bytes": 11436,
+        "sha256": "65208098c285c1208201d9ea6d63bd213290ce2b974dbdbfb6adc299bd55c130"
+      },
+      "resources/model-ready-idle-baseline.json": {
+        "bytes": 2502,
+        "sha256": "9ff576c387340cdc5b98869527deea7d16f79d6d4ca2c182f9595647444e345c"
+      },
+      "run-metadata.json": {
+        "bytes": 1641,
+        "sha256": "e6f7b980b30964c08a39fd283608845f53de55e25f949bd3693181b12c199f05"
+      },
+      "study-design.json": {
+        "bytes": 7785,
+        "sha256": "ab691ac00f73abc1cef9648da58c20a1816d7ab16cda7e59536054bea9a66b52"
+      },
+      "summary.json": {
+        "bytes": 12524,
+        "sha256": "353fd644f8fb12b9ddc34a43f5fa3f01aafd5e55e45a6432f97ce6b1be91a294"
+      }
+    },
+    "http_200_event_count": 172,
+    "independent_go_rows": 64,
+    "raw_indexed_events": 172,
+    "service_stopped": true,
+    "unique_sequences": 172
+  },
+  "latency_ms": {
+    "all": {
+      "cli_active": {
+        "max": 269.3145420000001,
+        "median": 107.17947950000007,
+        "min": 86.16579200000096,
+        "observed": 64,
+        "p95_nearest_rank": 241.5710839999985
+      },
+      "harness": {
+        "max": 279.99541599999844,
+        "median": 114.90191700000184,
+        "min": 93.92650000000025,
+        "observed": 64,
+        "p95_nearest_rank": 249.4502910000005
+      },
+      "provider_post": {
+        "max": 189.26258300000143,
+        "median": 97.38885450000012,
+        "min": 77.88241699999965,
+        "observed": 86,
+        "p95_nearest_rank": 125.52304099999922
+      },
+      "proxy_drain": {
+        "max": 0.01879199999876846,
+        "median": 0.011625500000000955,
+        "min": 0.009000000000369823,
+        "observed": 64,
+        "p95_nearest_rank": 0.01620799999990652
+      }
+    },
+    "arms": {
+      "compact_multilingual_local_feedback": {
+        "cli_active": {
+          "max": 269.3145420000001,
+          "median": 212.27406249999967,
+          "min": 86.16579200000096,
+          "observed": 32,
+          "p95_nearest_rank": 250.11754199999814
+        },
+        "harness": {
+          "max": 279.99541599999844,
+          "median": 220.6659369999997,
+          "min": 93.92650000000025,
+          "observed": 32,
+          "p95_nearest_rank": 258.65974999999963
+        },
+        "provider_post": {
+          "max": 153.44083300000122,
+          "median": 100.01466699999906,
+          "min": 77.88241699999965,
+          "observed": 54,
+          "p95_nearest_rank": 133.19158300000032
+        },
+        "proxy_drain": {
+          "max": 0.01879199999876846,
+          "median": 0.011812499999486192,
+          "min": 0.009457999999185063,
+          "observed": 32,
+          "p95_nearest_rank": 0.01762500000168643
+        }
+      },
+      "compact_multilingual_single": {
+        "cli_active": {
+          "max": 221.39566599999938,
+          "median": 102.66420849999935,
+          "min": 86.62024999999929,
+          "observed": 32,
+          "p95_nearest_rank": 116.37183400000062
+        },
+        "harness": {
+          "max": 233.14591699999988,
+          "median": 110.4413124999999,
+          "min": 94.16683299999917,
+          "observed": 32,
+          "p95_nearest_rank": 124.0240410000002
+        },
+        "provider_post": {
+          "max": 189.26258300000143,
+          "median": 94.00825000000168,
+          "min": 77.90174999999877,
+          "observed": 32,
+          "p95_nearest_rank": 107.55108399999891
+        },
+        "proxy_drain": {
+          "max": 0.01620799999990652,
+          "median": 0.01147949999946718,
+          "min": 0.009000000000369823,
+          "observed": 32,
+          "p95_nearest_rank": 0.01441700000093249
+        }
+      }
+    },
+    "p95_method": "nearest-rank ceil(0.95*n)"
+  },
+  "limitations": [
+    "Finite candidate set and finite suites only.",
+    "There were 32 existing intents and no new intents.",
+    "Arms differ in feedback/search and attempt cap, so comparison does not isolate one causal factor.",
+    "CPU values are coarse sampled process time; RSS and pcpu are also sampled, not host resource deltas.",
+    "Source-completeness receipts are separately scoped evidence."
+  ],
+  "proposal_adjustment_emission": {
+    "arms": {
+      "compact_multilingual_local_feedback": {
+        "capture_validated_cells": 32,
+        "completed_cells": 32,
+        "emitted_scores": {
+          "independent_go_postselection_holdout": {
+            "passed": 95,
+            "total": 95
+          },
+          "independent_go_training": {
+            "passed": 137,
+            "total": 137
+          },
+          "native_training_summary": {
+            "observed_cells": 32,
+            "passed_sum": 137,
+            "planned_cells": 32
+          }
+        },
+        "first_provider_proposal": {
+          "choice_distribution": {
+            "option_a": 6,
+            "option_b": 11,
+            "option_c": 15
+          },
+          "finite_training_score": {
+            "passed": 91,
+            "total": 137
+          },
+          "intended_matches": {
+            "observed": 32,
+            "passed": 10,
+            "planned": 32
+          }
+        },
+        "local_training_feedback_adjustment": {
+          "declined_cells": 0,
+          "improved_cells": 22,
+          "observed_cells": 32,
+          "passed_case_delta_sum": 46,
+          "planned_cells": 32,
+          "unchanged_cells": 10
+        },
+        "native_attempts_including_sole_deterministic": 64,
+        "planned_cells": 32,
+        "provider_decision_attempts": 54,
+        "provider_decision_choice_distribution_all_calls": {
+          "option_a": 8,
+          "option_b": 21,
+          "option_c": 25
+        },
+        "raw_provider_posts": 54,
+        "resources": {
+          "cli_cpu_delta_seconds_coarse": {
+            "max": 0.01,
+            "median": 0.01,
+            "min": 0.01,
+            "observed": 1,
+            "p95_nearest_rank": 0.01
+          },
+          "cli_cpu_unknown_cells": 31,
+          "cli_pcpu_max_percent_sampled": {
+            "max": 1.0,
+            "median": 0.0,
+            "min": 0.0,
+            "observed": 32,
+            "p95_nearest_rank": 0.0
+          },
+          "cli_rss_peak_kb_sampled": {
+            "max": 16560.0,
+            "median": 4152.0,
+            "min": 1888.0,
+            "observed": 32,
+            "p95_nearest_rank": 6800.0
+          },
+          "laya_cpu_delta_seconds_coarse": {
+            "max": 0.5799999999999983,
+            "median": 0.3949999999999996,
+            "min": 0.13000000000000078,
+            "observed": 32,
+            "p95_nearest_rank": 0.5199999999999996
+          },
+          "laya_pcpu_max_percent_sampled": {
+            "max": 194.5,
+            "median": 179.60000000000002,
+            "min": 126.6,
+            "observed": 32,
+            "p95_nearest_rank": 194.5
+          },
+          "laya_rss_peak_kb_sampled": {
+            "max": 1362464.0,
+            "median": 1225904.0,
+            "min": 1147392.0,
+            "observed": 32,
+            "p95_nearest_rank": 1358512.0
+          },
+          "laya_samples_per_cell": {
+            "max": 3.0,
+            "median": 2.0,
+            "min": 2.0,
+            "observed": 32,
+            "p95_nearest_rank": 3.0
+          }
+        },
+        "sole_deterministic_selections": 10,
+        "timing_ms": {
+          "cli_active": {
+            "max": 269.3145420000001,
+            "median": 212.27406249999967,
+            "min": 86.16579200000096,
+            "observed": 32,
+            "p95_nearest_rank": 250.11754199999814
+          },
+          "harness": {
+            "max": 279.99541599999844,
+            "median": 220.6659369999997,
+            "min": 93.92650000000025,
+            "observed": 32,
+            "p95_nearest_rank": 258.65974999999963
+          },
+          "provider_post": {
+            "max": 153.44083300000122,
+            "median": 100.01466699999906,
+            "min": 77.88241699999965,
+            "observed": 54,
+            "p95_nearest_rank": 133.19158300000032
+          },
+          "proxy_drain": {
+            "max": 0.01879199999876846,
+            "median": 0.011812499999486192,
+            "min": 0.009457999999185063,
+            "observed": 32,
+            "p95_nearest_rank": 0.01762500000168643
+          }
+        }
+      },
+      "compact_multilingual_single": {
+        "capture_validated_cells": 32,
+        "completed_cells": 32,
+        "emitted_scores": {
+          "independent_go_postselection_holdout": {
+            "passed": 68,
+            "total": 95
+          },
+          "independent_go_training": {
+            "passed": 91,
+            "total": 137
+          },
+          "native_training_summary": {
+            "observed_cells": 32,
+            "passed_sum": 91,
+            "planned_cells": 32
+          }
+        },
+        "first_provider_proposal": {
+          "choice_distribution": {
+            "option_a": 6,
+            "option_b": 11,
+            "option_c": 15
+          },
+          "finite_training_score": {
+            "passed": 91,
+            "total": 137
+          },
+          "intended_matches": {
+            "observed": 32,
+            "passed": 10,
+            "planned": 32
+          }
+        },
+        "local_training_feedback_adjustment": {
+          "declined_cells": 0,
+          "improved_cells": 0,
+          "observed_cells": 32,
+          "passed_case_delta_sum": 0,
+          "planned_cells": 32,
+          "unchanged_cells": 32
+        },
+        "native_attempts_including_sole_deterministic": 32,
+        "planned_cells": 32,
+        "provider_decision_attempts": 32,
+        "provider_decision_choice_distribution_all_calls": {
+          "option_a": 6,
+          "option_b": 11,
+          "option_c": 15
+        },
+        "raw_provider_posts": 32,
+        "resources": {
+          "cli_cpu_delta_seconds_coarse": {
+            "max": null,
+            "median": null,
+            "min": null,
+            "observed": 0,
+            "p95_nearest_rank": null
+          },
+          "cli_cpu_unknown_cells": 32,
+          "cli_pcpu_max_percent_sampled": {
+            "max": 0.0,
+            "median": 0.0,
+            "min": 0.0,
+            "observed": 32,
+            "p95_nearest_rank": 0.0
+          },
+          "cli_rss_peak_kb_sampled": {
+            "max": 5840.0,
+            "median": 3496.0,
+            "min": 32.0,
+            "observed": 32,
+            "p95_nearest_rank": 5680.0
+          },
+          "laya_cpu_delta_seconds_coarse": {
+            "max": 0.240000000000002,
+            "median": 0.16000000000000014,
+            "min": 0.11999999999999922,
+            "observed": 32,
+            "p95_nearest_rank": 0.2400000000000002
+          },
+          "laya_pcpu_max_percent_sampled": {
+            "max": 193.0,
+            "median": 169.2,
+            "min": 52.1,
+            "observed": 32,
+            "p95_nearest_rank": 193.0
+          },
+          "laya_rss_peak_kb_sampled": {
+            "max": 1362464.0,
+            "median": 1225496.0,
+            "min": 1146128.0,
+            "observed": 32,
+            "p95_nearest_rank": 1250112.0
+          },
+          "laya_samples_per_cell": {
+            "max": 3.0,
+            "median": 2.0,
+            "min": 2.0,
+            "observed": 32,
+            "p95_nearest_rank": 3.0
+          }
+        },
+        "sole_deterministic_selections": 0,
+        "timing_ms": {
+          "cli_active": {
+            "max": 221.39566599999938,
+            "median": 102.66420849999935,
+            "min": 86.62024999999929,
+            "observed": 32,
+            "p95_nearest_rank": 116.37183400000062
+          },
+          "harness": {
+            "max": 233.14591699999988,
+            "median": 110.4413124999999,
+            "min": 94.16683299999917,
+            "observed": 32,
+            "p95_nearest_rank": 124.0240410000002
+          },
+          "provider_post": {
+            "max": 189.26258300000143,
+            "median": 94.00825000000168,
+            "min": 77.90174999999877,
+            "observed": 32,
+            "p95_nearest_rank": 107.55108399999891
+          },
+          "proxy_drain": {
+            "max": 0.01620799999990652,
+            "median": 0.01147949999946718,
+            "min": 0.009000000000369823,
+            "observed": 32,
+            "p95_nearest_rank": 0.01441700000093249
+          }
+        }
+      }
+    },
+    "combined_independent_go_finite_score": {
+      "postselection_holdout": {
+        "passed": 163,
+        "total": 190
+      },
+      "training": {
+        "passed": 228,
+        "total": 274
+      }
+    },
+    "interpretation": "Both arms have the same first choice distribution (A 6, B 11, C 15; 10/32 intended in each). The feedback arm also has a larger attempt cap, so the comparison does not isolate feedback causally. Holdout is only used for postselection independent Go scoring.",
+    "score_definition": "passed cases / finite declared cases; no general correctness extrapolation"
+  },
+  "resource_observations": {
+    "all_cells": {
+      "cli_cpu_delta_seconds_coarse": {
+        "max": 0.01,
+        "median": 0.01,
+        "min": 0.01,
+        "observed": 1,
+        "p95_nearest_rank": 0.01
+      },
+      "cli_cpu_unknown_cells": 63,
+      "cli_pcpu_max_percent_sampled": {
+        "max": 1.0,
+        "median": 0.0,
+        "min": 0.0,
+        "observed": 64,
+        "p95_nearest_rank": 0.0
+      },
+      "cli_rss_peak_kb_sampled": {
+        "max": 16560.0,
+        "median": 3816.0,
+        "min": 32.0,
+        "observed": 64,
+        "p95_nearest_rank": 5840.0
+      },
+      "laya_cpu_delta_seconds_coarse": {
+        "max": 0.5799999999999983,
+        "median": 0.16999999999999993,
+        "min": 0.11999999999999922,
+        "observed": 64,
+        "p95_nearest_rank": 0.5099999999999998
+      },
+      "laya_pcpu_max_percent_sampled": {
+        "max": 194.5,
+        "median": 175.45,
+        "min": 52.1,
+        "observed": 64,
+        "p95_nearest_rank": 193.0
+      },
+      "laya_rss_peak_kb_sampled": {
+        "max": 1362464.0,
+        "median": 1225792.0,
+        "min": 1146128.0,
+        "observed": 64,
+        "p95_nearest_rank": 1274704.0
+      },
+      "laya_samples_per_cell": {
+        "max": 3.0,
+        "median": 2.0,
+        "min": 2.0,
+        "observed": 64,
+        "p95_nearest_rank": 3.0
+      }
+    },
+    "arms": {
+      "compact_multilingual_local_feedback": {
+        "cli_cpu_delta_seconds_coarse": {
+          "max": 0.01,
+          "median": 0.01,
+          "min": 0.01,
+          "observed": 1,
+          "p95_nearest_rank": 0.01
+        },
+        "cli_cpu_unknown_cells": 31,
+        "cli_pcpu_max_percent_sampled": {
+          "max": 1.0,
+          "median": 0.0,
+          "min": 0.0,
+          "observed": 32,
+          "p95_nearest_rank": 0.0
+        },
+        "cli_rss_peak_kb_sampled": {
+          "max": 16560.0,
+          "median": 4152.0,
+          "min": 1888.0,
+          "observed": 32,
+          "p95_nearest_rank": 6800.0
+        },
+        "laya_cpu_delta_seconds_coarse": {
+          "max": 0.5799999999999983,
+          "median": 0.3949999999999996,
+          "min": 0.13000000000000078,
+          "observed": 32,
+          "p95_nearest_rank": 0.5199999999999996
+        },
+        "laya_pcpu_max_percent_sampled": {
+          "max": 194.5,
+          "median": 179.60000000000002,
+          "min": 126.6,
+          "observed": 32,
+          "p95_nearest_rank": 194.5
+        },
+        "laya_rss_peak_kb_sampled": {
+          "max": 1362464.0,
+          "median": 1225904.0,
+          "min": 1147392.0,
+          "observed": 32,
+          "p95_nearest_rank": 1358512.0
+        },
+        "laya_samples_per_cell": {
+          "max": 3.0,
+          "median": 2.0,
+          "min": 2.0,
+          "observed": 32,
+          "p95_nearest_rank": 3.0
+        }
+      },
+      "compact_multilingual_single": {
+        "cli_cpu_delta_seconds_coarse": {
+          "max": null,
+          "median": null,
+          "min": null,
+          "observed": 0,
+          "p95_nearest_rank": null
+        },
+        "cli_cpu_unknown_cells": 32,
+        "cli_pcpu_max_percent_sampled": {
+          "max": 0.0,
+          "median": 0.0,
+          "min": 0.0,
+          "observed": 32,
+          "p95_nearest_rank": 0.0
+        },
+        "cli_rss_peak_kb_sampled": {
+          "max": 5840.0,
+          "median": 3496.0,
+          "min": 32.0,
+          "observed": 32,
+          "p95_nearest_rank": 5680.0
+        },
+        "laya_cpu_delta_seconds_coarse": {
+          "max": 0.240000000000002,
+          "median": 0.16000000000000014,
+          "min": 0.11999999999999922,
+          "observed": 32,
+          "p95_nearest_rank": 0.2400000000000002
+        },
+        "laya_pcpu_max_percent_sampled": {
+          "max": 193.0,
+          "median": 169.2,
+          "min": 52.1,
+          "observed": 32,
+          "p95_nearest_rank": 193.0
+        },
+        "laya_rss_peak_kb_sampled": {
+          "max": 1362464.0,
+          "median": 1225496.0,
+          "min": 1146128.0,
+          "observed": 32,
+          "p95_nearest_rank": 1250112.0
+        },
+        "laya_samples_per_cell": {
+          "max": 3.0,
+          "median": 2.0,
+          "min": 2.0,
+          "observed": 32,
+          "p95_nearest_rank": 3.0
+        }
+      }
+    },
+    "model_ready_idle_baseline": {
+      "duration_ms": 2518.487874999999,
+      "interpretation": "model-ready server-only idle baseline after pinned health; no CLI or provider requests",
+      "process_summary": {
+        "cpu_delta_status": "unknown_below_ps_cputime_resolution_or_zero",
+        "cpu_seconds_delta_coarse": null,
+        "measurement_note": "Process-level ps samples; CPU is cumulative and second-granularity; RSS and CPU-percent peaks are sampled.",
+        "pcpu_interpretation": "sampled rolling process CPU percent; not host CPU increase",
+        "pcpu_percent_max_sampled": 24.2,
+        "rss_peak_kb_sampled": 1318080,
+        "sample_count": 4
+      },
+      "sample_count": 4,
+      "samples": [
+        {
+          "invocation_id": null,
+          "laya_server": {
+            "alive": true,
+            "cpu_seconds": 3.43,
+            "pcpu_percent_sample": 24.2,
+            "pid": 48232,
+            "ps_raw": "0:03.43  24.2 1318080 48232",
+            "rss_kb": 1318080
+          },
+          "monotonic_ns": 5933102791,
+          "sample_index": 1,
+          "sampled_unix_ns": 1790764916241658000,
+          "sampled_utc": "2026-09-30T10:41:56.241591+00:00",
+          "stage": "model_ready_idle_baseline"
+        },
+        {
+          "invocation_id": null,
+          "laya_server": {
+            "alive": true,
+            "cpu_seconds": 3.43,
+            "pcpu_percent_sample": 0.6,
+            "pid": 48232,
+            "ps_raw": "0:03.43   0.6 1318080 48232",
+            "rss_kb": 1318080
+          },
+          "monotonic_ns": 6952196666,
+          "sample_index": 2,
+          "sampled_unix_ns": 1790764917260748000,
+          "sampled_utc": "2026-09-30T10:41:57.260639+00:00",
+          "stage": "model_ready_idle_baseline"
+        },
+        {
+          "invocation_id": null,
+          "laya_server": {
+            "alive": true,
+            "cpu_seconds": 3.43,
+            "pcpu_percent_sample": 0.1,
+            "pid": 48232,
+            "ps_raw": "0:03.43   0.1 1318080 48232",
+            "rss_kb": 1318080
+          },
+          "monotonic_ns": 7962244041,
+          "sample_index": 3,
+          "sampled_unix_ns": 1790764918270794000,
+          "sampled_utc": "2026-09-30T10:41:58.270724+00:00",
+          "stage": "model_ready_idle_baseline"
+        },
+        {
+          "invocation_id": null,
+          "laya_server": {
+            "alive": true,
+            "cpu_seconds": 3.43,
+            "pcpu_percent_sample": 0.1,
+            "pid": 48232,
+            "ps_raw": "0:03.43   0.1 1318080 48232",
+            "rss_kb": 1318080
+          },
+          "monotonic_ns": 8451159833,
+          "sample_index": 4,
+          "sampled_unix_ns": 1790764918759708000,
+          "sampled_utc": "2026-09-30T10:41:58.759625+00:00",
+          "stage": "model_ready_idle_baseline"
+        }
+      ]
+    },
+    "notes": [
+      "ps cumulative CPU is sampled at one-second resolution; too-few samples remain unknown.",
+      "RSS and pcpu values are sampled process observations, not continuous maxima.",
+      "pcpu is rolling per-process CPU percentage, not host CPU increase.",
+      "Idle baseline and whole capture totals are separately reported; they are not added to per-cell metrics."
+    ],
+    "whole_capture_window": {
+      "completed_unix_ns": 1790764928623483000,
+      "process_summary": {
+        "cpu_delta_status": "coarse_observed_at_ps_second_resolution",
+        "cpu_seconds_delta_coarse": 16.54,
+        "measurement_note": "Process-level ps samples; CPU is cumulative and second-granularity; RSS and CPU-percent peaks are sampled.",
+        "pcpu_interpretation": "sampled rolling process CPU percent; not host CPU increase",
+        "pcpu_percent_max_sampled": 194.5,
+        "rss_peak_kb_sampled": 1362464,
+        "sample_count": 140
+      },
+      "sample_count_including_baseline_endpoint": 140,
+      "started_unix_ns": 1790764918761376000,
+      "wall_ms": 9862.131541
+    }
+  },
+  "run_id": "ir-composition-tdd-v8-20260930T104054Z-d868d3ee7f71",
+  "schema": "gooo/ir-composition-tdd-capture-analysis/v1"
+}

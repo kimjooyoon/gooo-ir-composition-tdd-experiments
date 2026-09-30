@@ -1,0 +1,13 @@
+{
+  "activity": "C17",
+  "frozen_design_sha256": "ab691ac00f73abc1cef9648da58c20a1816d7ab16cda7e59536054bea9a66b52",
+  "frozen_fixture_sha256": "33a902cfd0202bd368fc9e380868946a7f209102e1480d17d93aa86e2e8d5b4f",
+  "frozen_holdout_sha256": "b2c3026bccfb402801f18c070a04d7892debe0807472d8b65aa00a7190dcb904",
+  "frozen_plan_sha256": "ccf85462d8d62f7406f853ea97364030f18e83a06db238b43fc18f5f8b6a35f4",
+  "generated_source_sha256": "7f54aae6e7e86c9781810bfaf2b0a30c5a8e32dcf49023195a7da1a6f62cd1e8",
+  "generated_test_source_sha256": "bb68d3acfef92f3ab5340ac6e638168b638bf1a85f6a8cae09ce477a860008c9",
+  "go_mod_sha256": "0e6f935fb61192d92d2c562aa4344e5e5ec54ad82d62b4d4cbd4a579168da2d3",
+  "invocation_id": "56-cp17_nonpositive_inclusive-compact_multilingual_single",
+  "source_cli_invocation_record_sha256": "853afea83cd7f3f2a492f5f309ca1eb5be1df2b86b8cad3359cfaa0b15eefe49",
+  "source_cli_stdout_sha256": "231a712f5d4a3893bd27973208a57e14c4cb7684b2bc59c7579d37ea7cc66450"
+}

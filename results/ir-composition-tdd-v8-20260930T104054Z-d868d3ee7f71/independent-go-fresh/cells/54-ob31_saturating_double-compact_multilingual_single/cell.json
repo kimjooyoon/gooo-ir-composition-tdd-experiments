@@ -1,0 +1,32 @@
+{
+  "invocation": {
+    "arm": "compact_multilingual_single",
+    "error": "FileNotFoundError: [Errno 2] No such file or directory: '/Users/alice/meta-go/research/metaprogramming/gooo-ir-composition-tdd-experiments/study-design-v8/fixtures/ob31_saturating_double.gooo'",
+    "intent_id": "ob31_saturating_double",
+    "invocation_id": "54-ob31_saturating_double-compact_multilingual_single",
+    "planned_holdout_cases": 6,
+    "planned_training_cases": 5,
+    "sequence": 54,
+    "source_invocation_record_sha256": "dc114cb2fa4e332b385f19d3bfdb114796cef7840acf9cb47caeabb246f207d9",
+    "source_stderr_bytes": 0,
+    "source_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "source_stdout_bytes": 19300,
+    "source_stdout_sha256": "2629e31f2c2036b5510d7956aabb70fe71e72468b4aaf3c3e803eb210b20f946",
+    "status": "input_validation_failed"
+  },
+  "score": {
+    "holdout": {
+      "cases": [],
+      "observed_cases": 0,
+      "passed": null,
+      "planned_cases": 6
+    },
+    "status": "input_validation_failed",
+    "training": {
+      "cases": [],
+      "observed_cases": 0,
+      "passed": null,
+      "planned_cases": 5
+    }
+  }
+}

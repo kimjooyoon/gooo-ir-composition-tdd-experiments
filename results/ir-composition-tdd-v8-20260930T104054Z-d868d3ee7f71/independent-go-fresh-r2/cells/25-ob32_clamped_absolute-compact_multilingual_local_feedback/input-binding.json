@@ -1,0 +1,13 @@
+{
+  "activity": "C32",
+  "frozen_design_sha256": "ab691ac00f73abc1cef9648da58c20a1816d7ab16cda7e59536054bea9a66b52",
+  "frozen_fixture_sha256": "93dbc7f839a1cc76a6dfba47c2f4b54a02fe0455502552a06c8b5849fa04ea91",
+  "frozen_holdout_sha256": "7735e41b9f6940db1639784aab920bfed0746cc2bb40c3c2f70918af52f050ea",
+  "frozen_plan_sha256": "c8f18d4859dec0ad014d0d0f3d8dab7b01198f059ffcecde0910fcfda0db13ff",
+  "generated_source_sha256": "f5b597f31d8162baa9501524852f7488dc88e799e03527ca9a427313cc447052",
+  "generated_test_source_sha256": "b6073403f414a737324d66d23054027d829a323f88a2ea94d74acf72e230ae59",
+  "go_mod_sha256": "0e6f935fb61192d92d2c562aa4344e5e5ec54ad82d62b4d4cbd4a579168da2d3",
+  "invocation_id": "25-ob32_clamped_absolute-compact_multilingual_local_feedback",
+  "source_cli_invocation_record_sha256": "d47f1cbdc476f709a704f0456dc05967ff2d573660e20aff84a96f87e3d2dcbe",
+  "source_cli_stdout_sha256": "543db09ff5ae5931a0c79ce2c55706a94a16f6871e92b876443b841a8ef61dfd"
+}

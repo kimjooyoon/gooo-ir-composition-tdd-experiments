@@ -1,0 +1,32 @@
+{
+  "invocation": {
+    "arm": "compact_multilingual_single",
+    "error": "FileNotFoundError: [Errno 2] No such file or directory: '/Users/alice/meta-go/research/metaprogramming/gooo-ir-composition-tdd-experiments/study-design-v8/fixtures/bl22_reassigned_valid_flag.gooo'",
+    "intent_id": "bl22_reassigned_valid_flag",
+    "invocation_id": "30-bl22_reassigned_valid_flag-compact_multilingual_single",
+    "planned_holdout_cases": 3,
+    "planned_training_cases": 5,
+    "sequence": 30,
+    "source_invocation_record_sha256": "068bb169be95ee44b4c19bfb2c2b6fb77812017e77e9d1c114b8968c9b336754",
+    "source_stderr_bytes": 0,
+    "source_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "source_stdout_bytes": 19230,
+    "source_stdout_sha256": "ba4626e8c47e81dbfa8d139ef0d0f1f9054b419d06451e0a9a672e793733939c",
+    "status": "input_validation_failed"
+  },
+  "score": {
+    "holdout": {
+      "cases": [],
+      "observed_cases": 0,
+      "passed": null,
+      "planned_cases": 3
+    },
+    "status": "input_validation_failed",
+    "training": {
+      "cases": [],
+      "observed_cases": 0,
+      "passed": null,
+      "planned_cases": 5
+    }
+  }
+}
