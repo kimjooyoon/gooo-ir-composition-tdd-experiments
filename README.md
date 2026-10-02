@@ -13,6 +13,11 @@ Gooo judges and a Go runtime. See the
 and [language direction, 한국어](https://github.com/kimjooyoon/meta-ontology-go/blob/dev/docs/language-direction.ko.md)
 for progress, limitations and research acknowledgments.
 
+The most recent observed [frozen-study CI run](https://github.com/kimjooyoon/gooo-ir-composition-tdd-experiments/actions/runs/36753870787)
+failed its immutable-v7 validation on September 30. The October 3 README update
+provides project navigation; the recorded CI failure remains an open replay
+issue. The measurements below retain their original capture and model revisions.
+
 ## Recorded study
 
 This study uses the finalized revision-2 cohort from
