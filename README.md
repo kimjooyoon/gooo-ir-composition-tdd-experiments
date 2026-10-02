@@ -1,5 +1,8 @@
 # IR composition finite-choice search study
 
+[Gooo Wiki, 한국어](https://github.com/kimjooyoon/meta-ontology-go/wiki) explains
+the language, small-model integration, current measurements and research foundations.
+
 ## Development context — 2026-10-03
 
 This repository records the September Laya composition/TDD experiment: propose a
