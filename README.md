@@ -1,5 +1,20 @@
 # IR composition finite-choice search study
 
+## Development context — 2026-10-03
+
+This repository records the September Laya composition/TDD experiment: propose a
+permitted body, evaluate finite examples and use failures in the next attempt.
+Its paired arms retain their original model, task and attempt-budget definitions.
+
+Current work explores the same construction loop with independently trained
+Gooo judges and a Go runtime. See the
+[current research](https://github.com/kimjooyoon/gooo-neural-decision-experiments),
+[public model card](https://huggingface.co/asketeddy/gooo-shared-judgment-tiny-v1)
+and [language direction, 한국어](https://github.com/kimjooyoon/meta-ontology-go/blob/dev/docs/language-direction.ko.md)
+for progress, limitations and research acknowledgments.
+
+## Recorded study
+
 This study uses the finalized revision-2 cohort from
 `gooo-metaprogramming-experiments/cohorts/ir-composition-curriculum-2026-09-30/revision-2`.
 It reuses the same 32 intent IDs. It does not add or recount 32 new intents.
